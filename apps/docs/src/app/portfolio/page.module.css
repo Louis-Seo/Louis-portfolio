@@ -85,6 +85,14 @@
   font-weight: 400;
   line-height: 1.55;
   color: var(--p-text-secondary);
+  margin-bottom: 16px;
+}
+
+.heroSub {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--p-text-muted);
   margin-bottom: 36px;
 }
 

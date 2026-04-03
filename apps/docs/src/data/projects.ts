@@ -36,7 +36,7 @@ export const PROJECTS: ProjectDetail[] = [
   {
     slug: "dnk-rp",
     title: "DNK RP Web/App",
-    subtitle: "입주자 중심의 PMS 연동 주거 플랫폼",
+    subtitle: "입주자 앱, PMS, 백오피스를 연결해 주거 운영 경험을 하나의 플랫폼으로 재구성한 프로젝트",
     category: "UX/UI Design",
     domain: "PropTech · Resident Portal",
     platform: "Web + Mobile",
@@ -91,7 +91,7 @@ export const PROJECTS: ProjectDetail[] = [
   {
     slug: "invest-manager",
     title: "Invest Manager",
-    subtitle: "기관 투자자를 위한 자산 운용 대시보드",
+    subtitle: "복잡한 자산 운용 데이터를 더 빠르게 읽고 판단할 수 있도록 만든 투자 운영 대시보드",
     category: "Product Design",
     domain: "FinTech · Clean Energy",
     platform: "Web",
@@ -147,7 +147,7 @@ export const PROJECTS: ProjectDetail[] = [
   {
     slug: "design-system",
     title: "Zoomable Design System",
-    subtitle: "4개 제품팀이 공유하는 토큰 기반 디자인 시스템",
+    subtitle: "여러 제품팀이 같은 언어로 일할 수 있도록 토큰과 컴포넌트 체계를 구축한 디자인 시스템",
     category: "Design System",
     domain: "Design Infrastructure",
     platform: "Web + Figma",
@@ -313,7 +313,7 @@ export const PROJECTS: ProjectDetail[] = [
   {
     slug: "zoomable-wind",
     title: "Zoomable Wind",
-    subtitle: "풍력 발전기 점검 데이터 클라우드 기반 관리 플랫폼",
+    subtitle: "풍력 점검 데이터를 조회를 넘어 분석, 리포트, 이력 추적, 운영 관리까지 확장한 플랫폼",
     category: "UX/UI Design",
     domain: "Wind Energy · Data Platform",
     platform: "Web",
@@ -367,7 +367,7 @@ export const PROJECTS: ProjectDetail[] = [
   {
     slug: "research-problem-framing",
     title: "Research & Problem Framing",
-    subtitle: "풍력 블레이드 검사 운영 구조 분석 및 핵심 문제 정의",
+    subtitle: "운영 병목과 작업 흐름을 구조화해 Worker와 Wind의 출발점을 만든 선행 리서치 프로젝트",
     category: "UX Research",
     domain: "Wind Energy · Operations Research",
     platform: "Research",

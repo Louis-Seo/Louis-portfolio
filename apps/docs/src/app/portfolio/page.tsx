@@ -122,17 +122,24 @@ export default function PortfolioPage() {
             </Reveal>
             <Reveal delay={200}>
               <p className={styles.heroStatement}>
-                복잡한 제품 구조를
+                복잡한 운영 구조와 제품 시스템을,
                 <br />
-                명확한 경험으로 설계합니다.
+                명확하고 확장 가능한 경험으로 설계합니다.
+              </p>
+            </Reveal>
+            <Reveal delay={250}>
+              <p className={styles.heroSub}>
+                플랫폼, AI·데이터, 디자인 시스템까지 연결해
+                <br />
+                여러 역할과 워크플로우가 얽힌 제품을 더 이해하기 쉽게 만듭니다.
               </p>
             </Reveal>
             <Reveal delay={300}>
               <div className={styles.heroTags}>
-                <span>Product Systems</span>
+                <span>Platform UX</span>
                 <span>AI &amp; Data</span>
                 <span>Design Systems</span>
-                <span>Scalable UX</span>
+                <span>Scalable Products</span>
               </div>
             </Reveal>
           </div>
@@ -162,7 +169,9 @@ export default function PortfolioPage() {
             <div className={styles.sectionHead}>
               <h2 className={styles.sectionTitle}>Selected Work</h2>
               <p className={styles.sectionSub}>
-                플랫폼, 데이터, AI 등 높은 복잡도의 도메인에서 제품 구조와 사용자 경험을 설계한 프로젝트
+                플랫폼, 운영, 데이터, AI가 맞물린 복잡한 제품을 구조적으로 풀어낸 대표 프로젝트입니다.
+                <br />
+                문제 정의부터 워크플로우 설계, 시스템 정리, 제품 실행까지 직접 리드한 작업을 중심으로 구성했습니다.
               </p>
             </div>
           </Reveal>
@@ -173,7 +182,7 @@ export default function PortfolioPage() {
                 <Link
                   href={
                     project.slug === "design-system"
-                      ? "/"
+                      ? "/design-system"
                       : `/portfolio/${project.slug}`
                   }
                   className={`${styles.showcaseCard} ${
@@ -210,7 +219,14 @@ export default function PortfolioPage() {
       <section className={styles.indexSection}>
         <div className={styles.container}>
           <Reveal>
-            <h2 className={styles.sectionTitle}>All Projects</h2>
+            <div className={styles.sectionHead}>
+              <h2 className={styles.sectionTitle}>All Projects</h2>
+              <p className={styles.sectionSub}>
+                도메인은 달라도, 제가 반복해서 풀어온 문제는 같습니다.
+                <br />
+                복잡한 데이터, 운영 흐름, 사용자 역할을 더 명확한 구조와 경험으로 바꾸는 일입니다.
+              </p>
+            </div>
           </Reveal>
           <div className={styles.projectIndex}>
             {allProjects.map((project, i) => (
@@ -218,7 +234,7 @@ export default function PortfolioPage() {
                 <Link
                   href={
                     project.slug === "design-system"
-                      ? "/"
+                      ? "/design-system"
                       : `/portfolio/${project.slug}`
                   }
                   className={styles.indexRow}
@@ -241,11 +257,11 @@ export default function PortfolioPage() {
             <div className={styles.approachLeft}>
               <Reveal>
                 <h2 className={styles.approachHeadline}>
-                  화면이 아닌
+                  화면보다 먼저,
                   <br />
-                  구조를,
+                  제품이 작동하는
                   <br />
-                  제품 전체를
+                  구조를
                   <br />
                   설계합니다.
                 </h2>
@@ -253,9 +269,9 @@ export default function PortfolioPage() {
             </div>
             <div className={styles.approachRight}>
               {[
-                { num: "01", title: "Product Systems", text: "토큰, 컴포넌트, 패턴 기반의 디자인 시스템을 설계하고 운영하며, 제품이 성장해도 일관된 경험을 유지하는 구조를 만듭니다." },
-                { num: "02", title: "AI & Data Experience", text: "AI 예측 모델, 실시간 모니터링, 복잡한 데이터셋을 사용자가 해석하고 행동할 수 있는 직관적인 인터페이스로 전환합니다." },
-                { num: "03", title: "Design–Dev Bridge", text: "컴포넌트 스펙, 상태 정의, React 패턴까지 이해하며 엔지니어와 같은 언어로 소통합니다. 디자인 의도가 코드로 정확히 전달됩니다." },
+                { num: "01", title: "Product Systems", text: "디자인 시스템을 단순 컴포넌트 모음이 아니라, 제품이 커져도 일관된 경험을 유지하게 만드는 운영 구조로 설계합니다." },
+                { num: "02", title: "AI & Data Products", text: "예측 모델, 모니터링 데이터, 복잡한 테이블과 차트를 사용자가 해석하고 행동으로 옮길 수 있는 인터페이스로 전환합니다." },
+                { num: "03", title: "Design–Development Bridge", text: "상태 정의, 컴포넌트 스펙, 구현 제약까지 고려해 디자인 의도가 코드에서 흐려지지 않도록 설계합니다." },
               ].map((item, i) => (
                 <Reveal key={item.num} delay={i * 100}>
                   <div className={styles.approachCard}>
@@ -275,11 +291,11 @@ export default function PortfolioPage() {
         <div className={styles.container}>
           <Reveal>
             <div className={styles.contactInner}>
-              <h2 className={styles.contactTitle}>함께 만들어갈 제품이 있다면</h2>
+              <h2 className={styles.contactTitle}>복잡한 제품을 함께 더 명확하게 만들 팀을 찾고 있습니다.</h2>
               <p className={styles.contactText}>
-                복잡한 도메인, 까다로운 사용자 구조, 성장하는 플랫폼 —
+                운영 구조가 복잡한 플랫폼, AI·데이터 기반 제품,
                 <br />
-                그런 문제를 함께 풀 팀을 찾고 있습니다.
+                여러 역할이 얽힌 SaaS처럼 구조 설계가 중요한 문제에 특히 강합니다.
               </p>
               <a href="mailto:niedr7893@gmail.com" className={styles.contactEmail}>niedr7893@gmail.com →</a>
             </div>
