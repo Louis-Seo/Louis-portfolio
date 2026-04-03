@@ -5,6 +5,6 @@ export interface PortfolioNavItem {
 
 export const PORTFOLIO_NAV: PortfolioNavItem[] = [
   { label: "Projects", href: "/portfolio" },
-  { label: "Design System", href: "/" },
+  { label: "Design System", href: "/design-system" },
   { label: "About", href: "/portfolio/about" },
 ];

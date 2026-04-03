@@ -44,7 +44,7 @@ export default function DocsHeader({ onMenuToggle }: DocsHeaderProps) {
             Louis Seo
           </a>
           <span className={styles.brandSep}>/</span>
-          <a href="/" className={styles.brandCurrent}>
+          <a href="/design-system" className={styles.brandCurrent}>
             Design System
           </a>
         </div>
