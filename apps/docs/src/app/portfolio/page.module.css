@@ -388,8 +388,17 @@
    All Projects Index
    ══════════════════════════════════════════ */
 .indexSection {
-  padding: 80px 0;
+  padding: 64px 0 80px;
   border-top: 1px solid var(--p-border);
+}
+
+.indexSectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--p-text-secondary);
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
 }
 
 .projectIndex {
@@ -440,7 +449,50 @@
 }
 
 /* ══════════════════════════════════════════
-   How I Design — Split sticky
+   How I Work — Principle strip
+   ══════════════════════════════════════════ */
+.principleSection {
+  padding: 80px 0;
+  border-top: 1px solid var(--p-border);
+}
+
+.principleStatement {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--p-text);
+  letter-spacing: -0.5px;
+  margin-bottom: 48px;
+}
+
+.principleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.principleItem {
+  padding: 24px 0;
+  border-top: 2px solid var(--p-accent);
+}
+
+.principleKeyword {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--p-text);
+  margin-bottom: 8px;
+  letter-spacing: -0.2px;
+}
+
+.principleDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--p-text-muted);
+}
+
+/* ══════════════════════════════════════════
+   What I Bring — Split sticky
    ══════════════════════════════════════════ */
 .approachSection {
   padding: 120px 0;
@@ -583,6 +635,11 @@
     aspect-ratio: 16 / 9;
   }
 
+  .principleGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .approachLayout {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -627,8 +684,12 @@
     display: none;
   }
 
+  .principleStatement {
+    font-size: 20px;
+  }
+
   .contactTitle {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
