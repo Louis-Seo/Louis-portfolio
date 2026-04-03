@@ -1,0 +1,205 @@
+/* ── Badge (Textual Badge) ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sizeLarge {
+  height: 24px;
+  min-width: 24px;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.sizeMedium {
+  min-width: 18px;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+/* ── Background Colors ── */
+.bgGray {
+  background-color: var(--gray-50);
+}
+
+.bgGreen {
+  background-color: var(--green-50);
+}
+
+.bgBlue {
+  background-color: var(--blue-50);
+}
+
+.bgYellow {
+  background-color: var(--yellow-50);
+}
+
+.bgRed {
+  background-color: var(--red-50);
+}
+
+/* ── Text Colors ── */
+.textGray {
+  color: var(--gray-700);
+}
+
+.textGreen {
+  color: var(--green-700);
+}
+
+.textBlue {
+  color: var(--blue-700);
+}
+
+.textYellow {
+  color: var(--yellow-700);
+}
+
+.textRed {
+  color: var(--red-700);
+}
+
+/* ── Outline Borders ── */
+.outlineGray {
+  border: 1px solid var(--gray-200);
+}
+
+.outlineGreen {
+  border: 1px solid var(--green-200);
+}
+
+.outlineBlue {
+  border: 1px solid var(--blue-200);
+}
+
+.outlineYellow {
+  border: 1px solid var(--yellow-200);
+}
+
+.outlineRed {
+  border: 1px solid var(--red-200);
+}
+
+/* ── Content ── */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.label {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sizeLarge .label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sizeMedium .label {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* ── Close Button ── */
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+/* ── Count Badge ── */
+.countBadge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20px;
+  padding: 0 4px;
+  border-radius: 2px;
+  background-color: var(--gray-100);
+  color: var(--gray-500);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Textual Badge backgrounds — rgba 20% of 500-level color */
+:global([data-theme="dark"]) .bgGray {
+  background-color: rgba(158, 158, 158, 0.2);
+}
+
+:global([data-theme="dark"]) .bgGreen {
+  background-color: rgba(15, 186, 127, 0.2);
+}
+
+:global([data-theme="dark"]) .bgBlue {
+  background-color: rgba(6, 125, 253, 0.2);
+}
+
+:global([data-theme="dark"]) .bgYellow {
+  background-color: rgba(255, 235, 59, 0.2);
+}
+
+:global([data-theme="dark"]) .bgRed {
+  background-color: rgba(255, 68, 5, 0.2);
+}
+
+/* Textual Badge text — 500-level colors */
+:global([data-theme="dark"]) .textGray {
+  color: #9E9E9E;
+}
+
+:global([data-theme="dark"]) .textGreen {
+  color: #0FBA7F;
+}
+
+:global([data-theme="dark"]) .textBlue {
+  color: #03A9F4;
+}
+
+:global([data-theme="dark"]) .textYellow {
+  color: #FFEB3B;
+}
+
+:global([data-theme="dark"]) .textRed {
+  color: #FF4405;
+}
+
+/* Outline borders — match rgba bg */
+:global([data-theme="dark"]) .outlineGray {
+  border-color: rgba(158, 158, 158, 0.3);
+}
+
+:global([data-theme="dark"]) .outlineGreen {
+  border-color: rgba(15, 186, 127, 0.3);
+}
+
+:global([data-theme="dark"]) .outlineBlue {
+  border-color: rgba(6, 125, 253, 0.3);
+}
+
+:global([data-theme="dark"]) .outlineYellow {
+  border-color: rgba(255, 235, 59, 0.3);
+}
+
+:global([data-theme="dark"]) .outlineRed {
+  border-color: rgba(255, 68, 5, 0.3);
+}
+
+/* Count Badge */
+:global([data-theme="dark"]) .countBadge {
+  background-color: var(--dp-01);
+  color: var(--blue-500);
+}

@@ -1,0 +1,41 @@
+/* ══════════════════════════════════════════════
+   HistogramChart – Vertical Histogram Component
+   ══════════════════════════════════════════════ */
+
+/* ── Container ── */
+.container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+/* ── Bin (one vertical bar per x-axis slot — no gaps between bins) ── */
+.bin {
+  display: flex;
+  flex-direction: column-reverse; /* bottom-up stacking */
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: clip;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
+
+/* ── Segment (one stacked layer within a bin) ── */
+.segment {
+  width: 100%;
+  min-height: 1px;
+  transition: opacity 0.15s ease;
+}
+
+.segment:hover {
+  opacity: 0.8;
+}
+
+/* Top segment gets rounded corners (visually on top in column-reverse) */
+.segmentTop {
+  border-radius: 2px 2px 0 0;
+}

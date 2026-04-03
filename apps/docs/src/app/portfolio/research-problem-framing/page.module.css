@@ -1,0 +1,461 @@
+/* ── Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.page { width: 100%; }
+.container { max-width: 1080px; margin: 0 auto; padding: 0 40px; }
+
+/* ── Shared ── */
+.sectionLabel {
+  font-size: 12px; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; color: #E87A2E; margin-bottom: 16px;
+}
+.sectionTitle {
+  font-size: 28px; font-weight: 700; line-height: 1.5;
+  color: #FAFAFA; margin-bottom: 16px;
+}
+.sectionTitleLight {
+  font-size: 28px; font-weight: 700; line-height: 1.5;
+  color: #FAFAFA; margin-bottom: 24px;
+}
+.sectionDesc {
+  font-size: 15px; font-weight: 400; line-height: 1.8;
+  color: rgba(250,250,250,0.55); max-width: 720px; margin-bottom: 48px;
+}
+.imageFrame {
+  position: relative; width: 100%; aspect-ratio: 16/9;
+  border-radius: 12px; overflow: hidden; background: #1A1A1E;
+}
+.fullImage {
+  aspect-ratio: 16/9; border: 1px solid rgba(255,255,255,0.06); margin-bottom: 48px;
+}
+
+/* ═══ Hero ═══ */
+.hero { padding: 140px 0 0; }
+.heroTagRow { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.heroTag {
+  font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: #E87A2E; padding: 6px 14px; border: 1px solid rgba(232,122,46,0.3);
+  border-radius: 100px; background: rgba(232,122,46,0.08);
+}
+.heroTitle {
+  font-size: 56px; font-weight: 700; line-height: 1.1; color: #FAFAFA; margin-bottom: 24px;
+}
+.heroDescription {
+  font-size: 18px; font-weight: 400; line-height: 1.8;
+  color: rgba(250,250,250,0.6); max-width: 680px; margin-bottom: 48px;
+}
+.heroMeta {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 32px;
+  padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 80px;
+}
+.metaItem { display: flex; flex-direction: column; gap: 4px; }
+.metaLabel {
+  font-size: 11px; font-weight: 500; letter-spacing: 1px;
+  text-transform: uppercase; color: rgba(250,250,250,0.35);
+}
+.metaValue { font-size: 14px; font-weight: 500; color: rgba(250,250,250,0.8); }
+.heroVisual { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.heroImage { aspect-ratio: 16/9; border-radius: 16px; border: 1px solid rgba(255,255,255,0.06); }
+
+/* ═══ Why ═══ */
+.whySection { padding: 120px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.whyGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.whyLeft { position: sticky; top: 120px; }
+.whyTitle { font-size: 28px; font-weight: 700; line-height: 1.5; color: #FAFAFA; }
+.whyRight { display: flex; flex-direction: column; gap: 20px; }
+.whyText { font-size: 15px; font-weight: 400; line-height: 1.8; color: rgba(250,250,250,0.55); }
+.whyHighlight {
+  font-size: 15px; font-weight: 500; line-height: 1.8; color: rgba(250,250,250,0.75);
+  padding-left: 16px; border-left: 2px solid #E87A2E;
+}
+
+/* ═══ Methods ═══ */
+.methodsSection { padding: 120px 0; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.methodGrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.methodCard {
+  padding: 32px 28px; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.methodNum { font-size: 12px; font-weight: 700; color: #E87A2E; }
+.methodCardTitle { font-size: 18px; font-weight: 600; color: #FAFAFA; }
+.methodCardText { font-size: 13px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.45); }
+.methodCardOutcome {
+  font-size: 12px; font-weight: 500; line-height: 1.6; color: rgba(232,122,46,0.8);
+  margin-top: 4px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ═══ Interview ═══ */
+.interviewSection { padding: 120px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.interviewHighlights { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.interviewCard {
+  padding: 28px 24px; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 12px;
+}
+.interviewMeta { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.interviewName { font-size: 14px; font-weight: 600; color: #FAFAFA; }
+.interviewRole { font-size: 12px; font-weight: 400; color: rgba(250,250,250,0.4); }
+.interviewQuote { font-size: 14px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.6); font-style: italic; }
+.interviewGoal {
+  font-size: 12px; font-weight: 400; line-height: 1.6; color: rgba(250,250,250,0.4);
+  margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.interviewGoalLabel { font-weight: 600; color: rgba(250,250,250,0.5); }
+
+/* Interview Synthesis */
+.synthesisBlock {
+  margin-top: 48px; padding: 40px 32px; background: rgba(232,122,46,0.04);
+  border: 1px solid rgba(232,122,46,0.15); border-radius: 12px;
+}
+.synthesisTitle {
+  font-size: 16px; font-weight: 700; color: #E87A2E; margin-bottom: 20px;
+}
+.synthesisGrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.synthesisItem {
+  font-size: 14px; font-weight: 400; line-height: 1.6; color: rgba(250,250,250,0.6);
+  padding-left: 16px; border-left: 2px solid rgba(232,122,46,0.3);
+}
+
+/* ═══ Findings ═══ */
+.findingsSection { padding: 120px 0; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.findingsGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.findingsColumn { display: flex; flex-direction: column; gap: 16px; }
+.findingsColumnTitle {
+  font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  color: rgba(250,250,250,0.35); margin-bottom: 4px;
+}
+.findingsItem {
+  font-size: 14px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.55);
+  padding: 16px 20px; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 8px;
+}
+.findingsItemStrong {
+  font-size: 14px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.55);
+  padding: 16px 20px; background: rgba(232,122,46,0.04);
+  border: 1px solid rgba(232,122,46,0.15); border-radius: 8px;
+}
+.findingsInsight {
+  font-size: 15px; font-weight: 400; line-height: 1.8; color: rgba(250,250,250,0.55);
+  max-width: 720px; margin-top: 16px;
+}
+
+/* ═══ Problem Framing ═══ */
+.problemSection { padding: 120px 0; background: rgba(0,0,0,0.3); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.problemGrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.problemCard {
+  padding: 32px 28px; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(232,122,46,0.2); border-radius: 12px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.problemNum { font-size: 11px; font-weight: 600; color: #E87A2E; letter-spacing: 1px; text-transform: uppercase; }
+.problemCardTitle { font-size: 18px; font-weight: 700; color: #E87A2E; }
+.problemCardProblem { font-size: 13px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.55); }
+.problemCardWhy {
+  font-size: 12px; font-weight: 400; line-height: 1.6; color: rgba(250,250,250,0.4);
+  padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.problemCardResponse {
+  font-size: 12px; font-weight: 500; line-height: 1.6; color: rgba(232,122,46,0.8);
+}
+
+/* ═══ Opportunity ═══ */
+.opportunitySection { padding: 120px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+/* Summary Panel */
+.opportunitySummary {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 48px;
+}
+.opportunitySummaryCard {
+  padding: 24px 20px; background: rgba(232,122,46,0.04);
+  border: 1px solid rgba(232,122,46,0.15); border-radius: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.opportunitySummaryLabel {
+  font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: #E87A2E;
+}
+.opportunitySummaryText {
+  font-size: 13px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.55);
+}
+
+/* Cards */
+.opportunityGrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.opportunityCard {
+  padding: 28px 24px; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.opportunityCardTitle { font-size: 16px; font-weight: 700; color: #FAFAFA; }
+.opportunityCardSub {
+  font-size: 13px; font-weight: 500; line-height: 1.5; color: rgba(232,122,46,0.8);
+}
+.opportunityCardText { font-size: 13px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.45); }
+
+/* ═══ Quantitative ═══ */
+.quantSection { padding: 120px 0; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.quantGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 48px; }
+.quantImage { aspect-ratio: 16/10; border: 1px solid rgba(255,255,255,0.06); }
+.quantMetrics { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+.quantMetricCard {
+  padding: 32px 24px; background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 12px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.quantValue { font-size: 36px; font-weight: 700; color: #E87A2E; line-height: 1; margin-bottom: 8px; }
+.quantLabel { font-size: 14px; font-weight: 600; color: #FAFAFA; }
+.quantDesc { font-size: 12px; font-weight: 400; line-height: 1.5; color: rgba(250,250,250,0.4); margin-top: 4px; }
+.quantInsight {
+  font-size: 12px; font-weight: 400; line-height: 1.6; color: rgba(232,122,46,0.7);
+  margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.quantSynthesis {
+  margin-top: 48px; font-size: 15px; font-weight: 400; line-height: 1.8;
+  color: rgba(250,250,250,0.55); max-width: 720px;
+}
+
+/* ═══ Chart ═══ */
+.chartFrame {
+  background: #141416; border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 40px 36px; display: flex; flex-direction: column; gap: 24px;
+  margin-bottom: 48px;
+}
+.chartTitle {
+  font-size: 14px; font-weight: 600; color: #FAFAFA; text-align: center;
+  margin-bottom: 16px;
+}
+.chartArea { display: flex; gap: 8px; }
+.chartYAxis {
+  display: flex; flex-direction: column; justify-content: space-between;
+  font-size: 11px; font-weight: 500; color: rgba(250,250,250,0.35);
+  text-align: right; min-width: 28px; height: 260px;
+}
+.chartContent {
+  flex: 1; display: flex; flex-direction: column;
+}
+.chartPlot {
+  position: relative; height: 260px;
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.chartGridLines {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: space-between;
+  pointer-events: none;
+}
+.chartGridLine {
+  width: 100%; height: 1px; background: rgba(255,255,255,0.06);
+}
+.chartGroups {
+  position: absolute; inset: 0;
+  display: flex; justify-content: space-around; align-items: flex-end;
+  padding: 0 24px; z-index: 1;
+}
+.chartGroup {
+  display: flex; flex-direction: column; align-items: center;
+  height: 100%;
+}
+.chartBars {
+  display: flex; gap: 8px; align-items: flex-end; flex: 1;
+}
+.chartBarWrapper {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  width: 44px; height: 100%; justify-content: flex-end;
+}
+.chartBarLabel {
+  font-size: 11px; font-weight: 600; color: #FAFAFA;
+}
+.chartBarBefore {
+  width: 100%; background: rgba(180,180,180,0.6); border-radius: 2px 2px 0 0;
+}
+.chartBarAfter {
+  width: 100%; background: #E87A2E; border-radius: 2px 2px 0 0;
+}
+.chartXLabels {
+  display: flex; justify-content: space-around;
+  padding: 14px 24px 0;
+}
+.chartXLabel {
+  font-size: 12px; font-weight: 500; color: rgba(250,250,250,0.6);
+  text-align: center;
+}
+.chartLegend {
+  display: flex; gap: 20px; justify-content: flex-end;
+}
+.chartLegendItem {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 500; color: rgba(250,250,250,0.6);
+}
+.chartLegendSwatchBefore {
+  width: 12px; height: 12px; border-radius: 2px; background: rgba(180,180,180,0.6);
+}
+.chartLegendSwatchAfter {
+  width: 12px; height: 12px; border-radius: 2px; background: #E87A2E;
+}
+
+/* ═══ Performance Charts ═══ */
+.perfChartRow {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 48px;
+}
+.perfChartPanel {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 24px 20px 28px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.perfChartSectionTitle {
+  font-size: 12px; font-weight: 700; color: #FAFAFA; text-align: center;
+  padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 12px;
+}
+.perfChartPairRow {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.perfMiniChart {
+  display: flex; flex-direction: column; gap: 12px;
+}
+.perfMiniTitle {
+  font-size: 10px; font-weight: 600; color: rgba(250,250,250,0.6); text-align: center;
+  padding-left: 36px;
+}
+/* Plot = Y-axis label (rotated) + Y-tick numbers + bar area */
+.perfMiniPlotWrap {
+  display: flex; align-items: stretch; height: 200px;
+}
+.perfMiniAxisLabel {
+  writing-mode: vertical-lr; transform: rotate(180deg);
+  font-size: 8px; font-weight: 500; color: rgba(250,250,250,0.25);
+  white-space: nowrap; display: flex; align-items: center; justify-content: center;
+  padding-right: 2px; flex-shrink: 0;
+}
+.perfMiniYAxis {
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: 0 4px; flex-shrink: 0; min-width: 24px;
+}
+.perfMiniYLabel {
+  font-size: 9px; font-weight: 400; color: rgba(250,250,250,0.3); text-align: right;
+  line-height: 1;
+}
+.perfMiniPlotArea {
+  flex: 1; position: relative;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.perfMiniGridLines {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: space-between;
+  pointer-events: none;
+}
+.perfMiniGridLine {
+  width: 100%; height: 1px; background: rgba(255,255,255,0.06);
+}
+.perfMiniBars {
+  position: absolute; inset: 0;
+  display: flex; justify-content: space-evenly; align-items: flex-end;
+  padding: 0 12px; z-index: 1;
+}
+.perfMiniBarCol {
+  width: 40%; max-width: 60px; height: 100%;
+  display: flex; align-items: flex-end;
+}
+.perfMiniBar {
+  width: 100%; min-height: 2px;
+}
+.perfMiniBarPrimary { background: rgba(123,140,255,0.7); }
+.perfMiniBarSecondary { background: rgba(232,122,46,0.7); }
+.perfMiniXLabels {
+  display: grid; grid-template-columns: 1fr 1fr;
+  padding: 8px 0 0; margin-left: 36px;
+}
+.perfMiniXLabel {
+  font-size: 8px; font-weight: 400; color: rgba(250,250,250,0.35); text-align: center;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.perfMiniSubtitle {
+  font-size: 9px; font-weight: 400; color: rgba(250,250,250,0.3); text-align: center;
+  padding-left: 36px;
+}
+
+/* ═══ Performance ═══ */
+.perfSection { padding: 120px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.perfTable {
+  width: 100%; border-collapse: collapse; margin-top: 32px;
+}
+.perfTable th {
+  font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: rgba(250,250,250,0.35); text-align: left; padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.perfTable td {
+  font-size: 14px; font-weight: 400; color: rgba(250,250,250,0.6); padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.perfHighlight { color: #E87A2E; font-weight: 600; }
+
+/* ═══ Connected Outcomes ═══ */
+.connectedSection { padding: 120px 0; }
+.connectedDesc {
+  font-size: 15px; font-weight: 400; line-height: 1.8;
+  color: rgba(250,250,250,0.55); max-width: 680px; margin-bottom: 48px;
+}
+.connectedGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.connectedCard {
+  text-decoration: none; display: block;
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+  background: rgba(255,255,255,0.03); transition: border-color 0.2s, background 0.2s;
+}
+.connectedCard:hover { border-color: #E87A2E; background: rgba(232,122,46,0.04); }
+.connectedCardInner { padding: 40px 32px; display: flex; flex-direction: column; gap: 12px; }
+.connectedTag {
+  font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: #E87A2E; width: fit-content; padding: 4px 10px;
+  border: 1px solid rgba(232,122,46,0.3); border-radius: 100px; background: rgba(232,122,46,0.08);
+}
+.connectedCardTitle { font-size: 24px; font-weight: 700; color: #FAFAFA; }
+.connectedCardText { font-size: 14px; font-weight: 400; line-height: 1.7; color: rgba(250,250,250,0.5); }
+.connectedArrow { font-size: 14px; font-weight: 600; color: #E87A2E; margin-top: 8px; }
+.connectedCardBullets {
+  list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;
+}
+.connectedCardBullets li {
+  font-size: 13px; font-weight: 400; line-height: 1.6; color: rgba(250,250,250,0.45);
+  padding-left: 12px; position: relative;
+}
+.connectedCardBullets li::before {
+  content: ""; position: absolute; left: 0; top: 8px;
+  width: 4px; height: 4px; border-radius: 50%; background: rgba(232,122,46,0.5);
+}
+
+/* ═══ Responsive ═══ */
+@media (max-width: 828px) {
+  .container { padding: 0 20px; }
+  .hero { padding: 100px 0 0; }
+  .heroTitle { font-size: 36px; }
+  .heroDescription { font-size: 16px; }
+  .heroMeta { grid-template-columns: repeat(2,1fr); gap: 20px; margin-bottom: 48px; }
+  .heroVisual { padding: 0 20px; }
+  .whySection, .methodsSection, .interviewSection, .findingsSection,
+  .problemSection, .opportunitySection, .quantSection, .perfSection, .connectedSection { padding: 80px 0; }
+  .whyGrid { grid-template-columns: 1fr; gap: 32px; }
+  .whyLeft { position: static; }
+  .whyTitle, .sectionTitle, .sectionTitleLight { font-size: 22px; }
+  .methodGrid, .interviewHighlights, .connectedGrid { grid-template-columns: 1fr; }
+  .problemGrid, .opportunityGrid, .quantMetrics { grid-template-columns: repeat(2,1fr); }
+  .opportunitySummary { grid-template-columns: 1fr; }
+  .quantGrid { grid-template-columns: 1fr; }
+  .problemCard { aspect-ratio: auto; }
+  .findingsGrid { grid-template-columns: 1fr; gap: 32px; }
+  .synthesisGrid { grid-template-columns: 1fr; }
+  .opportunityModelGrid { grid-template-columns: repeat(2,1fr); }
+  .perfTable { font-size: 12px; }
+  .perfTable th, .perfTable td { padding: 12px 12px; }
+  .perfChartRow { grid-template-columns: 1fr; }
+  .perfChartPairRow { grid-template-columns: 1fr; gap: 24px; }
+}

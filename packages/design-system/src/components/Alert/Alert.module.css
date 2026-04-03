@@ -1,0 +1,140 @@
+/* ── Alert Base ── */
+.alert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: var(--radius-sm);
+  width: 100%;
+}
+
+/* ── Sizes ── */
+.medium {
+  padding: var(--space-2) var(--space-3);
+}
+
+.large {
+  padding: 10px var(--space-3);
+}
+
+.withDescription {
+  gap: 6px;
+}
+
+/* ── Container (filled) variant ── */
+.container {
+  color: var(--gray-50);
+}
+
+.container.success {
+  background-color: var(--alert-success-bg);
+}
+
+.container.information {
+  background-color: var(--alert-information-bg);
+}
+
+.container.warning {
+  background-color: var(--alert-warning-bg);
+}
+
+/* ── Text (non-container) variant ── */
+.text {
+  background: none;
+}
+
+.text.success {
+  color: var(--alert-success);
+}
+
+.text.information {
+  color: var(--alert-information);
+}
+
+.text.warning {
+  color: var(--alert-warning);
+}
+
+/* ── Title Row ── */
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+/* ── Icon ── */
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.medium .iconWrapper {
+  height: 20px;
+}
+
+.large .iconWrapper {
+  height: 22px;
+}
+
+/* ── Title ── */
+.title {
+  flex: 1;
+  min-width: 0;
+}
+
+.medium .title {
+  font-size: var(--font-size-subtitle3);
+  line-height: var(--line-height-subtitle3);
+  font-weight: var(--font-weight-subtitle3);
+}
+
+.large .title {
+  font-size: var(--font-size-subtitle1);
+  line-height: var(--line-height-subtitle1);
+  font-weight: var(--font-weight-subtitle1);
+}
+
+/* ── Description ── */
+.descriptionRow {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.descriptionIndented.descriptionIndented {
+  padding-left: 24px;
+}
+
+.large .descriptionIndented.descriptionIndented {
+  padding-left: 26px;
+}
+
+.description {
+  flex: 1;
+  min-width: 0;
+}
+
+.medium .description {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+}
+
+.large .description {
+  font-size: var(--font-size-body2);
+  line-height: var(--line-height-body2);
+  font-weight: var(--font-weight-body2);
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Container variant — fix: var(--gray-50) → #1E1E1E makes text invisible */
+:global([data-theme="dark"]) .container {
+  color: #FAFAFA;
+}
+
+/* Text variant — information color needs brightening on dark bg */
+:global([data-theme="dark"]) .text.information {
+  color: #9E9E9E;
+}

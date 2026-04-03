@@ -1,0 +1,68 @@
+:root {
+  /* Heading - Semi Bold (600) */
+  --font-size-h1: 32px;
+  --line-height-h1: 40px;
+  --font-weight-h1: 600;
+
+  --font-size-h2: 24px;
+  --line-height-h2: 30px;
+  --font-weight-h2: 600;
+
+  --font-size-h3: 20px;
+  --line-height-h3: 24px;
+  --font-weight-h3: 600;
+
+  --font-size-h4: 18px;
+  --line-height-h4: 22px;
+  --font-weight-h4: 600;
+
+  --font-size-h5: 16px;
+  --line-height-h5: 22px;
+  --font-weight-h5: 600;
+
+  /* Subtitle - Mixed: Medium (500) / Semi Bold (600) */
+  --font-size-subtitle1: 16px;
+  --line-height-subtitle1: 22px;
+  --font-weight-subtitle1: 500;
+
+  --font-size-subtitle2: 14px;
+  --line-height-subtitle2: 20px;
+  --font-weight-subtitle2: 600;
+
+  --font-size-subtitle3: 14px;
+  --line-height-subtitle3: 20px;
+  --font-weight-subtitle3: 500;
+
+  --font-size-subtitle4: 12px;
+  --line-height-subtitle4: 16px;
+  --font-weight-subtitle4: 600;
+
+  --font-size-subtitle5: 12px;
+  --line-height-subtitle5: 16px;
+  --font-weight-subtitle5: 500;
+
+  /* Body - Mixed: Regular (400) / Medium (500) */
+  --font-size-body1: 16px;
+  --line-height-body1: 22px;
+  --font-weight-body1: 400;
+
+  --font-size-body2: 14px;
+  --line-height-body2: 20px;
+  --font-weight-body2: 400;
+
+  --font-size-body3: 12px;
+  --line-height-body3: 16px;
+  --font-weight-body3: 500;
+
+  --font-size-body4: 12px;
+  --line-height-body4: 16px;
+  --font-weight-body4: 400;
+
+  --font-size-body5: 10px;
+  --line-height-body5: 14px;
+  --font-weight-body5: 500;
+
+  --font-size-body6: 10px;
+  --line-height-body6: 14px;
+  --font-weight-body6: 400;
+}

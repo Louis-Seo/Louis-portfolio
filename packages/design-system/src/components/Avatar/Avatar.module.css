@@ -1,0 +1,179 @@
+/* ── Avatar Base ── */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* ── Sizes ── */
+.sizeLarge {
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sizeMedium {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sizeSmall {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sizeXsmall {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* ── Shapes ── */
+.shapeSquare.sizeLarge {
+  border-radius: 6px;
+}
+
+.shapeSquare.sizeMedium {
+  border-radius: 4px;
+}
+
+.shapeSquare.sizeSmall {
+  border-radius: 3px;
+}
+
+.shapeSquare.sizeXsmall {
+  border-radius: 2px;
+}
+
+.shapeCircle {
+  border-radius: 50%;
+}
+
+/* ── Background Colors ── */
+.bgBlue {
+  background-color: #A7D9FF;
+}
+
+.bgGreen {
+  background-color: #C2EAD7;
+}
+
+.bgYellow {
+  background-color: #FFF59D;
+}
+
+.bgRed {
+  background-color: #FFBFBF;
+}
+
+.bgGray {
+  background-color: var(--gray-200);
+}
+
+/* ── Text Colors ── */
+.textBlue {
+  color: var(--blue-700);
+}
+
+.textGreen {
+  color: #008F60;
+}
+
+.textYellow {
+  color: var(--yellow-700);
+}
+
+.textRed {
+  color: #BF0A03;
+}
+
+.textGray {
+  color: var(--gray-700);
+}
+
+/* ── Disabled ── */
+.disabled {
+  opacity: 0.3;
+}
+
+/* ── Avatar with Text (wrapper) ── */
+.withText {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--gray-900);
+  white-space: nowrap;
+}
+
+.labelLarge {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.labelMedium {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.labelSmall {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.labelXsmall {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* ── Editable Icon Overlay ── */
+.editableWrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.editIcon {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.editIconLarge {
+  width: 16px;
+  height: 16px;
+}
+
+.editIconMedium {
+  width: 14px;
+  height: 14px;
+}
+
+.editIconSmall {
+  width: 12px;
+  height: 12px;
+}
+
+.editIconXsmall {
+  width: 10px;
+  height: 10px;
+}

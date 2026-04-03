@@ -1,0 +1,106 @@
+/* ── Radio Container ── */
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gapMedium {
+  gap: 8px;
+}
+
+.gapSmall {
+  gap: 4px;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* ── Circle ── */
+.circle {
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.radio:hover:not(.disabled) .circle:not(.circleChecked) {
+  background: var(--gray-50);
+}
+
+.circleChecked {
+  border-color: var(--blue-500);
+  background: var(--white);
+}
+
+/* ── Circle Sizes ── */
+.circleMedium {
+  width: 16px;
+  height: 16px;
+}
+
+.circleSmall {
+  width: 12px;
+  height: 12px;
+}
+
+/* ── Inner Dot (checked) ── */
+.dot {
+  border-radius: 100px;
+  background: var(--blue-500);
+}
+
+.dotMedium {
+  width: 8px;
+  height: 8px;
+}
+
+.dotSmall {
+  width: 6px;
+  height: 6px;
+}
+
+/* ── Label ── */
+.label {
+  font-weight: 400;
+  color: var(--gray-900);
+  white-space: nowrap;
+}
+
+.labelMedium {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.labelSmall {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Circle (unchecked) */
+:global([data-theme="dark"]) .circle {
+  background: #FAFAFA;
+  border-color: #E0E0E0;
+}
+
+:global([data-theme="dark"]) .radio:hover:not(.disabled) .circle:not(.circleChecked) {
+  background: #E0E0E0;
+}
+
+/* Circle (checked) */
+:global([data-theme="dark"]) .circleChecked {
+  background: #FAFAFA;
+}
+
+/* Label */
+:global([data-theme="dark"]) .label {
+  color: #FAFAFA;
+}

@@ -1,0 +1,495 @@
+/* ══════════════════════════════════════════
+   About Page — Dark Narrative Scroll
+   ══════════════════════════════════════════ */
+
+.page {
+  --p-bg: #0B0B0D;
+  --p-surface: #18191C;
+  --p-border: rgba(255, 255, 255, 0.08);
+  --p-border-hover: rgba(255, 255, 255, 0.16);
+  --p-text: #FAFAFA;
+  --p-text-secondary: #BDBDBD;
+  --p-text-muted: #757575;
+  --p-accent: #0FBA7F;
+  --p-accent-dim: rgba(15, 186, 127, 0.15);
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ── Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Shared ── */
+.section {
+  padding: 100px 0;
+}
+
+.sectionAlt {
+  background: var(--p-surface);
+  border-top: 1px solid var(--p-border);
+  border-bottom: 1px solid var(--p-border);
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--p-text);
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+}
+
+/* ══════════════════════════════════════════
+   Hero
+   ══════════════════════════════════════════ */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
+}
+
+.heroLabel {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--p-accent);
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--p-text);
+  letter-spacing: -1.5px;
+  margin-bottom: 28px;
+}
+
+.heroDesc {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--p-text-secondary);
+  max-width: 520px;
+}
+
+/* ══════════════════════════════════════════
+   What I Design — Split sticky
+   ══════════════════════════════════════════ */
+.splitLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.splitSticky {
+  position: sticky;
+  top: 120px;
+}
+
+.splitTitle {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--p-text);
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.splitDesc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--p-text-muted);
+}
+
+.splitFlow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.expertiseCard {
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--p-border);
+  background: var(--p-surface);
+  transition: border-color 0.2s;
+}
+
+.expertiseCard:hover {
+  border-color: var(--p-border-hover);
+}
+
+.expertiseNum {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--p-accent);
+  margin-bottom: 14px;
+}
+
+.expertiseTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--p-text);
+  margin-bottom: 8px;
+}
+
+.expertiseText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--p-text-secondary);
+  margin-bottom: 16px;
+}
+
+.expertiseTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.expertiseTags span {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--p-text-muted);
+}
+
+/* ══════════════════════════════════════════
+   Experience
+   ══════════════════════════════════════════ */
+.expList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.expItem {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--p-border);
+}
+
+.expItem:first-child {
+  border-top: 1px solid var(--p-border);
+}
+
+.expHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.expRole {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--p-text);
+  line-height: 1.3;
+}
+
+.expCompany {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--p-text-secondary);
+  margin-top: 2px;
+}
+
+.expPeriod {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--p-text-muted);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.expDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--p-text-secondary);
+  max-width: 680px;
+}
+
+.expProjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.expProjects span {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--p-text-muted);
+  border: 1px solid var(--p-border);
+}
+
+/* ── Awards & Education ── */
+.credentialGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.credentialList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.credentialItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--p-border);
+}
+
+.credentialItem:first-child {
+  border-top: 1px solid var(--p-border);
+}
+
+.credentialName {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--p-text);
+  line-height: 1.3;
+}
+
+.credentialMeta {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--p-text-muted);
+}
+
+/* ── Contact intro ── */
+.contactIntro {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--p-text-secondary);
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.contactFitTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.contactFitTags span {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--p-text-muted);
+  border: 1px solid var(--p-border);
+}
+
+/* ══════════════════════════════════════════
+   Design Principles
+   ══════════════════════════════════════════ */
+.principleIntro {
+  margin-bottom: 56px;
+}
+
+.principleHeadline {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--p-text);
+  letter-spacing: -1px;
+}
+
+.principleList {
+  display: flex;
+  flex-direction: column;
+}
+
+.principleItem {
+  display: flex;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--p-border);
+}
+
+.principleItem:first-child {
+  border-top: 1px solid var(--p-border);
+}
+
+.principleNum {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--p-accent);
+  flex-shrink: 0;
+  width: 32px;
+  padding-top: 2px;
+}
+
+.principleTitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--p-text);
+  margin-bottom: 6px;
+}
+
+.principleText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--p-text-secondary);
+}
+
+/* ══════════════════════════════════════════
+   Tools & Contact
+   ══════════════════════════════════════════ */
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.toolGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.toolGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toolLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--p-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.toolChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.toolChips span {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: var(--p-bg);
+  color: var(--p-text-secondary);
+  border: 1px solid var(--p-border);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.contactLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--p-text);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.contactLink:hover {
+  color: var(--p-accent);
+}
+
+/* ══════════════════════════════════════════
+   Responsive
+   ══════════════════════════════════════════ */
+@media (max-width: 960px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .splitLayout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .splitSticky {
+    position: static;
+  }
+
+  .splitTitle {
+    font-size: 24px;
+  }
+
+  .credentialGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: auto;
+    padding: 100px 0 56px;
+  }
+
+  .heroTitle {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .principleHeadline {
+    font-size: 28px;
+  }
+
+  .principleItem {
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 0;
+  }
+
+  .bottomGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

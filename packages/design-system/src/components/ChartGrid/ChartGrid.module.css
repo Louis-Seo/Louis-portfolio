@@ -1,0 +1,172 @@
+/* ══════════════════════════════════════════════
+   ChartGrid – Design System Chart Grid Component
+   ══════════════════════════════════════════════ */
+
+/* ── Wrapper ── */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* ── Dark Mode ── */
+.dark {
+  --_grid-line: var(--chart-grid-line-dark);
+  --_grid-baseline: var(--chart-grid-baseline-dark);
+  --_axis-text: var(--chart-axis-text-dark);
+  --_vertical-line: var(--chart-vertical-line-dark);
+}
+
+.light {
+  --_grid-line: var(--chart-grid-line);
+  --_grid-baseline: var(--chart-grid-baseline);
+  --_axis-text: var(--chart-axis-text);
+  --_vertical-line: var(--chart-vertical-line);
+}
+
+/* ── Axis Title Row ── */
+.yAxisTitleRow {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+.yAxisTitle {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_axis-text);
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yAxisTitleRight {
+  composes: yAxisTitle;
+  text-align: right;
+}
+
+.xAxisTitleRow {
+  padding-top: 4px;
+  text-align: center;
+}
+
+.xAxisTitle {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_axis-text);
+}
+
+/* ── Grid Area ── */
+.gridArea {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ── Vertical Lines Layer ── */
+.verticalLinesLayer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.verticalLineSlot {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.verticalLine {
+  width: 1px;
+  background-color: var(--_vertical-line);
+}
+
+/* ── Horizontal Lines Container (absolute positioning) ── */
+.horizontalLinesContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Horizontal Line Row ── */
+.hLineRow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+/* ── Y Value Label ── */
+.yValue {
+  width: 32px;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_axis-text);
+  white-space: nowrap;
+}
+
+/* ── Gap between Y value and line ── */
+.yValueGap {
+  width: 16px;
+  flex-shrink: 0;
+}
+
+/* ── Horizontal Line ── */
+.hLine {
+  flex: 1;
+  height: 1px;
+  background-color: var(--_grid-line);
+}
+
+.hLineBaseline {
+  composes: hLine;
+  background-color: var(--_grid-baseline);
+}
+
+/* When no horizontal lines but Y values shown */
+.hLineHidden {
+  flex: 1;
+  height: 1px;
+  background-color: transparent;
+}
+
+/* ── X Axis Values Row ── */
+.xAxisRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 4.5px;
+  z-index: 1;
+}
+
+.xLabel {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_axis-text);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Content Overlay (for chart data rendering) ── */
+.contentOverlay {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}

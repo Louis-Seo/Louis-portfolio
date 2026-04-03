@@ -1,0 +1,24 @@
+:root {
+  /* Alert / Toast Semantic Colors */
+  --alert-success: #05aa73;
+  --alert-success-bg: rgba(5, 170, 115, 0.8);
+  --alert-information: #757575;
+  --alert-information-bg: rgba(117, 117, 117, 0.8);
+  --alert-warning: #da120d;
+  --alert-warning-bg: rgba(218, 18, 13, 0.8);
+
+  /* Dark Mode (Night) */
+  --night-00: #0B0B0D;
+  --night-10: #18191C;
+  --night-110: #E8E9F2;
+
+  /* Chart Tokens */
+  --chart-grid-line: var(--gray-300);
+  --chart-grid-baseline: var(--gray-400);
+  --chart-axis-text: var(--gray-700);
+  --chart-vertical-line: var(--gray-300);
+  --chart-grid-line-dark: #333333;
+  --chart-grid-baseline-dark: var(--gray-800);
+  --chart-axis-text-dark: var(--gray-500);
+  --chart-vertical-line-dark: #333333;
+}

@@ -1,0 +1,580 @@
+/* ── Container ── */
+.container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* ── Trigger ── */
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  min-width: 120px;
+  width: 100%;
+  transition: background-color 0.15s, border-color 0.15s;
+  outline: none;
+}
+
+/* Trigger sizes */
+.triggerLarge {
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.triggerMedium {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.triggerSmall {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Trigger states */
+.trigger:hover:not(.triggerDisabled) {
+  background-color: var(--gray-50);
+}
+
+.triggerOpen {
+  background-color: var(--white);
+  border-color: var(--gray-300);
+}
+
+.triggerOpen:hover {
+  background-color: var(--white);
+}
+
+.triggerDisabled {
+  background-color: var(--gray-300);
+  border-color: transparent;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Trigger text */
+.triggerText {
+  flex: 1;
+  text-align: left;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.placeholder {
+  color: var(--gray-400);
+}
+
+.selectedText {
+  color: var(--gray-900);
+}
+
+/* Leading icon */
+.leadingIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+}
+
+.triggerLarge .leadingIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.triggerMedium .leadingIcon,
+.triggerSmall .leadingIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Chevron icon */
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+  transition: transform 0.15s;
+}
+
+.triggerLarge .chevron {
+  width: 18px;
+  height: 18px;
+}
+
+.triggerMedium .chevron,
+.triggerSmall .chevron {
+  width: 16px;
+  height: 16px;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ── Clear Button (multi-select) ── */
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--gray-900);
+  color: var(--gray-50);
+  border: none;
+  padding: 0;
+}
+
+.clearButton:hover {
+  background-color: var(--gray-700);
+}
+
+/* ── Menu ── */
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin-top: 4px;
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: var(--shadow-dp1);
+  padding: 4px 0;
+  min-width: 120px;
+  overflow: hidden;
+}
+
+.menuScrollable {
+  overflow-y: auto;
+}
+
+.menuLargeScroll {
+  max-height: 200px;
+}
+
+.menuMediumScroll {
+  max-height: 168px;
+}
+
+.menuSmallScroll {
+  max-height: 136px;
+}
+
+/* ── Search Input ── */
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.searchWrapperLarge {
+  padding: 13px 12px;
+}
+
+.searchWrapperMedium {
+  padding: 10px 12px;
+}
+
+.searchWrapperSmall {
+  padding: 6px 12px;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+}
+
+.searchWrapperLarge .searchIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.searchWrapperMedium .searchIcon,
+.searchWrapperSmall .searchIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-weight: 400;
+  color: var(--gray-900);
+  min-width: 0;
+}
+
+.searchInput::placeholder {
+  color: var(--gray-400);
+}
+
+.searchWrapperLarge .searchInput {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.searchWrapperMedium .searchInput,
+.searchWrapperSmall .searchInput {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.searchClear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--gray-400);
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.searchClear:hover {
+  color: var(--gray-700);
+}
+
+/* ── Item ── */
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 120px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  color: var(--gray-900);
+  background: none;
+  border: none;
+  text-align: left;
+  transition: background-color 0.1s;
+  gap: 4px;
+}
+
+.item:hover:not(.itemDisabled) {
+  background-color: var(--gray-50);
+}
+
+.itemSelected {
+  background-color: var(--gray-100);
+}
+
+.itemSelected:hover:not(.itemDisabled) {
+  background-color: var(--gray-100);
+}
+
+.itemDisabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Item sizes */
+.itemLarge {
+  padding: 13px 12px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.itemMedium {
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.itemSmall {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.itemLabel {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Check icon for multi-select */
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-900);
+}
+
+.itemLarge .checkIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.itemMedium .checkIcon,
+.itemSmall .checkIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Toggle ── */
+.toggle {
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.toggleSmall {
+  width: 28px;
+  height: 16px;
+}
+
+.toggleOff {
+  background-color: var(--gray-400);
+}
+
+.toggleOn {
+  background-color: var(--blue-500);
+}
+
+.toggleKnob {
+  position: absolute;
+  top: 2px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.2);
+  transition: left 0.15s;
+  width: 12px;
+  height: 12px;
+}
+
+.toggleOff .toggleKnob {
+  left: 2px;
+}
+
+.toggleOn .toggleKnob {
+  left: 14px;
+}
+
+/* ── Badge Chip ── */
+.badgeChip {
+  display: inline-flex;
+  align-items: center;
+  min-width: 18px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  flex-shrink: 0;
+}
+
+.badgeGreen {
+  background-color: var(--green-50);
+  color: #008F60;
+}
+
+.badgeBlue {
+  background-color: var(--blue-50);
+  color: var(--blue-700);
+}
+
+/* ── Avatar ── */
+.avatarCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.avatarTriggerContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 12px;
+}
+
+.triggerMedium .avatarTriggerContent,
+.triggerSmall .avatarTriggerContent {
+  gap: 8px;
+}
+
+.avatarItemContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.itemLarge .avatarItemContent {
+  gap: 12px;
+}
+
+.itemMedium .avatarItemContent,
+.itemSmall .avatarItemContent {
+  gap: 8px;
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Trigger */
+:global([data-theme="dark"]) .trigger {
+  background-color: var(--dp-00);
+  border-color: #616161;
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .trigger:hover:not(.triggerDisabled) {
+  background-color: var(--dp-01);
+}
+
+:global([data-theme="dark"]) .triggerOpen {
+  background-color: var(--dp-00);
+  border-color: #9E9E9E;
+}
+
+:global([data-theme="dark"]) .triggerOpen:hover {
+  background-color: var(--dp-00);
+}
+
+:global([data-theme="dark"]) .triggerDisabled {
+  background-color: var(--dp-00);
+  border-color: #616161;
+  opacity: 0.3;
+}
+
+:global([data-theme="dark"]) .placeholder {
+  color: #757575;
+}
+
+:global([data-theme="dark"]) .selectedText {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .chevron {
+  color: #BDBDBD;
+}
+
+:global([data-theme="dark"]) .leadingIcon {
+  color: #9E9E9E;
+}
+
+/* Clear button */
+:global([data-theme="dark"]) .clearButton {
+  background-color: #FAFAFA;
+  color: var(--dp-00);
+}
+
+:global([data-theme="dark"]) .clearButton:hover {
+  background-color: #BDBDBD;
+}
+
+/* Menu */
+:global([data-theme="dark"]) .menu {
+  background-color: var(--dp-02);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Items */
+:global([data-theme="dark"]) .item {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .item:hover:not(.itemDisabled) {
+  background-color: var(--dp-03);
+}
+
+:global([data-theme="dark"]) .itemSelected {
+  background-color: var(--dp-05);
+}
+
+:global([data-theme="dark"]) .itemSelected:hover:not(.itemDisabled) {
+  background-color: var(--dp-06);
+}
+
+:global([data-theme="dark"]) .itemDisabled {
+  opacity: 0.3;
+}
+
+:global([data-theme="dark"]) .checkIcon {
+  color: #FAFAFA;
+}
+
+/* Search */
+:global([data-theme="dark"]) .searchWrapper {
+  background-color: var(--dp-02);
+  border-bottom-color: #333333;
+}
+
+:global([data-theme="dark"]) .searchIcon {
+  color: #9E9E9E;
+}
+
+:global([data-theme="dark"]) .searchInput {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .searchInput::placeholder {
+  color: #757575;
+}
+
+:global([data-theme="dark"]) .searchClear {
+  color: #757575;
+}
+
+:global([data-theme="dark"]) .searchClear:hover {
+  color: #BDBDBD;
+}
+
+/* Toggle */
+:global([data-theme="dark"]) .toggleOff {
+  background-color: #616161;
+}
+
+:global([data-theme="dark"]) .toggleKnob {
+  background: #FAFAFA;
+}
+
+/* Badge chips */
+:global([data-theme="dark"]) .badgeGreen {
+  background-color: rgba(15, 186, 127, 0.15);
+  color: #4CAF50;
+}
+
+:global([data-theme="dark"]) .badgeBlue {
+  background-color: rgba(6, 125, 253, 0.15);
+  color: var(--blue-400);
+}

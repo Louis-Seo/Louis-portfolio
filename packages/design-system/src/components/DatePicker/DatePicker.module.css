@@ -1,0 +1,488 @@
+/* ── DatePicker Container ── */
+.container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* ── Trigger (reuses dropdown trigger pattern) ── */
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 400;
+  min-width: 120px;
+  width: 100%;
+  transition: background-color 0.15s, border-color 0.15s;
+  outline: none;
+}
+
+.triggerLarge {
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.triggerMedium {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.triggerSmall {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.trigger:hover:not(.triggerDisabled) {
+  background-color: var(--gray-50);
+}
+
+.triggerOpen {
+  background-color: var(--white);
+  border-color: var(--gray-300);
+}
+
+.triggerOpen:hover {
+  background-color: var(--white);
+}
+
+.triggerDisabled {
+  background-color: var(--gray-300);
+  border-color: transparent;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ── Trigger inner elements ── */
+.leadingIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+}
+
+.triggerLarge .leadingIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.triggerMedium .leadingIcon,
+.triggerSmall .leadingIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.triggerText {
+  flex: 1;
+  text-align: left;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.placeholder {
+  color: var(--gray-400);
+}
+
+.selectedText {
+  color: var(--gray-900);
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+  transition: transform 0.15s;
+}
+
+.triggerLarge .chevron {
+  width: 18px;
+  height: 18px;
+}
+
+.triggerMedium .chevron,
+.triggerSmall .chevron {
+  width: 16px;
+  height: 16px;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ── Calendar Popup (date / yearMonth) ── */
+.calendar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  margin-top: 4px;
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: var(--shadow-dp1);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── DateTime Layout (date + time column) ── */
+.calendarDateTime {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  margin-top: 4px;
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: var(--shadow-dp1);
+}
+
+.dateSection {
+  padding: 12px;
+  margin-right: 64px;
+}
+
+.calendarInner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ── Month Header ── */
+.monthHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  width: 192px;
+}
+
+.monthTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gray-900);
+  min-width: 0;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-900);
+}
+
+.navButton:hover {
+  background-color: var(--gray-50);
+}
+
+.navButtonDisabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.navButtonDisabled:hover {
+  background-color: transparent;
+}
+
+.navIcon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Day Grid ── */
+.dayGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.dayHeaders {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 192px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--gray-900);
+  text-align: center;
+}
+
+.dayHeaderCell {
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.separator {
+  width: 192px;
+  height: 1px;
+  background-color: var(--gray-200);
+  flex-shrink: 0;
+}
+
+.daysContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.weekRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 192px;
+}
+
+/* ── Day Cell ── */
+.dayCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.dayCell:hover:not(.dayCellPlaceholder):not(.dayCellSelected) {
+  background-color: var(--gray-50);
+}
+
+.dayText {
+  width: 16px;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--gray-900);
+  white-space: nowrap;
+}
+
+/* Day states */
+.dayCellPlaceholder .dayText {
+  color: var(--gray-400);
+}
+
+.dayCellPlaceholder {
+  cursor: default;
+}
+
+.dayCellCurrent .dayText {
+  color: var(--blue-500);
+  font-weight: 500;
+}
+
+.dayCellSelected {
+  background-color: var(--blue-500);
+}
+
+.dayCellSelected .dayText {
+  color: var(--gray-50);
+  font-weight: 500;
+}
+
+/* ── Year/Month Picker: Month Grid ── */
+.monthGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 8px;
+}
+
+.monthChip {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  color: var(--gray-500);
+  font-family: inherit;
+}
+
+.monthChip:hover:not(.monthChipSelected) {
+  background-color: var(--gray-50);
+}
+
+.monthChipSelected {
+  background-color: var(--blue-500);
+  border-color: var(--blue-500);
+  color: var(--gray-50);
+  font-weight: 500;
+}
+
+/* ── Time Column (dateTime mode) ── */
+.timeColumn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 64px;
+  background: var(--gray-50);
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.timeHeader {
+  padding: 9px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--gray-900);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.timeList {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  scrollbar-width: thin;
+}
+
+.timeList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.timeList::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: 2px;
+}
+
+.timeCell {
+  width: 100%;
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--gray-900);
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  display: block;
+  box-sizing: border-box;
+}
+
+.timeCell:hover:not(.timeCellSelected) {
+  background-color: var(--gray-100);
+}
+
+.timeCellSelected {
+  background-color: var(--blue-500);
+  color: var(--gray-50);
+  font-weight: 500;
+}
+
+/* ── Dark Mode Overrides ── */
+/* Figma specs: Calendar bg = dp-03, hover = dp-05, time column = dp-04 */
+
+/* Calendar popup background: dp-03 (not dp-00 from --white override) */
+:global([data-theme="dark"]) .calendar {
+  background-color: var(--dp-03);
+}
+
+:global([data-theme="dark"]) .calendarDateTime {
+  background-color: var(--dp-03);
+}
+
+/* Day text: default = #9E9E9E (not #FAFAFA from --gray-900 override) */
+:global([data-theme="dark"]) .dayText {
+  color: #9E9E9E;
+}
+
+/* Day hover: dp-05 (BG dp-03 + 2dp for hover) */
+:global([data-theme="dark"]) .dayCell:hover:not(.dayCellPlaceholder):not(.dayCellSelected) {
+  background-color: var(--dp-05);
+}
+
+/* Day placeholder text stays #616161 (--gray-400 override is correct) */
+
+/* Day current: Blue500 (--blue-500 is not overridden, correct) */
+
+/* Day selected: text #FAFAFA on Blue500 bg */
+:global([data-theme="dark"]) .dayCellSelected .dayText {
+  color: #FAFAFA;
+}
+
+/* Nav button hover: dp-05 */
+:global([data-theme="dark"]) .navButton:hover {
+  background-color: var(--dp-05);
+}
+
+/* Month chip: #424242 bg, #BDBDBD text, no border (Figma: Gray800 fill) */
+:global([data-theme="dark"]) .monthChip {
+  background-color: #424242;
+  color: #BDBDBD;
+  border-color: transparent;
+}
+
+:global([data-theme="dark"]) .monthChip:hover:not(.monthChipSelected) {
+  background-color: var(--dp-07);
+}
+
+:global([data-theme="dark"]) .monthChipSelected {
+  background-color: var(--blue-500);
+  border-color: var(--blue-500);
+  color: #FAFAFA;
+}
+
+/* Time column: dp-04 bg (not dp-01) */
+:global([data-theme="dark"]) .timeColumn {
+  background-color: var(--dp-04);
+}
+
+/* Time cell text: #9E9E9E (not #FAFAFA) */
+:global([data-theme="dark"]) .timeCell {
+  color: #9E9E9E;
+}
+
+/* Time hover: dp-05 */
+:global([data-theme="dark"]) .timeCell:hover:not(.timeCellSelected) {
+  background-color: var(--dp-05);
+}
+
+/* Time selected: dp-07 bg + #FAFAFA text (not Blue500) */
+:global([data-theme="dark"]) .timeCellSelected {
+  background-color: var(--dp-07);
+  color: #FAFAFA;
+}

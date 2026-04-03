@@ -1,0 +1,204 @@
+/* ── Wrapper (anchors the dropdown) ── */
+.wrap {
+  position: relative;
+}
+
+/* ── Input Box ── */
+.inputBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-default);
+  background: var(--surface-raised);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 260px;
+}
+
+.inputBox:focus-within {
+  border-color: var(--gray-400);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+}
+
+.icon {
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-primary);
+  font-family: inherit;
+  min-width: 0;
+}
+
+.input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  padding: 2px 4px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.clearBtn:hover {
+  color: var(--text-primary);
+  background: var(--state-hover);
+}
+
+.kbd {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  background: var(--surface-base);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 1px 5px;
+  line-height: 1.4;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+/* ── Dropdown Panel (anchored to input) ── */
+.panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 420px;
+  max-height: 400px;
+  background: var(--surface-base);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  z-index: 300;
+}
+
+.list {
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 6px;
+  scrollbar-width: thin;
+}
+
+/* ── Result Item ── */
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.08s;
+}
+
+.item:hover,
+.itemActive {
+  background: var(--state-hover);
+}
+
+.itemMain {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.itemPath {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemSnippet {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemCategory {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.hl {
+  background: var(--green-100);
+  color: var(--green-700);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* ── Empty ── */
+.empty {
+  padding: 28px 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1000px) {
+  .inputBox {
+    width: 200px;
+  }
+
+  .panel {
+    width: 360px;
+  }
+}
+
+@media (max-width: 828px) {
+  .inputBox {
+    width: auto;
+    padding: 7px 8px;
+  }
+
+  .input,
+  .kbd {
+    display: none;
+  }
+
+  .inputBox:focus-within .input {
+    display: block;
+  }
+
+  .panel {
+    position: fixed;
+    top: 70px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+  }
+}

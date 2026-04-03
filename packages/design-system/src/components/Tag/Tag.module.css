@@ -1,0 +1,179 @@
+/* ══════════════════════════════════════════════
+   Tag — Selector Tag, Filter Tag, Checklist Tag
+   ══════════════════════════════════════════════ */
+
+/* ── Selector Tag ── */
+.selectorTag {
+  display: inline-flex;
+  align-items: center;
+  min-width: 32px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 1px solid var(--gray-200);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.selectorTag:hover {
+  background-color: var(--gray-50);
+}
+
+.selectorContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.selectorText {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-700);
+  white-space: nowrap;
+}
+
+.selectorIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--gray-500);
+}
+
+/* ── Filter Tag ── */
+.filterTag {
+  display: inline-flex;
+  align-items: center;
+  min-width: 32px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  border: 1px solid var(--gray-200);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.filterTag:hover {
+  background-color: var(--gray-50);
+}
+
+.filterContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filterAvatar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.filterAvatarCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-200);
+  color: var(--blue-700);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  flex-shrink: 0;
+}
+
+.filterLabel {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-700);
+  white-space: nowrap;
+}
+
+.filterCloseIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--gray-500);
+}
+
+/* ── Checklist Tag ── */
+.checklistTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+.checklistPass {
+  background-color: var(--green-500);
+}
+
+.checklistFail {
+  background-color: var(--red-500);
+}
+
+.checklistText {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Selector Tag */
+:global([data-theme="dark"]) .selectorTag {
+  background-color: var(--dp-00);
+  border-color: #616161;
+}
+
+:global([data-theme="dark"]) .selectorTag:hover {
+  background-color: var(--dp-01);
+}
+
+:global([data-theme="dark"]) .selectorText {
+  color: #BDBDBD;
+}
+
+:global([data-theme="dark"]) .selectorIcon {
+  color: #BDBDBD;
+}
+
+/* Filter Tag */
+:global([data-theme="dark"]) .filterTag {
+  background-color: var(--dp-00);
+  border-color: #616161;
+}
+
+:global([data-theme="dark"]) .filterTag:hover {
+  background-color: var(--dp-01);
+}
+
+:global([data-theme="dark"]) .filterLabel {
+  color: #9E9E9E;
+}
+
+:global([data-theme="dark"]) .filterCloseIcon {
+  color: #BDBDBD;
+}
+
+/* Checklist Tag — text must stay bright */
+:global([data-theme="dark"]) .checklistText {
+  color: #FAFAFA;
+}

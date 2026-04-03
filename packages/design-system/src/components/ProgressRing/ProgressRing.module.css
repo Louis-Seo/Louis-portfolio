@@ -1,0 +1,61 @@
+/* ══════════════════════════════════════════════
+   ProgressRing – Design System Component
+   ══════════════════════════════════════════════ */
+
+/* ── Theme ── */
+.light {
+  --_text-primary: var(--gray-900);
+  --_text-secondary: var(--gray-700);
+}
+
+.dark {
+  --_text-primary: var(--night-110);
+  --_text-secondary: var(--gray-400);
+}
+
+/* ── Container ── */
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* ── Ring Wrapper ── */
+.ringWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.svg {
+  display: block;
+}
+
+/* ── Center Label ── */
+.centerLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.centerValue {
+  font-size: var(--font-size-subtitle2);
+  line-height: var(--line-height-subtitle2);
+  font-weight: var(--font-weight-subtitle2);
+  color: var(--_text-primary);
+  white-space: nowrap;
+}
+
+/* ── Sub Label ── */
+.subLabel {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_text-secondary);
+  text-align: center;
+  white-space: nowrap;
+}

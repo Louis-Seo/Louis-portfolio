@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: var(--surface-base);
+  border-bottom: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 200;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.headerScrolled {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom-color: var(--border-default);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ── Brand: Louis Seo / Design System ── */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brandParent {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.brandParent:hover {
+  color: var(--text-primary);
+}
+
+.brandSep {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-placeholder);
+  user-select: none;
+}
+
+.brandCurrent {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navLink {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--text-primary);
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  border-radius: 6px;
+}
+
+.menuButton:hover {
+  background-color: var(--state-hover);
+}
+
+@media (max-width: 828px) {
+  .header {
+    height: 56px;
+    padding: 0 16px;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .navLink {
+    display: none;
+  }
+
+  .brandParent {
+    font-size: 13px;
+  }
+
+  .brandSep {
+    font-size: 13px;
+  }
+
+  .brandCurrent {
+    font-size: 13px;
+  }
+}

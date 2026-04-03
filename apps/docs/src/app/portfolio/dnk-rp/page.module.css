@@ -1,0 +1,580 @@
+/* ── Reveal animation ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Page ── */
+.page {
+  width: 100%;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.containerWide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── Shared ── */
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3B82F6;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FAFAFA;
+  margin-bottom: 16px;
+}
+
+.sectionTitleLight {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FAFAFA;
+  margin-bottom: 24px;
+}
+
+.sectionDesc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(250, 250, 250, 0.55);
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+/* ── Image Frame ── */
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1A1A1E;
+}
+
+.fullImage {
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ═══════════════════════════════════════
+   Hero
+   ═══════════════════════════════════════ */
+.hero {
+  padding: 140px 0 0;
+}
+
+.heroLabel {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3B82F6;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #FAFAFA;
+  margin-bottom: 24px;
+}
+
+.heroDescription {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(250, 250, 250, 0.6);
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+
+.heroMeta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 80px;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metaLabel {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.35);
+}
+
+.metaValue {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.heroVisual {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.heroImage {
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ═══════════════════════════════════════
+   Overview
+   ═══════════════════════════════════════ */
+.overviewSection {
+  padding: 120px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.overviewLeft {
+  position: sticky;
+  top: 120px;
+}
+
+.overviewTitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #FAFAFA;
+}
+
+.overviewRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overviewText {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(250, 250, 250, 0.55);
+}
+
+/* ═══════════════════════════════════════
+   Research Sections
+   ═══════════════════════════════════════ */
+.researchSection {
+  padding: 120px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.researchSectionAlt {
+  padding: 120px 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── User Quote Grid ── */
+.userQuoteGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.userQuoteCard {
+  padding: 32px 28px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userQuoteLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: #3B82F6;
+  text-transform: uppercase;
+}
+
+.userQuoteTag {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(250, 250, 250, 0.35);
+}
+
+.userQuoteText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #FAFAFA;
+  margin-top: 4px;
+}
+
+/* ═══════════════════════════════════════
+   Insight
+   ═══════════════════════════════════════ */
+.insightSection {
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.insightImage {
+  aspect-ratio: 16 / 8;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ═══════════════════════════════════════
+   Direction (dark bg)
+   ═══════════════════════════════════════ */
+.directionSection {
+  padding: 120px 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.directionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.directionCard {
+  padding: 32px 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.directionCardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.directionCardSubtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FAFAFA;
+  margin-bottom: 4px;
+}
+
+.directionCardText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(250, 250, 250, 0.45);
+}
+
+/* ═══════════════════════════════════════
+   Concept
+   ═══════════════════════════════════════ */
+.conceptSection {
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ═══════════════════════════════════════
+   Design System
+   ═══════════════════════════════════════ */
+.designSystemSection {
+  padding: 120px 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dsImage {
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ═══════════════════════════════════════
+   Feature Sections
+   ═══════════════════════════════════════ */
+.featureSection {
+  padding: 120px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.featureSectionAlt {
+  padding: 120px 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.featureTitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FAFAFA;
+  margin-bottom: 16px;
+}
+
+.featureDescription {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(250, 250, 250, 0.55);
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.featureHeroImage {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Bullet cards ── */
+.bulletRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.bulletCard {
+  padding: 28px 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+}
+
+.bulletTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FAFAFA;
+  margin-bottom: 8px;
+}
+
+.bulletText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(250, 250, 250, 0.45);
+}
+
+/* ═══════════════════════════════════════
+   Outcome
+   ═══════════════════════════════════════ */
+.outcomeSection {
+  padding: 120px 0;
+}
+
+.outcomeTitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #FAFAFA;
+  margin-bottom: 48px;
+}
+
+.outcomeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+.outcomeCard {
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.outcomeValue {
+  font-size: 36px;
+  font-weight: 700;
+  color: #3B82F6;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.outcomeLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FAFAFA;
+}
+
+.outcomeDesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(250, 250, 250, 0.4);
+  margin-top: 4px;
+}
+
+/* ── Reflection ── */
+.reflectionBox {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+}
+
+.reflectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FAFAFA;
+  margin-bottom: 16px;
+}
+
+.reflectionText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(250, 250, 250, 0.5);
+}
+
+.reflectionText + .reflectionText {
+  margin-top: 12px;
+}
+
+/* ═══════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════ */
+@media (max-width: 828px) {
+  .container,
+  .containerWide {
+    padding: 0 20px;
+  }
+
+  .hero {
+    padding: 100px 0 0;
+  }
+
+  .heroTitle {
+    font-size: 36px;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+  }
+
+  .heroMeta {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+
+  .heroVisual {
+    padding: 0 20px;
+  }
+
+  .overviewSection {
+    padding: 80px 0;
+  }
+
+  .overviewGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .overviewLeft {
+    position: static;
+  }
+
+  .overviewTitle,
+  .sectionTitle,
+  .sectionTitleLight {
+    font-size: 22px;
+  }
+
+  .researchSection,
+  .researchSectionAlt,
+  .featureSection,
+  .featureSectionAlt,
+  .directionSection,
+  .designSystemSection {
+    padding: 80px 0;
+  }
+
+  .userQuoteGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .directionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featureTitle {
+    font-size: 26px;
+  }
+
+  .bulletRow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .outcomeSection {
+    padding: 80px 0;
+  }
+
+  .outcomeGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .reflectionBox {
+    padding: 24px;
+  }
+
+  .insightSection,
+  .conceptSection {
+    padding: 48px 0;
+  }
+}

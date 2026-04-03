@@ -1,0 +1,15 @@
+/* DatePicker — page-specific styles only. Common layout classes are imported from @/styles/docs.module.css */
+
+/* ── Preview Box Transparent ── */
+.previewBoxTransparent { background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; margin-bottom: 16px; overflow: hidden; }
+
+/* ── Variants Row (2-col) ── */
+.variantsRow { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 48px; }
+.variantCol { display: flex; flex-direction: column; }
+.variantColHeading { font-size: 18px; font-weight: 600; line-height: 1.3; color: var(--gray-900); margin-bottom: 8px; }
+.variantColDesc { font-size: 14px; font-weight: 400; line-height: 1.6; color: var(--gray-900); }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .variantsRow { grid-template-columns: 1fr; }
+}

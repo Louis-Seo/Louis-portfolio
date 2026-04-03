@@ -1,0 +1,130 @@
+/* ── Tree View Container ── */
+.tree {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Group (branch + children block) ── */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ── Branch Item (collapsible header) ── */
+.branch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 0;
+  cursor: pointer;
+  user-select: none;
+  background: none;
+  border: none;
+  font-family: inherit;
+  width: 100%;
+  text-align: left;
+}
+
+.branch:hover {
+  opacity: 0.7;
+}
+
+.branchDisabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.branchDisabled:hover {
+  opacity: 0.3;
+}
+
+.branchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--gray-900);
+  transition: transform 0.15s;
+}
+
+.branchIconCollapsed {
+  transform: rotate(-90deg);
+}
+
+.branchLabel {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+/* ── Leaf Item (clickable item) ── */
+.leaf {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  width: 100%;
+  text-align: left;
+}
+
+.leaf:hover:not(.leafSelected):not(.leafDisabled) {
+  background-color: var(--gray-50);
+}
+
+.leafSelected {
+  background-color: var(--gray-50);
+}
+
+.leafSelected:hover {
+  background-color: var(--gray-100);
+}
+
+.leafDisabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.leafLabel {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--gray-700);
+}
+
+.leafSelected .leafLabel {
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+/* ── Children Container (indented) ── */
+.children {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+/* ── Top-level spacing between groups ── */
+.tree > .group + .group,
+.tree > .leafWrapper + .group,
+.tree > .group + .leafWrapper,
+.tree > .leafWrapper + .leafWrapper {
+  margin-top: 0;
+}
+
+.groupList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,182 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.large {
+  height: 48px;
+  min-width: 90px;
+  padding: 0 16px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 6px;
+}
+
+.medium {
+  height: 40px;
+  min-width: 80px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.small {
+  height: 32px;
+  min-width: 80px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.xSmall {
+  height: 28px;
+  min-width: 70px;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 3px;
+}
+
+.xxSmall {
+  height: 24px;
+  min-width: 60px;
+  padding: 0 16px;
+  font-size: 10px;
+  line-height: 14px;
+  border-radius: 3px;
+}
+
+/* Primary */
+.primary {
+  background-color: var(--blue-500);
+  color: var(--text-on-accent);
+  border-color: transparent;
+}
+
+.primary:hover {
+  background-color: var(--blue-600);
+}
+
+.primary:active,
+.primary.pressed {
+  background-color: var(--blue-600);
+}
+
+.primary.clicked {
+  background-color: var(--blue-700);
+  color: var(--text-on-accent);
+}
+
+.primary.disabled {
+  background-color: var(--gray-300);
+  color: var(--gray-500);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.primary.progressing {
+  background-color: var(--blue-500);
+  color: transparent;
+  cursor: default;
+}
+
+/* Secondary */
+.secondary {
+  background-color: var(--white);
+  color: var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+.secondary:hover {
+  background-color: var(--blue-50);
+}
+
+.secondary:active,
+.secondary.pressed {
+  background-color: var(--blue-50);
+}
+
+.secondary.clicked {
+  background-color: var(--blue-100);
+  border-color: var(--blue-500);
+  color: var(--blue-500);
+}
+
+.secondary.disabled {
+  background-color: var(--gray-300);
+  border-color: transparent;
+  color: var(--gray-500);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.secondary.progressing {
+  background-color: var(--white);
+  border-color: var(--blue-500);
+  color: transparent;
+  cursor: default;
+}
+
+/* ── Dark Mode Overrides ── */
+
+:global([data-theme="dark"]) .secondary {
+  background-color: var(--dp-00);
+  color: #BDBDBD;
+  border-color: #616161;
+}
+
+:global([data-theme="dark"]) .secondary:hover {
+  background-color: var(--dp-01);
+}
+
+:global([data-theme="dark"]) .secondary:active,
+:global([data-theme="dark"]) .secondary.pressed {
+  background-color: var(--dp-01);
+}
+
+:global([data-theme="dark"]) .secondary.clicked {
+  background-color: var(--dp-02);
+  border-color: #616161;
+  color: #BDBDBD;
+}
+
+:global([data-theme="dark"]) .secondary.disabled {
+  background-color: var(--dp-00);
+  border-color: transparent;
+  color: #9E9E9E;
+  opacity: 0.3;
+}
+
+:global([data-theme="dark"]) .secondary.progressing {
+  background-color: var(--dp-00);
+  border-color: #616161;
+  color: transparent;
+}
+
+/* Icon in button */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Spinner overlay */
+.spinnerOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

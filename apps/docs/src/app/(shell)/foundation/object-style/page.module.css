@@ -1,0 +1,120 @@
+/* ── Page ── */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Hero ── */
+.hero {
+  margin-bottom: 0;
+}
+
+.pageTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.pageDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 820px;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-default);
+  margin: 32px 0;
+}
+
+/* ── Section ── */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--text-primary);
+}
+
+/* ── Rounding Guide ── */
+.roundingHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.roundingNote {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-tertiary);
+}
+
+.roundingDiagram {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 40px 32px;
+}
+
+.roundingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.roundingSizeLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.roundingShapeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.roundingShape {
+  background-color: #0FBA7F;
+}
+
+.roundingRadiusLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 828px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .roundingDiagram {
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+}

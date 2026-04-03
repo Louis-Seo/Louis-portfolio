@@ -1,0 +1,424 @@
+/* ── Page ── */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Hero ── */
+.hero {
+  margin-bottom: 0;
+}
+
+.pageTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.pageDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--text-secondary);
+  max-width: 820px;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-default);
+  margin: 32px 0;
+}
+
+/* ── Section ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--text-primary);
+}
+
+.sectionDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-secondary);
+  max-width: 820px;
+}
+
+/* ── Type Usage Table ── */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.tableHeaderRow th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--text-tertiary);
+  padding: 12px 12px;
+  border-bottom: 2px solid var(--border-default);
+}
+
+.thName { white-space: nowrap; }
+.thTypeface { white-space: nowrap; }
+.thWeight { white-space: nowrap; }
+.thSize { white-space: nowrap; }
+.thRem { white-space: nowrap; }
+.thLineHeight { white-space: nowrap; }
+.thUnitless { white-space: nowrap; }
+
+.groupHeader td {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--text-primary);
+  padding: 20px 0 8px;
+  border: none;
+}
+
+.tableRow td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-default);
+  vertical-align: middle;
+}
+
+.cellName {
+  color: var(--text-primary);
+}
+
+.cellTypeface {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.cellWeight {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.cellSize {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.cellRem {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.cellLineHeight {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.cellUnitless {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text-primary);
+}
+
+.lineHeightBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: rgba(6, 125, 253, 0.08);
+  color: var(--blue-500);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+/* ── Type Weight Cards ── */
+.weightCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.weightCard {
+  background-color: var(--state-hover);
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-default);
+  position: relative;
+}
+
+.weightCard:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.weightCard:last-child {
+  border-radius: 0 0 8px 8px;
+  border-bottom: none;
+}
+
+.weightCardNum {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weightCardTitle {
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--text-primary);
+  letter-spacing: 3px;
+}
+
+.weightCardSpecimen {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  letter-spacing: 0.3px;
+}
+
+/* ── Type Scale ── */
+.scaleGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.scaleCard {
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scaleCardInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 360px;
+}
+
+.scaleLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 32px 24px;
+  border-right: 1px dashed var(--border-default);
+}
+
+.scaleLeftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scalePreview {
+  color: var(--text-primary);
+}
+
+.scaleMeta {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.scaleMetaText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-tertiary);
+  white-space: pre-line;
+}
+
+.scaleRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-color: var(--state-hover);
+}
+
+.scaleContextPlaceholder {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: 1px dashed var(--border-default);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scaleContextLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+
+/* ── Type Scale Context Image ── */
+.scaleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.scaleImageLight {
+  display: block;
+}
+
+.scaleImageDark {
+  display: none;
+}
+
+:global([data-theme="dark"]) .scaleImageLight {
+  display: none;
+}
+
+:global([data-theme="dark"]) .scaleImageDark {
+  display: block;
+}
+
+/* ── Weight Usage ── */
+.weightUsageTable {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-default);
+}
+
+.weightUsageRow {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.weightUsageLabel {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--text-primary);
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.weightUsageDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-secondary);
+}
+
+/* ── Usage Notes ── */
+.notesList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.noteItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 20px;
+  background-color: var(--state-hover);
+  border-radius: 8px;
+  border-left: 3px solid var(--blue-500);
+}
+
+.noteLabel {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--text-primary);
+}
+
+.noteText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-secondary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 828px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .pageDescription {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .divider {
+    margin: 32px 0;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    min-width: 600px;
+  }
+
+  .weightCard {
+    padding: 32px 24px;
+  }
+
+  .weightCardTitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .scaleCardInner {
+    grid-template-columns: 1fr;
+  }
+
+  .scaleLeft {
+    border-right: none;
+    border-bottom: 1px dashed var(--border-default);
+  }
+
+  .scaleRight {
+    min-height: 200px;
+  }
+
+  .weightUsageRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

@@ -1,0 +1,136 @@
+/* ── Checkbox Container ── */
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gapLarge {
+  gap: 8px;
+}
+
+.gapMedium {
+  gap: 8px;
+}
+
+.gapSMedium {
+  gap: 8px;
+}
+
+.gapSmall {
+  gap: 4px;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* ── Box ── */
+.box {
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.checkbox:hover:not(.disabled) .box:not(.boxChecked) {
+  background: var(--gray-50);
+}
+
+.boxChecked {
+  background: var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+/* ── Box Sizes ── */
+.boxLarge {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.boxMedium {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.boxSMedium {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.boxSmall {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* ── Checkmark Icon ── */
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+/* ── Label ── */
+.label {
+  font-weight: 400;
+  color: var(--gray-900);
+  white-space: nowrap;
+}
+
+.labelLarge {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.labelMedium {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.labelSMedium {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.labelSmall {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Box (unchecked) */
+:global([data-theme="dark"]) .box {
+  background-color: var(--dp-00);
+  border-color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .checkbox:hover:not(.disabled) .box:not(.boxChecked) {
+  background-color: var(--dp-01);
+}
+
+/* Box (checked) — Blue-500 bg & border */
+:global([data-theme="dark"]) .boxChecked {
+  background-color: var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+/* Checkmark icon — Grey-50 (#FAFAFA) */
+:global([data-theme="dark"]) .checkIcon {
+  color: #FAFAFA;
+}
+
+/* Label — Grey-50 (#FAFAFA) */
+:global([data-theme="dark"]) .label {
+  color: #FAFAFA;
+}

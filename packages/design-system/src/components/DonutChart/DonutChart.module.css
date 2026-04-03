@@ -1,0 +1,199 @@
+/* ══════════════════════════════════════════════
+   DonutChart – Design System Component
+   ══════════════════════════════════════════════ */
+
+/* ── Container ── */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* ── Theme ── */
+.light {
+  --_text-primary: var(--gray-900);
+  --_text-secondary: var(--gray-700);
+  --_text-tertiary: var(--gray-500);
+  --_tooltip-bg: white;
+  --_tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark {
+  --_text-primary: var(--night-110);
+  --_text-secondary: var(--gray-400);
+  --_text-tertiary: var(--gray-500);
+  --_tooltip-bg: var(--night-10);
+  --_tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Chart Wrapper ── */
+.chartWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+}
+
+/* ── Segments ── */
+.segment {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.segmentDimmed {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.15s ease;
+}
+
+/* ── Center Label ── */
+.centerLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.semiCenterLabel {
+  top: auto;
+  bottom: 4px;
+  transform: translate(-50%, 0);
+}
+
+.centerValue {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: var(--font-weight-h3);
+  color: var(--_text-primary);
+  white-space: nowrap;
+}
+
+.centerSub {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_text-tertiary);
+  white-space: nowrap;
+}
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 2px 0;
+  transition: opacity 0.15s ease;
+}
+
+.legendRowDimmed {
+  opacity: 0.3;
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legendName {
+  flex: 1;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_text-secondary);
+  white-space: nowrap;
+}
+
+.legendPercent {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_text-tertiary);
+  min-width: 32px;
+  text-align: right;
+}
+
+.legendValue {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: 600;
+  color: var(--_text-primary);
+  min-width: 48px;
+  text-align: right;
+}
+
+/* ── Tooltip ── */
+.tooltip {
+  position: absolute;
+  background: var(--_tooltip-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  box-shadow: var(--_tooltip-shadow);
+  pointer-events: none;
+  z-index: 10;
+  white-space: nowrap;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.tooltipHeader {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: 600;
+  color: var(--_text-primary);
+  margin-bottom: 4px;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1px 0;
+}
+
+.tooltipSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.tooltipName {
+  flex: 1;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_text-secondary);
+}
+
+.tooltipPercent {
+  flex-shrink: 0;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--_text-tertiary);
+  margin-left: 4px;
+}
+
+.tooltipValue {
+  flex-shrink: 0;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: 600;
+  color: var(--_text-primary);
+  margin-left: 4px;
+  text-align: right;
+}

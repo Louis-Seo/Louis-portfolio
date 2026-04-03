@@ -1,0 +1,231 @@
+/* ── Wrapper ── */
+.wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+/* ── Tooltip Container ── */
+.tooltip {
+  position: absolute;
+  display: flex;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* ── Position ── */
+.top {
+  bottom: 100%;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.bottom {
+  top: 100%;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.left {
+  right: 100%;
+  flex-direction: row;
+  margin-right: 4px;
+}
+
+.right {
+  left: 100%;
+  flex-direction: row;
+  margin-left: 4px;
+}
+
+/* ── Tip Alignment: top/bottom (horizontal alignment) ── */
+.top.tipStart,
+.bottom.tipStart {
+  left: 0;
+  align-items: flex-start;
+}
+
+.top.tipCenter,
+.bottom.tipCenter {
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.top.tipEnd,
+.bottom.tipEnd {
+  right: 0;
+  align-items: flex-end;
+}
+
+/* ── Tip Alignment: left/right (vertical alignment) ── */
+.left.tipStart,
+.right.tipStart {
+  top: 0;
+  align-items: flex-start;
+}
+
+.left.tipCenter,
+.right.tipCenter {
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+.left.tipEnd,
+.right.tipEnd {
+  bottom: 0;
+  align-items: flex-end;
+}
+
+/* ── Bubble (content area) ── */
+.bubble {
+  background-color: var(--gray-700);
+  border-radius: 3px;
+  color: var(--gray-50);
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  flex-shrink: 0;
+}
+
+/* ── Arrow ── */
+.arrow {
+  display: block;
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Vertical arrows (top/bottom positions) */
+.arrowVertical {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.top .arrowVertical {
+  border-top: 4px solid var(--gray-700);
+}
+
+.bottom .arrowVertical {
+  border-bottom: 4px solid var(--gray-700);
+}
+
+/* Horizontal arrows (left/right positions) */
+.arrowHorizontal {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.left .arrowHorizontal {
+  border-left: 4px solid var(--gray-700);
+}
+
+.right .arrowHorizontal {
+  border-right: 4px solid var(--gray-700);
+}
+
+/* ── Short Content ── */
+.shortContent {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding: 6px var(--space-3);
+  white-space: nowrap;
+  font-weight: var(--font-weight-body4);
+}
+
+/* ── Long Content ── */
+.longContent {
+  width: 280px;
+  padding: 6px var(--space-3);
+  font-weight: var(--font-weight-body4);
+}
+
+/* ── List Content ── */
+.listContent {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.listTitle {
+  padding: var(--space-2) var(--space-3);
+  font-weight: var(--font-weight-subtitle5);
+}
+
+.listBody {
+  padding: 0 var(--space-3) var(--space-3);
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  list-style: disc;
+  padding-left: 18px;
+  font-weight: var(--font-weight-body4);
+}
+
+/* ── Toolbar Content ── */
+.toolbarContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbarHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3) var(--space-1);
+  font-weight: var(--font-weight-subtitle5);
+}
+
+.toolbarBody {
+  padding: 0 var(--space-3) var(--space-2);
+}
+
+.toolbarDescription {
+  font-weight: var(--font-weight-body4);
+}
+
+/* ── Text & Shortcut ── */
+.text {
+  color: var(--gray-50);
+}
+
+.shortcut {
+  color: var(--gray-400);
+}
+
+/* ── Dark Mode Overrides ── */
+/* Primitive overrides invert tooltip colors (gray-700→#BDBDBD, gray-50→#1E1E1E).
+   Per Figma/PDF: container bg = dp-05, text = #FAFAFA, shortcut = #BDBDBD */
+
+:global([data-theme="dark"]) .bubble {
+  background-color: var(--dp-05);
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .text {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .shortcut {
+  color: #BDBDBD;
+}
+
+/* Arrow must match bubble background */
+:global([data-theme="dark"]) .top .arrowVertical {
+  border-top-color: var(--dp-05);
+}
+
+:global([data-theme="dark"]) .bottom .arrowVertical {
+  border-bottom-color: var(--dp-05);
+}
+
+:global([data-theme="dark"]) .left .arrowHorizontal {
+  border-left-color: var(--dp-05);
+}
+
+:global([data-theme="dark"]) .right .arrowHorizontal {
+  border-right-color: var(--dp-05);
+}

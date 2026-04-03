@@ -1,0 +1,103 @@
+.textButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  transition: color 0.15s, opacity 0.15s;
+}
+
+/* Sizes - large and xSmall use Medium weight (500), medium and small use Regular (400) */
+.large {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.medium {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--gray-700);
+}
+
+.small {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--gray-700);
+}
+
+.xSmall {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+/* Underline variant */
+.textWithUnderline {
+  text-decoration: underline;
+}
+
+/* States */
+.large:hover {
+  color: var(--gray-700);
+}
+
+.medium:hover,
+.small:hover,
+.xSmall:hover {
+  color: var(--gray-500);
+}
+
+.large:active,
+.large.pressed {
+  color: var(--gray-700);
+}
+
+.medium:active,
+.medium.pressed,
+.small:active,
+.small.pressed,
+.xSmall:active,
+.xSmall.pressed {
+  color: var(--gray-500);
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Chevron icon */
+.chevron {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Chevron sizes per text button size (font-size + 2px) */
+.large .chevron svg {
+  width: 18px;
+  height: 18px;
+}
+
+.medium .chevron svg {
+  width: 16px;
+  height: 16px;
+}
+
+.small .chevron svg {
+  width: 14px;
+  height: 14px;
+}
+
+.xSmall .chevron svg {
+  width: 12px;
+  height: 12px;
+}

@@ -1,0 +1,81 @@
+/* ══════════════════════════════════════════════
+   Theme Tokens — Light / Dark Mode
+   ══════════════════════════════════════════════
+   사용법: <html data-theme="dark"> 또는 <html data-theme="light">
+   기본값은 light mode.
+   ══════════════════════════════════════════════ */
+
+/* ── A. Semantic Tokens (새 코드에서 사용 권장) ── */
+
+:root,
+[data-theme="light"] {
+  /* Surface */
+  --surface-base: var(--white);
+  --surface-raised: var(--gray-50);
+  --surface-overlay: var(--white);
+
+  /* Text */
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-700);
+  --text-tertiary: var(--gray-500);
+  --text-placeholder: var(--gray-400);
+  --text-on-accent: var(--white);
+
+  /* Border */
+  --border-default: var(--gray-200);
+  --border-strong: var(--gray-300);
+
+  /* Interactive States */
+  --state-hover: var(--gray-50);
+  --state-selected: var(--gray-100);
+}
+
+[data-theme="dark"] {
+  /* Surface */
+  --surface-base: var(--dp-00);
+  --surface-raised: var(--dp-01);
+  --surface-overlay: var(--dp-03);
+
+  /* Text */
+  --text-primary: #FAFAFA;
+  --text-secondary: #BDBDBD;
+  --text-tertiary: #9E9E9E;
+  --text-placeholder: #757575;
+  --text-on-accent: #FAFAFA;
+
+  /* Border */
+  --border-default: #616161;
+  --border-strong: #9E9E9E;
+
+  /* Interactive States
+     규칙: Hover = BG + 1dp, Selected = Hover + 2dp */
+  --state-hover: var(--dp-04);
+  --state-selected: var(--dp-06);
+}
+
+/* ── B. Primitive 오버라이드 (기존 컴포넌트 호환) ── */
+/* 기존 컴포넌트들이 --white, --gray-* 를 직접 참조하므로
+   dark 모드에서 이 값들을 재매핑하여 자동 전환 */
+
+[data-theme="dark"] {
+  /* Background / Surface — 밝은 → 어두운 */
+  --white: #121212;
+  --gray-50: #1E1E1E;
+  --gray-100: #242424;
+  --gray-200: #333333;
+  --gray-300: #494949;
+
+  /* Text / Icon — 어두운 → 밝은 (반전) */
+  --gray-400: #616161;
+  --gray-500: #9E9E9E;
+  --gray-600: #9E9E9E;
+  --gray-700: #BDBDBD;
+  --gray-800: #E0E0E0;
+  --gray-900: #FAFAFA;
+
+  /* Black → White */
+  --black: #FFFFFF;
+
+  /* Shadow 강화 */
+  --shadow-dp1: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}

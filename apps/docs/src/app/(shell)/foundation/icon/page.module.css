@@ -1,0 +1,726 @@
+/* ── Page ── */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Hero ── */
+.hero {
+  margin-bottom: 0;
+}
+
+.pageTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.pageDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 820px;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-default);
+  margin: 32px 0;
+}
+
+/* ── Section ── */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-secondary);
+  max-width: 820px;
+  margin-bottom: 24px;
+}
+
+/* ── Diagram Container (shared) ── */
+.diagramRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.diagramBox {
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.diagramLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-top: 16px;
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ── Icon Size Section ── */
+.iconSizeSmall {
+  width: 24px;
+  height: 24px;
+  color: var(--gray-800);
+}
+
+.iconSizeLarge {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.iconSizeGrid {
+  width: 240px;
+  height: 240px;
+  border: 1px solid var(--gray-300);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  position: relative;
+}
+
+.iconSizeGrid > span {
+  border: 0.5px solid var(--gray-200);
+}
+
+.iconSizeGridIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-800);
+}
+
+.iconSizeGridIcon svg {
+  width: 200px;
+  height: 200px;
+}
+
+.iconSizeAnnotation {
+  position: absolute;
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--gray-500);
+}
+
+.annotationWidth {
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.annotationHeight {
+  right: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ── Layout Section ── */
+.layoutDescriptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.layoutDescItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.layoutSubtitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.layoutNote {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.layoutDiagram {
+  width: 240px;
+  height: 240px;
+  position: relative;
+  border: 1px solid var(--gray-300);
+}
+
+.layoutLiveArea {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1.5px dashed var(--green-500);
+  background-color: rgba(15, 186, 127, 0.06);
+}
+
+.layoutPadding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layoutPaddingTop,
+.layoutPaddingBottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-color: rgba(15, 186, 127, 0.08);
+  border: 1px dashed var(--green-500);
+}
+
+.layoutPaddingTop {
+  top: 0;
+}
+
+.layoutPaddingBottom {
+  bottom: 0;
+}
+
+.layoutPaddingLeft,
+.layoutPaddingRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background-color: rgba(15, 186, 127, 0.08);
+  border: 1px dashed var(--green-500);
+}
+
+.layoutPaddingLeft {
+  left: 0;
+}
+
+.layoutPaddingRight {
+  right: 0;
+}
+
+.layoutAnnotation {
+  position: absolute;
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--green-500);
+  font-weight: 600;
+}
+
+.layoutAnnotation20 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ── Keyline Shapes Section ── */
+.shapesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.shapeCard {
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px 16px;
+}
+
+.shapeVisual {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.shapeSquare {
+  width: 90px;
+  height: 90px;
+  border: 2px solid var(--green-500);
+  background-color: rgba(15, 186, 127, 0.08);
+  border-radius: 2px;
+}
+
+.shapeVertRect {
+  width: 72px;
+  height: 100px;
+  border: 2px solid var(--green-500);
+  background-color: rgba(15, 186, 127, 0.08);
+  border-radius: 2px;
+}
+
+.shapeHorizRect {
+  width: 100px;
+  height: 72px;
+  border: 2px solid var(--green-500);
+  background-color: rgba(15, 186, 127, 0.08);
+  border-radius: 2px;
+}
+
+.shapeCircle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--green-500);
+  background-color: rgba(15, 186, 127, 0.08);
+  border-radius: 50%;
+}
+
+.shapeSizeLabel {
+  position: absolute;
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--text-tertiary);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shapeName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.shapeDescription {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-tertiary);
+  text-align: center;
+  max-width: 200px;
+}
+
+/* ── Stroke Section ── */
+.strokeRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.strokeBox {
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  position: relative;
+}
+
+.strokeDiagram {
+  width: 240px;
+  height: 240px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strokeIcon {
+  color: var(--gray-800);
+}
+
+.strokeIcon svg {
+  width: 200px;
+  height: 200px;
+  stroke-width: 2;
+}
+
+.strokeAnnotation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--green-500);
+  font-weight: 600;
+}
+
+.strokeAnnotationLine {
+  width: 40px;
+  height: 2px;
+  background-color: var(--green-500);
+}
+
+/* ── Radius Section ── */
+.radiusRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.radiusBox {
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  position: relative;
+}
+
+.radiusDiagram {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radiusSample {
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--gray-800);
+}
+
+.radiusSample0 {
+  border-radius: 0;
+}
+
+.radiusSample1 {
+  border-radius: 10px;
+}
+
+.radiusSample2 {
+  border-radius: 20px;
+}
+
+.radiusValue {
+  font-size: 14px;
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 16px;
+}
+
+.radiusAnnotation {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--green-500);
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.radiusAnnotationLine {
+  width: 1px;
+  height: 40px;
+  background-color: var(--green-500);
+}
+
+/* ── Styles Section ── */
+.stylesRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.styleBox {
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px 32px;
+}
+
+.styleIcon {
+  color: var(--gray-800);
+  margin-bottom: 24px;
+}
+
+.styleIcon svg {
+  width: 120px;
+  height: 120px;
+}
+
+.styleLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ── Colors Section ── */
+.colorsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.colorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px 32px;
+  position: relative;
+}
+
+.colorCard:not(:last-child) {
+  border-right: 1px solid var(--border-default);
+}
+
+.colorBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.colorBadgeA {
+  background-color: var(--gray-200);
+  color: var(--gray-500);
+}
+
+.colorBadgeB {
+  background-color: var(--gray-200);
+  color: var(--gray-900);
+}
+
+.colorBadgeC {
+  background-color: var(--gray-800);
+  color: var(--gray-50);
+}
+
+.colorIcon {
+  margin-bottom: 24px;
+}
+
+.colorDescription {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* ── Object Style / Rounding Guide Section ── */
+.roundingHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.roundingTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--text-primary);
+}
+
+.roundingNote {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-tertiary);
+}
+
+.roundingDiagram {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: var(--gray-100);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 40px 32px;
+}
+
+.roundingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.roundingSizeLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.roundingShapeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.roundingShape {
+  background-color: #0FBA7F;
+}
+
+.roundingRadiusLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-tertiary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ── Dark Mode Overrides ── */
+:global([data-theme="dark"]) .diagramBox,
+:global([data-theme="dark"]) .strokeBox,
+:global([data-theme="dark"]) .radiusBox,
+:global([data-theme="dark"]) .styleBox,
+:global([data-theme="dark"]) .shapeCard {
+  background-color: #1E1E1E;
+  border-color: #333333;
+}
+
+:global([data-theme="dark"]) .colorsRow {
+  background-color: #1E1E1E;
+  border-color: #333333;
+}
+
+:global([data-theme="dark"]) .colorCard:not(:last-child) {
+  border-right-color: #333333;
+}
+
+:global([data-theme="dark"]) .iconSizeGrid {
+  border-color: #424242;
+}
+
+:global([data-theme="dark"]) .iconSizeGrid > span {
+  border-color: #333333;
+}
+
+:global([data-theme="dark"]) .layoutDiagram {
+  border-color: #424242;
+}
+
+:global([data-theme="dark"]) .iconSizeSmall,
+:global([data-theme="dark"]) .iconSizeGridIcon,
+:global([data-theme="dark"]) .strokeIcon,
+:global([data-theme="dark"]) .styleIcon {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .radiusSample {
+  border-color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .colorBadgeA {
+  background-color: #333333;
+  color: #9E9E9E;
+}
+
+:global([data-theme="dark"]) .colorBadgeB {
+  background-color: #333333;
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .colorBadgeC {
+  background-color: #424242;
+  color: #FAFAFA;
+}
+
+/* ── Responsive ── */
+@media (max-width: 828px) {
+  .diagramRow,
+  .strokeRow,
+  .stylesRow {
+    grid-template-columns: 1fr;
+  }
+
+  .shapesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .radiusRow {
+    grid-template-columns: 1fr;
+  }
+
+  .colorsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .colorCard:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  :global([data-theme="dark"]) .colorCard:not(:last-child) {
+    border-bottom-color: #333333;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+  }
+}

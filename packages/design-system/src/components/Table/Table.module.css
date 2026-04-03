@@ -1,0 +1,156 @@
+/* ── Table Container ── */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+/* ── Header ── */
+.thead {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.th {
+  padding: 14px 16px;
+  min-width: 80px;
+  background-color: var(--white);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--gray-900);
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.thSmall {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.thBg {
+  background-color: var(--gray-50);
+}
+
+.thLeft {
+  text-align: left;
+}
+
+.thCenter {
+  text-align: center;
+}
+
+.thRight {
+  text-align: right;
+}
+
+/* ── Header Content Wrapper ── */
+.thContent {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.thSubtext {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--gray-700);
+}
+
+.thWithSubtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Sort Button ── */
+.sortButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-500);
+  flex-shrink: 0;
+}
+
+.sortButton:hover {
+  background-color: var(--gray-50);
+}
+
+.sortActive {
+  color: var(--gray-900);
+}
+
+/* ── Body ── */
+.tbody tr {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tbody tr:hover {
+  background-color: var(--gray-50);
+}
+
+/* ── Body Cell ── */
+.td {
+  padding: 18px 16px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--gray-700);
+  box-sizing: border-box;
+}
+
+.tdMedium {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.tdLeft {
+  text-align: left;
+}
+
+.tdCenter {
+  text-align: center;
+}
+
+.tdRight {
+  text-align: right;
+}
+
+/* ── Link Cell ── */
+.tdLink {
+  color: var(--blue-500);
+  cursor: pointer;
+}
+
+.tdLink:hover {
+  text-decoration: underline;
+}
+
+/* ── No Data / Not Included ── */
+.tdNoData {
+  color: var(--gray-500);
+}
+
+.tdDash {
+  color: var(--gray-400);
+}
+
+/* ── Checkbox Cell ── */
+.thCheckbox,
+.tdCheckbox {
+  width: 48px;
+  padding: 0 12px;
+  text-align: center;
+  vertical-align: middle;
+}

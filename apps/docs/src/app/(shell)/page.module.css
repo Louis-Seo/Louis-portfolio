@@ -1,0 +1,443 @@
+/* ══════════════════════════════════════════
+   Design System Home
+   ══════════════════════════════════════════ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-bottom: 48px;
+}
+
+/* ── Hero Banner ── */
+.heroBanner {
+  background: var(--green-500);
+  border-radius: 20px;
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 280px;
+}
+
+.bannerContent {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.bannerTitle {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: white;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.bannerDesc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 420px;
+  margin-bottom: 28px;
+}
+
+.bannerStats {
+  display: flex;
+  gap: 8px;
+}
+
+.statPill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.statPill .statLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.statPill .statNumber {
+  font-size: 14px;
+  font-weight: 800;
+  color: white;
+  font-variant-numeric: tabular-nums;
+}
+
+.bannerVisual {
+  flex-shrink: 0;
+  width: 240px;
+  height: 180px;
+  position: relative;
+}
+
+/* ── Toss-style floating graphic ── */
+.gWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gMainCard {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 140px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.gMainCardHeader {
+  height: 32px;
+  background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
+}
+
+.gMainCardBody {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gMainCardLine1 {
+  width: 80%;
+  height: 6px;
+  border-radius: 3px;
+  background: #e0e0e0;
+}
+
+.gMainCardLine2 {
+  width: 55%;
+  height: 6px;
+  border-radius: 3px;
+  background: #eeeeee;
+}
+
+.gCircle1 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.gCircle2 {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.gPill {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  width: 80px;
+  height: 28px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+/* ── Section ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.sectionDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-tertiary);
+  max-width: 480px;
+}
+
+.sectionCount {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.sectionLink {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-600);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.sectionLink:hover {
+  color: var(--green-700);
+}
+
+/* ── Foundation Grid ── */
+.foundationGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.foundationCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 16px 20px;
+  border-radius: 14px;
+  background: var(--surface-raised);
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+}
+
+.foundationCard:hover {
+  background: white;
+  border-color: var(--border-default);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.foundationIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foundationName {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.foundationDesc {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+}
+
+/* ── Component Grid ── */
+.componentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* First card (General) spans both columns */
+.componentGrid > :first-child {
+  grid-column: 1 / -1;
+}
+
+.componentCard {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  background: var(--surface-base);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.componentCard:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* First card horizontal layout */
+.componentGrid > :first-child {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.componentGrid > :first-child .componentVisual {
+  height: auto;
+  min-height: 140px;
+}
+
+.componentVisual {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.componentBody {
+  padding: 20px 24px 24px;
+}
+
+.componentHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.componentTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.componentCount {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  background: var(--surface-raised);
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.componentDesc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-tertiary);
+  margin-bottom: 14px;
+}
+
+.componentChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.componentChip {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 6px;
+  background: var(--surface-raised);
+  transition: background 0.15s, color 0.15s;
+  line-height: 1;
+}
+
+.componentChip:hover {
+  background: var(--green-50);
+  color: var(--green-700);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .heroBanner {
+    padding: 36px 32px;
+    min-height: auto;
+  }
+
+  .bannerTitle {
+    font-size: 36px;
+  }
+
+  .bannerVisual {
+    width: 180px;
+    height: 140px;
+  }
+
+  .foundationGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .componentGrid > :first-child {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    gap: 48px;
+  }
+
+  .heroBanner {
+    flex-direction: column;
+    padding: 32px 28px;
+  }
+
+  .bannerTitle {
+    font-size: 28px;
+  }
+
+  .bannerVisual {
+    display: none;
+  }
+
+  .bannerStats {
+    flex-wrap: wrap;
+  }
+
+  .heroStats {
+    flex-wrap: wrap;
+  }
+
+  .foundationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .componentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .componentGrid > :first-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroBanner {
+    padding: 24px 20px;
+  }
+
+  .heroVisual {
+    display: none;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+}

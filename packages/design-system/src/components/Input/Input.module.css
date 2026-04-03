@@ -1,0 +1,174 @@
+/* ── Input Container ── */
+.input {
+  display: flex;
+  align-items: center;
+  min-width: 160px;
+  width: 320px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  cursor: text;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+/* ── Sizes ── */
+.sizeLarge {
+  padding: 13px 12px;
+  border-radius: 6px;
+  gap: 8px;
+}
+
+.sizeMedium {
+  padding: 10px 12px;
+  border-radius: 4px;
+  gap: 4px;
+}
+
+.sizeSmall {
+  padding: 6px 12px;
+  border-radius: 4px;
+  gap: 4px;
+}
+
+/* ── States ── */
+.input:hover:not(.disabled) {
+  background: var(--gray-50);
+}
+
+.focused:not(.disabled) {
+  background: var(--white);
+  border-color: var(--gray-300);
+}
+
+.disabled {
+  background: var(--gray-300);
+  border-color: var(--gray-200);
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* ── Native Input ── */
+.nativeInput {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--gray-900);
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nativeInput::placeholder {
+  color: var(--gray-400);
+}
+
+.nativeInput:disabled {
+  cursor: default;
+  color: var(--gray-900);
+}
+
+.nativeInput:disabled::placeholder {
+  color: var(--gray-400);
+}
+
+/* Input sizing per variant */
+.nativeInputLarge {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.nativeInputMedium {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.nativeInputSmall {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* ── Icons ── */
+.iconLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+  overflow: hidden;
+}
+
+.iconLeftLarge {
+  width: 18px;
+  height: 18px;
+}
+
+.iconLeftMedium {
+  width: 16px;
+  height: 16px;
+}
+
+.iconLeftSmall {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Cancel IconButton SVG size overrides ── */
+.cancelButtonLg svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.cancelButtonSm svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* ── Dark Mode Overrides ── */
+
+/* Container */
+:global([data-theme="dark"]) .input {
+  background-color: var(--dp-00);
+  border-color: #616161;
+}
+
+:global([data-theme="dark"]) .input:hover:not(.disabled) {
+  background-color: var(--dp-01);
+}
+
+:global([data-theme="dark"]) .focused:not(.disabled) {
+  background-color: var(--dp-00);
+  border-color: #9E9E9E;
+}
+
+:global([data-theme="dark"]) .disabled {
+  background-color: var(--dp-00);
+  border-color: #616161;
+  opacity: 0.3;
+}
+
+/* Text */
+:global([data-theme="dark"]) .nativeInput {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .nativeInput::placeholder {
+  color: #757575;
+}
+
+:global([data-theme="dark"]) .nativeInput:disabled {
+  color: #FAFAFA;
+}
+
+:global([data-theme="dark"]) .nativeInput:disabled::placeholder {
+  color: #757575;
+}
+
+/* Icons */
+:global([data-theme="dark"]) .iconLeft {
+  color: #9E9E9E;
+}

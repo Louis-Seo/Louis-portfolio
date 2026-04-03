@@ -1,0 +1,134 @@
+/* ══════════════════════════════════════════════
+   HorizontalBarChart – Design System Component
+   ══════════════════════════════════════════════ */
+
+/* ── Wrapper ── */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legendLabel {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-700);
+}
+
+/* ── Row (one category) ── */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row + .row {
+  margin-top: 4px;
+}
+
+/* ── Category Label ── */
+.categoryLabel {
+  flex-shrink: 0;
+  align-self: center;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+/* ── Bar Lines Container (stacks each bar-line vertically) ── */
+.barLines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  margin-left: 12px;
+}
+
+/* ── Bar Line (one bar + its labels, on the same horizontal row) ── */
+.barLine {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Single Bar ── */
+.bar {
+  flex: 1;
+  height: 16px;
+  border-radius: 0 2px 2px 0;
+  transition: opacity 0.15s ease;
+  min-width: 2px;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+/* ── Size Variants ── */
+.sizeSmall .bar {
+  height: 12px;
+}
+
+.sizeLarge .bar {
+  height: 20px;
+}
+
+/* ── Per-bar value labels (right of each bar) ── */
+.percentLabel {
+  flex-shrink: 0;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-500);
+  min-width: 32px;
+  text-align: right;
+  margin-left: 8px;
+}
+
+.valueLabel {
+  flex-shrink: 0;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-900);
+  min-width: 48px;
+  text-align: right;
+  margin-left: 8px;
+}
+
+/* ── "No more categories" ── */
+.noMore {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-400);
+  text-align: right;
+  margin-top: 8px;
+}

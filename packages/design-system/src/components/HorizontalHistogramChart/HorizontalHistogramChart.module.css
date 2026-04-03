@@ -1,0 +1,151 @@
+/* ══════════════════════════════════════════════
+   HorizontalHistogramChart – Design System Component
+   ══════════════════════════════════════════════ */
+
+/* ── Wrapper ── */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legendLabel {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-700);
+}
+
+/* ── Rows Container (no gap — histogram bins are adjacent) ── */
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ── Row (one bin / category) ── */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Category Label ── */
+.categoryLabel {
+  flex-shrink: 0;
+  align-self: center;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+/* ── Stacked Bar Track (segments stacked horizontally) ── */
+.stackedTrack {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  margin-left: 12px;
+  height: 16px;
+  overflow: clip;
+}
+
+/* First row's track: top-right corner */
+.row:first-child .stackedTrack {
+  border-radius: 0 2px 0 0;
+}
+
+/* Last row's track: bottom-right corner */
+.row:last-child .stackedTrack {
+  border-radius: 0 0 2px 0;
+}
+
+/* Single row: both right corners */
+.row:first-child:last-child .stackedTrack {
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Individual Segment ── */
+.segment {
+  min-width: 1px;
+  height: 100%;
+  transition: opacity 0.15s ease;
+}
+
+.segment:hover {
+  opacity: 0.8;
+}
+
+/* ── Size Variants ── */
+.sizeSmall .stackedTrack {
+  height: 12px;
+}
+
+.sizeLarge .stackedTrack {
+  height: 20px;
+}
+
+/* ── Per-row value labels (right of the bar) ── */
+.valueLabels {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.percentLabel {
+  flex-shrink: 0;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-500);
+  min-width: 32px;
+  text-align: right;
+}
+
+.valueLabel {
+  flex-shrink: 0;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-900);
+  min-width: 48px;
+  text-align: right;
+  margin-left: 8px;
+}
+
+/* ── "No more categories" ── */
+.noMore {
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-400);
+  text-align: right;
+  margin-top: 8px;
+}

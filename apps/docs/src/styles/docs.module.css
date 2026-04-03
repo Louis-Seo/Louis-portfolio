@@ -1,0 +1,332 @@
+/* ═══════════════════════════════════════════════════════════════
+   Shared Documentation Layout System
+   ═══════════════════════════════════════════════════════════════
+   All component documentation pages import this module.
+   Page-specific styles (demos, mockups, diagrams) stay in each
+   page's own page.module.css.
+
+   Spacing Scale (8px base):
+     8 / 12 / 16 / 24 / 32 / 48 / 64
+
+   Hierarchy:
+     Page Title (40/700) → 24px → Description (16/400)
+     ─── Divider (margin 48px 0) ───
+     Section Heading (24/600) → 16px → Section Subtext (14/400) → 32px → Content
+     Subsection Heading (18/600) → 12px → Subsection Text (14/400) → 24px → Content
+     Image Block → 12px → Caption (14/400, gray-600)
+     Content Block → 48px → Next Section
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Page Root ── */
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Page Hero ── */
+.pageTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gray-900);
+  margin-bottom: 24px;
+}
+
+.pageDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-default);
+  margin: 32px 0;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ── Section Level (h2) ── */
+.sectionHeading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--gray-900);
+  margin-bottom: 16px;
+}
+
+.sectionSubtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-900);
+  margin-bottom: 32px;
+}
+
+/* ── Subsection Level (h3/h4) ── */
+.typeHeading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--gray-900);
+  margin-bottom: 12px;
+}
+
+.typeSubtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-900);
+  margin-bottom: 24px;
+}
+
+/* ── Caption (image labels, numbered parts) ── */
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+/* ── Spacing Utility ── */
+.sectionGap {
+  margin-bottom: 32px;
+}
+
+/* ── Preview Blocks ── */
+
+/* Full-width image, no background */
+.previewBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.previewBox img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Image with gray background + padding */
+.previewBoxBg {
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.previewBoxBg img {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ── Grid Layouts ── */
+
+/* 2-column (variants, side-by-side) */
+.previewRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+/* 3-column (use cases, cards) */
+.grid3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+/* Grid card */
+.gridCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridCardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+
+.gridCardDesc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+/* ── Usage Row (image left + text right) ── */
+.usageRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.usageRow > .previewBox,
+.usageRow > .previewBoxBg {
+  margin-bottom: 0;
+}
+
+/* ── Usage Row Equal (2-col symmetric) ── */
+.usageRowEqual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* When image row is immediately followed by text row, close the gap */
+.usageRowEqual + .usageRowEqual {
+  margin-top: -32px;
+}
+
+.ruleCardBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ruleTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--gray-900);
+  margin-bottom: 12px;
+}
+
+.ruleText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--gray-900);
+}
+
+/* ── Properties Table ── */
+.propsTable {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+/* 3-column row (Property / Values / Default) */
+.propsRow3col {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.propsRow3col:first-child {
+  border-top: 1px solid var(--gray-300);
+}
+
+/* 2-column row (Label / Description) */
+.propsRow2col {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.propsRow2col:first-child {
+  border-top: 1px solid var(--gray-300);
+}
+
+/* 1-column row */
+.propsRow1col {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.propsRow1col:first-child {
+  border-top: 1px solid var(--gray-300);
+}
+
+/* Cell */
+.propsCell {
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-900);
+}
+
+.propsCellSub {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--gray-500);
+  margin-top: 4px;
+}
+
+.propsHeader .propsCell {
+  font-weight: 600;
+}
+
+/* 3-column row with check icon */
+.propsRow3colCheck {
+  display: grid;
+  grid-template-columns: 1fr 3fr auto;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.propsRow3colCheck:first-child {
+  border-top: 1px solid var(--gray-300);
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  background: var(--green-500, #00B875);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .previewRow,
+  .usageRow,
+  .usageRowEqual {
+    grid-template-columns: 1fr;
+  }
+
+  .usageRowEqual + .usageRowEqual {
+    margin-top: 0;
+  }
+
+  .grid3col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .grid3col {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,704 @@
+/* ── Page-specific styles for Button ── */
+
+/* ── Spec Image Wrap ── */
+.specImageWrap {
+  width: 100%;
+  margin-bottom: 16px;
+  overflow: hidden;
+  aspect-ratio: 1440 / 420;
+  border-radius: 12px;
+}
+
+.specImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Type Description ── */
+.typeDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-900);
+  margin-bottom: 24px;
+}
+
+/* ── Card Grid ── */
+.cardGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 48px;
+}
+
+.cardGrid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-bottom: 48px;
+}
+
+/* ── Card ── */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card + .card .cardContent,
+.card + .card .cardContentCol {
+  border-left: 1px solid var(--gray-300);
+}
+
+.cardContent {
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 280px;
+  padding: 40px 24px;
+}
+
+.cardContentCol {
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 280px;
+  padding: 40px 24px;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--green-500);
+  color: var(--white);
+  font-size: 9px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-family: "Inter", sans-serif;
+}
+
+.cardLabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gray-600);
+  text-align: center;
+  padding: 16px 8px;
+}
+
+/* ── Demo Button Styles (from Figma tokens) ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  cursor: default;
+  white-space: nowrap;
+  border: none;
+}
+
+.btnPrimary {
+  background: var(--green-500);
+  color: var(--gray-50);
+  border: 1px solid transparent;
+}
+
+.btnSecondary {
+  background: var(--white);
+  color: var(--green-500);
+  border: 1px solid var(--green-500);
+}
+
+.btnMd {
+  height: 40px;
+  min-width: 80px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* ── Icon Button ── */
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  border: none;
+  background: none;
+}
+
+.iconBtnPrimary {
+  background: var(--green-500);
+  color: var(--gray-50);
+}
+
+.iconBtnSecondary {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  color: var(--gray-900);
+}
+
+.iconBtnTertiary {
+  color: var(--gray-700);
+}
+
+.iconBtnLg {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+/* ── Text Button ── */
+.textBtn {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--green-500);
+  cursor: default;
+}
+
+.textBtnBlack {
+  color: var(--gray-900);
+}
+
+/* ── Segment Button ── */
+.segmentBtn {
+  display: flex;
+  border-radius: 4px;
+  height: 32px;
+  width: 192px;
+  position: relative;
+}
+
+.segmentBtnFloating {
+  border: 1px solid var(--gray-200);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+  background: var(--white);
+}
+
+.segmentItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--gray-400);
+  cursor: default;
+  border-radius: 4px;
+}
+
+.segmentItemSelected {
+  font-weight: 500;
+  color: var(--green-500);
+  border: 1px solid var(--green-500);
+  background: var(--white);
+}
+
+.segmentBtnFloating .segmentItemSelected {
+  border: 1px solid var(--gray-400);
+  color: var(--gray-900);
+  background: var(--white);
+  margin: -1px;
+}
+
+.segmentBtnFloating .segmentItem:not(.segmentItemSelected) {
+  color: var(--gray-400);
+}
+
+/* ── Progress Status ── */
+.progressApproved {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5.5px;
+  border-radius: 2px;
+  background: var(--green-500);
+  color: var(--gray-50);
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: default;
+}
+
+.progressInReview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background: var(--white);
+  border: 1px solid var(--green-500);
+  color: var(--green-500);
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: default;
+}
+
+/* ── Combo Button ── */
+.comboWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.comboBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 32px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: var(--green-700);
+  color: var(--gray-50);
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.comboMenu {
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+  padding: 4px 0;
+  width: 120px;
+}
+
+.comboMenuItem {
+  padding: 6px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gray-900);
+  cursor: default;
+}
+
+/* ── Button Size Variants ── */
+.btnLg {
+  height: 48px;
+  min-width: 90px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 6px;
+}
+
+.btnSm {
+  height: 32px;
+  min-width: 80px;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btnXs {
+  height: 28px;
+  min-width: 71px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.btnXxs {
+  height: 24px;
+  min-width: 64px;
+  padding: 0 8px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.btnDisabled {
+  opacity: 0.4;
+}
+
+/* ── Preview Box (with gray bg + padding, differs from shared) ── */
+.previewBox {
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding: 40px;
+  margin-bottom: 16px;
+}
+
+.previewCaption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-600);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* ── Dialog Card ── */
+.dialogCard {
+  background: var(--white);
+  border-radius: 6px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 320px;
+}
+
+.dialogTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--gray-900);
+  font-family: "Inter", sans-serif;
+}
+
+.dialogText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gray-600);
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+}
+
+.dialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* ── Anatomy ── */
+.anatomyBox {
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 60px 40px;
+  margin-bottom: 16px;
+}
+
+.anatomyDiagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.anatomyBadge {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #7C3AED;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  flex-shrink: 0;
+}
+
+.anatomyConnectorV {
+  width: 1px;
+  height: 32px;
+  background: #7C3AED;
+}
+
+.anatomyConnectorH {
+  width: 24px;
+  height: 1px;
+  background: #7C3AED;
+}
+
+.anatomyBracket {
+  width: 8px;
+  height: 40px;
+  border: 1px solid #7C3AED;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.anatomyTopGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anatomyMiddleRow {
+  display: flex;
+  align-items: center;
+}
+
+.anatomyLeftGroup {
+  display: flex;
+  align-items: center;
+}
+
+.anatomyBottomGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anatomyLabels {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.anatomyLabelItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gray-900);
+  font-family: "Inter", sans-serif;
+}
+
+.anatomyLabelBadge {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7C3AED;
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  flex-shrink: 0;
+}
+
+/* ── Variant Grid ── */
+.variantGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.variantCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.variantBox {
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  padding: 40px 24px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+.variantBoxInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@container (max-width: 400px) {
+  .variantBoxInner {
+    transform: scale(0.85);
+  }
+}
+
+@container (max-width: 320px) {
+  .variantBoxInner {
+    transform: scale(0.7);
+  }
+}
+
+@container (max-width: 250px) {
+  .variantBoxInner {
+    transform: scale(0.55);
+  }
+}
+
+.variantColHeading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+}
+
+.variantColDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-900);
+}
+
+/* ── Props Row (custom 3-col for button) ── */
+.propsRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.propsRow:first-child {
+  border-top: 1px solid var(--gray-300);
+}
+
+.propsRow > div:nth-child(2) {
+  border-left: 1px solid var(--gray-300);
+  border-right: 1px solid var(--gray-300);
+}
+
+/* ── Usage Row (custom 2fr 1fr for button) ── */
+.usageRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.usageCard {
+  background: #F7F7F7;
+  border-radius: 0;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.usageImageCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.usageImageCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ruleSubtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-600);
+  margin-top: 16px;
+}
+
+/* ── Loading Section ── */
+.loadingStateLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-600);
+  min-width: 120px;
+  font-family: "Inter", sans-serif;
+}
+
+.loadingTypeLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-600);
+  text-align: center;
+  padding-top: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ── Spinner ── */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 1s linear infinite;
+}
+
+/* ═══════════════════════════════════════════
+   Icon Button Section Styles
+   ═══════════════════════════════════════════ */
+
+/* ── 2-Column Variant Grid ── */
+.ibVariantGrid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .cardGrid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .cardGrid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card + .card .cardContent,
+  .card + .card .cardContentCol {
+    border-left: none;
+    border-top: 1px solid var(--gray-300);
+  }
+
+  .variantGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .propsRow {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .usageRow {
+    grid-template-columns: 1fr;
+  }
+
+  .ibVariantGrid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardGrid4 {
+    grid-template-columns: 1fr;
+  }
+}

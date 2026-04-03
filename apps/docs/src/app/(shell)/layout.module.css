@@ -1,0 +1,43 @@
+.content {
+  margin-left: 260px;
+  padding: 96px 40px 120px;
+  min-height: 100vh;
+}
+
+.contentInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* When TOC nav exists inside aside, expand to 2-col */
+.contentInner:has(.tocSidebar > *) {
+  grid-template-columns: 1fr 200px;
+}
+
+.contentMain {
+  min-width: 0;
+}
+
+.tocSidebar {
+  /* stretches for sticky; hidden when empty via grid collapse */
+}
+
+@media (max-width: 1200px) {
+  .contentInner {
+    grid-template-columns: 1fr;
+  }
+
+  .tocSidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 828px) {
+  .content {
+    margin-left: 0;
+    padding: 76px 20px 60px;
+  }
+}

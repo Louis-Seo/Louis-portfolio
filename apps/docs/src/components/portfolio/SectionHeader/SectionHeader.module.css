@@ -1,0 +1,35 @@
+.header {
+  margin-bottom: 48px;
+}
+
+.label {
+  font-size: var(--font-size-body5);
+  font-weight: var(--font-weight-body5);
+  line-height: var(--line-height-body5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-500);
+  margin-bottom: var(--space-4);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.description {
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-body1);
+  line-height: var(--line-height-body1);
+  color: var(--text-secondary);
+  max-width: 640px;
+}
+
+@media (max-width: 828px) {
+  .title {
+    font-size: var(--font-size-h2);
+  }
+}

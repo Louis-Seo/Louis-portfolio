@@ -1,0 +1,72 @@
+/* ══════════════════════════════════════════════
+   WaterfallChart – Design System Component
+   ══════════════════════════════════════════════ */
+
+/* ── Container ── */
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+/* ── Slot (one x-axis position: bar + optional connector) ── */
+.slot {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ── Bar Wrapper (positions the bar vertically via bottom offset) ── */
+.barWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Bar ── */
+.bar {
+  width: 16px;
+  min-height: 2px;
+  border-radius: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+/* ── Value Label ── */
+.label {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: var(--font-size-body4);
+  line-height: var(--line-height-body4);
+  font-weight: var(--font-weight-body4);
+  color: var(--gray-900);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.labelAbove {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 4px;
+}
+
+.labelBelow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 4px;
+}
