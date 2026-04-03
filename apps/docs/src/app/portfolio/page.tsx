@@ -248,31 +248,6 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* ═══ How I Work ═══ */}
-      <section className={styles.principleSection}>
-        <div className={styles.container}>
-          <Reveal>
-            <p className={styles.principleStatement}>
-              저는 화면을 그리기 전에, 제품이 작동해야 하는 구조를 먼저 그립니다.
-            </p>
-          </Reveal>
-          <div className={styles.principleGrid}>
-            {[
-              { keyword: "Structure First", desc: "워크플로우와 데이터 흐름을 먼저 정리한 뒤 인터페이스를 설계합니다." },
-              { keyword: "System Thinking", desc: "하나의 화면이 아니라 제품 전체가 일관되게 작동하는 구조를 만듭니다." },
-              { keyword: "Ship with Engineers", desc: "컴포넌트 스펙과 상태 정의까지 함께 설계해 구현 과정에서 의도가 유지됩니다." },
-            ].map((item, i) => (
-              <Reveal key={item.keyword} delay={i * 80}>
-                <div className={styles.principleItem}>
-                  <h3 className={styles.principleKeyword}>{item.keyword}</h3>
-                  <p className={styles.principleDesc}>{item.desc}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ═══ What I Bring ═══ */}
       <section className={styles.approachSection}>
         <div className={styles.container}>
@@ -288,6 +263,13 @@ export default function PortfolioPage() {
                   <br />
                   설계합니다.
                 </h2>
+              </Reveal>
+              <Reveal delay={100}>
+                <div className={styles.principleChips}>
+                  <span>Structure First</span>
+                  <span>System Thinking</span>
+                  <span>Ship with Engineers</span>
+                </div>
               </Reveal>
             </div>
             <div className={styles.approachRight}>
