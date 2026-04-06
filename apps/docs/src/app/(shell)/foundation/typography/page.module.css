@@ -385,39 +385,100 @@
   }
 
   .divider {
-    margin: 32px 0;
+    margin: 24px 0;
   }
 
+  .sectionTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .sectionDescription {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  /* Table: horizontal scroll wrapper */
   .table {
     display: block;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
   }
 
+  .tableHeaderRow th {
+    font-size: 11px;
+    padding: 8px;
+    white-space: nowrap;
+  }
+
+  .tableRow td {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  /* Weight cards */
   .weightCard {
-    padding: 32px 24px;
+    padding: 24px 16px;
   }
 
   .weightCardTitle {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
   }
 
+  .weightCardSpecimen {
+    font-size: 12px;
+  }
+
+  .weightCardNum {
+    top: 12px;
+    left: 12px;
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  /* Scale cards */
   .scaleCardInner {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .scaleLeft {
     border-right: none;
     border-bottom: 1px dashed var(--border-default);
+    padding: 24px 16px 20px;
   }
 
   .scaleRight {
-    min-height: 200px;
+    min-height: 180px;
+    padding: 20px 16px;
   }
 
+  .scaleContextPlaceholder {
+    min-height: 180px;
+  }
+
+  /* Weight usage */
   .weightUsageRow {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+  }
+
+  .weightUsageLabel {
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .weightUsageDesc {
+    font-size: 13px;
+  }
+
+  /* Notes */
+  .noteItem {
+    padding: 12px 16px;
   }
 }
