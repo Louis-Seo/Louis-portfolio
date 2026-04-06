@@ -25,15 +25,6 @@ img {
   height: auto;
 }
 
-/* Prevent any element from causing horizontal overflow on mobile */
-@media (max-width: 828px) {
-  main,
-  section,
-  article,
-  div {
-    max-width: 100vw;
-  }
-}
 
 a {
   color: inherit;
