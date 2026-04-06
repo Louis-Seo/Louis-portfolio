@@ -26,7 +26,8 @@
 }
 
 @media (max-width: 1200px) {
-  .contentInner {
+  .contentInner,
+  .contentInner:has(.tocSidebar > *) {
     grid-template-columns: 1fr;
   }
 
