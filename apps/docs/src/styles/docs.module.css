@@ -324,9 +324,68 @@
 @media (max-width: 600px) {
   .pageTitle {
     font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .pageDescription {
+    font-size: 14px;
+  }
+
+  .sectionHeading {
+    font-size: 20px;
+  }
+
+  .typeHeading {
+    font-size: 16px;
   }
 
   .grid3col {
     grid-template-columns: 1fr;
+  }
+
+  /* Tables: stack on mobile */
+  .propsRow3col,
+  .propsRow2col,
+  .propsRow3colCheck {
+    grid-template-columns: 1fr;
+  }
+
+  .propsCell {
+    padding: 10px 16px;
+  }
+
+  /* First cell in stacked row acts as header */
+  .propsRow3col > .propsCell:first-child,
+  .propsRow2col > .propsCell:first-child,
+  .propsRow3colCheck > .propsCell:first-child {
+    font-weight: 600;
+    padding-bottom: 4px;
+    border-bottom: none;
+  }
+
+  /* Image blocks */
+  .previewBoxBg {
+    padding: 16px;
+  }
+
+  .previewBoxBg img {
+    max-width: 100%;
+  }
+
+  /* Spacing */
+  .previewRow,
+  .usageRow,
+  .usageRowEqual,
+  .grid3col {
+    gap: 20px;
+  }
+
+  .divider {
+    margin: 24px 0;
+  }
+
+  .sectionSubtext,
+  .typeSubtext {
+    margin-bottom: 20px;
   }
 }

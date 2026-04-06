@@ -38,6 +38,12 @@
 @media (max-width: 828px) {
   .content {
     margin-left: 0;
-    padding: 76px 20px 60px;
+    padding: 72px 16px 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 68px 14px 40px;
   }
 }

@@ -429,15 +429,83 @@
 }
 
 @media (max-width: 600px) {
+  .page {
+    gap: 36px;
+  }
+
   .heroBanner {
     padding: 24px 20px;
+    border-radius: 14px;
   }
 
-  .heroVisual {
-    display: none;
+  .bannerTitle {
+    font-size: 24px;
+    margin-bottom: 12px;
   }
 
-  .heroTitle {
-    font-size: 32px;
+  .bannerDesc {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .bannerStats {
+    gap: 6px;
+  }
+
+  .statPill {
+    padding: 6px 12px;
+    gap: 6px;
+  }
+
+  .statPill .statLabel {
+    font-size: 11px;
+  }
+
+  .statPill .statNumber {
+    font-size: 12px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
+  }
+
+  .sectionDesc {
+    font-size: 13px;
+  }
+
+  .foundationGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .foundationCard {
+    padding: 16px 12px 14px;
+    border-radius: 10px;
+  }
+
+  .foundationName {
+    font-size: 13px;
+  }
+
+  .foundationDesc {
+    font-size: 10px;
+  }
+
+  .componentBody {
+    padding: 16px;
+  }
+
+  .componentTitle {
+    font-size: 15px;
+  }
+
+  .componentDesc {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .componentChip {
+    font-size: 11px;
+    padding: 3px 8px;
   }
 }
