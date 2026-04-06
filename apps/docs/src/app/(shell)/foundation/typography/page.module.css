@@ -391,7 +391,6 @@
   .table {
     display: block;
     overflow-x: auto;
-    min-width: 600px;
   }
 
   .weightCard {
