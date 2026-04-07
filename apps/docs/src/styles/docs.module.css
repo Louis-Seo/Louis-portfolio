@@ -222,10 +222,18 @@
 
 /* ── Properties Table ── */
 .propsTable {
+  display: block;
   width: 100%;
   margin-bottom: 32px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+/* When propsTable is a <table>, force children to block for overflow to work */
+.propsTable thead,
+.propsTable tbody,
+.propsTable tfoot {
+  display: block;
 }
 
 /* 3-column row (Property / Values / Default) */
