@@ -13,7 +13,6 @@
   .previewBoxCompact img { width: 100%; }
 
   .propsRow4col { min-width: 560px; }
-  .propsRow4col > div { overflow: hidden; text-overflow: ellipsis; }
   .propsRow4col > div:first-child {
     position: sticky;
     left: 0;

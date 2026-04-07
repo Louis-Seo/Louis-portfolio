@@ -710,7 +710,6 @@
     min-width: 480px;
   }
 
-  .propsRow > div { overflow: hidden; text-overflow: ellipsis; }
   .propsRow > div:first-child {
     position: sticky;
     left: 0;
