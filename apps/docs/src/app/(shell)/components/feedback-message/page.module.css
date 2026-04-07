@@ -10,12 +10,16 @@
   .propsRow2col { min-width: 400px; }
   .propsRow3col { min-width: 480px; }
 
+  .propsRow2col > div,
+  .propsRow3col > div { overflow: hidden; text-overflow: ellipsis; }
+
   .propsRow2col > div:first-child,
   .propsRow3col > div:first-child {
     position: sticky;
     left: 0;
     background: var(--surface-base);
     z-index: 2;
+    white-space: nowrap;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
   }
 }

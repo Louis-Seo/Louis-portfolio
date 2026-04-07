@@ -13,11 +13,13 @@
   .previewBoxCompact img { width: 100%; }
 
   .propsRow4col { min-width: 560px; }
+  .propsRow4col > div { overflow: hidden; text-overflow: ellipsis; }
   .propsRow4col > div:first-child {
     position: sticky;
     left: 0;
     background: var(--surface-base);
     z-index: 2;
+    white-space: nowrap;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
   }
 }

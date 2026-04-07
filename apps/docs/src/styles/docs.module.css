@@ -365,14 +365,8 @@
     padding: 8px 12px;
     font-size: 12px;
     line-height: 1.4;
-    white-space: nowrap;
-  }
-
-  /* Allow controlled wrapping only in wide value columns */
-  .propsRow3col > .propsCell:nth-child(2),
-  .propsRow3colCheck > .propsCell:nth-child(2) {
-    white-space: normal;
-    min-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* Sticky first column */
@@ -389,7 +383,6 @@
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
   }
 
-  /* Header row sticky cells get slightly different bg */
   .propsHeader .propsCell:first-child {
     background: var(--surface-base);
   }

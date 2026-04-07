@@ -174,11 +174,13 @@
     min-width: 480px;
   }
 
+  .tableRow > div { overflow: hidden; text-overflow: ellipsis; }
   .tableRow > div:first-child {
     position: sticky;
     left: 0;
     background: var(--surface-base);
     z-index: 2;
+    white-space: nowrap;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
   }
 }
