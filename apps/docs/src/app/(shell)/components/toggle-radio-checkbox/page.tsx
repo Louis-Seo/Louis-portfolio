@@ -108,7 +108,8 @@ export default function ToggleRadioCheckboxPage() {
 
       <h3 className={s.sectionHeading}>Selection Control</h3>
 
-      <div className={s.propsTable}>
+      {/* Desktop: 4-column comparison table */}
+      <div className={styles.compTableDesktop}>
         <div className={`${styles.propsRow} ${s.propsHeader}`}>
           <div className={s.propsCell} />
           <div className={s.propsCell}>Checkboxes Group</div>
@@ -165,6 +166,34 @@ export default function ToggleRadioCheckboxPage() {
             </span>
           </div>
         </div>
+      </div>
+
+      {/* Mobile: row-based comparison cards */}
+      <div className={styles.compCardsMobile}>
+        {[
+          { label: "Options", checkbox: "Multiple", radio: "Multiple", toggle: "Single" },
+          { label: "Selection Case", checkbox: "0 - all (Multiple)", radio: "1 (Single)", toggle: "2 (On / Off)" },
+          { label: "Default Option", checkbox: "All Unselected", radio: "1 (Single)", toggle: "Checked (On)" },
+          { label: "Relation", checkbox: "Independent (독립적)", radio: "Mutually Exclusive (상호베타적)", toggle: "Independent (독립적)" },
+        ].map((row) => (
+          <div key={row.label} className={styles.compCard}>
+            <div className={styles.compCardLabel}>{row.label}</div>
+            <div className={styles.compCardValues}>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Checkbox</span>
+                <span className={styles.compCardVal}>{row.checkbox}</span>
+              </div>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Radio</span>
+                <span className={styles.compCardVal}>{row.radio}</span>
+              </div>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Toggle</span>
+                <span className={styles.compCardVal}>{row.toggle}</span>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <hr className={s.divider} />

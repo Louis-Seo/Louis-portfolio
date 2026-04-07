@@ -88,8 +88,75 @@
   flex-direction: column;
 }
 
+/* ── Comparison Table: Desktop / Mobile Toggle ── */
+.compTableDesktop {
+  display: block;
+}
+
+.compCardsMobile {
+  display: none;
+}
+
+/* ── Comparison Cards (Mobile) ── */
+.compCard {
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.compCardLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-900);
+  padding: 10px 16px;
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.compCardValues {
+  display: flex;
+  flex-direction: column;
+}
+
+.compCardItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--gray-100);
+  gap: 12px;
+}
+
+.compCardItem:last-child {
+  border-bottom: none;
+}
+
+.compCardType {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-500);
+  flex-shrink: 0;
+  min-width: 64px;
+}
+
+.compCardVal {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-900);
+  text-align: right;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
+  .compTableDesktop {
+    display: none;
+  }
+
+  .compCardsMobile {
+    display: block;
+  }
+
   .propsRow {
     grid-template-columns: 1fr;
   }
@@ -100,5 +167,23 @@
 
   .variantsRow {
     grid-template-columns: 1fr;
+  }
+
+  .groupColHeading {
+    font-size: 15px;
+  }
+
+  .groupColDesc {
+    font-size: 13px;
+  }
+
+  .groupRow {
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .variantsRow {
+    gap: 20px;
+    margin-bottom: 32px;
   }
 }

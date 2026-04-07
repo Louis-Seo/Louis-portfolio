@@ -51,8 +51,8 @@ export default function DropdownPage() {
         />
       </div>
 
-      {/* ── Comparison Table ── */}
-      <div className={s.propsTable}>
+      {/* ── Comparison Table (Desktop) ── */}
+      <div className={styles.compTableDesktop}>
         <div className={`${styles.propsRow} ${s.propsHeader}`}>
           <div className={s.propsCell} />
           <div className={s.propsCell}>Primary Type</div>
@@ -83,23 +83,42 @@ export default function DropdownPage() {
         </div>
         <div className={styles.propsRow}>
           <div className={s.propsCell} style={{ fontWeight: 600 }}>Characteristics</div>
-          <div className={s.propsCell}>
-            가장 일반적으로 사용 되는 타입으로, 표출되는 Item의 형태가 Text 혹은 Icon으로
-            구성되어져 있습니다.
-          </div>
-          <div className={s.propsCell}>
-            Field에 포함되는 Item의 형태가 Text Type가 아닌 다양한 컴포넌트로 구성된 형태로
-            Avatar 및 Badge가 대표적으로 사용 됩니다.
-          </div>
-          <div className={s.propsCell}>
-            Default 상태의 Dropdown Container의 Outline이 없는 형태로, 내부 Field만 표출이
-            되는 형태로 Table 혹은 List의 형태에서 사용되어 집니다.
-          </div>
-          <div className={s.propsCell}>
-            Dropdown Button의 형태가 Icon Button으로 제공이 되는 타입이며, Menu의 경우 기존의
-            Primary, Secondary에서 사용되는 Menu의 형태가 사용 됩니다.
-          </div>
+          <div className={s.propsCell}>가장 일반적으로 사용 되는 타입으로, Text 혹은 Icon으로 구성</div>
+          <div className={s.propsCell}>Avatar 및 Badge 등 다양한 컴포넌트로 구성된 형태</div>
+          <div className={s.propsCell}>Outline 없이 내부 Field만 표출, Table/List에서 사용</div>
+          <div className={s.propsCell}>Icon Button 형태로 제공, 기존 Menu 형태 사용</div>
         </div>
+      </div>
+
+      {/* ── Comparison Cards (Mobile) ── */}
+      <div className={styles.compCardsMobile}>
+        {[
+          { label: "Field Type", primary: "Text", secondary: "Avatar, Badge", tertiary: "Text, Avatar, Badge", extra: "Icon" },
+          { label: "Selected Item", primary: "Single", secondary: "Multi/Single", tertiary: "Multi/Single", extra: "Single" },
+          { label: "Extra Composition", primary: "—", secondary: "Count Badge", tertiary: "Count Badge", extra: "—" },
+        ].map((row) => (
+          <div key={row.label} className={styles.compCard}>
+            <div className={styles.compCardLabel}>{row.label}</div>
+            <div className={styles.compCardValues}>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Primary</span>
+                <span className={styles.compCardVal}>{row.primary}</span>
+              </div>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Secondary</span>
+                <span className={styles.compCardVal}>{row.secondary}</span>
+              </div>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Tertiary</span>
+                <span className={styles.compCardVal}>{row.tertiary}</span>
+              </div>
+              <div className={styles.compCardItem}>
+                <span className={styles.compCardType}>Extra</span>
+                <span className={styles.compCardVal}>{row.extra}</span>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <hr className={s.divider} />
