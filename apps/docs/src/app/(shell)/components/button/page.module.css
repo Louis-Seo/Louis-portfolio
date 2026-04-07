@@ -568,7 +568,7 @@
 /* ── Props Row (custom 3-col for button) ── */
 .propsRow {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 120px minmax(160px, 2fr) minmax(100px, 1fr);
   border-bottom: 1px solid var(--gray-300);
 }
 
@@ -685,7 +685,7 @@
   }
 
   .propsRow {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 120px minmax(160px, 2fr) minmax(100px, 1fr);
   }
 
   .usageRow {

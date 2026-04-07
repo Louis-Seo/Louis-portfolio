@@ -1,9 +1,9 @@
 /* FeedbackMessage — page-specific styles only. Common layout classes are imported from @/styles/docs.module.css */
 
 /* Page-specific column proportions (differ from shared defaults) */
-.propsRow2col { display: grid; grid-template-columns: 1fr 2fr; border-bottom: 1px solid var(--gray-300); }
+.propsRow2col { display: grid; grid-template-columns: 120px minmax(200px, 1fr); border-bottom: 1px solid var(--gray-300); }
 .propsRow2col:first-child { border-top: 1px solid var(--gray-300); }
-.propsRow3col { display: grid; grid-template-columns: 1fr 1.5fr 1.5fr; border-bottom: 1px solid var(--gray-300); }
+.propsRow3col { display: grid; grid-template-columns: 120px minmax(120px, 1.5fr) minmax(120px, 1.5fr); border-bottom: 1px solid var(--gray-300); }
 .propsRow3col:first-child { border-top: 1px solid var(--gray-300); }
 
 @media (max-width: 600px) {

@@ -3,7 +3,7 @@
 /* ── Props Table (4-col) ── */
 .propsRow {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 140px repeat(3, minmax(120px, 1fr));
   border-bottom: 1px solid var(--gray-300);
 }
 
