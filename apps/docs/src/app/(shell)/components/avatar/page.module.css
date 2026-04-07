@@ -11,5 +11,4 @@
 @media (max-width: 600px) {
   .previewBoxCompact { padding: 24px 16px 16px; }
   .previewBoxCompact img { width: 100%; }
-  .propsRow4col { grid-template-columns: 1fr; }
 }

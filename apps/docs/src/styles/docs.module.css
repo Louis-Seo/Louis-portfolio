@@ -343,24 +343,27 @@
     grid-template-columns: 1fr;
   }
 
-  /* Tables: stack on mobile */
-  .propsRow3col,
-  .propsRow2col,
+  /* Tables: keep structure, reduce density */
+  .propsTable {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .propsRow3col {
+    min-width: 480px;
+  }
+
+  .propsRow2col {
+    min-width: 360px;
+  }
+
   .propsRow3colCheck {
-    grid-template-columns: 1fr;
+    min-width: 480px;
   }
 
   .propsCell {
-    padding: 10px 16px;
-  }
-
-  /* First cell in stacked row acts as header */
-  .propsRow3col > .propsCell:first-child,
-  .propsRow2col > .propsCell:first-child,
-  .propsRow3colCheck > .propsCell:first-child {
-    font-weight: 600;
-    padding-bottom: 4px;
-    border-bottom: none;
+    padding: 10px 12px;
+    font-size: 13px;
   }
 
   /* Image blocks */

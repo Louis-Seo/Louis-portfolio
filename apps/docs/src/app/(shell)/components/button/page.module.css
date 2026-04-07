@@ -702,10 +702,6 @@
     grid-template-columns: 1fr;
   }
 
-  .propsRow {
-    grid-template-columns: 1fr;
-  }
-
   .dialogCard {
     min-width: 0;
   }

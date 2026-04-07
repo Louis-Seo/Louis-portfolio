@@ -6,9 +6,3 @@
 .propsRow3col { display: grid; grid-template-columns: 1fr 1.5fr 1.5fr; border-bottom: 1px solid var(--gray-300); }
 .propsRow3col:first-child { border-top: 1px solid var(--gray-300); }
 
-@media (max-width: 600px) {
-  .propsRow2col,
-  .propsRow3col {
-    grid-template-columns: 1fr;
-  }
-}

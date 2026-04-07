@@ -157,10 +157,6 @@
     display: block;
   }
 
-  .propsRow {
-    grid-template-columns: 1fr;
-  }
-
   .groupRow {
     grid-template-columns: 1fr;
   }

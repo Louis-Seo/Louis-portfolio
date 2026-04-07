@@ -123,8 +123,4 @@
   .compCardsMobile {
     display: block;
   }
-
-  .propsRow {
-    grid-template-columns: 1fr;
-  }
 }
