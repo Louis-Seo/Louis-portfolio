@@ -53,3 +53,17 @@
   margin-bottom: 16px;
 }
 
+@media (max-width: 600px) {
+  .propsRow {
+    min-width: 560px;
+  }
+
+  .propsRow > div:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--surface-base);
+    z-index: 2;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
+  }
+}
+

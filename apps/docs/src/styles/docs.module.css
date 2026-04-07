@@ -343,27 +343,55 @@
     grid-template-columns: 1fr;
   }
 
-  /* Tables: keep structure, reduce density */
+  /* ── Tables: sticky first column + horizontal scroll ── */
   .propsTable {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   .propsRow3col {
-    min-width: 480px;
+    min-width: 520px;
   }
 
   .propsRow2col {
-    min-width: 360px;
+    min-width: 400px;
   }
 
   .propsRow3colCheck {
-    min-width: 480px;
+    min-width: 520px;
   }
 
   .propsCell {
-    padding: 10px 12px;
-    font-size: 13px;
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  /* Allow controlled wrapping only in wide value columns */
+  .propsRow3col > .propsCell:nth-child(2),
+  .propsRow3colCheck > .propsCell:nth-child(2) {
+    white-space: normal;
+    min-width: 180px;
+  }
+
+  /* Sticky first column */
+  .propsRow3col > .propsCell:first-child,
+  .propsRow2col > .propsCell:first-child,
+  .propsRow3colCheck > .propsCell:first-child,
+  .propsRow1col > .propsCell:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--surface-base);
+    z-index: 2;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Header row sticky cells get slightly different bg */
+  .propsHeader .propsCell:first-child {
+    background: var(--surface-base);
   }
 
   /* Image blocks */

@@ -11,4 +11,13 @@
 @media (max-width: 600px) {
   .previewBoxCompact { padding: 24px 16px 16px; }
   .previewBoxCompact img { width: 100%; }
+
+  .propsRow4col { min-width: 560px; }
+  .propsRow4col > div:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--surface-base);
+    z-index: 2;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
+  }
 }

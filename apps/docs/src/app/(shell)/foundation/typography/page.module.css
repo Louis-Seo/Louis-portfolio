@@ -398,7 +398,7 @@
     line-height: 20px;
   }
 
-  /* Table: horizontal scroll wrapper */
+  /* Table: sticky first column + horizontal scroll */
   .table {
     display: block;
     overflow-x: auto;
@@ -408,13 +408,31 @@
 
   .tableHeaderRow th {
     font-size: 11px;
-    padding: 8px;
+    padding: 8px 10px;
     white-space: nowrap;
   }
 
   .tableRow td {
-    padding: 8px;
+    padding: 8px 10px;
     font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Sticky first column (Scale Category / n) */
+  .tableHeaderRow th:first-child,
+  .tableRow td:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--surface-base);
+    z-index: 2;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
+  }
+
+  .groupHeader td {
+    position: sticky;
+    left: 0;
+    background: var(--surface-base);
+    z-index: 2;
   }
 
   /* Weight cards */
