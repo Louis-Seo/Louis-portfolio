@@ -67,10 +67,10 @@ export const PROJECTS: ProjectDetail[] = [
     outcome:
       "입주자 중심의 PMS 연동 주거 플랫폼을 성공적으로 설계하여, 관리자와 입주자 간 양방향 소통 구조를 구현했습니다.",
     impactMetrics: [
+      { value: "3", label: "통합 플랫폼" },
       { value: "6", label: "핵심 기능 모듈" },
-      { value: "2", label: "플랫폼 (Web + App)" },
-      { value: "40%", label: "문의 건수 감소" },
-      { value: "65%", label: "수기 문의 감소" },
+      { value: "47%", label: "문의 건수 감소" },
+      { value: "65%", label: "수기 접수 감소" },
     ],
     tags: ["PropTech", "B2B2C", "PMS", "Mobile"],
     featured: true,
