@@ -377,7 +377,6 @@
     background: var(--surface-base);
     z-index: 2;
     font-weight: 600;
-    white-space: nowrap;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
   }
 
