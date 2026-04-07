@@ -224,6 +224,8 @@
 .propsTable {
   width: 100%;
   margin-bottom: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* 3-column row (Property / Values / Default) */
@@ -343,12 +345,7 @@
     grid-template-columns: 1fr;
   }
 
-  /* ── Tables: sticky first column + horizontal scroll ── */
-  .propsTable {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
+  /* ── Tables: mobile density adjustments ── */
   .propsRow3col {
     min-width: 520px;
   }
