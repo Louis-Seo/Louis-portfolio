@@ -440,21 +440,19 @@
     font-size: 11px;
   }
 
-  /* Scale cards */
+  /* Scale cards: hide text preview on mobile, show image only */
   .scaleCardInner {
     grid-template-columns: 1fr;
     min-height: auto;
   }
 
   .scaleLeft {
-    border-right: none;
-    border-bottom: 1px dashed var(--border-default);
-    padding: 24px 16px 20px;
+    display: none;
   }
 
   .scaleRight {
-    min-height: 180px;
-    padding: 20px 16px;
+    min-height: auto;
+    padding: 16px;
   }
 
   .scaleContextPlaceholder {

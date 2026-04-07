@@ -32,22 +32,6 @@ const TYPE_USAGE_ROWS: TypeRowData[] = [
   { name: "Body 6", typeface: "Noto Sans Display", size: 10, weight: "Regular", weightNum: 400, lineHeightPx: 14 },
 ];
 
-/* Keep old arrays for Type Scale section */
-const HEADING_ROWS = TYPE_USAGE_ROWS.filter((r) => r.name.startsWith("H")).map((r) => ({
-  name: r.name, size: r.size, weight: r.weight, weightNum: r.weightNum, lineHeight: `${r.lineHeightPx}px`,
-}));
-const SUBTITLE_ROWS = TYPE_USAGE_ROWS.filter((r) => r.name.startsWith("Subtitle")).map((r) => ({
-  name: r.name, size: r.size, weight: r.weight, weightNum: r.weightNum, lineHeight: `${r.lineHeightPx}px`,
-}));
-const BODY_ROWS = TYPE_USAGE_ROWS.filter((r) => r.name.startsWith("Body")).map((r) => ({
-  name: r.name, size: r.size, weight: r.weight, weightNum: r.weightNum, lineHeight: `${r.lineHeightPx}px`,
-}));
-const BUTTON_ROWS = [
-  { name: "Button 1", size: 10, weight: "Medium", weightNum: 500, lineHeight: "14px" },
-  { name: "Button 2", size: 12, weight: "Medium", weightNum: 500, lineHeight: "16px" },
-  { name: "Button 3", size: 14, weight: "Medium", weightNum: 500, lineHeight: "20px" },
-  { name: "Button 4", size: 16, weight: "Medium", weightNum: 500, lineHeight: "22px" },
-];
 
 const SCALE_LOGIC_ROWS = [
   { n: 1, calc: "Initial Value 12px", increment: "-", result: 12 },
@@ -79,6 +63,16 @@ const WEIGHT_CARDS = [
   { num: 2, label: "PRETENDARD MEDIUM", weight: 500 },
   { num: 3, label: "PRETENDARD SEMI BOLD", weight: 600 },
 ];
+
+const HEADING_ROWS = TYPE_USAGE_ROWS.filter((r) => r.name.startsWith("H")).map((r) => ({
+  name: r.name, size: r.size, weight: r.weight, weightNum: r.weightNum, lineHeight: `${r.lineHeightPx}px`,
+}));
+const SUBTITLE_ROWS = TYPE_USAGE_ROWS.filter((r) => r.name.startsWith("Subtitle")).map((r) => ({
+  name: r.name, size: r.size, weight: r.weight, weightNum: r.weightNum, lineHeight: `${r.lineHeightPx}px`,
+}));
+const BODY_ROWS = TYPE_USAGE_ROWS.filter((r) => r.name.startsWith("Body")).map((r) => ({
+  name: r.name, size: r.size, weight: r.weight, weightNum: r.weightNum, lineHeight: `${r.lineHeightPx}px`,
+}));
 
 const SCALE_GROUPS = [
   {
@@ -153,33 +147,6 @@ function TypeUsageRow({ row }: { row: TypeRowData }) {
   );
 }
 
-function TypeRow({
-  row,
-}: {
-  row: { name: string; size: number; weight: string; weightNum: number; lineHeight: string };
-}) {
-  return (
-    <tr className={styles.tableRow}>
-      <td className={styles.cellName}>
-        <span
-          style={{
-            fontSize: `${row.size}px`,
-            fontWeight: row.weightNum,
-            lineHeight: row.lineHeight,
-          }}
-        >
-          {row.name}
-        </span>
-      </td>
-      <td className={styles.cellTypeface}>Noto Sans Display</td>
-      <td className={styles.cellWeight}>{row.weight}</td>
-      <td className={styles.cellSize}>{row.size}</td>
-      <td className={styles.cellLineHeight}>
-        <span className={styles.lineHeightBadge}>{row.lineHeight}</span>
-      </td>
-    </tr>
-  );
-}
 
 /* ── Main Page ── */
 
@@ -312,7 +279,7 @@ export default function TypographyPage() {
           {SCALE_GROUPS.map((group) => (
             <div key={group.title} className={styles.scaleCard}>
               <div className={styles.scaleCardInner}>
-                {/* Left: Type scale preview */}
+                {/* Left: Type scale preview (hidden on mobile) */}
                 <div className={styles.scaleLeft}>
                   <div className={styles.scaleLeftContent}>
                     {group.rows.map((row) => (
