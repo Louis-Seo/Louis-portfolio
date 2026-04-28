@@ -40,7 +40,7 @@ export const PROJECTS: ProjectDetail[] = [
     category: "Product Design",
     domain: "FinTech · Real Estate Investment",
     platform: "Web",
-    year: "2024–",
+    year: "2026–",
     duration: "Ongoing",
     role: "Product Designer",
     team: "Product Designer, PM, Frontend·Backend Dev, Data Engineer",
@@ -80,13 +80,13 @@ export const PROJECTS: ProjectDetail[] = [
     featured: true,
     gallery: [],
     hero: {
-      label: "Product Design · 2024–",
+      label: "Product Design · 2026–",
       title: "DNK Invest Manager",
       description:
         "투자 포트폴리오 분석을 위한 대시보드 리디자인 — BI 복잡도를 줄이고, 신뢰 가능한 숫자 위에서 의사결정하는 분석 작업공간",
       meta: [
         { label: "Role", value: "Product Designer" },
-        { label: "Duration", value: "2024–" },
+        { label: "Duration", value: "2026–" },
         { label: "Platform", value: "Web" },
         { label: "Contribution", value: "Planning, IA, Dashboard, Pipeline, AI SQL, DS" },
       ],
@@ -204,7 +204,7 @@ export const PROJECTS: ProjectDetail[] = [
     category: "UX Research",
     domain: "Wind Energy · Operations Research",
     platform: "Research",
-    year: "2022–2023",
+    year: "2023–2024",
     duration: "6 months",
     role: "Product Designer / UX Researcher",
     team: "UX/UI Designer, PM, Field Engineers, Data Analysts",
@@ -245,7 +245,7 @@ export const PROJECTS: ProjectDetail[] = [
       description: "풍력 블레이드 검사 운영 구조를 분석하고 핵심 문제를 정의한 선행 프로젝트",
       meta: [
         { label: "Role", value: "Product Designer / UX Researcher" },
-        { label: "Duration", value: "2022–2023" },
+        { label: "Duration", value: "2023–2024" },
         { label: "Scope", value: "Research · Strategy · Problem Framing" },
         { label: "Outcome", value: "→ Zoomable Worker · Zoomable Wind" },
       ],

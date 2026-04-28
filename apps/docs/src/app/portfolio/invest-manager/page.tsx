@@ -67,7 +67,7 @@ export default function InvestManagerPage() {
       <section className={styles.hero}>
         <div className={styles.container}>
           <Reveal>
-            <p className={styles.heroLabel}>Product Design · 2024–</p>
+            <p className={styles.heroLabel}>Product Design · 2026–</p>
           </Reveal>
           <Reveal delay={100}>
             <h1 className={styles.heroTitle}>DNK Invest Manager</h1>
@@ -88,7 +88,7 @@ export default function InvestManagerPage() {
               </div>
               <div className={styles.metaItem}>
                 <span className={styles.metaLabel}>Duration</span>
-                <span className={styles.metaValue}>2024–</span>
+                <span className={styles.metaValue}>2026–</span>
               </div>
               <div className={styles.metaItem}>
                 <span className={styles.metaLabel}>Contribution</span>
