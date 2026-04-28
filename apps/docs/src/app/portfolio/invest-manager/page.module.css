@@ -23,10 +23,37 @@
   padding: 0 40px;
 }
 
-.containerWide {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
+/* ── Image Frame ── */
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1e;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.04) 0%,
+    rgba(99, 102, 241, 0.06) 50%,
+    rgba(59, 130, 246, 0.03) 100%
+  );
+}
+
+.placeholderLabel {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgba(250, 250, 250, 0.2);
+  text-transform: uppercase;
 }
 
 /* ── Shared ── */
@@ -63,21 +90,6 @@
   margin-bottom: 48px;
 }
 
-/* ── Image Frame ── */
-.imageFrame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #1a1a1e;
-}
-
-.fullImage {
-  aspect-ratio: 16 / 9;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
 /* ═══════════════════════════════════════
    Hero
    ═══════════════════════════════════════ */
@@ -102,12 +114,19 @@
   margin-bottom: 24px;
 }
 
-.heroDescription {
+.heroTagline {
   font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(250, 250, 250, 0.75);
+  margin-bottom: 16px;
+}
+
+.heroDescription {
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
-  color: rgba(250, 250, 250, 0.6);
-  max-width: 600px;
+  color: rgba(250, 250, 250, 0.45);
   margin-bottom: 48px;
 }
 
@@ -140,16 +159,8 @@
   color: rgba(250, 250, 250, 0.8);
 }
 
-.heroVisual {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
 .heroImage {
-  aspect-ratio: 16 / 9;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* ═══════════════════════════════════════
@@ -193,28 +204,23 @@
 }
 
 /* ═══════════════════════════════════════
-   Research Sections
+   Problem
    ═══════════════════════════════════════ */
-.researchSection {
-  padding: 120px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.researchSectionAlt {
+.problemSection {
   padding: 120px 0;
   background: rgba(255, 255, 255, 0.02);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* ── User Quote Grid ── */
-.userQuoteGrid {
+.painGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-bottom: 48px;
 }
 
-.userQuoteCard {
-  padding: 32px 28px;
+.painCard {
+  padding: 32px 24px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
@@ -223,201 +229,153 @@
   gap: 8px;
 }
 
-.userQuoteLabel {
+.painNum {
   font-size: 12px;
   font-weight: 700;
   color: #3b82f6;
-  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.userQuoteTag {
-  font-size: 12px;
-  font-weight: 400;
-  color: rgba(250, 250, 250, 0.35);
-}
-
-.userQuoteText {
+.painTitle {
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.6;
   color: #fafafa;
-  margin-top: 4px;
+}
+
+.painDesc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(250, 250, 250, 0.45);
+}
+
+.fullImage {
+  margin-top: 48px;
 }
 
 /* ═══════════════════════════════════════
-   Insight
+   Users
    ═══════════════════════════════════════ */
-.insightSection {
-  padding: 80px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.insightImage {
-  aspect-ratio: 16 / 8;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-/* ═══════════════════════════════════════
-   Direction (dark bg)
-   ═══════════════════════════════════════ */
-.directionSection {
+.usersSection {
   padding: 120px 0;
-  background: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.directionGrid {
+.userGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.directionCard {
+.userCard {
   padding: 32px 28px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-.directionCardTitle {
-  font-size: 14px;
+.userRole {
+  font-size: 12px;
   font-weight: 700;
-  color: #fafafa;
+  color: #3b82f6;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.directionCardSubtitle {
+.userQuestion {
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #fafafa;
-  margin-bottom: 4px;
 }
 
-.directionCardText {
+.userNeeds {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.7;
   color: rgba(250, 250, 250, 0.45);
 }
 
+.userTab {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(59, 130, 246, 0.7);
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 4px;
+}
+
 /* ═══════════════════════════════════════
-   Concept (text + image)
+   Design Strategy
    ═══════════════════════════════════════ */
-.conceptSection {
+.strategySection {
   padding: 120px 0;
   background: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.conceptHeader {
-  margin-bottom: 48px;
-}
-
-.conceptTitle {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #fafafa;
-  margin-bottom: 16px;
-}
-
-.conceptDesc {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.8;
-  color: rgba(250, 250, 250, 0.55);
-}
-
-.conceptFlow {
+.strategyGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-bottom: 48px;
 }
 
-.conceptFlowCard {
+.strategyCard {
   padding: 32px 24px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.conceptFlowStep {
+.strategyNum {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
-  text-transform: uppercase;
   color: #3b82f6;
-  margin-bottom: 12px;
 }
 
-.conceptFlowTitle {
-  font-size: 20px;
+.strategyTitle {
+  font-size: 18px;
   font-weight: 700;
   color: #fafafa;
-  margin-bottom: 8px;
 }
 
-.conceptFlowText {
+.strategyDesc {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.7;
   color: rgba(250, 250, 250, 0.45);
+}
+
+.strategyTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.strategyTag {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  background: rgba(59, 130, 246, 0.1);
+  color: rgba(59, 130, 246, 0.8);
 }
 
 /* ═══════════════════════════════════════
-   Design System
+   Information Architecture
    ═══════════════════════════════════════ */
-.designSystemSection {
+.iaSection {
   padding: 120px 0;
   background: rgba(255, 255, 255, 0.02);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.dsContext {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 48px;
-}
-
-.dsContextCard {
-  padding: 28px 24px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-}
-
-.dsContextTitle {
-  font-size: 14px;
-  font-weight: 600;
-  color: #fafafa;
-  margin-bottom: 8px;
-}
-
-.dsContextText {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.7;
-  color: rgba(250, 250, 250, 0.45);
-}
-
-.dsGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.dsImage {
-  aspect-ratio: 16 / 9;
-  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* ═══════════════════════════════════════
@@ -451,30 +409,30 @@
 }
 
 .featureHeroImage {
-  aspect-ratio: 16 / 9;
   margin-bottom: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* ── Bullet cards ── */
+/* ── Bullet Row ── */
 .bulletRow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
 
 .bulletCard {
-  padding: 28px 24px;
+  padding: 24px 20px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .bulletTitle {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fafafa;
-  margin-bottom: 8px;
 }
 
 .bulletText {
@@ -482,6 +440,146 @@
   font-weight: 400;
   line-height: 1.7;
   color: rgba(250, 250, 250, 0.45);
+}
+
+.bulletText code {
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(250, 250, 250, 0.75);
+}
+
+/* ── Sub-section within a feature (used in Dashboard Builder extension) ── */
+.subSectionHeader {
+  margin-top: 96px;
+  margin-bottom: 32px;
+  padding-top: 48px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.subSectionLabel {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #8bbcff;
+  margin-bottom: 10px;
+}
+
+.subSectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fafafa;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
+}
+
+.subSectionDesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: rgba(250, 250, 250, 0.55);
+  max-width: 720px;
+}
+
+/* ═══════════════════════════════════════
+   Design Decisions
+   ═══════════════════════════════════════ */
+.decisionSection {
+  padding: 120px 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.decisionGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.decisionCard {
+  padding: 36px 32px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.decisionNum {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3b82f6;
+}
+
+.decisionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fafafa;
+  line-height: 1.4;
+}
+
+.decisionOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.decisionOption {
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.decisionChosen {
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.06);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.optionLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(250, 250, 250, 0.35);
+  margin-bottom: 8px;
+}
+
+.chosenLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(59, 130, 246, 0.8);
+  margin-bottom: 8px;
+}
+
+.optionDesc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(250, 250, 250, 0.55);
+}
+
+.decisionReason {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(250, 250, 250, 0.5);
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* ═══════════════════════════════════════
@@ -494,7 +592,7 @@
 .outcomeTitle {
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #fafafa;
   margin-bottom: 48px;
 }
@@ -592,10 +690,6 @@
     margin-bottom: 48px;
   }
 
-  .heroVisual {
-    padding: 0 20px;
-  }
-
   .overviewSection {
     padding: 80px 0;
   }
@@ -615,42 +709,30 @@
     font-size: 22px;
   }
 
-  .researchSection,
-  .researchSectionAlt,
+  .featureTitle {
+    font-size: 28px;
+  }
+
+  .problemSection,
+  .usersSection,
+  .strategySection,
+  .iaSection,
   .featureSection,
   .featureSectionAlt,
-  .directionSection,
-  .designSystemSection {
+  .decisionSection,
+  .actionsSection {
     padding: 80px 0;
   }
 
-  .userQuoteGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .directionGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .conceptFlow {
-    grid-template-columns: 1fr;
-  }
-
-  .dsContext {
-    grid-template-columns: 1fr;
-  }
-
-  .dsGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .featureTitle {
-    font-size: 26px;
-  }
-
+  .painGrid,
+  .strategyGrid,
   .bulletRow {
     grid-template-columns: 1fr;
-    gap: 16px;
+  }
+
+  .userGrid,
+  .decisionOptions {
+    grid-template-columns: 1fr;
   }
 
   .outcomeSection {
@@ -662,12 +744,11 @@
     gap: 12px;
   }
 
-  .reflectionBox {
-    padding: 24px;
+  .decisionCard {
+    padding: 24px 20px;
   }
 
-  .insightSection,
-  .conceptSection {
-    padding: 48px 0;
+  .reflectionBox {
+    padding: 24px;
   }
 }

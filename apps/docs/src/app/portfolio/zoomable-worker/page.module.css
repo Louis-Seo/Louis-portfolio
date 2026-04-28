@@ -2,7 +2,8 @@
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -28,7 +29,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFA726;
+  color: #ffa726;
   margin-bottom: 16px;
 }
 
@@ -39,7 +40,7 @@
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
-  background: #1A1A1E;
+  background: #1a1a1e;
 }
 
 /* ═══════════════════════════════════════
@@ -54,7 +55,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFA726;
+  color: #ffa726;
   margin-bottom: 20px;
 }
 
@@ -62,7 +63,7 @@
   font-size: 56px;
   font-weight: 700;
   line-height: 1.1;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 24px;
 }
 
@@ -95,7 +96,7 @@
 }
 
 .heroScopeArrow {
-  color: #FFA726;
+  color: #ffa726;
   font-size: 11px;
   margin: 0 2px;
 }
@@ -130,7 +131,7 @@
 }
 
 .heroVisual {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -156,7 +157,9 @@
   border-radius: 16px;
   background: rgba(232, 122, 46, 0.04);
   text-decoration: none;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .researchRefLink:hover {
@@ -169,7 +172,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #E87A2E;
+  color: #e87a2e;
   padding: 4px 10px;
   border: 1px solid rgba(232, 122, 46, 0.3);
   border-radius: 100px;
@@ -185,7 +188,7 @@
 }
 
 .researchRefText strong {
-  color: #FAFAFA;
+  color: #fafafa;
   font-weight: 600;
 }
 
@@ -193,7 +196,7 @@
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
-  color: #E87A2E;
+  color: #e87a2e;
   margin-top: 12px;
 }
 
@@ -209,7 +212,7 @@
 .researchFindingsTitle {
   font-size: 16px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 24px;
 }
 
@@ -229,14 +232,14 @@
 .findingNum {
   font-size: 11px;
   font-weight: 700;
-  color: #FFA726;
+  color: #ffa726;
   font-variant-numeric: tabular-nums;
 }
 
 .findingTitle {
   font-size: 14px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .findingText {
@@ -279,7 +282,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 1.5;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .overviewRight {
@@ -308,7 +311,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 1.4;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 16px;
 }
 
@@ -341,14 +344,14 @@
 .processNum {
   font-size: 12px;
   font-weight: 700;
-  color: #FFA726;
+  color: #ffa726;
   font-variant-numeric: tabular-nums;
 }
 
 .processStepTitle {
   font-size: 15px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .processStepDesc {
@@ -376,7 +379,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 16px;
 }
 
@@ -451,7 +454,9 @@
   padding: 8px 20px;
   border-radius: 8px;
   cursor: pointer;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 .tab:hover {
@@ -459,7 +464,7 @@
 }
 
 .tabActive {
-  color: #FAFAFA;
+  color: #fafafa;
   background: rgba(255, 255, 255, 0.08);
   font-weight: 600;
 }
@@ -471,7 +476,7 @@
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  background: #1A1A1E;
+  background: #1a1a1e;
 }
 
 .tabPane {
@@ -479,7 +484,9 @@
   inset: 0;
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
   pointer-events: none;
 }
 
@@ -507,7 +514,7 @@
 .bulletTitle {
   font-size: 15px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 8px;
 }
 
@@ -564,7 +571,7 @@
 .splitDetailTitle {
   font-size: 20px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .splitDetailText {
@@ -599,7 +606,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #FFA726;
+  background: #ffa726;
 }
 
 /* ═══════════════════════════════════════
@@ -615,7 +622,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 1.4;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 48px;
 }
 
@@ -635,7 +642,7 @@
 .decisionQuestion {
   font-size: 16px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 12px;
 }
 
@@ -658,7 +665,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 1.4;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 48px;
 }
 
@@ -682,7 +689,7 @@
 .outcomeValue {
   font-size: 36px;
   font-weight: 700;
-  color: #FFA726;
+  color: #ffa726;
   font-variant-numeric: tabular-nums;
   line-height: 1;
   margin-bottom: 8px;
@@ -691,7 +698,7 @@
 .outcomeLabel {
   font-size: 14px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .outcomeDesc {
@@ -713,7 +720,7 @@
 .reflectionTitle {
   font-size: 18px;
   font-weight: 600;
-  color: #FAFAFA;
+  color: #fafafa;
   margin-bottom: 16px;
 }
 

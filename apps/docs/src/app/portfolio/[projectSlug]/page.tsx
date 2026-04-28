@@ -6,7 +6,15 @@ import SectionHeader from "@/components/portfolio/SectionHeader/SectionHeader";
 import StatGrid from "@/components/portfolio/StatGrid/StatGrid";
 import styles from "./page.module.css";
 
-const DEDICATED_PAGES = new Set(["design-system", "zoomable-worker", "zoomable-wind", "nearthwind-mobile", "dnk-rp", "research-problem-framing"]);
+const DEDICATED_PAGES = new Set([
+  "design-system",
+  "zoomable-worker",
+  "zoomable-wind",
+  "nearthwind-mobile",
+  "dnk-rp",
+  "research-problem-framing",
+  "invest-manager",
+]);
 
 export function generateStaticParams() {
   return getAllProjectSlugs()
@@ -74,9 +82,7 @@ export default async function ProjectDetailPage({
         <div className={styles.processGrid}>
           {project.process.map((step, i) => (
             <div key={step} className={styles.processStep}>
-              <span className={styles.processNumber}>
-                {String(i + 1).padStart(2, "0")}
-              </span>
+              <span className={styles.processNumber}>{String(i + 1).padStart(2, "0")}</span>
               <p className={styles.processText}>{step}</p>
             </div>
           ))}

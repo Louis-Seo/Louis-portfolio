@@ -36,7 +36,8 @@ export const PROJECTS: ProjectDetail[] = [
   {
     slug: "dnk-rp",
     title: "DNK RP Web/App",
-    subtitle: "입주자 앱, PMS, 백오피스를 연결해 주거 운영 경험을 하나의 플랫폼으로 재구성한 프로젝트",
+    subtitle:
+      "입주자 앱, PMS, 백오피스를 연결해 주거 운영 경험을 하나의 플랫폼으로 재구성한 프로젝트",
     category: "UX/UI Design",
     domain: "PropTech · Resident Portal",
     platform: "Web + Mobile",
@@ -48,14 +49,8 @@ export const PROJECTS: ProjectDetail[] = [
       "일본 주택 시장의 복잡한 운영 구조와 PMS 중심의 관리자 시스템을 해결하기 위해, 단일 데이터 구조 위에 RP App(입주자용), RP Admin Web(관리자용), PMS를 통합한 양방향 플랫폼을 설계했습니다.",
     problem:
       "일본의 기존 임대 시스템은 관리자 중심으로 운영되며, 입주자는 계약, 납부, 공지 확인 등 대부분의 정보를 수동적으로 전달받아야 하는 구조였습니다.",
-    goal:
-      "입주자 중심의 구조를 도입한 최초의 PMS 연동 주거 플랫폼을 구축하여, 일본의 로컬 규제와 운영 관행에 맞춘 사용자 경험을 제공합니다.",
-    responsibilities: [
-      "Project Planning",
-      "UI/UX Design",
-      "Design System",
-      "Maintenance",
-    ],
+    goal: "입주자 중심의 구조를 도입한 최초의 PMS 연동 주거 플랫폼을 구축하여, 일본의 로컬 규제와 운영 관행에 맞춘 사용자 경험을 제공합니다.",
+    responsibilities: ["Project Planning", "UI/UX Design", "Design System", "Maintenance"],
     process: [
       "Market research & user interview",
       "UX direction & IA design",
@@ -78,8 +73,7 @@ export const PROJECTS: ProjectDetail[] = [
     hero: {
       label: "UX/UI Design",
       title: "DNK RP Web/App",
-      description:
-        "일본 임대 시장을 위한 입주자 중심 PMS 연동 주거 플랫폼",
+      description: "일본 임대 시장을 위한 입주자 중심 PMS 연동 주거 플랫폼",
       meta: [
         { label: "Role", value: "UX/UI Designer" },
         { label: "Duration", value: "2025–" },
@@ -90,64 +84,68 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     slug: "invest-manager",
-    title: "Invest Manager",
-    subtitle: "복잡한 자산 운용 데이터를 더 빠르게 읽고 판단할 수 있도록 만든 투자 운영 대시보드",
+    title: "DNK Invest Manager",
+    subtitle: "BI 복잡도를 줄이고 투자 의사결정을 빠르게 만드는 분석 대시보드 리디자인",
     category: "Product Design",
-    domain: "FinTech · Clean Energy",
+    domain: "FinTech · Real Estate Investment",
     platform: "Web",
-    year: "2023",
-    duration: "6 months",
+    year: "2024–",
+    duration: "Ongoing",
     role: "Product Designer",
-    team: "1 Designer, 4 Engineers, 1 PM",
+    team: "Product Designer, PM, Frontend·Backend Dev, Data Engineer",
     summary:
-      "Designed a portfolio management dashboard enabling institutional investors to monitor wind farm performance, track ROI, and manage asset allocation across multiple energy projects.",
+      "부동산 투자 포트폴리오의 성과를 공통 정의 아래에서 해석하고, 의사결정으로 연결하는 분석 작업공간을 설계했습니다. 기존 BI 기반의 복잡한 대시보드를 목적 중심의 셀프서비스 인터페이스로 재구성하여, Executive부터 Analyst까지 모두가 신뢰 가능한 숫자 위에서 판단할 수 있도록 만들었습니다.",
     problem:
-      "Investment analysts spent hours compiling reports from multiple data sources. There was no unified view to compare asset performance or identify underperforming wind farms quickly.",
-    goal:
-      "Create a centralized dashboard that provides real-time portfolio visibility, automated performance reports, and actionable investment insights.",
+      "기존 대시보드는 차트 생성이 기술적이고, 지표 정의가 통일되지 않아 같은 데이터도 사용자마다 다르게 해석했습니다. BI 도구의 높은 진입장벽으로 비전문 사용자는 직접 분석이 불가능했습니다.",
+    goal: "Scope, CFC 템플릿, 글로벌 필터를 중심으로 숫자의 전제를 명확히 하고, Preset Chart와 AI Insights로 분석 비용을 최소화하는 투자 분석 플랫폼을 구축합니다.",
     responsibilities: [
-      "Dashboard information architecture",
-      "Data-dense UI design for financial metrics",
-      "Chart and data visualization system",
-      "Filtering and comparison interaction patterns",
-      "Stakeholder presentation and design review",
+      "Product Planning & PRD",
+      "Information Architecture (6-tab IA)",
+      "Home & Portfolio Overview",
+      "Dashboard Builder & Preset Chart System",
+      "Deal Pipeline (Kanban)",
+      "Cash Flow Config & Data Management",
+      "AI SQL & Natural Language Query",
+      "Design System & Component Spec",
     ],
     process: [
-      "Domain research on clean energy investment workflows",
-      "Competitive analysis of financial dashboards",
-      "Wireframe exploration for data-dense layouts",
-      "Interactive prototype for stakeholder validation",
-      "Visual design with accessibility considerations",
-      "Component spec and developer handoff",
+      "사용자 역할별 니즈 분석 및 시나리오 도출",
+      "6개 탭 정보 구조 설계",
+      "Home: Trust Bar, Key Metrics, Action Center",
+      "Dashboard Builder: 드래그앤드롭, Preset Chart",
+      "Deal Pipeline: Kanban, Detail Drawer",
+      "CFC, Data Management, AI SQL 설계",
+      "컴포넌트 스펙 및 개발 핸드오프",
     ],
     outcome:
-      "Adopted by 2 institutional investment firms. Reduced monthly reporting time from 3 days to 4 hours through automated dashboards.",
+      "6개 탭 기반의 통합 IM 플랫폼을 설계하여, Home에서 Deal Pipeline까지 투자 분석 워크플로우 전체를 커버하고, 조직 전체가 동일한 지표 체계로 의사결정할 수 있는 구조를 구축했습니다.",
     impactMetrics: [
-      { value: "85%", label: "Reporting time reduction" },
-      { value: "2", label: "Institutional firms adopted" },
-      { value: "40+", label: "Screens designed" },
-      { value: "12", label: "Chart types implemented" },
+      { value: "6", label: "통합 탭 IA 설계" },
+      { value: "11", label: "Preset Chart 정의" },
+      { value: "60+", label: "화면 설계" },
+      { value: "4", label: "사용자 역할 대응" },
     ],
     tags: ["Dashboard", "FinTech", "Data Visualization", "B2B"],
     featured: true,
     gallery: [],
     hero: {
-      label: "Product Design",
-      title: "Invest Manager",
+      label: "Product Design · 2024–",
+      title: "DNK Invest Manager",
       description:
-        "Portfolio management dashboard for institutional wind energy investors — transforming fragmented data into clear, actionable investment insights.",
+        "투자 포트폴리오 분석을 위한 대시보드 리디자인 — BI 복잡도를 줄이고, 신뢰 가능한 숫자 위에서 의사결정하는 분석 작업공간",
       meta: [
         { label: "Role", value: "Product Designer" },
-        { label: "Duration", value: "6 months" },
+        { label: "Duration", value: "2024–" },
         { label: "Platform", value: "Web" },
-        { label: "Year", value: "2023" },
+        { label: "Contribution", value: "Planning, IA, Dashboard, Pipeline, AI SQL, DS" },
       ],
     },
   },
   {
     slug: "design-system",
     title: "Zoomable Design System",
-    subtitle: "여러 제품팀이 같은 언어로 일할 수 있도록 토큰과 컴포넌트 체계를 구축한 디자인 시스템",
+    subtitle:
+      "여러 제품팀이 같은 언어로 일할 수 있도록 토큰과 컴포넌트 체계를 구축한 디자인 시스템",
     category: "Design System",
     domain: "Design Infrastructure",
     platform: "Web + Figma",
@@ -159,8 +157,7 @@ export const PROJECTS: ProjectDetail[] = [
       "Built and maintained a comprehensive design system with 70+ components, design tokens, and documentation — bridging Figma design decisions and React implementation through a shared system language.",
     problem:
       "Multiple products shared similar UI patterns but implemented them independently, leading to visual inconsistency, duplicated effort, and slow design-to-development handoff.",
-    goal:
-      "Create a unified design system that serves as the single source of truth for all product teams — enabling faster, more consistent product development.",
+    goal: "Create a unified design system that serves as the single source of truth for all product teams — enabling faster, more consistent product development.",
     responsibilities: [
       "Design system architecture and token structure",
       "Component design with variants, sizes, and states",
@@ -215,13 +212,8 @@ export const PROJECTS: ProjectDetail[] = [
       "NearthWind Mobile은 AI를 활용하여 드론이 자동으로 풍력 터빈을 검사하는 혁신적인 무인 로봇 시스템입니다. 발전기를 한 번 정지한 후, 최상단 블레이드를 4면에서 꼼꼼히 점검하며, 드론은 자동 비행 기능을 통해 스스로 이동하며 딥러닝 기술을 이용해 결함을 자동으로 촬영하고 분석합니다.",
     problem:
       "기존 풍력 터빈 검사는 특수 드론과 숙련된 파일럿이 필요하여 비용과 시간이 많이 소요되었습니다. 촬영 데이터 관리와 결함 식별도 수작업에 의존했습니다.",
-    goal:
-      "일반 드론으로도 효율적이고 정밀한 터빈 점검이 가능하며, 촬영 데이터를 자동으로 관리하고 분석하여 Zoomable Worker로 전송하는 시스템을 구축합니다.",
-    responsibilities: [
-      "Project Planning",
-      "UI/UX Design",
-      "Maintenance",
-    ],
+    goal: "일반 드론으로도 효율적이고 정밀한 터빈 점검이 가능하며, 촬영 데이터를 자동으로 관리하고 분석하여 Zoomable Worker로 전송하는 시스템을 구축합니다.",
+    responsibilities: ["Project Planning", "UI/UX Design", "Maintenance"],
     process: [
       "Field research & requirements",
       "Drone UI pattern exploration",
@@ -244,8 +236,7 @@ export const PROJECTS: ProjectDetail[] = [
     hero: {
       label: "UX/UI Design",
       title: "NearthWind Mobile",
-      description:
-        "AI 드론 기반 풍력 터빈 블레이드 자동 검사·촬영 모바일 시스템",
+      description: "AI 드론 기반 풍력 터빈 블레이드 자동 검사·촬영 모바일 시스템",
       meta: [
         { label: "Role", value: "UX/UI Designer" },
         { label: "Duration", value: "2022–2024" },
@@ -269,8 +260,7 @@ export const PROJECTS: ProjectDetail[] = [
       "AI와 드론 기술을 결합하여 풍력 터빈의 블레이드를 자동으로 검사하고 결함을 식별하는 최첨단 솔루션입니다. 고해상도 드론 이미지를 수집하고, AI 분석을 통해 결함을 빠르고 정확하게 탐지합니다.",
     problem:
       "풍력 터빈 블레이드 검사는 수작업에 의존하여 시간과 비용이 많이 들고, 결함 식별의 정확도가 낮아 유지보수 효율이 떨어졌습니다.",
-    goal:
-      "사용자 친화적인 인터페이스와 자동화된 보고서 생성 기능으로 시간과 비용을 절감하고, 다양한 환경에서 안전하고 효율적으로 운영할 수 있는 시스템을 구축합니다.",
+    goal: "사용자 친화적인 인터페이스와 자동화된 보고서 생성 기능으로 시간과 비용을 절감하고, 다양한 환경에서 안전하고 효율적으로 운영할 수 있는 시스템을 구축합니다.",
     responsibilities: [
       "Project Planning",
       "User Interview",
@@ -300,8 +290,7 @@ export const PROJECTS: ProjectDetail[] = [
     hero: {
       label: "UX/UI Design",
       title: "Zoomable Worker",
-      description:
-        "AI와 드론 기술을 결합한 풍력 터빈 블레이드 자동 검사·결함 관리 플랫폼",
+      description: "AI와 드론 기술을 결합한 풍력 터빈 블레이드 자동 검사·결함 관리 플랫폼",
       meta: [
         { label: "Role", value: "UX/UI Designer" },
         { label: "Duration", value: "2022–2024" },
@@ -325,13 +314,8 @@ export const PROJECTS: ProjectDetail[] = [
       "Zoomable Wind는 Nearthlab의 디지털 솔루션 중 하나로 자을 드론에 의해 수집된 데이터를 클라우드 기반 데이터베이스로 효과적으로 관리합니다. 사용자는 Zoomable 내에서 초고해상도 사진을 통해 손상의 심각성과 위치에 따라 결함을 식별할 수 있습니다.",
     problem:
       "기존에는 사진 중심의 정보 조회만 제공하여 결함 데이터의 체계적 분석과 이력 추적이 어려웠습니다. 고객들은 결함만을 집중적으로 볼 수 있는 기능을 요구했습니다.",
-    goal:
-      "검사 데이터를 디지털화하여 분석 보고서로 변환하고 장기 검사 솔루션에서 활용할 수 있는 플랫폼을 구축합니다.",
-    responsibilities: [
-      "Project Planning",
-      "UI/UX Design",
-      "Maintenance",
-    ],
+    goal: "검사 데이터를 디지털화하여 분석 보고서로 변환하고 장기 검사 솔루션에서 활용할 수 있는 플랫폼을 구축합니다.",
+    responsibilities: ["Project Planning", "UI/UX Design", "Maintenance"],
     process: [
       "Customer research & requirements",
       "Information architecture",
@@ -354,8 +338,7 @@ export const PROJECTS: ProjectDetail[] = [
     hero: {
       label: "UX/UI Design",
       title: "Zoomable Wind",
-      description:
-        "풍력 발전기 점검 데이터를 클라우드 기반으로 관리하고 분석하는 디지털 플랫폼",
+      description: "풍력 발전기 점검 데이터를 클라우드 기반으로 관리하고 분석하는 디지털 플랫폼",
       meta: [
         { label: "Role", value: "UX/UI Designer" },
         { label: "Duration", value: "2022–2024" },
@@ -379,8 +362,7 @@ export const PROJECTS: ProjectDetail[] = [
       "풍력 발전기 블레이드 결함 탐지 및 리포트 운영 구조를 분석하고, Zoomable Worker와 Zoomable Wind의 설계 출발점이 된 핵심 문제를 정의한 선행 프로젝트입니다.",
     problem:
       "현재 풍력 발전기 블레이드의 결함을 식별하고 관리하는 과정에서 중복 이미지, 낮은 PPA 신뢰도, 긴 작업 시간 등 다수의 운영 비효율이 발생하고 있었습니다.",
-    goal:
-      "데스크 리서치, 이해관계자 인터뷰, 프로세스 분석, 정량 검증을 통해 핵심 문제를 구조화하고, 제품 설계 방향을 도출합니다.",
+    goal: "데스크 리서치, 이해관계자 인터뷰, 프로세스 분석, 정량 검증을 통해 핵심 문제를 구조화하고, 제품 설계 방향을 도출합니다.",
     responsibilities: [
       "Desk Research",
       "Stakeholder Interview",
@@ -410,8 +392,7 @@ export const PROJECTS: ProjectDetail[] = [
     hero: {
       label: "UX Research · Strategy",
       title: "Research & Problem Framing",
-      description:
-        "풍력 블레이드 검사 운영 구조를 분석하고 핵심 문제를 정의한 선행 프로젝트",
+      description: "풍력 블레이드 검사 운영 구조를 분석하고 핵심 문제를 정의한 선행 프로젝트",
       meta: [
         { label: "Role", value: "Product Designer / UX Researcher" },
         { label: "Duration", value: "2022–2023" },
@@ -422,9 +403,7 @@ export const PROJECTS: ProjectDetail[] = [
   },
 ];
 
-export function getProjectBySlug(
-  slug: string
-): ProjectDetail | undefined {
+export function getProjectBySlug(slug: string): ProjectDetail | undefined {
   return PROJECTS.find((p) => p.slug === slug);
 }
 

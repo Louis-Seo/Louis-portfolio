@@ -45,7 +45,8 @@ export default function AboutPage() {
             <p className={styles.heroDesc}>
               복잡한 제품일수록 화면보다 구조가 먼저라고 믿습니다.
               <br />
-              저는 역할, 데이터, 워크플로우가 얽힌 시스템을 더 명확하고 확장 가능한 경험으로 설계해왔습니다.
+              저는 역할, 데이터, 워크플로우가 얽힌 시스템을 더 명확하고 확장 가능한 경험으로
+              설계해왔습니다.
             </p>
           </Reveal>
         </div>
@@ -59,8 +60,8 @@ export default function AboutPage() {
               <Reveal>
                 <h2 className={styles.splitTitle}>What I Bring</h2>
                 <p className={styles.splitDesc}>
-                  산업보다 구조를 먼저 보는 디자이너입니다.
-                  복잡한 제품이 가진 역할, 데이터, 워크플로우의 문제를 더 명확한 경험으로 정리해왔습니다.
+                  산업보다 구조를 먼저 보는 디자이너입니다. 복잡한 제품이 가진 역할, 데이터,
+                  워크플로우의 문제를 더 명확한 경험으로 정리해왔습니다.
                 </p>
               </Reveal>
             </div>
@@ -128,9 +129,9 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2024.11 — Present</span>
                 </div>
                 <p className={styles.expDesc}>
-                  글로벌 주택임대 관리 솔루션의 제품 설계를 담당. PMS 리디자인, 전자계약 신규 기획 및 프로젝트 리딩,
-                  B2C 레지던트 앱/웹 및 어드민 백오피스, 부동산 투자/운용 데이터 관리 플랫폼(Invest Manager)의
-                  대시보드·KPI·리포팅·자산 운영 워크플로우 UX를 설계.
+                  글로벌 주택임대 관리 솔루션의 제품 설계를 담당. PMS 리디자인, 전자계약 신규 기획
+                  및 프로젝트 리딩, B2C 레지던트 앱/웹 및 어드민 백오피스, 부동산 투자/운용 데이터
+                  관리 플랫폼(Invest Manager)의 대시보드·KPI·리포팅·자산 운영 워크플로우 UX를 설계.
                 </p>
                 <div className={styles.expProjects}>
                   <span>DNK PMS</span>
@@ -151,10 +152,10 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2022.08 — 2024.04</span>
                 </div>
                 <p className={styles.expDesc}>
-                  AI 드론 검사 플랫폼 기업에서 B2B SaaS 웹 서비스, B2G 군·경찰용 드론 앱, 모바일 자율비행 앱 등
-                  6개 이상의 제품을 설계. 전사 UX 표준 디자인 시스템을 구축하여 솔루션 아이덴티티 수립.
-                  디자인 QA 프로세스 도입 및 운영. iF Design Award(Service Design, AI&Robotics)와
-                  Red Dot Design Award 수상 제품에 기여.
+                  AI 드론 검사 플랫폼 기업에서 B2B SaaS 웹 서비스, B2G 군·경찰용 드론 앱, 모바일
+                  자율비행 앱 등 6개 이상의 제품을 설계. 전사 UX 표준 디자인 시스템을 구축하여
+                  솔루션 아이덴티티 수립. 디자인 QA 프로세스 도입 및 운영. iF Design Award(Service
+                  Design, AI&Robotics)와 Red Dot Design Award 수상 제품에 기여.
                 </p>
                 <div className={styles.expProjects}>
                   <span>Zoomable Wind Web</span>
@@ -178,9 +179,9 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2021.06 — 2022.07</span>
                 </div>
                 <p className={styles.expDesc}>
-                  호주 스마트홈 스타트업에서 레지던트 매니지먼트 웹/앱, 호텔 자동화 앱,
-                  화상 진료 의료 서비스를 기획부터 디자인·유지보수까지 담당.
-                  글로벌 환경에서 다국적 팀과 영어 기반 협업.
+                  호주 스마트홈 스타트업에서 레지던트 매니지먼트 웹/앱, 호텔 자동화 앱, 화상 진료
+                  의료 서비스를 기획부터 디자인·유지보수까지 담당. 글로벌 환경에서 다국적 팀과 영어
+                  기반 협업.
                 </p>
                 <div className={styles.expProjects}>
                   <span>We Services</span>
@@ -201,9 +202,9 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2019.03 — 2021.11</span>
                 </div>
                 <p className={styles.expDesc}>
-                  호주 IoT 스타트업에서 스마트 샤워 시스템 앱 기획·디자인 및 유지보수.
-                  Boshantech의 Brand Identity와 Brand Value 컨셉을 구축하며
-                  BX 디자인까지 담당. 제품 디자인과 브랜드 설계를 동시에 경험.
+                  호주 IoT 스타트업에서 스마트 샤워 시스템 앱 기획·디자인 및 유지보수. Boshantech의
+                  Brand Identity와 Brand Value 컨셉을 구축하며 BX 디자인까지 담당. 제품 디자인과
+                  브랜드 설계를 동시에 경험.
                 </p>
                 <div className={styles.expProjects}>
                   <span>Smart Shower App</span>
@@ -227,7 +228,9 @@ export default function AboutPage() {
                 <Reveal delay={40}>
                   <div className={styles.credentialItem}>
                     <span className={styles.credentialName}>iF Design Award — Service Design</span>
-                    <span className={styles.credentialMeta}>Zoomable Data Analytics Platforms · 2025</span>
+                    <span className={styles.credentialMeta}>
+                      Zoomable Data Analytics Platforms · 2025
+                    </span>
                   </div>
                 </Reveal>
                 <Reveal delay={80}>
@@ -238,19 +241,25 @@ export default function AboutPage() {
                 </Reveal>
                 <Reveal delay={120}>
                   <div className={styles.credentialItem}>
-                    <span className={styles.credentialName}>iF Design Award — AI &amp; Robotics</span>
+                    <span className={styles.credentialName}>
+                      iF Design Award — AI &amp; Robotics
+                    </span>
                     <span className={styles.credentialMeta}>AiDEN · 2024</span>
                   </div>
                 </Reveal>
                 <Reveal delay={160}>
                   <div className={styles.credentialItem}>
                     <span className={styles.credentialName}>직무발명 특허</span>
-                    <span className={styles.credentialMeta}>비행체가 제공하는 정보를 표시하는 방법 및 장치 · 2023</span>
+                    <span className={styles.credentialMeta}>
+                      비행체가 제공하는 정보를 표시하는 방법 및 장치 · 2023
+                    </span>
                   </div>
                 </Reveal>
                 <Reveal delay={200}>
                   <div className={styles.credentialItem}>
-                    <span className={styles.credentialName}>Google UX Design Professional Certificate</span>
+                    <span className={styles.credentialName}>
+                      Google UX Design Professional Certificate
+                    </span>
                     <span className={styles.credentialMeta}>Coursera · 2024</span>
                   </div>
                 </Reveal>
@@ -264,17 +273,20 @@ export default function AboutPage() {
                 <Reveal delay={40}>
                   <div className={styles.credentialItem}>
                     <span className={styles.credentialName}>RMIT University</span>
-                    <span className={styles.credentialMeta}>Communication Design, Bachelor&apos;s degree · 2019–2021</span>
+                    <span className={styles.credentialMeta}>
+                      Communication Design, Bachelor&apos;s degree · 2019–2021
+                    </span>
                   </div>
                 </Reveal>
                 <Reveal delay={80}>
                   <div className={styles.credentialItem}>
                     <span className={styles.credentialName}>Holmesglen</span>
-                    <span className={styles.credentialMeta}>Graphic Design, Diploma of Education · 2017–2018</span>
+                    <span className={styles.credentialMeta}>
+                      Graphic Design, Diploma of Education · 2017–2018
+                    </span>
                   </div>
                 </Reveal>
               </div>
-
             </div>
           </div>
         </div>
@@ -314,9 +326,7 @@ export default function AboutPage() {
             ].map((item, i) => (
               <Reveal key={i} delay={i * 80}>
                 <div className={styles.principleItem}>
-                  <span className={styles.principleNum}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
+                  <span className={styles.principleNum}>{String(i + 1).padStart(2, "0")}</span>
                   <div>
                     <h3 className={styles.principleTitle}>{item.title}</h3>
                     <p className={styles.principleText}>{item.text}</p>
@@ -372,10 +382,9 @@ export default function AboutPage() {
               <div>
                 <h2 className={styles.sectionTitle}>Next Step</h2>
                 <p className={styles.contactIntro}>
-                  PMS를 리디자인하고, 드론 검사 데이터를 대시보드로 만들고,
-                  70개 컴포넌트의 디자인 시스템을 운영해 왔습니다.
-                  다음은 더 큰 스케일의 제품, 더 복잡한 구조를 함께 설계할 팀에서
-                  일하고 싶습니다.
+                  PMS를 리디자인하고, 드론 검사 데이터를 대시보드로 만들고, 70개 컴포넌트의 디자인
+                  시스템을 운영해 왔습니다. 다음은 더 큰 스케일의 제품, 더 복잡한 구조를 함께 설계할
+                  팀에서 일하고 싶습니다.
                 </p>
                 <div className={styles.contactFitTags}>
                   <span>SaaS</span>
@@ -388,7 +397,12 @@ export default function AboutPage() {
                   <a href="mailto:niedr7893@gmail.com" className={styles.contactLink}>
                     niedr7893@gmail.com →
                   </a>
-                  <a href="#" className={styles.contactLink}>
+                  <a
+                    href="https://www.linkedin.com/in/myungchul-seo-8313511bb/"
+                    className={styles.contactLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     LinkedIn →
                   </a>
                 </div>
