@@ -131,12 +131,13 @@ export default function AboutPage() {
                 <p className={styles.expDesc}>
                   글로벌 주택임대 관리 솔루션의 제품 설계를 담당. PMS 리디자인, 전자계약 신규 기획
                   및 프로젝트 리딩, B2C 레지던트 앱/웹 및 어드민 백오피스, 부동산 투자/운용 데이터
-                  관리 플랫폼(Invest Manager)의 대시보드·KPI·리포팅·자산 운영 워크플로우 UX를 설계.
+                  관리 플랫폼(Investment Manager)의 대시보드·KPI·리포팅·자산 운영 워크플로우 UX를
+                  설계.
                 </p>
                 <div className={styles.expProjects}>
                   <span>DNK PMS</span>
                   <span>Resident App/Web</span>
-                  <span>Invest Manager Platform</span>
+                  <span>Investment Manager Platform</span>
                 </div>
               </div>
             </Reveal>

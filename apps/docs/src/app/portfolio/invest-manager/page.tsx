@@ -70,7 +70,7 @@ export default function InvestManagerPage() {
             <p className={styles.heroLabel}>Product Design · 2026–</p>
           </Reveal>
           <Reveal delay={100}>
-            <h1 className={styles.heroTitle}>DNK Invest Manager</h1>
+            <h1 className={styles.heroTitle}>DNK Investment Manager</h1>
           </Reveal>
           <Reveal delay={200}>
             <p className={styles.heroTagline}>Turning complex BI into decision-ready workspace</p>
@@ -109,7 +109,7 @@ export default function InvestManagerPage() {
           <div className={styles.container}>
             <CaseImage
               src="/images/portfolio/invest-manager/hero.png"
-              alt="DNK Invest Manager System Dashboard"
+              alt="DNK Investment Manager System Dashboard"
               className={styles.heroImage}
               label="System Dashboard"
             />
@@ -334,7 +334,7 @@ export default function InvestManagerPage() {
           <div className={styles.container}>
             <CaseImage
               src="/images/portfolio/invest-manager/ia-map.png"
-              alt="DNK Invest Manager 6탭 정보 구조"
+              alt="DNK Investment Manager 6탭 정보 구조"
               className={styles.fullImage}
               label="Information Architecture — 6 Tabs"
             />

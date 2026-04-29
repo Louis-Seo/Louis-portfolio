@@ -35,7 +35,7 @@ export interface ProjectDetail {
 export const PROJECTS: ProjectDetail[] = [
   {
     slug: "invest-manager",
-    title: "DNK Invest Manager",
+    title: "DNK Investment Manager",
     subtitle: "BI 복잡도를 줄이고 투자 의사결정을 빠르게 만드는 분석 대시보드 리디자인",
     category: "Product Design",
     domain: "FinTech · Real Estate Investment",
@@ -81,7 +81,7 @@ export const PROJECTS: ProjectDetail[] = [
     gallery: [],
     hero: {
       label: "Product Design · 2026–",
-      title: "DNK Invest Manager",
+      title: "DNK Investment Manager",
       description:
         "투자 포트폴리오 분석을 위한 대시보드 리디자인 — BI 복잡도를 줄이고, 신뢰 가능한 숫자 위에서 의사결정하는 분석 작업공간",
       meta: [
