@@ -133,7 +133,7 @@ export default function AboutPage() {
                   백오피스, 투자 분석 대시보드(Investment Manager) 등 4개 제품군의 UX를 동시에 설계.
                   전자계약 신규 제품을 0→1로 기획·리드. 기존 PMS는 운영 워크플로우 중심으로
                   리디자인. 임대 운영자·입주자·어드민·투자 분석자가 같은 데이터를 다른 맥락에서
-                  사용하는 멀티 롤 플랫폼을 일관된 시스템으로 정리.
+                  사용하는 멀티 롤 플랫폼의 정보 구조와 역할별 워크플로우를 통합 설계.
                 </p>
                 <div className={styles.expProjects}>
                   <span>DNK PMS</span>
