@@ -205,12 +205,12 @@ export default function AboutPage() {
                     <h3 className={styles.expRole}>Product Designer Intern</h3>
                     <span className={styles.expCompany}>Boshantech (AU)</span>
                   </div>
-                  <span className={styles.expPeriod}>2019.03 — 2021.11</span>
+                  <span className={styles.expPeriod}>2021.01 — 2021.06</span>
                 </div>
                 <p className={styles.expDesc}>
-                  호주 IoT 스타트업에서 스마트 샤워 시스템 앱 기획·디자인 및 유지보수. Boshantech의
-                  Brand Identity와 Brand Value 컨셉을 구축하며 BX 디자인까지 담당. 제품 디자인과
-                  브랜드 설계를 동시에 경험.
+                  호주 IoT 스타트업에서 스마트 샤워 시스템 모바일 앱 UX와 Brand Identity·Value·BX
+                  시안을 직접 디자인. 하드웨어 제품·디지털 인터페이스·브랜드를 한 흐름으로 다룬 첫
+                  디자인 경험.
                 </p>
                 <div className={styles.expProjects}>
                   <span>Smart Shower App</span>
