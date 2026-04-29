@@ -3,14 +3,14 @@
    ══════════════════════════════════════════ */
 
 .page {
-  --p-bg: #0B0B0D;
-  --p-surface: #18191C;
+  --p-bg: #0b0b0d;
+  --p-surface: #18191c;
   --p-border: rgba(255, 255, 255, 0.08);
   --p-border-hover: rgba(255, 255, 255, 0.16);
-  --p-text: #FAFAFA;
-  --p-text-secondary: #BDBDBD;
+  --p-text: #fafafa;
+  --p-text-secondary: #bdbdbd;
   --p-text-muted: #757575;
-  --p-accent: #0FBA7F;
+  --p-accent: #0fba7f;
   --p-accent-dim: rgba(15, 186, 127, 0.15);
   width: 100%;
 }
@@ -25,8 +25,9 @@
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal[data-visible="true"] {
@@ -368,6 +369,7 @@
   font-weight: 400;
   line-height: 1.7;
   color: var(--p-text-secondary);
+  max-width: 680px;
 }
 
 /* ══════════════════════════════════════════
