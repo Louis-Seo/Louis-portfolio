@@ -183,9 +183,11 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2021.06 — 2022.07</span>
                 </div>
                 <p className={styles.expDesc}>
-                  호주 스마트홈 스타트업에서 레지던트 매니지먼트 웹/앱, 호텔 자동화 앱, 화상 진료
-                  의료 서비스를 기획부터 디자인·유지보수까지 담당. 글로벌 환경에서 다국적 팀과 영어
-                  기반 협업.
+                  호주 기반 프롭테크 SaaS 스타트업에서 strata 매니저·시설 운영자·입주자가 함께 쓰는
+                  레지던트 매니지먼트 앱(We Services)을 비롯해 호텔 운영 자동화 앱(Wumbotel), 원격
+                  의료 서비스(Wumbo Care) 등 3개 제품의 UX를 동시에 설계. 신규 기능 기획부터
+                  디자인·출시·운영 유지보수까지 풀 라이프사이클을 담당. 다국적 팀과 영어 기반
+                  협업으로 B2B 운영자와 B2C 사용자 양측 워크플로우를 통합.
                 </p>
                 <div className={styles.expProjects}>
                   <span>We Services</span>
