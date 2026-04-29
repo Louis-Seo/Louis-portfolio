@@ -153,10 +153,12 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2022.08 — 2024.04</span>
                 </div>
                 <p className={styles.expDesc}>
-                  AI 드론 검사 플랫폼 기업에서 B2B SaaS 웹 서비스, B2G 군·경찰용 드론 앱, 모바일
-                  자율비행 앱 등 6개 이상의 제품을 설계. 전사 UX 표준 디자인 시스템을 구축하여
-                  솔루션 아이덴티티 수립. 디자인 QA 프로세스 도입 및 운영. iF Design Award(Service
-                  Design, AI&Robotics)와 Red Dot Design Award 수상 제품에 기여.
+                  AI 드론 검사 플랫폼 기업에서 B2B SaaS 웹 서비스, B2G 군·경찰용 드론 운영 앱과 관제
+                  시스템(보안 비공개), 모바일 자율비행 앱 등 6개 이상의 제품을 설계. 전사 UX 표준
+                  디자인 시스템을 구축하여 솔루션 아이덴티티 수립. 디자인 QA 프로세스 도입 및 운영.
+                  iF Design Award(Service Design, AI&Robotics)와 Red Dot Design Award 수상 제품에
+                  기여. 미션 크리티컬 환경의 실시간 정보 표시와 역할 기반 워크플로우 설계 경험으로
+                  직무발명 특허 등록(2023).
                 </p>
                 <div className={styles.expProjects}>
                   <span>Zoomable Wind Web</span>
