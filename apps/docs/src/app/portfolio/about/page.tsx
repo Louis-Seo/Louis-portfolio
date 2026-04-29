@@ -129,10 +129,11 @@ export default function AboutPage() {
                   <span className={styles.expPeriod}>2024.11 — Present</span>
                 </div>
                 <p className={styles.expDesc}>
-                  글로벌 주택임대 관리 솔루션의 제품 설계를 담당. PMS 리디자인, 전자계약 신규 기획
-                  및 프로젝트 리딩, B2C 레지던트 앱/웹 및 어드민 백오피스, 부동산 투자/운용 데이터
-                  관리 플랫폼(Investment Manager)의 대시보드·KPI·리포팅·자산 운영 워크플로우 UX를
-                  설계.
+                  글로벌 부동산 임대·투자 SaaS 플랫폼에서 B2B PMS, B2C 레지던트 앱/웹, 어드민
+                  백오피스, 투자 분석 대시보드(Investment Manager) 등 4개 제품군의 UX를 동시에 설계.
+                  전자계약 신규 제품을 0→1로 기획·리드. 기존 PMS는 운영 워크플로우 중심으로
+                  리디자인. 임대 운영자·입주자·어드민·투자 분석자가 같은 데이터를 다른 맥락에서
+                  사용하는 멀티 롤 플랫폼을 일관된 시스템으로 정리.
                 </p>
                 <div className={styles.expProjects}>
                   <span>DNK PMS</span>
