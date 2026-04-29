@@ -70,25 +70,25 @@ export default function AboutPage() {
                 {
                   num: "01",
                   title: "Product System Design",
-                  text: "Nearthlab에서 70개 이상의 컴포넌트로 구성된 디자인 시스템을 처음부터 만들어 4개 제품팀에 적용했습니다. 토큰 구조 설계부터 Figma 라이브러리 운영, 문서화, 팀 채택까지 시스템의 전체 생명주기를 직접 운영한 경험이 있습니다.",
+                  text: "70개 이상의 컴포넌트로 구성된 디자인 시스템을 처음부터 만들어 4개 제품팀에 적용했습니다. 토큰 구조 설계부터 Figma 라이브러리 운영, 문서화, 팀 채택까지 시스템의 전체 생명주기를 직접 운영한 경험이 있습니다.",
                   tags: ["Design Systems", "Tokens", "70+ Components", "Multi-Product"],
                 },
                 {
                   num: "02",
                   title: "AI & Data Experience",
-                  text: "딥러닝 기반 자동 결함 탐지 앱(PPA Demo), 풍력 터빈 AI 리스크 예측 대시보드, 실시간 센서 데이터 모니터링 시스템을 설계했습니다. 모델의 결과를 사용자가 신뢰하고 행동으로 연결할 수 있는 인터페이스를 만드는 데 집중합니다.",
+                  text: "딥러닝 기반 자동 결함 탐지 앱, 풍력 터빈 AI 리스크 예측 대시보드, 실시간 센서 데이터 모니터링 시스템을 설계했습니다. 모델의 결과를 사용자가 신뢰하고 행동으로 연결할 수 있는 인터페이스를 만드는 데 집중합니다.",
                   tags: ["AI/ML UX", "Data Visualization", "Real-time", "Predictive"],
                 },
                 {
                   num: "03",
                   title: "Platform & Multi-Role UX",
-                  text: "DNK에서는 B2B 임대 관리(PMS), B2C 입주자 앱, 투자 운용 대시보드를 동시에 설계하며 같은 데이터를 다른 역할이 다르게 사용하는 구조를 다뤘습니다. B2B, B2C, B2G가 공존하는 플랫폼에서 역할별 워크플로우를 설계하는 데 익숙합니다.",
+                  text: "B2B 임대 관리(PMS), B2C 입주자 앱, 투자 운용 대시보드를 동시에 설계하며 같은 데이터를 다른 역할이 다르게 사용하는 구조를 다뤘습니다. B2B, B2C, B2G가 공존하는 플랫폼에서 역할별 워크플로우를 설계하는 데 익숙합니다.",
                   tags: ["B2B/B2C/B2G", "Multi-tenant", "RBAC", "Workflow"],
                 },
                 {
                   num: "04",
                   title: "Design–Engineering Bridge",
-                  text: "Nearthlab에서 전사 UX 가이드를 수립하고 디자인 QA 프로세스를 도입해 직접 운영했습니다. 컴포넌트 스펙, 상태 정의, React 패턴까지 이해하며, Figma에서 코드로 넘어갈 때 의도가 손실되지 않도록 책임집니다.",
+                  text: "전사 UX 가이드를 수립하고 디자인 QA 프로세스를 도입해 직접 운영했습니다. 컴포넌트 스펙, 상태 정의, React 패턴까지 이해하며, Figma에서 코드로 넘어갈 때 의도가 손실되지 않도록 책임집니다.",
                   tags: ["Design QA", "UX Guide", "React", "Handoff"],
                 },
               ].map((item, i) => (
