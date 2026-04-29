@@ -158,7 +158,7 @@ export default function AboutPage() {
                   디자인 시스템을 구축하여 솔루션 아이덴티티 수립. 디자인 QA 프로세스 도입 및 운영.
                   iF Design Award(Service Design, AI&Robotics)와 Red Dot Design Award 수상 제품에
                   기여. 미션 크리티컬 환경의 실시간 정보 표시와 역할 기반 워크플로우 설계 경험으로
-                  직무발명 특허 등록(2023).
+                  직무발명 특허 등록.
                 </p>
                 <div className={styles.expProjects}>
                   <span>Zoomable Wind Web</span>
