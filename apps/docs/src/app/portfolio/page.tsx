@@ -272,7 +272,7 @@ export default function PortfolioPage() {
               <Reveal delay={100}>
                 <div className={styles.principleChips}>
                   <span>Structure First</span>
-                  <span>System Thinking</span>
+                  <span>Systems Thinking</span>
                   <span>Ship with Engineers</span>
                 </div>
               </Reveal>
@@ -287,12 +287,12 @@ export default function PortfolioPage() {
                 {
                   num: "02",
                   title: "AI & Data Products",
-                  text: "드론 촬영 데이터의 AI 결함 분석, 풍력 자산 투자 대시보드, 실시간 모니터링 인터페이스를 설계했습니다. 복잡한 데이터를 판단과 행동으로 연결하는 UI를 만듭니다.",
+                  text: "드론 촬영 데이터의 AI 결함 분석, 부동산 투자 분석 대시보드, 실시간 모니터링 인터페이스를 설계했습니다. 복잡한 데이터를 판단과 행동으로 연결하는 UI를 만듭니다.",
                 },
                 {
                   num: "03",
                   title: "Design–Dev Bridge",
-                  text: "Figma 토큰과 React 컴포넌트 스펙을 직접 정의하고, 상태·변형·제약 조건까지 설계에 포함시킵니다. 디자인 의도가 코드에서 그대로 작동하도록 만듭니다.",
+                  text: "Figma 토큰과 React 컴포넌트 스펙을 직접 정의하고, 상태·변형·제약 조건까지 설계 단계에서 결정합니다. 디자인 의도가 코드에서 그대로 작동하도록 만듭니다.",
                 },
               ].map((item, i) => (
                 <Reveal key={item.num} delay={i * 100}>
