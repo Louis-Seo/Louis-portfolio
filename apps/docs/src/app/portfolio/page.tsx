@@ -83,9 +83,10 @@ function MobileMock() {
 
 function ProjectVisual({ slug }: { slug: string }) {
   const colors: Record<string, { bg: string; accent: string }> = {
-    "dnk-rp": { bg: "#0F1A14", accent: "#0FBA7F" },
     "invest-manager": { bg: "#0F1520", accent: "#03A9F4" },
+    "dnk-rp": { bg: "#0F1520", accent: "#03A9F4" },
     "design-system": { bg: "#141414", accent: "#0FBA7F" },
+    "research-problem-framing": { bg: "#141414", accent: "#0FBA7F" },
     "zoomable-wind": { bg: "#111118", accent: "#29B6F6" },
     "nearthwind-mobile": { bg: "#0F1612", accent: "#54C694" },
     "zoomable-worker": { bg: "#14120F", accent: "#FFA726" },
@@ -96,8 +97,14 @@ function ProjectVisual({ slug }: { slug: string }) {
     <div className={styles.projectVisual} style={{ background: c.bg }}>
       <div className={styles.pvGrid}>
         <div className={styles.pvBar} style={{ background: c.accent, width: "60%" }} />
-        <div className={styles.pvBar} style={{ background: c.accent, opacity: 0.3, width: "80%" }} />
-        <div className={styles.pvBar} style={{ background: c.accent, opacity: 0.15, width: "45%" }} />
+        <div
+          className={styles.pvBar}
+          style={{ background: c.accent, opacity: 0.3, width: "80%" }}
+        />
+        <div
+          className={styles.pvBar}
+          style={{ background: c.accent, opacity: 0.15, width: "45%" }}
+        />
       </div>
       <div className={styles.pvDot} style={{ background: c.accent }} />
     </div>
@@ -185,9 +192,7 @@ export default function PortfolioPage() {
                       ? "/design-system"
                       : `/portfolio/${project.slug}`
                   }
-                  className={`${styles.showcaseCard} ${
-                    i === 0 ? styles.showcaseCardLarge : ""
-                  }`}
+                  className={`${styles.showcaseCard} ${i === 0 ? styles.showcaseCardLarge : ""}`}
                 >
                   <div className={styles.showcaseImage}>
                     <ProjectVisual slug={project.slug} />
@@ -196,7 +201,9 @@ export default function PortfolioPage() {
                     <div className={styles.showcaseMeta}>
                       <div className={styles.showcaseTags}>
                         {project.tags.slice(0, 2).map((tag) => (
-                          <span key={tag} className={styles.showcaseTag}>{tag}</span>
+                          <span key={tag} className={styles.showcaseTag}>
+                            {tag}
+                          </span>
                         ))}
                       </div>
                       <span className={styles.showcaseYear}>{project.year}</span>
@@ -221,9 +228,7 @@ export default function PortfolioPage() {
           <Reveal>
             <div className={styles.sectionHead}>
               <h2 className={styles.indexSectionTitle}>All Projects</h2>
-              <p className={styles.sectionSub}>
-                도메인은 달라도, 풀어온 문제의 구조는 같습니다.
-              </p>
+              <p className={styles.sectionSub}>도메인은 달라도, 풀어온 문제의 구조는 같습니다.</p>
             </div>
           </Reveal>
           <div className={styles.projectIndex}>
@@ -274,9 +279,21 @@ export default function PortfolioPage() {
             </div>
             <div className={styles.approachRight}>
               {[
-                { num: "01", title: "Product Systems", text: "4개 제품팀이 공유하는 토큰 기반 디자인 시스템을 구축하고, 70개 이상의 컴포넌트를 직접 설계·운영했습니다. 제품이 확장되어도 경험이 흐트러지지 않는 구조를 만듭니다." },
-                { num: "02", title: "AI & Data Products", text: "드론 촬영 데이터의 AI 결함 분석, 풍력 자산 투자 대시보드, 실시간 모니터링 인터페이스를 설계했습니다. 복잡한 데이터를 판단과 행동으로 연결하는 UI를 만듭니다." },
-                { num: "03", title: "Design–Dev Bridge", text: "Figma 토큰과 React 컴포넌트 스펙을 직접 정의하고, 상태·변형·제약 조건까지 설계에 포함시킵니다. 디자인 의도가 코드에서 그대로 작동하도록 만듭니다." },
+                {
+                  num: "01",
+                  title: "Product Systems",
+                  text: "4개 제품팀이 공유하는 토큰 기반 디자인 시스템을 구축하고, 70개 이상의 컴포넌트를 직접 설계·운영했습니다. 제품이 확장되어도 경험이 흐트러지지 않는 구조를 만듭니다.",
+                },
+                {
+                  num: "02",
+                  title: "AI & Data Products",
+                  text: "드론 촬영 데이터의 AI 결함 분석, 풍력 자산 투자 대시보드, 실시간 모니터링 인터페이스를 설계했습니다. 복잡한 데이터를 판단과 행동으로 연결하는 UI를 만듭니다.",
+                },
+                {
+                  num: "03",
+                  title: "Design–Dev Bridge",
+                  text: "Figma 토큰과 React 컴포넌트 스펙을 직접 정의하고, 상태·변형·제약 조건까지 설계에 포함시킵니다. 디자인 의도가 코드에서 그대로 작동하도록 만듭니다.",
+                },
               ].map((item, i) => (
                 <Reveal key={item.num} delay={i * 100}>
                   <div className={styles.approachCard}>
@@ -306,7 +323,9 @@ export default function PortfolioPage() {
                 <br />
                 문제를 구조화하고 실행까지 이어본 디자이너가 필요하다면.
               </p>
-              <a href="mailto:niedr7893@gmail.com" className={styles.contactEmail}>niedr7893@gmail.com →</a>
+              <a href="mailto:niedr7893@gmail.com" className={styles.contactEmail}>
+                niedr7893@gmail.com →
+              </a>
             </div>
           </Reveal>
         </div>

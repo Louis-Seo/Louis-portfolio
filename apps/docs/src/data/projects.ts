@@ -387,7 +387,7 @@ export const PROJECTS: ProjectDetail[] = [
       { value: "12+", label: "글로벌 Wind Farm" },
     ],
     tags: ["Platform", "Data", "Wind Energy", "B2B SaaS"],
-    featured: true,
+    featured: false,
     gallery: [],
     hero: {
       label: "UX/UI Design",
