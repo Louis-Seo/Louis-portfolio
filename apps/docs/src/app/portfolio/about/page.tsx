@@ -379,6 +379,8 @@ export default function AboutPage() {
                       <span>TypeScript</span>
                       <span>CSS Modules</span>
                       <span>Component Spec</span>
+                      <span>Storybook</span>
+                      <span>Token Pipeline</span>
                     </div>
                   </div>
                 </div>
