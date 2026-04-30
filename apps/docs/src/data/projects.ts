@@ -94,11 +94,11 @@ export const PROJECTS: ProjectDetail[] = [
   },
   {
     slug: "dnk-rp",
-    title: "DNK RP Web/App",
+    title: "DNK Resident Portal",
     subtitle:
       "입주자 앱, PMS, 백오피스를 연결해 주거 운영 경험을 하나의 플랫폼으로 재구성한 프로젝트",
     category: "UX/UI Design",
-    domain: "PropTech · Resident Portal",
+    domain: "PropTech · Multi-Sided Platform",
     platform: "Web + Mobile",
     year: "2025–",
     duration: "Ongoing",
@@ -131,7 +131,7 @@ export const PROJECTS: ProjectDetail[] = [
     gallery: [],
     hero: {
       label: "UX/UI Design",
-      title: "DNK RP Web/App",
+      title: "DNK Resident Portal",
       description: "일본 임대 시장을 위한 입주자 중심 PMS 연동 주거 플랫폼",
       meta: [
         { label: "Role", value: "UX/UI Designer" },
@@ -202,7 +202,7 @@ export const PROJECTS: ProjectDetail[] = [
     title: "Research & Problem Framing",
     subtitle: "운영 병목과 작업 흐름을 구조화해 Worker와 Wind의 출발점을 만든 선행 리서치 프로젝트",
     category: "UX Research",
-    domain: "Wind Energy · Operations Research",
+    domain: "Wind Energy · UX Research",
     platform: "Research",
     year: "2023–2024",
     duration: "6 months",
@@ -256,7 +256,7 @@ export const PROJECTS: ProjectDetail[] = [
     title: "NearthWind Mobile",
     subtitle: "AI 드론 기반 풍력 터빈 자동 검사 모바일 시스템",
     category: "UX/UI Design",
-    domain: "Wind Energy · Drone · AI",
+    domain: "Wind Energy · AI Drone Ops",
     platform: "Mobile (Tablet)",
     year: "2022–2024",
     duration: "2 years",
