@@ -386,19 +386,11 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={100}>
               <div>
-                <h2 className={styles.sectionTitle}>Next Step</h2>
+                <h2 className={styles.sectionTitle}>What&apos;s Next</h2>
                 <p className={styles.contactIntro}>
-                  PMS를 리디자인하고, 드론 검사 데이터를 대시보드로 만들고, 70개 컴포넌트의 디자인
-                  시스템을 운영해 왔습니다. 다음은 더 큰 스케일의 제품, 더 복잡한 구조를 함께 설계할
-                  팀에서 일하고 싶습니다.
+                  복잡한 시스템을 단단하게 풀어내는 일을, 더 많은 사용자가 쓰는 제품에서 해보고
+                  싶습니다.
                 </p>
-                <div className={styles.contactFitTags}>
-                  <span>SaaS</span>
-                  <span>Platform</span>
-                  <span>Data / AI</span>
-                  <span>Design Systems</span>
-                  <span>Operations Tool</span>
-                </div>
                 <div className={styles.contactList}>
                   <a href="mailto:niedr7893@gmail.com" className={styles.contactLink}>
                     niedr7893@gmail.com →
