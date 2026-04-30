@@ -76,7 +76,7 @@ export const PROJECTS: ProjectDetail[] = [
       { value: "60+", label: "화면 설계" },
       { value: "4", label: "사용자 역할 대응" },
     ],
-    tags: ["Dashboard", "FinTech", "Data Visualization", "B2B"],
+    tags: ["BI Platform", "FinTech", "AI Integration", "Data Visualization"],
     featured: true,
     gallery: [],
     hero: {
@@ -181,7 +181,7 @@ export const PROJECTS: ProjectDetail[] = [
       { value: "4", label: "Product teams using" },
       { value: "30%", label: "Faster feature design" },
     ],
-    tags: ["Design System", "React", "Tokens", "Component Library"],
+    tags: ["Design System", "Multi-Product", "React", "Tokens"],
     featured: true,
     gallery: [],
     hero: {
@@ -236,7 +236,7 @@ export const PROJECTS: ProjectDetail[] = [
       { value: "85%", label: "리포트 생산 비용 감소" },
       { value: "4", label: "핵심 문제 정의" },
     ],
-    tags: ["Research", "Strategy", "Problem Framing", "Wind Energy"],
+    tags: ["UX Research", "Strategy", "Problem Framing", "Wind Energy"],
     featured: true,
     gallery: [],
     hero: {
