@@ -359,7 +359,7 @@ export default function AboutPage() {
                       <span>Data Visualization</span>
                       <span>Interaction Design</span>
                       <span>User Research</span>
-                      <span>Prototyping</span>
+                      <span>Workflow Design</span>
                     </div>
                   </div>
                   <div className={styles.toolGroup}>
@@ -369,7 +369,7 @@ export default function AboutPage() {
                       <span>Component API Design</span>
                       <span>Figma Library</span>
                       <span>Design QA</span>
-                      <span>Documentation</span>
+                      <span>Multi-Product Adoption</span>
                     </div>
                   </div>
                   <div className={styles.toolGroup}>
