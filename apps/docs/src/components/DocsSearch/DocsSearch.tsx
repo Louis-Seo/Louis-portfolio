@@ -295,13 +295,18 @@ export default function DocsSearch() {
   // Click outside to close
   useEffect(() => {
     if (!open) return;
-    const handler = (e: MouseEvent) => {
+    const handler = (e: MouseEvent | TouchEvent) => {
       if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) {
         setOpen(false);
+        inputRef.current?.blur();
       }
     };
     document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler, { passive: true });
+    return () => {
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
+    };
   }, [open]);
 
   // Scroll selected into view
@@ -358,10 +363,25 @@ export default function DocsSearch() {
 
   const showPanel = open && query.trim().length > 0;
 
+  // Lock body scroll on mobile while the search panel is open
+  useEffect(() => {
+    if (!showPanel) return;
+    if (typeof window === "undefined") return;
+    if (!window.matchMedia("(max-width: 828px)").matches) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [showPanel]);
+
   return (
-    <div className={styles.wrap} ref={wrapRef}>
+    <div className={styles.wrap} ref={wrapRef} role="search">
       {/* ── Input ── */}
-      <div className={styles.inputBox} onClick={() => inputRef.current?.focus()}>
+      <div
+        className={`${styles.inputBox} ${showPanel ? styles.inputBoxOpen : ""}`}
+        onClick={() => inputRef.current?.focus()}
+      >
         <SearchIcon />
         <input
           ref={inputRef}
@@ -377,6 +397,7 @@ export default function DocsSearch() {
           onKeyDown={handleKeyDown}
           autoComplete="off"
           spellCheck={false}
+          aria-label="Search documentation"
         />
         {query ? (
           <button

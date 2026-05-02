@@ -195,13 +195,16 @@
     min-width: 0;
     padding: 0;
     flex: 0 0 0;
+    /* 16px prevents iOS Safari from auto-zooming the viewport on focus */
+    font-size: 16px;
   }
 
   .kbd {
     display: none;
   }
 
-  .inputBox:focus-within {
+  .inputBox:focus-within,
+  .inputBoxOpen {
     position: fixed;
     top: 12px;
     left: 60px;
@@ -210,7 +213,8 @@
     z-index: 250;
   }
 
-  .inputBox:focus-within .input {
+  .inputBox:focus-within .input,
+  .inputBoxOpen .input {
     width: auto;
     flex: 1;
     padding-left: 4px;
@@ -222,5 +226,15 @@
     right: 16px;
     left: 16px;
     width: auto;
+    /* Cap to small viewport so the panel doesn't slip behind the soft keyboard */
+    max-height: min(400px, 60dvh);
+  }
+
+  .list {
+    max-height: min(400px, 60dvh);
+  }
+
+  .item {
+    padding: 12px 14px;
   }
 }
