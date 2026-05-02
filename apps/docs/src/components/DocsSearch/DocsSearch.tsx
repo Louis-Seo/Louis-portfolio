@@ -19,18 +19,31 @@ interface SearchEntry {
   priority: number; // 1 = page, 2 = section, 3 = subsection
 }
 
-const SECTION_DATA: Record<
-  string,
-  { sections: string[]; snippet?: string }
-> = {
+const SECTION_DATA: Record<string, { sections: string[]; snippet?: string }> = {
   // Foundation
   typography: {
     snippet: "타입 스케일과 컬러를 고려한 타이포그래피 가이드",
-    sections: ["Type Usage", "Type Scale Logic", "Type Weight", "Type Scale", "Weight Usage", "Usage Notes"],
+    sections: [
+      "Type Usage",
+      "Type Scale Logic",
+      "Type Weight",
+      "Type Scale",
+      "Weight Usage",
+      "Usage Notes",
+    ],
   },
   color: {
     snippet: "브랜드 컬러, 텍스트, 배경, 보더 등 컬러 시스템",
-    sections: ["Color Usage Guidelines", "Brand Colors", "Main Green Colour Variation", "Text Colour", "Background Depth", "Selected Color", "Border Colour", "Secondary & Extra Colours"],
+    sections: [
+      "Color Usage Guidelines",
+      "Brand Colors",
+      "Main Green Colour Variation",
+      "Text Colour",
+      "Background Depth",
+      "Selected Color",
+      "Border Colour",
+      "Secondary & Extra Colours",
+    ],
   },
   icon: {
     snippet: "아이콘 사이즈, 레이아웃, 키라인, 스타일 가이드",
@@ -43,11 +56,30 @@ const SECTION_DATA: Record<
   // Components
   button: {
     snippet: "Primary, Secondary, Tertiary, Extra 버튼 컴포넌트",
-    sections: ["Components", "Anatomy", "Varients", "Table of Figma Properties", "Spec", "Usage & Placement", "Loading Status"],
+    sections: [
+      "Components",
+      "Anatomy",
+      "Varients",
+      "Table of Figma Properties",
+      "Spec",
+      "Usage & Placement",
+      "Loading Status",
+    ],
   },
   dropdown: {
     snippet: "옵션 선택, 필터링, 정렬에 사용되는 드롭다운",
-    sections: ["Anatomy", "Components", "Varients", "Color", "Spacing", "Contents", "Usage & Placement", "Loading Status", "Menu Placement", "Menu Items"],
+    sections: [
+      "Anatomy",
+      "Components",
+      "Varients",
+      "Color",
+      "Spacing",
+      "Contents",
+      "Usage & Placement",
+      "Loading Status",
+      "Menu Placement",
+      "Menu Items",
+    ],
   },
   navigation: {
     snippet: "GNB, 탭, 메뉴 등 네비게이션 컴포넌트",
@@ -67,7 +99,13 @@ const SECTION_DATA: Record<
   },
   "toggle-radio-checkbox": {
     snippet: "체크박스, 라디오 버튼, 토글 스위치",
-    sections: ["Components", "Selection Control Group", "Checkbox", "Radio Button", "Toggle-Switch"],
+    sections: [
+      "Components",
+      "Selection Control Group",
+      "Checkbox",
+      "Radio Button",
+      "Toggle-Switch",
+    ],
   },
   chip: {
     snippet: "필터링과 선택을 위한 칩 컴포넌트",
@@ -95,7 +133,15 @@ const SECTION_DATA: Record<
   },
   "table-list": {
     snippet: "데이터를 정리해 보여주는 테이블 컴포넌트",
-    sections: ["Anatomy", "Usage", "Table Style", "Content Data Alignment", "Interaction", "State", "Sizing"],
+    sections: [
+      "Anatomy",
+      "Usage",
+      "Table Style",
+      "Content Data Alignment",
+      "Interaction",
+      "State",
+      "Sizing",
+    ],
   },
   "badge-tag": {
     snippet: "알림, 상태, 라벨을 표시하는 배지/태그",
@@ -123,11 +169,26 @@ const SECTION_DATA: Record<
   },
   tooltip: {
     snippet: "UI 요소에 대한 부가 설명 툴팁",
-    sections: ["Anatomy", "Usage", "Spec", "Contents", "Interaction", "Components", "Usage Guidelines"],
+    sections: [
+      "Anatomy",
+      "Usage",
+      "Spec",
+      "Contents",
+      "Interaction",
+      "Components",
+      "Usage Guidelines",
+    ],
   },
   modal: {
     snippet: "확인, 입력을 받기 위한 오버레이 모달",
-    sections: ["Anatomy", "Buttons", "Modality Criteria & Checklist", "Scrim Area", "Spacing", "Content & Action Area"],
+    sections: [
+      "Anatomy",
+      "Buttons",
+      "Modality Criteria & Checklist",
+      "Scrim Area",
+      "Spacing",
+      "Content & Action Area",
+    ],
   },
   indicator: {
     snippet: "스피너, 프로그레스바 등 로딩 인디케이터",
@@ -174,13 +235,15 @@ function buildIndex(): SearchEntry[] {
 }
 
 function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9가-힣\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "")
-    .slice(0, 80) || "section";
+  return (
+    text
+      .toLowerCase()
+      .replace(/[^a-z0-9가-힣\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .replace(/^-|-$/g, "")
+      .slice(0, 80) || "section"
+  );
 }
 
 /* ═══════════════════════════════════════════
@@ -259,7 +322,7 @@ export default function DocsSearch() {
       close();
       router.push(href);
     },
-    [close, router]
+    [close, router],
   );
 
   const handleKeyDown = useCallback(
@@ -277,7 +340,7 @@ export default function DocsSearch() {
         close();
       }
     },
-    [results, selectedIdx, navigate, close]
+    [results, selectedIdx, navigate, close],
   );
 
   const highlight = (text: string, q: string) => {
@@ -298,7 +361,7 @@ export default function DocsSearch() {
   return (
     <div className={styles.wrap} ref={wrapRef}>
       {/* ── Input ── */}
-      <div className={styles.inputBox}>
+      <div className={styles.inputBox} onClick={() => inputRef.current?.focus()}>
         <SearchIcon />
         <input
           ref={inputRef}
@@ -339,26 +402,18 @@ export default function DocsSearch() {
               {results.map((entry, i) => (
                 <button
                   key={`${entry.href}-${i}`}
-                  className={`${styles.item} ${
-                    i === selectedIdx ? styles.itemActive : ""
-                  }`}
+                  className={`${styles.item} ${i === selectedIdx ? styles.itemActive : ""}`}
                   onClick={() => navigate(entry.href)}
                   onMouseEnter={() => setSelectedIdx(i)}
                   type="button"
                 >
                   <div className={styles.itemMain}>
-                    <span className={styles.itemPath}>
-                      {highlight(entry.path, query)}
-                    </span>
+                    <span className={styles.itemPath}>{highlight(entry.path, query)}</span>
                     {entry.snippet && entry.priority === 1 && (
-                      <span className={styles.itemSnippet}>
-                        {entry.snippet}
-                      </span>
+                      <span className={styles.itemSnippet}>{entry.snippet}</span>
                     )}
                   </div>
-                  <span className={styles.itemCategory}>
-                    {entry.category}
-                  </span>
+                  <span className={styles.itemCategory}>{entry.category}</span>
                 </button>
               ))}
             </div>

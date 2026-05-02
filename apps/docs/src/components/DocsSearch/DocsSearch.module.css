@@ -12,7 +12,9 @@
   border-radius: 8px;
   border: 1px solid var(--border-default);
   background: var(--surface-raised);
-  transition: border-color 0.15s, box-shadow 0.15s;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
   width: 260px;
 }
 
@@ -81,7 +83,9 @@
   background: var(--surface-base);
   border: 1px solid var(--border-default);
   border-radius: 12px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   z-index: 300;
 }
@@ -181,17 +185,35 @@
 
 @media (max-width: 828px) {
   .inputBox {
-    width: auto;
+    width: 36px;
     padding: 7px 8px;
+    cursor: text;
   }
 
-  .input,
+  .input {
+    width: 0;
+    min-width: 0;
+    padding: 0;
+    flex: 0 0 0;
+  }
+
   .kbd {
     display: none;
   }
 
+  .inputBox:focus-within {
+    position: fixed;
+    top: 12px;
+    left: 60px;
+    right: 16px;
+    width: auto;
+    z-index: 250;
+  }
+
   .inputBox:focus-within .input {
-    display: block;
+    width: auto;
+    flex: 1;
+    padding-left: 4px;
   }
 
   .panel {
