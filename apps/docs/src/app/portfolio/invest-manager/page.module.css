@@ -220,6 +220,7 @@
 }
 
 .painCard {
+  height: 100%;
   padding: 32px 24px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -251,6 +252,120 @@
 
 .fullImage {
   margin-top: 48px;
+}
+
+/* ── Problem Diagram (replaces "before" screenshot) ── */
+.problemDiagram {
+  margin-top: 56px;
+  padding: 48px 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.diagramTier {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.diagramTierLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.35);
+  text-align: center;
+}
+
+.diagramRoleRow,
+.diagramOutputRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.diagramRole {
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fafafa;
+  text-align: center;
+}
+
+.diagramConnector {
+  width: 1px;
+  height: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.04));
+  margin: 10px auto;
+}
+
+.diagramBarrier {
+  margin: 0 auto;
+  padding: 18px 28px;
+  min-width: 280px;
+  max-width: 380px;
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(59, 130, 246, 0.04);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.diagramBarrierLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: -0.1px;
+}
+
+.diagramBarrierMeta {
+  font-size: 11px;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.diagramOutput {
+  padding: 14px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.diagramOutputRole {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8bbcff;
+}
+
+.diagramOutputValue {
+  font-family: "SF Mono", Menlo, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fafafa;
+  font-variant-numeric: tabular-nums;
+}
+
+.diagramCaption {
+  margin-top: 28px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.55);
+  text-align: center;
+  letter-spacing: -0.1px;
 }
 
 /* ═══════════════════════════════════════
@@ -483,7 +598,6 @@
   font-weight: 400;
   line-height: 1.75;
   color: rgba(250, 250, 250, 0.55);
-  max-width: 720px;
 }
 
 /* ═══════════════════════════════════════
@@ -728,6 +842,20 @@
   .strategyGrid,
   .bulletRow {
     grid-template-columns: 1fr;
+  }
+
+  .problemDiagram {
+    padding: 32px 20px;
+  }
+
+  .diagramRoleRow,
+  .diagramOutputRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diagramBarrier {
+    min-width: 0;
+    width: 100%;
   }
 
   .userGrid,

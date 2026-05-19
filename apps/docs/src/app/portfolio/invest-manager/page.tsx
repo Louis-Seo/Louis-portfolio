@@ -195,12 +195,55 @@ export default function InvestManagerPage() {
         </div>
         <Reveal delay={200}>
           <div className={styles.container}>
-            <CaseImage
-              src="/images/portfolio/invest-manager/problem-before.png"
-              alt="기존 BI 도구 기반 대시보드의 복잡한 인터페이스"
-              className={styles.fullImage}
-              label="PMR Report — Raw Data Table"
-            />
+            <div className={styles.problemDiagram}>
+              <div className={styles.diagramTier}>
+                <span className={styles.diagramTierLabel}>4 Roles</span>
+                <div className={styles.diagramRoleRow}>
+                  <div className={styles.diagramRole}>Executive</div>
+                  <div className={styles.diagramRole}>Asset Manager</div>
+                  <div className={styles.diagramRole}>Analyst</div>
+                  <div className={styles.diagramRole}>Data Manager</div>
+                </div>
+              </div>
+
+              <div className={styles.diagramConnector} aria-hidden />
+
+              <div className={styles.diagramTier}>
+                <span className={styles.diagramTierLabel}>1 Shared Surface</span>
+                <div className={styles.diagramBarrier}>
+                  <span className={styles.diagramBarrierLabel}>BI Tool — complex, expert-only</span>
+                  <span className={styles.diagramBarrierMeta}>
+                    One UI for every role · CFC unmanaged
+                  </span>
+                </div>
+              </div>
+
+              <div className={styles.diagramConnector} aria-hidden />
+
+              <div className={styles.diagramTier}>
+                <span className={styles.diagramTierLabel}>4 Inconsistent Reads</span>
+                <div className={styles.diagramOutputRow}>
+                  <div className={styles.diagramOutput}>
+                    <span className={styles.diagramOutputRole}>Exec</span>
+                    <span className={styles.diagramOutputValue}>NOI ¥3.42B</span>
+                  </div>
+                  <div className={styles.diagramOutput}>
+                    <span className={styles.diagramOutputRole}>AM</span>
+                    <span className={styles.diagramOutputValue}>NOI ¥3.31B</span>
+                  </div>
+                  <div className={styles.diagramOutput}>
+                    <span className={styles.diagramOutputRole}>Analyst</span>
+                    <span className={styles.diagramOutputValue}>NOI ¥3.55B</span>
+                  </div>
+                  <div className={styles.diagramOutput}>
+                    <span className={styles.diagramOutputRole}>DM</span>
+                    <span className={styles.diagramOutputValue}>NOI ¥3.18B</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className={styles.diagramCaption}>동일한 데이터 · 다른 해석 · 다른 숫자</p>
+            </div>
           </div>
         </Reveal>
       </section>
@@ -618,6 +661,50 @@ export default function InvestManagerPage() {
                 <p className={styles.bulletText}>
                   Core Banking, PMR, Bloomberg 등 6개 소스의 연결 상태와 Health Bar를 카드 형태로
                   한눈에 모니터링합니다.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={300}>
+            <div className={styles.subSectionHeader}>
+              <p className={styles.subSectionLabel}>PMR Review</p>
+              <h3 className={styles.subSectionTitle}>AI 보조 검수로 신뢰 가능한 숫자를 만듭니다</h3>
+              <p className={styles.subSectionDesc}>
+                모니터링이 &ldquo;전체 환경의 건강도&rdquo;를 본다면, PMR Review는 매월 들어오는
+                개별 리포트의 셀 단위 정합성을 다룹니다. Coverage, AI Fix Queue, Anomaly Detection이
+                한 화면에서 돌고, Executive가 보는 숫자가 만들어지기 전 단계에서 마찰을 흡수합니다.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={400}>
+            <CaseImage
+              src="/images/portfolio/invest-manager/pmr-review.png"
+              alt="PMR Upload Portal — Coverage, AI Fix Queue, Anomalies Detected"
+              className={styles.featureHeroImage}
+              label="PMR Upload Portal — AI-assisted Review"
+            />
+          </Reveal>
+          <Reveal delay={500}>
+            <div className={styles.bulletRow}>
+              <div className={styles.bulletCard}>
+                <h4 className={styles.bulletTitle}>Coverage at a Glance</h4>
+                <p className={styles.bulletText}>
+                  128개 셀의 상태를 한 줄로 — Errors · AI Filled · Empty · Edited. 색으로 우선순위가
+                  즉시 잡힙니다.
+                </p>
+              </div>
+              <div className={styles.bulletCard}>
+                <h4 className={styles.bulletTitle}>AI Fix Queue</h4>
+                <p className={styles.bulletText}>
+                  Fix · AI Fill · Review 액션이 항목별로 정렬됩니다. Auto-fill Empty 또는 Accept All
+                  AI로 일괄 처리도 가능합니다.
+                </p>
+              </div>
+              <div className={styles.bulletCard}>
+                <h4 className={styles.bulletTitle}>Anomaly Detection</h4>
+                <p className={styles.bulletText}>
+                  전월 대비 큰 변동을 Watch · Alert 레벨로 자동 감지합니다. Sapporo Utility +34% MoM
+                  같은 신호가 누락 없이 떠오릅니다.
                 </p>
               </div>
             </div>
