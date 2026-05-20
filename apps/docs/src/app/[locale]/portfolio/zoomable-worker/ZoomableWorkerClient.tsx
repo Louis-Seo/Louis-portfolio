@@ -586,15 +586,6 @@ export default function ZoomableWorkerClient() {
           </Reveal>
         </div>
       </section>
-
-      {/* ═══ Quote ═══ */}
-      <section className={styles.quoteSection}>
-        <div className={styles.container}>
-          <Reveal>
-            <blockquote className={styles.quote}>{t("quote")}</blockquote>
-          </Reveal>
-        </div>
-      </section>
     </div>
   );
 }
