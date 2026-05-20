@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Feedback Message",
+    "description": "Communicates system change to the user — Alert for DB-impacting events, Toast for non-blocking confirmations."
+  },
+  "hero": {
+    "title": "Feedback Message",
+    "desc": "Feedback Message communicates system change to the user. It splits into Alert and Toast based on whether the system DB has changed."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Feedback Message splits into Alert and Toast. Alert surfaces actions the user must complete; Toast delivers short, non-blocking results.",
+    "caption": "A. Alert\nB. Toast"
+  },
+  "criteria": {
+    "title": "Message Contents Criteria",
+    "desc": "Writing guidelines for Feedback Message content. These can flex depending on context but should be followed where possible.",
+    "rows": [
+      {
+        "key": "concise",
+        "label": "Conciseness",
+        "desc": "Messages are written as a single sentence by default.\nKeep to a single conditional clause."
+      },
+      {
+        "key": "clarity",
+        "label": "Information Clarity",
+        "desc": "Messages must include the keyword that names the cause of the conveyed information (Information, Success, Warning).\nMessages should be composed with a verb — not just word combinations — so they deliver clear information and help users complete their task."
+      }
+    ]
+  },
+  "table": {
+    "title": "Feedback Message",
+    "headerAlert": "Alert",
+    "headerToast": "Toast",
+    "rows": [
+      {
+        "key": "duration",
+        "label": "Duration",
+        "alert": "Till Completion Task",
+        "toast": "3 Sec"
+      },
+      {
+        "key": "type",
+        "label": "Message Type",
+        "alert": "3 (Error / Warning, Success, Information)",
+        "toast": "3 (Warning, Success, Information)"
+      },
+      {
+        "key": "expression",
+        "label": "Expression Standard",
+        "alert": "Error / Warning",
+        "toast": "Success"
+      },
+      {
+        "key": "relation",
+        "label": "Relation to Others",
+        "labelSub": "(Expression)",
+        "alert": "Mutually Exclusive",
+        "alertSub": "(Mutually exclusive with a specific element group)",
+        "toast": "Independent of Each Other",
+        "toastSub": "(Independent from other elements)"
+      }
+    ]
+  },
+  "alert": {
+    "title": "Alert",
+    "desc": "Alerts surface mandatory user actions — they provide the information needed for the user to complete that action.",
+    "anatomy": {
+      "title": "Anatomy",
+      "caption": "1. Icon\n2. Header\n3. Description Text\n4. Container"
+    },
+    "component": {
+      "title": "Component",
+      "desc": "Alert has two types based on placement and visual form — Text Alert, tightly coupled with a specific component, and Container Alert, wrapped in a container."
+    },
+    "messageType": {
+      "title": "Message Type",
+      "desc": "Alert splits into three by information type — Information for brief action feedback, Success for completed actions, and Warning for failed actions. Success Alert is provisionally not used."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Warning, Information, Success", "default": "None" },
+        { "prop": "Size", "values": "Large, Medium", "default": "None" },
+        { "prop": "Container", "values": "True, False", "default": "None" },
+        { "prop": "Description", "values": "True, False", "default": "False" },
+        { "prop": "Icon", "values": "True, False", "default": "True" }
+      ]
+    },
+    "placement": {
+      "title": "Placement",
+      "desc": "Alert delivers state, error, guidance, or processing results immediately. Based on component structure and message scope, place it as Contained Type, Floating Type, or Inline Text Type. Even for the same Alert, choose the right Placement based on whether the target is an individual component, a component group, or an inline-level supplementary message.",
+      "items": [
+        {
+          "key": "contained",
+          "title": "Contained Type",
+          "desc": "When related components form a visual group, use this to communicate state or error across the entire group.\nAlert places within the same width as the Component Group — well-suited to delivering a shared message that applies to multiple elements at once.\n\nFits when verification results need to be shown per section or grouped unit, so the user clearly understands the scope.\n(e.g., Change Tag, Swap Tag)"
+        },
+        {
+          "key": "floating",
+          "title": "Floating Type",
+          "desc": "Floating Type sits independently above a component group or single component to deliver a more emphasized state message. Perceived as a separate layer from the base layout — fits when an error, success, or guidance message needs immediate user attention."
+        },
+        {
+          "key": "inline",
+          "title": "Inline Text Type",
+          "desc": "Inline Text Type surfaces auxiliary messages directly tied to a single input field or component. Used to deliver field-level validation results or input guidance — placed inline directly below the component so the message's target is immediately obvious."
+        }
+      ]
+    },
+    "spacing": {
+      "title": "Spacing",
+      "desc": "Alert's inner padding is defined per size to keep text readable and balance icon and text. All sizes use 12px horizontal padding as a base. Vertical padding varies by size: Large uses 10px top/bottom; Medium uses 8px top/bottom. This adjusts density per size while keeping readability and information delivery consistent within the same structure.",
+      "ruleTitle": "Padding Rule",
+      "ruleText": "Alert uses 12px horizontal padding as a base across both Large and Medium sizes. Vertical padding is 10px for Large and 8px for Medium, adjusting density per size."
+    }
+  },
+  "toast": {
+    "title": "Toast",
+    "desc": "Toast is a non-blocking feedback component that delivers task results or state changes briefly and clearly. Typically surfaced right after actions like save, copy, create, or delete — it doesn't interrupt the user's flow and helps them recognize results quickly.",
+    "anatomy": {
+      "title": "Anatomy",
+      "caption": "1. Icon\n2. Header\n3. Description Text\n4. Container\n5. Close Icon Button"
+    },
+    "component": {
+      "title": "Component",
+      "desc": "Toast surfaces in a Floating layout — only one type: Container Toast (wrapped in a container)."
+    },
+    "messageType": {
+      "title": "Message Type",
+      "desc": "Toast splits into three by information type — Information for brief action feedback, Success for completed actions, and Warning for failed actions. Most Toasts are used as Success type."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Warning, Information, Success", "default": "None" },
+        { "prop": "Size", "values": "Large, Medium", "default": "None" },
+        { "prop": "Container", "values": "True, False", "default": "None" },
+        { "prop": "Description", "values": "True, False", "default": "False" },
+        { "prop": "Icon", "values": "True, False", "default": "True" }
+      ]
+    },
+    "placement": {
+      "title": "Placement",
+      "desc": "Toast is a feedback component that delivers task results briefly and clearly. Based on message tone and user context, place it at Bottom Center, Top, or Nearby Component. All placements share the same Toast structure — choose the right position based on message priority, occurrence context, and the user's natural eye flow.",
+      "items": [
+        {
+          "key": "bottom-center",
+          "title": "Bottom Center",
+          "desc": "Bottom Center is the default placement when task results need to be announced globally — such as creation, deletion, or save completion. Surfaces briefly at the bottom center of the screen right after the user completes a primary task. Delivers results clearly without disrupting flow.\n\nFits when success or completion feedback applies to the entire page."
+        },
+        {
+          "key": "top",
+          "title": "Top",
+          "desc": "Top placement fits state feedback that occurs relatively often but should stay minimally intrusive — like Auto saved. Sits fixed at the top so it doesn't cover primary content, letting users recognize the current state naturally while continuing their task.\n\nFits repetitive system state announcements and short-lived informational messages."
+        },
+        {
+          "key": "nearby",
+          "title": "Nearby Component",
+          "desc": "Nearby Component delivers a task result tied directly to a specific button or action icon, right next to that component. Fits when more contextual feedback is needed than a global success message — users immediately understand which action the result belongs to, without extra interpretation.\n\nTypically used for short success feedback on a single action — Link copied, Shared, Added, Moved — surfaced briefly near the related UI element and dismissed automatically as the default rule."
+        }
+      ]
+    }
+  }
+}

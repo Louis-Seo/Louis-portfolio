@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Expansion Panel",
+    "description": "Panel that can be easily expanded and collapsed in place — built around the OSD Viewer's Side Expansion Panel."
+  },
+  "hero": {
+    "title": "Expansion Panel",
+    "desc": "Expansion Panel is a panel that can be expanded and collapsed inline within the page."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "usage": {
+    "title": "Usage",
+    "desc": "Zoomable's canonical Side Expansion Panel is the work panel surfaced during OSD Viewer tasks. Its contents are composed from various components depending on purpose. Side Expansion Panel typically anchors to either the left or right side of the page.",
+    "ruleTitle": "Side Expansion Panel",
+    "ruleText": "A vertical surface containing the actions available for the page within its panel area. It carries a dedicated Button area at the bottom."
+  },
+  "variants": {
+    "title": "Variants",
+    "desc": "Zoomable's canonical Side Expansion Panel is the work panel surfaced during OSD Viewer tasks. Its contents are composed from various components depending on purpose. Side Expansion Panel typically anchors to either the left or right side of the page.",
+    "fold": {
+      "title": "Panel Fold",
+      "desc": "Side Panel can be folded and unfolded based on usage. The Icon Button that triggers this action surfaces on hover at the panel edge. Unlike GNB, the collapsed state collapses down to a single icon button."
+    },
+    "scroll": {
+      "title": "Scroll Bar",
+      "desc": "When panel items exceed the visible area, a Scroll Bar appears. The Scroll Area is sized to the items' bounds."
+    }
+  },
+  "tables": {
+    "panel": {
+      "title": "Table of Figma Properties — Expansion Panel / OSD Viewer Panel",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Defect Panel, Photo Panel", "default": "None" },
+        { "prop": "Empty", "values": "False, True", "default": "False" },
+        { "prop": "Position", "values": "Full, Screen", "default": "Screen" }
+      ]
+    },
+    "entry": {
+      "title": "Table of Figma Properties — Expansion Panel / OSD Viewer Panel / Entry Type",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        {
+          "prop": "Type",
+          "values": "Dropdown, Severity Filter, Short Input, Slider with Input, Toggle with Input, Checkbox, Range, Slider with Input (Reset)",
+          "default": "None"
+        }
+      ]
+    },
+    "list": {
+      "title": "Table of Figma Properties — Expansion Panel / OSD Viewer Panel / List",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        {
+          "prop": "State",
+          "values": "Default, Hover, Selected, Select Hover",
+          "default": "Default"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "labels": {
+    "role": "Role",
+    "duration": "Duration",
+    "platform": "Platform",
+    "contribution": "Contribution",
+    "scope": "Scope",
+    "outcome": "Outcome",
+    "components": "Components",
+    "teams": "Teams"
+  },
+  "invest-manager": {
+    "title": "DNK Investment Manager",
+    "subtitle": "Redesigning a BI-heavy dashboard into a decision-first analytics workspace for real estate investment.",
+    "tags": ["BI Platform", "FinTech", "AI Integration", "Data Visualization"]
+  },
+  "dnk-rp": {
+    "title": "DNK Resident Portal",
+    "subtitle": "Reframing Japan's rental operations around residents — a PMS-connected platform spanning resident app, admin web, and back office.",
+    "tags": ["PropTech", "B2B2C", "PMS", "Mobile"]
+  },
+  "design-system": {
+    "title": "Zoomable Design System",
+    "subtitle": "A shared token and component system that let multiple product teams speak the same design language.",
+    "tags": ["Design System", "Multi-Product", "React", "Tokens"]
+  },
+  "research-problem-framing": {
+    "title": "Research & Problem Framing",
+    "subtitle": "Mapping operational bottlenecks and workflows to define the starting point for Zoomable Worker and Wind.",
+    "tags": ["UX Research", "Strategy", "Problem Framing", "Wind Energy"]
+  },
+  "nearthwind-mobile": {
+    "title": "NearthWind Mobile",
+    "subtitle": "An AI-driven autonomous drone system for inspecting wind turbines without specialist pilots.",
+    "tags": ["Mobile", "AI", "Drone", "Wind Energy"]
+  },
+  "zoomable-worker": {
+    "title": "Zoomable Worker",
+    "subtitle": "An AI-assisted platform for inspecting wind turbine blades and managing defects end-to-end.",
+    "tags": ["AI", "Wind Energy", "Inspection", "B2B SaaS"]
+  },
+  "zoomable-wind": {
+    "title": "Zoomable Wind",
+    "subtitle": "Extending wind inspection data from passive viewing into analytics, reporting, history, and operations.",
+    "tags": ["Platform", "Data", "Wind Energy", "B2B SaaS"]
+  }
+}

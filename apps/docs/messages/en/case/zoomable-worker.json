@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "title": "Zoomable Worker",
+    "description": "Workflow platform for wind turbine blade inspection — image upload through quality check, defect marking, decision, dashboard, and flight log. One system for the entire field operation."
+  },
+  "hero": {
+    "label": "UX/UI Design · 2022–2024",
+    "title": "Zoomable Worker",
+    "description": "An AI- and drone-driven workflow platform for wind turbine blade inspection. Image collection, quality check, defect marking, final decision, operational dashboard, flight log — the entire field inspection operation runs as one system.",
+    "scope": [
+      "Upload",
+      "Quality Check",
+      "OSD Viewer",
+      "Defect Marking",
+      "Decision",
+      "Dashboard",
+      "Flight Log"
+    ],
+    "meta": [
+      { "label": "Role", "value": "UX/UI Designer" },
+      { "label": "Duration", "value": "2022–2024 (2 years)" },
+      {
+        "label": "Contribution",
+        "value": "Planning, User Interview, UT, UI/UX Design, Maintenance"
+      },
+      {
+        "label": "Team",
+        "value": "UX/UI Designer, PM, Frontend·Backend Dev, DL Engineer"
+      }
+    ]
+  },
+  "research": {
+    "tag": "Built from Research",
+    "textBefore": "This project was designed on top of the operational problems and user insights defined in ",
+    "textLink": "Research & Problem Framing",
+    "textAfter": ".",
+    "arrow": "View the research →",
+    "findingsTitle": "Key insights surfaced in the research",
+    "findings": [
+      {
+        "num": "01",
+        "title": "Fragmented inspection workflow",
+        "text": "Image upload, quality check, defect marking, and final decision lived in different tools or manual steps. Data dropped between stages and work piled up at the seams."
+      },
+      {
+        "num": "02",
+        "title": "No image quality management",
+        "text": "Hundreds of drone-captured images, low-quality ones included, pushed straight into analysis. Detection accuracy dropped, and re-shoot costs kept recurring."
+      },
+      {
+        "num": "03",
+        "title": "Communication broken across roles",
+        "text": "Pilots, inspectors, and managers worked in different systems. Status didn't propagate, flight log and inspection record didn't connect, and the operation ran on thin visibility."
+      }
+    ],
+    "summary": "From these findings, Zoomable Worker was scoped not as another AI defect detector but as a workflow platform that connects the entire inspection operation as one piece."
+  },
+  "overview": {
+    "label": "Overview",
+    "titleLine1": "From image capture to operational management,",
+    "titleLine2": "the inspection pipeline as one platform",
+    "paragraphs": [
+      "Zoomable Worker is the workflow platform that combines AI and drone capture to inspect wind turbine blades and identify defects. Drones collect high-resolution images, AI runs first-pass detection, humans verify, and final decisions land — the entire process inside one system.",
+      "It's built around seven core modules — Upload, Quality Check, OSD Viewer, Defect Marking, Decision, Dashboard & Notifications, Flight Log — designed so pilots, inspectors, and managers collaborate inside one surface."
+    ]
+  },
+  "process": {
+    "label": "Product Structure",
+    "title": "End-to-end inspection workflow",
+    "intro": "Zoomable Worker structures the inspection process into seven function modules. Each runs independently, but data flows naturally to the next step.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Image Upload",
+        "desc": "Bulk-upload drone images with auto-linked metadata — the entry point of the inspection data pipeline."
+      },
+      {
+        "num": "02",
+        "title": "Quality Check",
+        "desc": "Verify image quality and filter low-quality data — the gate that protects downstream analysis accuracy."
+      },
+      {
+        "num": "03",
+        "title": "OSD Viewer",
+        "desc": "Identify defects on ultra-high-resolution imagery and review AI detection results — the inspector's workbench."
+      },
+      {
+        "num": "04",
+        "title": "Defect Marking",
+        "desc": "Convert visual findings into structured defect data — classified by type and severity."
+      },
+      {
+        "num": "05",
+        "title": "Defect Decision",
+        "desc": "Final review of marked defects and the repair-or-not call — the judgment gate."
+      },
+      {
+        "num": "06",
+        "title": "Dashboard",
+        "desc": "Real-time monitoring across farms with notifications that coordinate a distributed team — the operational hub."
+      },
+      {
+        "num": "07",
+        "title": "Flight Log",
+        "desc": "Collect and process pilot flight logs to support invoicing and customer reporting — the operational record layer."
+      }
+    ]
+  },
+  "features": {
+    "upload": {
+      "label": "Core Feature 01",
+      "title": "Image Upload",
+      "description": "The entry point of the inspection workflow. Bulk-upload hundreds of blade images at once and auto-link metadata — turbine ID, blade position, timestamp. Not a file uploader — the first quality gate that decides how trustworthy downstream analysis can be.",
+      "heroImageAlt": "Image Upload main interface",
+      "bullets": [
+        {
+          "title": "Bulk upload + metadata linking",
+          "text": "Upload many images at once with auto-linked turbine ID, blade position, and timestamp. Manual entry drops, data accuracy goes up, downstream errors don't compound."
+        },
+        {
+          "title": "Pre-check + filtering",
+          "text": "Initial quality is assessed on upload, and low-quality images get flagged. Quality gets enforced before analysis begins — rework cost falls."
+        },
+        {
+          "title": "Progress + error handling",
+          "text": "Real-time upload progress and completion state. Alerts and logs catch errors as they happen — data integrity and storage security stay intact."
+        }
+      ],
+      "subImageAlts": {
+        "sub1": "Image Upload detail view",
+        "sub2": "Image Upload metadata view"
+      }
+    },
+    "quality": {
+      "label": "Core Feature 02",
+      "title": "Image Quality Check",
+      "description": "Defect call accuracy lives or dies by the input image. This is the gate that verifies every uploaded image is good enough to read for defects. Grid View and Stitching View catch missing capture coverage, and image attributes — blur, brightness — get evaluated. Below threshold, re-capture gets requested.",
+      "tabs": { "grid": "Grid View", "stitching": "Stitching View" },
+      "bullets": [
+        {
+          "title": "Inspection + classification",
+          "text": "Verify uploaded images and classify by quality. Stitching View and Grid View catch missing capture data and confirm full blade coverage."
+        },
+        {
+          "title": "Adjustment + re-shoot",
+          "text": "Adjust blur, brightness, and darkness to hold image quality. If quality falls below threshold, trigger a re-capture before analysis is poisoned."
+        },
+        {
+          "title": "Status + audit trail",
+          "text": "Each image holds a Pass, Fail, or Review state — quality progress reads clearly. All state changes and comments log for cross-team auditing."
+        }
+      ],
+      "subImageAlts": {
+        "sub1": "Quality Check detail panel",
+        "sub2": "Quality Check review panel"
+      }
+    },
+    "osd": {
+      "label": "Core Feature 03",
+      "title": "OSD Viewer",
+      "description": "The workbench where inspectors spend most of their time. Highlight defects with B-boxes on ultra-high-resolution images, and reconcile AI-detected defects with the ones the inspector finds — all on one surface. Comparison views track defect progression over time, and image adjustment tools push detection accuracy up.",
+      "imageAlts": {
+        "left1": "OSD Viewer — General view",
+        "left2": "OSD Viewer — Comparison view",
+        "right": "OSD Viewer — Detail panels"
+      },
+      "bullets": [
+        {
+          "title": "Defect identification + multi-user work",
+          "text": "Highlight defects with B-boxes — square or non-square, sized to the defect shape. Multiple users work simultaneously, and Show/Hide cuts visual noise to a minimum."
+        },
+        {
+          "title": "Comparison view + image adjustments",
+          "text": "Place the current and previous inspection side by side to track defect change. Brightness, exposure, contrast, white balance — adjustment controls push the call accuracy up."
+        },
+        {
+          "title": "AI-assisted detection + metadata",
+          "text": "Machine learning auto-detects defects. Turbine model, blade info, image metadata, defect severity, type, and action items all live on a single screen."
+        }
+      ]
+    },
+    "marking": {
+      "label": "Core Feature 04",
+      "title": "Defect Marking",
+      "description": "The step that converts a visual finding into structured operational data. Inspectors mark up defects directly on the image — pen, highlight, shape tools — and classify by type and severity. The structured data that gets produced here is what powers final decisions and reports.",
+      "heroImageAlt": "Defect Marking interface",
+      "bullets": [
+        {
+          "title": "Marking + classification",
+          "text": "Mark up defects directly on the image or in the workspace. Use the right tools to record defect type, position, and severity in a clean, recoverable structure."
+        },
+        {
+          "title": "Collaboration + real-time feedback",
+          "text": "Multiple users review and edit defects in the same workspace. Real-time comments support cross-team communication, and defect frequency and pattern feed into quality improvement."
+        },
+        {
+          "title": "Report integration",
+          "text": "Auto-generated defect reports give managers a top-down read on overall quality state. Export to PDF or Excel for external sharing and documentation."
+        }
+      ],
+      "subImageAlts": {
+        "sub1": "Defect Marking detail 1",
+        "sub2": "Defect Marking detail 2"
+      }
+    },
+    "decision": {
+      "label": "Core Feature 05",
+      "title": "Defect Decision",
+      "description": "The final judgment gate before a marked defect turns into a repair order. Filter by blade type (A, B, C) and defect position (LE, TE, SS, PS), evaluate severity, and lock in Pass, Good, or Bad. Every decision logs for transparency.",
+      "heroImageAlt": "Defect Decision main view",
+      "bullets": [
+        {
+          "title": "Defect list + filtering",
+          "text": "See every defect photo on the selected blade. Filter by blade type and defect position, sort by severity — review the urgent defects first."
+        },
+        {
+          "title": "Final call + edit",
+          "text": "Lock each defect as Pass, Good, or Bad. Zoom into the defect photo for detail review and edit the marking on the spot when needed — the call lands accurately."
+        },
+        {
+          "title": "Decision audit trail",
+          "text": "Decision and edit history logs for full transparency. Empty defects get counted before final lock-in, and a confirmation step prevents missed calls."
+        }
+      ],
+      "subImageAlts": {
+        "sub1": "Defect Decision detail 1",
+        "sub2": "Defect Decision detail 2"
+      }
+    },
+    "dashboard": {
+      "label": "Core Feature 06",
+      "title": "Dashboard & Notification",
+      "description": "The operational hub where a distributed team coordinates inspection work across multiple wind farms in real time. Read and change every farm's DIU (Drone Inspection Unit) status from one screen, and a unified notification system resolves the time and distance gap.",
+      "heroImageAlt": "Dashboard main view",
+      "bullets": [
+        {
+          "title": "Real-time work status",
+          "text": "Read and change DIU work status across multiple farms live. Status indicators, change buttons, and assignment tools coordinate cross-team work without friction."
+        },
+        {
+          "title": "Unified notifications + Watch",
+          "text": "Email and in-app notifications when work status changes. Notification on/off and Watch let you track the things you care about without missing changes."
+        },
+        {
+          "title": "Personalized settings",
+          "text": "My Account, Notification settings, and General Settings personalize per-user notifications and work management — tuned to each user's role and responsibility."
+        }
+      ],
+      "subImageAlts": {
+        "sub1": "Dashboard settings view",
+        "sub2": "Dashboard watchlist view"
+      }
+    },
+    "flightLog": {
+      "label": "Core Feature 07",
+      "title": "Flight Log",
+      "description": "Not a record utility — the documentation and reconciliation layer of the inspection operation. Collect and process pilot flight logs, unify scattered data, and support automated post-processing. Accurate invoicing, professional customer response, and a workflow that gets better for pilots and operations together — all in one system.",
+      "heroImageAlt": "Flight Log main view",
+      "bullets": [
+        {
+          "title": "Data consolidation + status management",
+          "text": "Date, uploader, work type, start/end time, signature, save time — every flight data point in one place. WEB/APP upload split and state checks preserve data integrity."
+        },
+        {
+          "title": "Metadata + workflow",
+          "text": "Metadata upload, edit, and delete are supported. A Work Type description page locks in TPH values precisely. Pilot and operations workflows are streamlined through automated post-processing."
+        },
+        {
+          "title": "Invoicing + customer response",
+          "text": "Download per-date flight logs as Excel or PDF to push invoice accuracy. Documentation supports a professional response to customer requests."
+        }
+      ],
+      "subImageAlts": {
+        "sub1": "Flight Log detail view",
+        "sub2": "Flight Log history view"
+      }
+    }
+  },
+  "decisions": {
+    "label": "Design Decisions",
+    "title": "The judgment calls that shaped the product",
+    "items": [
+      {
+        "question": "Why are Upload and Quality Check separate steps?",
+        "answer": "Upload is data collection. Quality check is data validation. In the field, the drone team usually uploads, and the inspection team verifies — splitting the steps respects role-specific workflow while keeping the quality gate explicit."
+      },
+      {
+        "question": "Why are OSD Viewer and Defect Marking separate steps?",
+        "answer": "OSD Viewer is the exploration tool — find defects on high-resolution imagery and validate AI detection. Defect Marking is the recording tool — convert findings into structured data. Splitting exploration from recording lets each step stay focused, and since marking integrity drives downstream decision and report trust, it needed its own quality envelope."
+      },
+      {
+        "question": "Why does Defect Decision need to be a separate step?",
+        "answer": "If marked defect data flows directly into repair instructions, false positives and over-calls turn into field cost. Splitting the final decision into its own step enables severity re-evaluation, blade/position-based filtering, and decision audit trails — it's the safety mechanism that prevents wrong repairs."
+      },
+      {
+        "question": "Why does Flight Log belong in the same product?",
+        "answer": "Flight logs are the operational record that proves the source and context of inspection imagery. Keep them in a separate system and invoice reconciliation, customer reporting, and audit lookups all require manual cross-checking. Inside the same platform, the data stays linked and the information cost between pilot, operations, and manager drops."
+      }
+    ]
+  },
+  "outcome": {
+    "label": "Outcome & Reflection",
+    "title": "Project results",
+    "metrics": [
+      {
+        "value": "60%",
+        "label": "Less inspection time",
+        "desc": "Total workflow time cut 60% vs. the manual baseline. Single-platform handling from upload to decision removes transition cost between steps."
+      },
+      {
+        "value": "95%",
+        "label": "Defect detection accuracy",
+        "desc": "Hybrid workflow of AI auto-detection plus human verification hits 95% accuracy. The quality gate guarantees input data quality."
+      },
+      {
+        "value": "7",
+        "label": "Core feature modules",
+        "desc": "Upload through Flight Log — seven modules covering the full inspection operation as one integrated workflow system."
+      },
+      {
+        "value": "2yr",
+        "label": "Ongoing operation & iteration",
+        "desc": "Two years of feedback-driven iteration from pilots, inspectors, and managers — and stable operation throughout."
+      }
+    ],
+    "reflection": {
+      "title": "Reflection",
+      "paragraphs": [
+        "Zoomable Worker was a project about designing a workflow where a complex industrial domain's many roles could collaborate naturally on one platform. Pilots own the flight log, inspectors handle marking and decisions, managers coordinate progress from the dashboard. Connecting the data flow and handoffs between those roles cleanly was the core challenge.",
+        "We started as an AI defect detection tool. As we understood the real field operation, the product scope expanded. Image quality decides analysis accuracy. Marking and decisions need to be separated. Flight log and inspection records need to connect for invoice accuracy. Every one of these came from field feedback.",
+        "Across two years we grew from a tool into an integrated system that transformed the whole inspection process. From this project I learned that in operational UX, workflow integrity matters more than feature convenience — and that in AI-assisted systems, how you design the human verification step decides whether the product gets trusted."
+      ]
+    }
+  },
+  "quote": "“Good design is obvious. Great design is transparent.”"
+}

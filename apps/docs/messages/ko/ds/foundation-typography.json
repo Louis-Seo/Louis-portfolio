@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Typography",
+    "description": "Type Scale·Weight·Usage 가이드 — 명확한 위계와 일관된 가독성을 위한 타이포그래피 시스템."
+  },
+  "hero": {
+    "title": "Typography",
+    "desc": "Typography는 제품이 사용자와 대화하는 주된 표면입니다. 시스템은 균형 있는 Scale, Weight 팔레트, Line-height를 정의하여 위계를 전달하고 읽는 부담을 줄입니다. 목적에 맞게 적용하세요 — Typeface와 Weight는 취향이 아닌 의도를 따릅니다."
+  },
+  "typeUsage": {
+    "title": "Type Usage",
+    "descLine1": "정의된 스케일은 강제 제약이 아닌 권장 가이드라인입니다.",
+    "descLine2": "단일 스케일에 묶이면 디자인 유연성이 떨어집니다. 시스템은 권장 크기·굵기를 제안하고, 디자이너는 그 위에서 자유롭게 조합합니다.",
+    "noteBelow12": "가독성과 접근성을 위해 12pt 미만 폰트 크기는 피합니다.",
+    "table": {
+      "scale": "Scale Category",
+      "typeface": "Typeface",
+      "weight": "Weight",
+      "size": "Font Size (px)",
+      "rem": "REM",
+      "lineHeight": "Line Height (px)",
+      "unitless": "Unitless Line Height (LH ÷ FS)"
+    }
+  },
+  "scaleLogic": {
+    "title": "Type Scale Logic",
+    "descLine1": "스케일은 12px에서 시작하여 4단계마다 증가 폭이 확장됩니다.",
+    "descLine2": "작은 본문부터 강조와 헤드라인까지 — 각 단계가 리듬을 깨지 않으면서 구조적 대비를 더합니다.",
+    "formula": "공식 Xₙ = Xₙ₋₁ + {{ INT[(n−2)/4] + 1 }} × 2 — 낮은 구간은 2px, 중간은 4px, 상위 구간은 6px 단위로 증가합니다.",
+    "formulaSub": "낮은 단계에서는 미세한 차이로 가독성을 유지하고, 높은 단계에서는 명확한 강조로 위계를 전달합니다.",
+    "table": {
+      "n": "n",
+      "calc": "Calculation",
+      "increment": "Increment",
+      "result": "Final Font Size (Xₙ)"
+    }
+  },
+  "typeWeight": {
+    "title": "Type Weight",
+    "desc": "기본 Typeface는 Pretendard이며, Weight는 Regular(400), Medium(500), Semi Bold(600)을 사용합니다."
+  },
+  "typeScale": {
+    "title": "Type Scale",
+    "desc": "같은 스케일을 화면 위계와 컴포넌트 내부 위계 모두에 사용할 수 있습니다."
+  },
+  "weightUsage": {
+    "title": "Weight Usage",
+    "rows": [
+      { "weight": "Semi Bold", "desc": "Heading" },
+      { "weight": "Medium", "desc": "기본 Title, 인라인 강조, 버튼 라벨" },
+      { "weight": "Regular", "desc": "기본 Body 텍스트" },
+      { "weight": "Light", "desc": "강조도가 낮은 Body 텍스트" }
+    ]
+  },
+  "usageNotes": {
+    "title": "Usage Notes",
+    "items": [
+      {
+        "label": "Navigation Bar (예외)",
+        "text": "Main Navigation은 Subtitle 1, Body 1 사용 (Letter Spacing −0.5%)."
+      },
+      {
+        "label": "Subtitle & Body (예외)",
+        "text": "Subtitle·Body가 두 줄로 표시될 때: 12px → Line-height 120%, 14·16px → Line-height 140%."
+      },
+      {
+        "label": "Modal",
+        "text": "Header 24, Subtitle Medium 14, Info Text Regular 14."
+      },
+      {
+        "label": "Tooltip",
+        "text": "10px 사용."
+      },
+      {
+        "label": "Alert",
+        "text": "Title — 14px / Medium · Body — 12px / Regular."
+      }
+    ]
+  },
+  "scaleGroups": {
+    "heading": {
+      "title": "Heading",
+      "meta": "Pretendard",
+      "metaWeight": "Semi Bold — 16px",
+      "contextLabel": "Navigation & Dashboard UI"
+    },
+    "subtitle": {
+      "title": "Subtitle",
+      "meta": "Pretendard",
+      "metaWeight": "Medium — 14px",
+      "contextLabel": "Form & Detail Panel UI"
+    },
+    "body": {
+      "title": "Body",
+      "meta": "Pretendard",
+      "metaWeight": "Regular — 14px",
+      "contextLabel": "Data Table UI"
+    }
+  }
+}

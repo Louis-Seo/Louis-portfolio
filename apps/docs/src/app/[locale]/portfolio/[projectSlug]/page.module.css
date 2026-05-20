@@ -1,0 +1,112 @@
+.page {
+  width: 100%;
+}
+
+/* ── Prose ── */
+.prose {
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-body1);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 720px;
+}
+
+/* ── Two Column ── */
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.blockTitle {
+  font-size: var(--font-size-subtitle2);
+  font-weight: var(--font-weight-subtitle2);
+  line-height: var(--line-height-subtitle2);
+  color: var(--text-primary);
+}
+
+/* ── List ── */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  font-size: var(--font-size-body1);
+  font-weight: var(--font-weight-body1);
+  line-height: var(--line-height-body1);
+  color: var(--text-secondary);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.listItem:first-child {
+  border-top: 1px solid var(--border-default);
+}
+
+/* ── Process ── */
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.processStep {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.processNumber {
+  font-size: var(--font-size-body4);
+  font-weight: var(--font-weight-body4);
+  line-height: var(--line-height-body4);
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+}
+
+.processText {
+  font-size: var(--font-size-body2);
+  font-weight: var(--font-weight-body2);
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+/* ── Gallery ── */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.galleryPlaceholder {
+  aspect-ratio: 4 / 3;
+  background: var(--gray-100);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+}
+
+/* ── Responsive ── */
+@media (max-width: 828px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+}

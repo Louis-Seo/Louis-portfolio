@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Indicator",
+    "description": "Visual signal that surfaces ongoing progress while data loads or a user action runs — Spinner and Progress Bar."
+  },
+  "hero": {
+    "title": "Indicator",
+    "desc": "Indicator signals that work is in progress — while data loads, or while a user-triggered action is being processed."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Indicator splits by how the duration behaves — Spinner for indeterminate timing, Progress Bar for determinate timing.",
+    "caption": "A. Spinner\nB. Progress Bar"
+  },
+  "spinner": {
+    "title": "Spinner",
+    "desc": "Used when data loading or processing takes an unpredictable amount of time — visualizes the work indeterminately.",
+    "anatomy": {
+      "title": "Anatomy",
+      "caption": "1. Track\n2. Indicator (Fill)"
+    },
+    "variants": {
+      "title": "Variants",
+      "type": {
+        "title": "Type",
+        "desc": "Spinner splits by scope — embedded within a Button or Dropdown, and applied at the Container or Page level."
+      },
+      "duration": {
+        "title": "Duration",
+        "desc": "As an indeterminate Indicator, Spinner is typically used for short loading windows around 1-3 seconds."
+      }
+    },
+    "useCase": {
+      "title": "Usecase",
+      "items": [
+        {
+          "key": "button",
+          "title": "Button",
+          "desc": "Surfaces when a Button action triggers data loading."
+        },
+        {
+          "key": "dropdown",
+          "title": "Dropdown",
+          "desc": "Surfaces when a Dropdown action triggers data loading."
+        },
+        {
+          "key": "file-upload",
+          "title": "File Upload",
+          "desc": "Surfaces during individual file uploads."
+        }
+      ]
+    }
+  },
+  "progressBar": {
+    "title": "Progress Bar",
+    "desc": "Used when the processing time is predictable — visualizes the work determinately.",
+    "caption": "Progress Bar (Linear Type)",
+    "anatomy": {
+      "title": "Anatomy",
+      "caption": "1. Indicator (Bar Type)\n2. Track\n3. Helper Text"
+    },
+    "variants": {
+      "title": "Variants",
+      "state": {
+        "title": "State",
+        "desc": "Progress Bar surfaces determinate progress information. In Wind, it's primarily used during file upload. It carries two states — Uploading and Complete."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "When embedded in a Wind container, Progress Bar's Height equals the container's Height. Width flexes to the surrounding area."
+      }
+    },
+    "useCase": {
+      "title": "Usecase",
+      "exportPdf": {
+        "title": "Export PDF",
+        "desc": "Wind uses Progress Bar when exporting files. Typically pairs with Spinner."
+      }
+    }
+  }
+}

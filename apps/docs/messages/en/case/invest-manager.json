@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "title": "DNK Investment Manager",
+    "description": "Redesigning a BI-heavy dashboard into a decision-first analytics workspace — built for executives, asset managers, analysts, and data managers alike."
+  },
+  "hero": {
+    "label": "Product Design · 2026–",
+    "title": "DNK Investment Manager",
+    "tagline": "Turning complex BI into decision-ready workspace",
+    "descLine1": "Cutting the analysis overhead out of real estate investing,",
+    "descLine2": "and giving the whole org one set of numbers they trust."
+  },
+  "heroMeta": [
+    { "label": "Role", "value": "Product Designer" },
+    { "label": "Duration", "value": "2026–" },
+    {
+      "label": "Contribution",
+      "valueLine1": "Product Planning, IA, Dashboard Builder,",
+      "valueLine2": "Deal Pipeline, CFC, AI SQL, Design System"
+    },
+    { "label": "Team", "value": "Designer, PM, Dev, Data Engineer" }
+  ],
+  "overview": {
+    "label": "Overview",
+    "titleLine1": "Built for decisions,",
+    "titleLine2": "not just for looking at data.",
+    "paragraphs": [
+      "DNK Investment Manager turns real estate portfolio performance into decisions. Before this, the only analysis surface was a BI-driven dashboard — powerful, but a wall to anyone who wasn't a BI expert.",
+      "We didn't redesign a data tool. We built a decision-support interface. Read portfolio health on Home, compose purpose-driven views in Dashboard Builder, execute deals in Deal Pipeline, and explore freely in AI SQL — six tabs that move you through the analysis workflow as one piece, not six."
+    ]
+  },
+  "problem": {
+    "label": "Problem",
+    "titleLine1": "The data was there.",
+    "titleLine2": "Reading the same numbers? Not guaranteed.",
+    "desc": "Across the existing IM environment, the recurring problem wasn't 'missing tools.' It was missing a shared interpretation and a way to actually reach the data.",
+    "painCards": [
+      {
+        "num": "01",
+        "title": "No shared interpretation",
+        "desc": "Cash flow structures and normalization rules weren't aligned, so the same dataset produced different numbers depending on who was reading. The data existed, but purpose-fit interpretation and comparison didn't."
+      },
+      {
+        "num": "02",
+        "title": "BI was too high a wall",
+        "desc": "BI tools are powerful, but unforgiving for non-experts. Chart configuration was technical, and there was no quick path from 'what I need to know' to 'a view I can read.'"
+      },
+      {
+        "num": "03",
+        "title": "No role-aware views",
+        "desc": "Executive, Asset Manager, Analyst, and Data Manager all need information at different depths — yet the existing interface treated them as one user."
+      }
+    ],
+    "diagram": {
+      "tier1": {
+        "label": "4 Roles",
+        "roles": ["Executive", "Asset Manager", "Analyst", "Data Manager"]
+      },
+      "tier2": {
+        "label": "1 Shared Surface",
+        "title": "BI Tool — complex, expert-only",
+        "meta": "One UI for every role · CFC unmanaged"
+      },
+      "tier3": {
+        "label": "4 Inconsistent Reads",
+        "outputs": [
+          { "role": "Exec", "value": "NOI ¥3.42B" },
+          { "role": "AM", "value": "NOI ¥3.31B" },
+          { "role": "Analyst", "value": "NOI ¥3.55B" },
+          { "role": "DM", "value": "NOI ¥3.18B" }
+        ]
+      },
+      "caption": "Same data · different interpretations · different numbers"
+    }
+  },
+  "users": {
+    "label": "Users",
+    "title": "Four roles. Four different questions.",
+    "desc": "Each IM user reads information at a different depth and angle, depending on their role. The design respects that difference while keeping everyone on the same data foundation.",
+    "cards": [
+      {
+        "role": "Executive",
+        "question": "Where is the portfolio heading overall?",
+        "needs": "Scan AUM, NOI, Yield, and Growth fast, and catch outliers early.",
+        "tab": "Home, Dashboard"
+      },
+      {
+        "role": "Asset Manager",
+        "question": "What's actually pulling this portfolio or asset's performance?",
+        "needs": "Go deep on Rent, Occupancy, Expense, NOI — toggling between charts and tables.",
+        "tab": "Dashboard Builder, Deal Pipeline"
+      },
+      {
+        "role": "Analyst",
+        "question": "What patterns emerge across vintages and asset classes?",
+        "needs": "Comparative analysis and drill-down — AUM mix, yield comparison, Rent per Tsubo.",
+        "tab": "Dashboard Builder, AI SQL"
+      },
+      {
+        "role": "Data Manager",
+        "question": "Are the assumptions behind the executive's numbers correct?",
+        "needs": "Govern PMR completeness, CFC templates, and data quality — and control them.",
+        "tab": "Data Management, Cash Flow Config"
+      }
+    ]
+  },
+  "strategy": {
+    "label": "Design Strategy",
+    "titleLine1": "Three strategies",
+    "titleLine2": "set the product's judgment.",
+    "desc": "Every design decision was made against these. The goal wasn't a feature list — it was a structure where users trust the numbers and act quickly.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "Trust the Numbers",
+        "desc": "Show the assumptions before the numbers. Scope and CFC templates are always visible, one dashboard maps to one CFC, and global filters control the shared conditions — so the whole organization reads the same number.",
+        "tags": ["Scope First", "One Dashboard = One CFC", "Global Filter"]
+      },
+      {
+        "num": "02",
+        "title": "Lower the Barrier",
+        "desc": "Don't open on a blank canvas — give people a usable starting point. Eleven preset charts let you start instantly. Executives and analysts can each work at their own depth without switching surfaces. Intuitive and extensible at the same time.",
+        "tags": ["Preset Over Blank", "Executive-friendly", "Analyst-capable"]
+      },
+      {
+        "num": "03",
+        "title": "AI as Copilot",
+        "desc": "AI summarizes, but it always has to be verifiable. It explains chart patterns in natural language and suggests follow-up questions — while letting users check the source directly through Data Table and SQL.",
+        "tags": ["Insight with Proof", "Verifiable AI", "Natural Language Query"]
+      }
+    ]
+  },
+  "ia": {
+    "label": "Information Architecture",
+    "title": "Tabs and an expansion layer, bound into one analytical system",
+    "desc": "IM's tabs aren't independent features. They're one investment analysis workflow, wired together. Enter from Home, analyze in Dashboard, execute in Deal Pipeline, govern the assumptions through Data Management and CFC. On top of that, the Command Palette (⌘K) sits as the IA's expansion layer — so the sidebar doesn't grow heavier as features grow.",
+    "imageAlt": "DNK Investment Manager — 6-tab information architecture"
+  },
+  "features": {
+    "home": {
+      "label": "Feature 01",
+      "title": "Home",
+      "description": "An entry hub that reads portfolio health at a glance. Not a list of dashboards — Trust Bar surfaces data confidence first, Key Metrics lets you pick what matters, and the Action Center suggests what to do next.",
+      "heroImageAlt": "Home tab — Trust Bar, Key Metrics, Action Center",
+      "bullets": [
+        {
+          "title": "Trust Bar",
+          "text": "Assumptions before numbers. PMR upload rate, missing data, and last refresh sit at the top — data confidence reads instantly."
+        },
+        {
+          "title": "Action Center",
+          "text": "A hub that doesn't end with observation. Critical, Watch, and Info alerts suggest the next action and link straight to the affected assets."
+        },
+        {
+          "title": "Key Metrics",
+          "text": "A different first number for each role. Pick AUM, NOI Yield, Occupancy, or Rent per Tsubo, and the right-side chart syncs immediately."
+        }
+      ]
+    },
+    "dashboardBuilder": {
+      "label": "Feature 02",
+      "title": "Dashboard Builder",
+      "description": "A self-serve builder for purpose-driven dashboards — no BI tool required. Eleven preset charts give you a usable starting point instead of a blank canvas. Drag and drop arranges sections and cells freely.",
+      "heroImageAlt": "Dashboard Builder — drag-and-drop layout with Preset Chart panel",
+      "bullets": [
+        {
+          "title": "2-Level Drag & Drop",
+          "text": "Dual-level drag at the cell and section level. Place widgets, group them into sections, and preview the result through visual feedback as you go."
+        },
+        {
+          "title": "Preset Chart Panel",
+          "text": "Eleven usable starting points instead of an empty page. Add AUM, Cap Rate, Revenue, Occupancy, and other core investment metrics in one click."
+        },
+        {
+          "title": "Real-time Preview",
+          "text": "Selecting a chart renders an immediate preview. See the result in edit mode and finish the dashboard with confidence."
+        }
+      ],
+      "completed": {
+        "label": "Completed Dashboard",
+        "title": "Portfolio Performance Overview",
+        "desc": "How a built dashboard actually reaches the user. Five preset charts laid out in a 3+2 grid, with the header's filter chain and AI Insights wrapping the whole analysis flow.",
+        "heroImageAlt": "Completed dashboard — Portfolio Performance Overview (5 charts, filter chain, AI Insights)",
+        "bullets": [
+          {
+            "title": "Hover-only Chrome",
+            "text": "The AI · Expand · Edit · More buttons on a chart are hidden by default and surface only on hover. Resting state stays at zero visual noise; chrome appears only when you reach for it."
+          },
+          {
+            "title": "Count-badge Filters",
+            "text": "Multi-select counts show inside the chips — Portfolio +2, Asset +12 — so the current filter state reads instantly without opening anything."
+          },
+          {
+            "title": "Scoped AI",
+            "text": "Every chart has an AI Insights entry point wired in. Interpretation follows naturally from the numbers, without breaking the flow."
+          }
+        ]
+      }
+    },
+    "dealPipeline": {
+      "label": "Feature 03",
+      "title": "Deal Pipeline",
+      "description": "A Kanban view that reads the flow of investment deals at a glance. Track deals across six pipeline stages from Sourcing to Closing, and read full detail on click — no page transition.",
+      "heroImageAlt": "Deal Pipeline — 6-stage Kanban board with Deal Detail Drawer",
+      "bullets": [
+        {
+          "title": "6-Stage Pipeline",
+          "text": "Sourcing, Screening, LOI/Bidding, Due Diligence, IC Review, Closing — every stage of a deal's lifecycle, on one screen."
+        },
+        {
+          "title": "5-Layer Card",
+          "text": "Source, priority, price, Cap Rate/IRR, and progress with milestones — five layers of information packed into a single card without overwhelming it."
+        },
+        {
+          "title": "3-Tab Detail Drawer",
+          "text": "Click a card and a three-tab drawer opens — Overview, Financials, Activity. The full context of the deal, no page change."
+        }
+      ]
+    },
+    "cashFlowConfig": {
+      "label": "Feature 04",
+      "title": "Cash Flow Config",
+      "description": "The core system that defines the meaning behind every metric. The implementation of 'One Dashboard = One CFC' — Revenue, Expense, and NCF structures, managed in an intuitive tree editor.",
+      "heroImageAlt": "Cash Flow Config — split-pane tree editor",
+      "bullets": [
+        {
+          "title": "Split View",
+          "text": "Edit the Revenue/Expense tree on the left, browse category fields on the right. Edit and reference at the same time."
+        },
+        {
+          "title": "Tree Structure Editor",
+          "text": "Expand, collapse, and drag-reorder categories and subcategories. Hierarchical financial data managed intuitively."
+        },
+        {
+          "title": "Lock vs Drag",
+          "text": "System-protected nodes show a clear lock icon. The boundary between editable and protected is always visible."
+        }
+      ]
+    },
+    "dataManagement": {
+      "label": "Feature 05",
+      "title": "Data Management",
+      "description": "Where the assumptions behind the executive's numbers get governed. Monitor data source connections, import activity, and quality metrics in one place — and catch problems before they hit the dashboard.",
+      "heroImageAlt": "Data Management — Trust Bar, data source cards, Data Quality",
+      "bullets": [
+        {
+          "title": "Trust Bar",
+          "text": "Data completeness, active source count, last import, and unresolved issues summarized in one line. System health reads at a glance."
+        },
+        {
+          "title": "Data Quality",
+          "text": "Pick Completeness, Accuracy, Timeliness, or Consistency — the 12-month trend chart syncs immediately."
+        },
+        {
+          "title": "Source Cards",
+          "text": "Connection status and a Health Bar for each of six sources — Core Banking, PMR, Bloomberg, and more — monitored card-by-card."
+        }
+      ],
+      "pmrReview": {
+        "label": "PMR Review",
+        "title": "AI-assisted review for numbers you can trust",
+        "desc": "Where monitoring tracks 'overall environment health,' PMR Review handles cell-level integrity of the monthly reports coming in. Coverage, AI Fix Queue, and Anomaly Detection run on one screen — absorbing friction before the executive's numbers are ever formed.",
+        "heroImageAlt": "PMR Upload Portal — Coverage, AI Fix Queue, Anomalies Detected",
+        "bullets": [
+          {
+            "title": "Coverage at a Glance",
+            "text": "128 cells, summarized in one line — Errors · AI Filled · Empty · Edited. Color sets priority immediately."
+          },
+          {
+            "title": "AI Fix Queue",
+            "text": "Fix, AI Fill, and Review actions sort by item. Auto-fill Empty and Accept All AI also handle batch operations."
+          },
+          {
+            "title": "Anomaly Detection",
+            "text": "Large month-over-month shifts auto-flagged at Watch or Alert level. Signals like 'Sapporo Utility +34% MoM' surface without slipping through."
+          }
+        ]
+      }
+    },
+    "aiSql": {
+      "label": "Feature 06",
+      "title": "AI SQL",
+      "description": "Ask in natural language; AI generates SQL and visualizes the result as a chart. The implementation of 'Insight with Proof' — AI gives the answer, but always pairs it with a verifiable path.",
+      "heroImageAlt": "AI SQL — chat UI, SQL highlighting, result chart",
+      "bullets": [
+        {
+          "title": "Chat-based Query",
+          "text": "Ask in natural language; AI generates the SQL. Questions like 'What's the average rent in Tokyo?' convert to a query instantly."
+        },
+        {
+          "title": "SQL Highlighting",
+          "text": "Read and edit the generated SQL directly. Not a black box — a transparent AI, with keyword highlighting that keeps queries readable."
+        },
+        {
+          "title": "View Toggle",
+          "text": "Switch the result between Table, Bar, and Line views as you explore. See the same data from multiple angles and find the insight."
+        }
+      ]
+    },
+    "aiInsights": {
+      "label": "Feature 07",
+      "title": "AI Insights",
+      "description": "Dashboards surface numbers, but interpretation always landed on the user. Where AI SQL is the 'question → answer' loop, AI Insights is the 'number → interpretation' loop. Every chart has a hover-revealed AI Assistant entry point; clicking it opens an explanation panel injected with the chart's context. Copy maintains the verification and sharing path, and Suggested Prompts remove the friction of follow-up.",
+      "heroImageAlt": "AI Insights panel — chart context header, body, Copy, Suggested Prompts",
+      "bullets": [
+        {
+          "title": "Chart-contextual Header",
+          "text": "The chart name appears in the panel subtitle — no confusion about which chart's interpretation you're reading. The AI's subject is visually pinned."
+        },
+        {
+          "title": "Suggested Prompts",
+          "text": "Two to three follow-up questions surface as arrow chips. Click to auto-fill the input and shift focus — friction-to-start drops to near zero."
+        },
+        {
+          "title": "Draggable Persistence",
+          "text": "Grab the header and move the panel anywhere in the viewport. Position holds for the session, so you can compare across charts without losing your view."
+        }
+      ]
+    },
+    "systemChrome": {
+      "label": "Feature 08",
+      "title": "System Chrome",
+      "description": "A sidebar alone isn't enough. As the product grows, navigation weight grows with it — and product-wide utilities like notifications, account, and theme inevitably converge at the top corner. We redesigned the whole shell to converge input on a single ⌘K command palette and tuned notifications, the user menu, and the AI Assistant entry into one consistent register. The goal: make keyboard-first an implementation, not a tagline.",
+      "heroImageAlt": "System Chrome — topbar and Command Palette open together",
+      "bullets": [
+        {
+          "title": "Command Palette (⌘K)",
+          "text": "Jump to · Recent · Actions · Ask AI converge into one input. Anywhere in the app is two seconds away — no sidebar expansion required."
+        },
+        {
+          "title": "Notifications Center",
+          "text": "Signals split into Alert · Report · Mention · Info. Unread badge, All/Unread tabs, and individual or bulk read — signal management closes cleanly."
+        },
+        {
+          "title": "Keyboard-first Tooltips",
+          "text": "Every icon button surfaces its shortcut as a tooltip. Shortcuts like ⌘K · ? · ⌘, stay discoverable even for mouse users."
+        }
+      ]
+    }
+  },
+  "decisions": {
+    "label": "Design Decisions",
+    "title": "Key decisions and the reasoning behind them",
+    "desc": "The most consequential structural calls on this project. Here's the alternative I rejected and why I chose what I chose.",
+    "cards": [
+      {
+        "num": "Decision 01",
+        "title": "Why CFC lives in its own tab — not inside the dashboard",
+        "alternative": "Embed CFC inside the dashboard's settings panel. Configure it as part of dashboard creation.",
+        "chosen": "CFC as a separate tab. Templates are defined ahead of time; dashboards just pick one.",
+        "reason": "CFC templates get reused across dashboards. Embedding means repeating the same configuration each time, and permissions can't separate. The real point was role separation — the Data Manager owns templates, analysts pick from them."
+      },
+      {
+        "num": "Decision 02",
+        "title": "Why Preset Charts are the default — not an empty dashboard",
+        "alternative": "Blank canvas plus onboarding guidance. A high-freedom approach where users build from scratch.",
+        "chosen": "Eleven preset charts alongside custom creation. Start from a purpose-fit point; extend as needed.",
+        "reason": "A blank screen triggers the 'what should I make' state. Naming the recurring analysis patterns lets non-experts start analyzing immediately, and lets experts customize from the preset."
+      },
+      {
+        "num": "Decision 03",
+        "title": "Why Trust Bar lives on the main view — not in settings",
+        "alternative": "Show data quality info only in the Data Management tab. Hide it from the analysis surface.",
+        "chosen": "Trust Bar persistent at the top of Home. Data confidence reads before any number.",
+        "reason": "'Can I trust this number?' is the first question in any investment decision. Bury data quality in a settings page and nobody checks. We placed it on the entry view so every read passes through it."
+      },
+      {
+        "num": "Decision 04",
+        "title": "Why AI entry points split between the global palette and chart-level Insights",
+        "alternative": "One global AI Assistant panel handles everything — generic questions and chart interpretation through a single chat.",
+        "chosen": "Command Palette Ask AI (general) and per-chart AI Insights (contextual), split two ways. Different entry points, shared AI principles.",
+        "reason": "General questions and contextual questions don't behave the same way. 'Jump to deal pipeline' is a fast, one-shot ask. 'Why did this Yield Spread drop?' is exploratory and multi-turn. Force them into one UI and both get worse. Two entry points, one shared register."
+      },
+      {
+        "num": "Decision 05",
+        "title": "Why topbar search triggers the Command Palette — instead of inline input",
+        "alternative": "Direct input in the topbar with inline autocomplete — pages, deals, and assets handled in one dropdown.",
+        "chosen": "Topbar input is a ⌘K trigger only. The actual search and execution run in the central modal Command Palette.",
+        "reason": "Navigate, Recent, Action, and Ask AI in one inline dropdown gets crowded fast. Splitting into a modal makes group boundaries clean and lets us serve keyboard navigation, large input, and section divisions in parallel. The Palette absorbs future sidebar/topbar expansion pressure, so the shell stays light as features grow."
+      }
+    ]
+  },
+  "outcome": {
+    "label": "Outcome",
+    "titleLine1": "Less BI complexity,",
+    "titleLine2": "and an analysis flow Executive through Analyst",
+    "titleLine3": "can actually trust.",
+    "metrics": [
+      {
+        "value": "8",
+        "label": "Integrated surfaces",
+        "desc": "Six tabs + AI Insights + System Chrome, connected as one analytical system."
+      },
+      {
+        "value": "11",
+        "label": "Preset Charts defined",
+        "desc": "AUM, NOI, Yield, Growth — covering the core investment metrics."
+      },
+      {
+        "value": "80+",
+        "label": "Screens designed",
+        "desc": "Dashboards, charts, deal pipeline, AI, governance — and the global shell."
+      },
+      {
+        "value": "4",
+        "label": "User roles supported",
+        "desc": "Executive, Asset Manager, Analyst, Data Manager."
+      }
+    ],
+    "reflection": {
+      "title": "Reflection",
+      "paragraphs": [
+        "The most consequential call on this project wasn't 'improve the BI tool.' It was 'build a different kind of interface — one made to support decisions.' Hold the freedom of BI, give non-experts a path to start analyzing with intent — that's why Dashboard Builder and AI SQL live as separate things.",
+        "Trust Bar isn't a UI element. It's a product decision: show whether a number is trustworthy before you show the number. Scope-first, One-CFC follow the same logic — structural choices that make the whole organization read the same number.",
+        "Designing six tabs, what I came back to most was this: each tab can't be a standalone feature. They have to be a connected workflow. Spot an anomaly in Home → drill into Dashboard → trace the assumption back through Data Management. That flow has to feel inevitable."
+      ]
+    }
+  }
+}

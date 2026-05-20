@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Input",
+    "description": "Text entry components — Text Input, Text Input with Icon, and Search Input — plus numerical, table, list, and description variants."
+  },
+  "hero": {
+    "title": "Input",
+    "desc": "Input lets users enter and edit text. The family includes Text Input, Text Input with Icon, and Search Input — used to query and retrieve specific values."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "dropdownType": {
+    "title": "Dropdown Type",
+    "desc": "Dropdowns surface Menu Items used to filter or sort page content. Variants split by Dropdown Button type — Primary (Label), Secondary (Avatar & Badge), and Tertiary (Non-Outlined).",
+    "tableHeaders": {
+      "primary": "Primary Type",
+      "secondary": "Secondary Type",
+      "extra": "Extra Type"
+    },
+    "rows": [
+      {
+        "label": "Field Type",
+        "primary": "Text",
+        "secondary": "Text",
+        "extra": "Text (Numerical Type)"
+      },
+      {
+        "label": "Extra Composition",
+        "primary": "Leading Icon, Clear All Icon Button",
+        "secondary": "—",
+        "extra": "—"
+      },
+      {
+        "label": "Characteristics",
+        "primary": "The most common type — composed of a text-only Label Dropdown or a Label with Icon Dropdown.",
+        "secondary": "Outline hidden until Focused — at which point the field falls back to a Primary-style Text (with Icon) Input. Used inside tables and lists.",
+        "extra": "Forms outside Primary and Secondary — primarily Text Area, Comment Text Input, and Numerical Text Input."
+      }
+    ]
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Input splits into Primary and Secondary by style, intent, and field shape. Within each, sub-types — Text (with Icon) Input and Search Input — apply per use case."
+  },
+  "textWithIcon": {
+    "title": "Text (with Icon) Input",
+    "desc": "The most common type — composed of a text-only Label Input or a Label with Icon Input."
+  },
+  "secondary": {
+    "title": "Secondary Type",
+    "desc": "Outline hidden by default; when Focused, the input falls back to a Primary-style Text (with Icon) form. Two variants: Table Input and List Input. Table Input keeps the area's padding; List Input fills the entire cell (padding = 0)."
+  },
+  "extra": {
+    "title": "Extra Type",
+    "desc": "Forms outside Primary and Secondary — Description Text Area (height flexes with content up to a max), Comment Text Input (fixed height), and Numerical Text Input (numeric data only)."
+  },
+  "variants": {
+    "title": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Input has 4 states — Disabled, Default, Hover, Focused."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Sizes use height — Large, Medium, Small. Width stays flexible."
+    }
+  },
+  "sizing": {
+    "title": "Sizing",
+    "minWidth": {
+      "title": "Minimum Width",
+      "text": "Width flexes with the surrounding area. Minimum width is 160px."
+    },
+    "overflow": {
+      "title": "Text Overflow",
+      "text": "Overflowing text renders one of two ways — truncate with \"…\" at a fixed height, or wrap to the next line beyond the given width. Choose per feature intent."
+    }
+  },
+  "props": {
+    "title": "Table of Figma Properties — Input",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+      { "prop": "State", "values": "Default, Hover, Focused, Disabled", "default": "Default" },
+      { "prop": "Filled", "values": "False, True", "default": "False" },
+      { "prop": "Search", "values": "False, True", "default": "False" },
+      { "prop": "Clear All (Cancel Icon)", "values": "False, True", "default": "False" },
+      { "prop": "Icon", "values": "False, True", "default": "False" }
+    ]
+  },
+  "search": {
+    "title": "Search",
+    "desc": "Search Input lets users query for specific information. Unlike other Input components, when Fill = On, the Cancel (Clear All) Icon Button surfaces.",
+    "withLabel": {
+      "title": "Text Input with Field Label",
+      "desc": "For in-page item search — uses the Container outline form."
+    },
+    "withoutLabel": {
+      "title": "Text Input without Field Label",
+      "desc": "For searching inside another component — uses the underline form."
+    }
+  },
+  "textIconSection": {
+    "title": "Text (with Icon) Input",
+    "desc": "Surfaces a field for text entry. Typically paired with a Field Label.\n(e.g. Status / Comment text in the OSD Viewer panel, History panel text entry, Login form input.)"
+  },
+  "tableList": {
+    "title": "Table / List Input",
+    "desc": "Edit values inline inside a Table or List. On Hover and Focused, Table / List Inputs match the Primary Type Input behavior.",
+    "table": {
+      "title": "Text Input in Table",
+      "desc": "Edits content inside a table."
+    },
+    "list": {
+      "title": "Text Input in List",
+      "desc": "Edits content inside a list."
+    }
+  },
+  "numerical": {
+    "title": "Numerical Input",
+    "desc": "Accepts numeric values only. Used without a Label — the Unit sits to the right with a small gap.",
+    "withUnit": {
+      "title": "Numerical Input with unit",
+      "desc": "Paired with a unit — often combined with other controls (checkbox, slider, etc.)."
+    },
+    "state": {
+      "title": "State of Numerical Input",
+      "desc": "Four states — Disabled, Default, Hover, Focused — each with Filled or Unfilled. Unfilled placeholders carry one of three values: \"0\", \"min\", \"max\"."
+    }
+  },
+  "description": {
+    "title": "Description / Comment",
+    "desc": "Description and Comment patterns surface text for reading or capture text from users. Read-focused Text Area vs. entry-focused Text Input — the container height flexes or stays fixed by context.\n\nThe same text-based component delivers a consistent input experience tailored to each surface's purpose and flow.",
+    "descArea": {
+      "title": "Description Text Area",
+      "desc": "Conveys descriptive text for easy reading. Used for guidance copy, status descriptions, supplementary info — read-focused content. Expands across one line or multiple lines based on content."
+    },
+    "descInput": {
+      "title": "Description Text Input",
+      "desc": "For user-entered descriptions or detail text. In fixed-height panels like the History Panel, input runs within the panel's preserved structure."
+    },
+    "commentArea": {
+      "title": "Comment Text Area",
+      "desc": "For free-length opinions or comments. The container height expands with the entered text — supports natural multi-line capture."
+    },
+    "commentInput": {
+      "title": "Commnet Text Input",
+      "desc": "For short comments or quick replies. Fixed input height — efficient, concise capture in a constrained area."
+    }
+  },
+  "usage": {
+    "title": "Usage & Placement",
+    "desc": "Input most commonly appears in form layouts, often paired with Dropdown.",
+    "label": {
+      "title": "Label",
+      "text": "Forms with a Dropdown surface a Label for the field. Use Subtitle 3 (Inter, Medium, 14px), with Required, Error, and Information variants as needed. Label + Dropdown / Input combinations are often used together. Use 8px between Label and Dropdown, 24px between horizontally arranged elements, and 32px between vertically arranged. In vertical-only layouts, use 16px between elements."
+    },
+    "sync": {
+      "title": "Label: Sync",
+      "text": "A Sync Checkbox to the right of the Label auto-syncs the data entered into the field."
+    },
+    "information": {
+      "title": "Label: Information",
+      "text": "Surfaces supplementary information about the input value to the user."
+    },
+    "required": {
+      "title": "Label: Required",
+      "text": "Marks the field as required. Place 4px after the Label and use \"*\". Optional fields use no marker — just the Label. Use Body 2 (Inter, Regular, 14px) for \"*\", at the same text size as the Label."
+    },
+    "error": {
+      "title": "Label: Error(Alert)",
+      "text": "Surfaces an alert about the input value. Typically triggered after an action (e.g., Confirm Button). The Dropdown Button outline color and a Text Alert both surface. Error state outline color: Red 500. Use the Medium-size Alert."
+    },
+    "labelSize": {
+      "title": "Label Size",
+      "text": "Form-resident Inputs with Labels use the Large or Medium Primary Type Text Input. Label typography differs per size."
+    },
+    "unit": {
+      "title": "Unit",
+      "text": "When the Input value is numeric, surface its unit information in the Label. Format as Label (Unit) using parentheses. Numerical Inputs aren't paired with a Label — when a unit is needed, place it 4px outside the right edge of the field."
+    }
+  }
+}

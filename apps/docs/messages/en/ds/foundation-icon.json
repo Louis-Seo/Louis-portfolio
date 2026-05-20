@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Icon",
+    "description": "Iconography guidelines — size, layout, keylines, stroke, radius, style, and color."
+  },
+  "hero": {
+    "title": "Iconography",
+    "desc": "Icons are a visual language that turns functions, actions, and objects into compact symbols — communicating efficiently in tight spaces."
+  },
+  "iconSize": {
+    "title": "Icon Size",
+    "desc": "System icons render at 24 × 24 dp. Design icons to be readable at 100% scale for pixel accuracy.",
+    "imageAlt": "Icon Size diagram showing 100% and 1000% scale"
+  },
+  "layout": {
+    "title": "Layout",
+    "desc": "Content stays within the live area — the region least likely to be clipped at runtime (e.g., when a sidebar reveals on scroll). When extra visual weight is required, content may extend into the padding between the live area and the trim area (the icon's full size). No part of an icon should extend past the trim area.",
+    "imageAlt": "Layout diagram showing live area and padding"
+  },
+  "keyline": {
+    "title": "Keyline Shapes",
+    "desc": "Keyline shapes define the base frame of every icon, giving icons with similar proportions a consistent silhouette.",
+    "imageAlt": "Keyline Shapes diagram showing square, vertical rectangle, horizontal rectangle, and circle"
+  },
+  "stroke": {
+    "title": "Stroke",
+    "desc": "Default stroke is 2 dp. It may shift based on the icon's size, position, and purpose.",
+    "imageAlt": "Stroke diagram showing 2dp stroke width"
+  },
+  "radius": {
+    "title": "Radius",
+    "desc": "Radius is freely chosen between 0–2 dp. Apply per corner to better convey the icon's motif.",
+    "imageAlt": "Radius diagram showing 0, 1, and 2dp radius options"
+  },
+  "styles": {
+    "title": "Styles",
+    "desc": "Icons use two styles — Line and Fill — applied per context.",
+    "imageAlt": "Styles diagram showing Line and Fill icon types"
+  },
+  "colors": {
+    "title": "Colors",
+    "desc": "Icons default to Gray-50. Standalone icons inside Worker generally use Gray-400; icons paired with a Heading use Gray-50. Background and context may shift the applied color.",
+    "imageAlt": "Colors diagram showing Gray-500, Gray-900, and Gray-50 icon colors"
+  }
+}

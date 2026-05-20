@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Filter",
+    "description": "표출된 데이터를 기준으로 좁히는 Data Entry 조합 — Exposed·Hidden Filter, Filter Bar, Side Bar, Modal Filter."
+  },
+  "hero": {
+    "title": "Filter",
+    "desc": "Filter는 사용자가 input으로 받은 기준에 따라 화면에 표출되는 데이터를 좁힐 수 있도록 하는 Data Entry의 조합입니다."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Filter는 노출 방식에 따라 두 가지로 분류됩니다. Exposed Filter는 화면에 데이터와 함께 노출되며, Hidden Filter는 화면에서 숨겨진 상태로 추가 Depth가 필요한 경우에 사용됩니다.",
+    "exposed": {
+      "title": "1. Exposed Filter",
+      "desc": "Exposed Filter는 데이터와 함께 표출되는 필터로, Horizontal 형태의 Filter Bar와 Vertical 형태의 Side Bar 두 가지가 있습니다. Filter Bar는 Container로 감싸 사용하는 Primary Type과 Input·Dropdown 조합으로 Container 없이 사용하는 Secondary Type으로 다시 나뉩니다."
+    },
+    "hidden": {
+      "title": "2. Hidden Filter",
+      "desc1": "Hidden Filter는 화면에 데이터와 함께 직접 표출하기 어려운 Filtering 요소들을 다루는 숨겨진 필터로, 주로 별도의 Action을 통해 Modal 형태로 표출되는 것이 특징입니다. 그래서 일반적인 Filter Type 대비 사용에 추가 Depth가 필요한 경우로 정의됩니다. 구조적으로 Modal + extra (Now Undefined)로 구성됩니다.",
+      "desc2": "특정 Action을 통해 Modal 형태로 표출되는 것이 일반적인 사용 패턴입니다. Table과 Filter가 함께 나오는 경우에는 Filter와 Table heading의 Order Align이 필요합니다."
+    }
+  },
+  "dataEntry": {
+    "title": "Data Entry for Filter",
+    "desc": "Filter는 Data를 좁힐 기준을 잡아주는 Data Entry의 조합으로 구성됩니다. Zoomable의 Filter에서 사용할 수 있는 Data Entry는 Dropdown, Input, Filter Chip, Check Box, Toggle, Slider 6가지입니다.",
+    "items": [
+      {
+        "key": "dropdown",
+        "title": "Dropdown",
+        "desc": "Sequence가 없는 경우 Menu Item을 사전 순으로 정렬하는 것을 원칙으로 하며, Sequence가 있는 경우 해당 Sequence를 따릅니다."
+      },
+      {
+        "key": "input",
+        "title": "Input",
+        "desc": "Text 입력으로 특정 항목을 Filtering 하는 용도로 사용됩니다."
+      },
+      {
+        "key": "filter-chip",
+        "title": "Filter Chip",
+        "desc": "특정 항목을 On/Off하는 용도로 사용됩니다."
+      },
+      {
+        "key": "check-box",
+        "title": "Check Box",
+        "desc": "특정 세부 항목에 대한 On/Off 용도로 사용됩니다."
+      },
+      {
+        "key": "toggle",
+        "title": "Toggle",
+        "desc": "상호 배타적인 옵션 (On/Off) 데이터에 한정해 사용을 권장합니다."
+      },
+      { "key": "slider", "title": "Slider", "desc": "정성적인 데이터에 한정해 사용을 권장합니다." }
+    ]
+  },
+  "exposedDetail": {
+    "title": "Exposed Filter",
+    "desc": "Exposed Filter는 데이터와 함께 표출되는 필터로, Horizontal 형태의 Filter Bar와 Vertical 형태의 Side Bar 두 가지가 있습니다.",
+    "filterBar": {
+      "title": "Filter Bar",
+      "desc": "Filter Bar는 Container로 감싸 사용하는 Primary Type과 Input·Dropdown 조합으로 Container 없이 사용하는 Secondary Type 두 가지로 사용됩니다. 구성 요소는 대표적으로 Chip, Dropdown, Button의 조합이며, Chip을 Filter로 사용할 때는 해당 Chip Group의 Label과 함께 구성되는 것이 특징입니다.",
+      "primary": {
+        "title": "1. Primary Type",
+        "desc": "Primary Type은 Data Entry 중 Chip 구성의 타입으로, Label에 따라 Grouping해 사용되는 것이 특징입니다. Zoomable에서는 주로 사진 Filtering 목적으로 사용되며, Zoomable Wind의 Gallery View에서 갤러리 이미지를 특정 요소 기준으로 선별할 때 사용됩니다."
+      },
+      "secondary": {
+        "title": "2. Secondary Type",
+        "desc": "Secondary Type은 Dropdown, Input, (Button Icon) 구성의 타입으로, Primary Type과 달리 별도 Container 내에 배치되지 않고 Components의 배열만으로 구성되는 것이 특징입니다. 일반적으로 Height를 맞추어 배열해 사용합니다. 배열된 요소에 Filtering 역할이 아닌 타 구성요소를 함께 사용할 수 있으며, 이 경우 기능적 분리를 위해 Divider를 활용합니다."
+      },
+      "primaryTable": {
+        "title": "Table of Figma Properties — Filter Bar (Primary)",
+        "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+        "rows": [
+          { "prop": "Line", "values": "1, 2", "default": "1" },
+          { "prop": "Size", "values": "Long, Short", "default": "Long" },
+          { "prop": "Expansion", "values": "False, True", "default": "False" }
+        ]
+      },
+      "spacing": {
+        "title": "Spacing",
+        "desc": "Container를 가진 Primary Type은 상하좌우 16px Padding을 갖습니다. Label을 포함한 Chip Group 간 간격은 32px, Label과 Chip 간 간격은 8px입니다. Filtering이 가능한 Chip Group은 좌측부터 정렬되며, Filter 역할이 아닌 Action 요소는 우측 기준으로 정렬됩니다."
+      },
+      "position": {
+        "title": "Position",
+        "desc": "Filter Bar는 Data Set (e.g., Gallery)의 위쪽에 위치하며, Filtering 후 하단에 Data (e.g., Image Gallery)가 표출되는 것이 특징입니다."
+      },
+      "selection": {
+        "title": "Single / Multi-Selection",
+        "desc": "Filter에 포함되는 Data Entry의 특성과 기능적 목적에 따라 Single-Selection과 Multi-Selection을 모두 포함합니다. Group으로 사용했을 때의 Single·Multi-Selection 규칙은 해당 Data Entry Component의 규칙과 동일하게 유지됩니다. 즉, 해당 Component가 Group 시 Multi-Selection을 허용하면 Filter에서도 동일하게 동작합니다. Filter Bar는 Group 내 Chip이 Multi-Selection을 허용합니다. 모두 선택 안 된 상태는 모두 선택된 것과 동일한 Filtering 결과를 가집니다."
+      },
+      "arrangement": {
+        "title": "Contents Arrangement",
+        "ruleTitle": "Header Align with Filter Arrange",
+        "ruleText": "Secondary Type Filter Bar 사용 시 Filtering 되는 정보가 Table Column 단위인 경우, Table Column Header와 Filter Bar 내 표출 순서를 동일하게 가져가는 것을 원칙으로 합니다."
+      }
+    },
+    "sideBar": {
+      "title": "Side Bar (Side Panel)",
+      "desc": "Side Bar는 Wind에서만 사용되는 Filter로, 필터 요소가 많고 세부 항목을 Customizing 해서 사용하는 경우에 적합합니다. Side Panel로도 분류됩니다. 구성 요소는 Filter Bar와 동일하게 Chip, Dropdown, Button 조합이 대표적이며, Chip을 Filter로 사용할 때는 해당 Chip Group의 Label과 함께 구성됩니다.",
+      "spacing": {
+        "title": "Spacing",
+        "desc": "Side Bar는 Container의 상하좌우 16px Padding을 갖습니다. Filter 그룹 사이에는 Divider를 두어 구분하며, Divider와 16px Gap을 가집니다. Label과 Filtering Component 그룹 간 간격은 12px입니다. Filtering이 가능한 Group은 우측부터 정렬됩니다."
+      },
+      "position": {
+        "title": "Position",
+        "desc": "Side Filter는 Data Set (e.g., Table)의 좌측에 위치하며, 사용자의 시선 흐름에 맞춰 Filtering 후 우측에 Data (e.g., Table)가 표출되는 것이 특징입니다."
+      },
+      "selected": {
+        "title": "Selected Filter",
+        "desc": "Selected Filter는 Side Bar에 다수의 Filter 그룹이 존재할 때, 사용자가 선택한 필터 항목을 축약해서 보여주는 역할을 합니다. 보통 Filter 그룹 가장 위쪽에 위치하며, Side Panel 내 Scroll 시에도 Fixed 되어 항상 표출되는 것이 특징입니다."
+      },
+      "selectedTable": {
+        "title": "Table of Figma Properties — Selected Filters",
+        "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+        "rows": [{ "prop": "Item", "values": "0, 1, 2, 3, 4", "default": "0" }]
+      },
+      "useCase": {
+        "title": "Use Case",
+        "ruleTitle": "Fixed Area",
+        "ruleText": "Side Bar는 Table에 보여지는 정보 외의 정보를 기반으로 Filtering 하며, 세부적이고 다양한 Data Entry가 사용되는 것이 특징입니다. 다양한 종류의 Filter를 한 번에 설정하므로, Selected Filters를 두어 사용자가 Filtering 한 값을 정보로 제공합니다. 일반적으로 Fixed 되어 사용됩니다."
+      }
+    }
+  },
+  "hidden": {
+    "title": "Hidden Filter",
+    "desc": "Hidden Filter는 화면에 데이터와 함께 직접 표출하기 어려운 Filtering 요소들을 다루는 숨겨진 필터로, 주로 별도의 Action을 통해 Modal 형태로 표출되는 것이 특징입니다. 일반적인 Filter Type과 비교했을 때 추가 Depth가 필요한 경우로 정의됩니다. 구조적으로 Modal + extra (Now Undefined)로 이루어집니다. 일반적으로 Action을 통해 Modal 형태로 표출되는 것이 대표적인 패턴입니다.",
+    "modal": {
+      "title": "Modal Filter"
+    },
+    "useCase": {
+      "title": "Use Case",
+      "tableSettings": {
+        "title": "Table Settings — Hidden/Show Toggle",
+        "desc": "Hidden Filter는 주로 Modal로 표출되며, 특정 부분에 대한 Viewer를 On/Off 하는 역할을 합니다. Table Setting Modal에서 Hidden Filter로 분류되는지는 Column에 대한 Viewer Toggle 유무에 따라 결정되는 것이 특징입니다."
+      },
+      "management": {
+        "title": "Management Settings — Hidden/Show (Off/On) Toggle",
+        "desc": "특정 정보를 포함한 데이터를 On/Off 하는 기능으로 사용됩니다."
+      }
+    }
+  }
+}

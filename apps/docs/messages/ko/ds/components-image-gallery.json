@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Image Gallery",
+    "description": "여러 이미지를 한데 모아 보여주는 이미지 컬렉션 — 썸네일에 특정 정보를 함께 표출."
+  },
+  "hero": {
+    "title": "Image Gallery",
+    "desc": "여러 이미지 정보를 한데 모아 보여주기 위한 이미지 컬렉션으로, 이미지 썸네일에 특정 정보를 일부 함께 나타내어 사용됩니다."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": ["1. Severity Label", "2. Image Container", "3. Text Label", "4. Label Container"]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc": "Image Gallery는 정보의 유형과 상태에 따라 크게 4가지로 분류됩니다.\n\n해당 콘텐츠가 가지고 있는 정보 특성에 따라 4가지로 분류되며, 4가지 모두 선택되었을 때의 Selected, Unfocused Status가 별도로 존재하는 것이 특징입니다.",
+    "list": ["1. Default Image", "2. Image with Severity", "3. No Data", "4. Image Empty"],
+    "items": [
+      {
+        "key": "default",
+        "title": "Default Image",
+        "desc": "기본적인 이미지 요소의 형태입니다."
+      },
+      {
+        "key": "severity",
+        "title": "Image with Severity",
+        "desc": "포함하고 있는 정보에서 Severity를 보유하고 있을 때의 형태입니다."
+      },
+      {
+        "key": "no-data",
+        "title": "No Data",
+        "desc": "데이터가 존재하지 않는 상태입니다."
+      },
+      {
+        "key": "empty",
+        "title": "Image Empty",
+        "desc": "메타데이터는 존재하되, 이미지는 로딩되지 않는 형태입니다."
+      }
+    ]
+  },
+  "status": {
+    "title": "Status",
+    "desc": "Alert는 정보의 구성에 따라 콘텐츠를 Container Alert, Text Alert 2가지로 분류합니다. Info Text와 Info Icon으로 구성된 Basic Info Box를 기본으로 합니다. Text Alert과 Container Alert는 정보에 대한 액션이 필요한 경우 사용하며, 정보의 함축·요약이 필요한 경우에도 사용합니다.",
+    "items": [
+      {
+        "key": "default",
+        "title": "Default",
+        "desc": "기본적으로 이미지 갤러리에 접근했을 때 표출되는 방식입니다."
+      },
+      {
+        "key": "focused",
+        "title": "Focused",
+        "desc": "특정 이미지 콘텐츠에 집중시켜 해당 요소와 연관된 특정 Action을 하기 위한 상태입니다."
+      },
+      {
+        "key": "unfocused",
+        "title": "Unfocused",
+        "desc": "Focused와 함께 동작하는 형태로, 집중된 하나의 요소 외 요소들의 집중도를 낮춰주는 역할을 합니다."
+      }
+    ]
+  },
+  "spacing": {
+    "title": "Spacing",
+    "desc": "Image Gallery의 이미지 사이즈는 부여된 화면마다의 갤러리 영역에 따라 Flexible하게 변하며, 상하좌우 간격은 8px로 두는 것으로 합니다."
+  },
+  "contents": {
+    "title": "Contents",
+    "severityGroup": {
+      "title": "Severity Group",
+      "desc": "Gallery에 사용되는 Severity Badge는 Circular Type으로 사용되며, 개수가 포함된 Count Severity Group과 개수를 포함하지 않은 Severity Group 두 가지로 분류되어 사용됩니다."
+    },
+    "textLabel": {
+      "title": "Text Label",
+      "desc": "이미지에 대한 정보를 이미지 하단에 Text로 제공하는 역할로 사용됩니다. 'Blade / Blade Side / R Value' 정보를 표출합니다."
+    }
+  }
+}

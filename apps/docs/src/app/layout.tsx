@@ -8,26 +8,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Design System",
-  description: "Design system component documentation",
+  metadataBase: new URL("https://louisseo.com"),
+  title: {
+    default: "Louis Seo — Product Designer",
+    template: "%s · Louis Seo",
+  },
+  description: "Portfolio of Louis Seo, a system-oriented product designer.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" data-theme="light">
-      <head>
-        <link
-          rel="stylesheet"
-          as="style"
-          crossOrigin="anonymous"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
-        />
-      </head>
-      <body>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return children;
 }

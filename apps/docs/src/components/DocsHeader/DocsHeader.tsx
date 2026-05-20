@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Link } from "@/i18n/navigation";
 import DocsSearch from "@/components/DocsSearch/DocsSearch";
+import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./DocsHeader.module.css";
 
 interface DocsHeaderProps {
@@ -11,7 +13,12 @@ interface DocsHeaderProps {
 function MenuIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path
+        d="M3 6H21M3 12H21M3 18H21"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
@@ -27,9 +34,7 @@ export default function DocsHeader({ onMenuToggle }: DocsHeaderProps) {
   }, []);
 
   return (
-    <header
-      className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}
-    >
+    <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}>
       <div className={styles.left}>
         <button
           className={styles.menuButton}
@@ -40,17 +45,18 @@ export default function DocsHeader({ onMenuToggle }: DocsHeaderProps) {
           <MenuIcon />
         </button>
         <div className={styles.brand}>
-          <a href="/portfolio" className={styles.brandParent}>
+          <Link href="/portfolio" className={styles.brandParent}>
             Louis Seo
-          </a>
+          </Link>
           <span className={styles.brandSep}>/</span>
-          <a href="/design-system" className={styles.brandCurrent}>
+          <Link href="/design-system" className={styles.brandCurrent}>
             Design System
-          </a>
+          </Link>
         </div>
       </div>
       <div className={styles.right}>
         <DocsSearch />
+        <LanguageSwitcher />
       </div>
     </header>
   );

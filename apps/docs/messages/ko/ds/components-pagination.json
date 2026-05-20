@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Pagination",
+    "description": "콘텐츠 또는 데이터를 여러 페이지로 분할하여 Previous/Next 이동과 페이지 직접 선택을 지원하는 컴포넌트."
+  },
+  "hero": {
+    "title": "Pagination (Page Controller)",
+    "desc": "Pagination은 콘텐츠 또는 데이터를 여러 페이지로 분할합니다. Previous/Next 버튼으로 이동하거나, 페이지 번호를 직접 선택해 전환합니다. 불연속적인 정보를 나열하거나 사용자가 반복적인 작업을 수행하는 페이지에서 주로 사용됩니다."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "paginationProps": {
+    "title": "Table of Figma Properties — Pagination",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "First, Middle, Last", "default": "First" },
+      { "prop": "Capacity", "values": "True, False", "default": "False" },
+      { "prop": "Page Number", "values": "1, 2, 3, 4, 5", "default": "5" }
+    ]
+  },
+  "item": {
+    "title": "Pagination Item",
+    "desc": "Pagination Item은 Data를 포함한 Page Number들과 함께 현재 화면에 Display되는 Data의 위치를 보여주는 역할을 합니다. 형태적·상태적 측면에서 Chip과 유사하게 사용됩니다.",
+    "alignment": {
+      "title": "Alignment",
+      "text": "일반적으로 Pagination Item의 Selected 위치는 가운데에 위치합니다. 가장 앞쪽의 1, 2 페이지와 마지막 2 페이지는 끝점을 기준으로 순차적으로 위치합니다."
+    },
+    "props": {
+      "title": "Table of Figma Properties — Pagination Item",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        {
+          "prop": "State",
+          "values": "Default, Hover, Selected, Disabled",
+          "default": "Default, Selected"
+        }
+      ]
+    }
+  },
+  "useCase": {
+    "title": "Use Case",
+    "itemState": {
+      "title": "Pagination Item State",
+      "text": "종속된 페이지 또는 컴포넌트의 현재 위치와 전체 데이터 Display 영역을 Navigate합니다. State는 Chip과 동일한 4가지 — Default·Hover·Selected·Disabled. Disabled 상태는 Sorting 시 표출되는 배열 문제로 사용을 지양합니다."
+    }
+  },
+  "prevNext": {
+    "title": "Previous / Next Icon Button",
+    "desc": "Previous/Next, First/Last Page Icon Button은 페이지당 클릭 한 번으로 이동합니다. Medium Size Icon Button을 사용합니다. 첫 페이지 또는 마지막 페이지처럼 이동이 불가능한 경우 버튼 State는 Disabled가 됩니다."
+  },
+  "pageNumber": {
+    "title": "Page Number",
+    "desc": "디스플레이 화면 별 Page Number는 기본 5개로 구성되며, 이 갯수를 최댓값으로 사용합니다. 전체 데이터의 Page Number < 5인 경우 전체 페이지 갯수(1–4)만 표출합니다."
+  },
+  "spec": {
+    "title": "Spec",
+    "spacing": {
+      "title": "Spacing",
+      "text": "Previous/Next, First/Last Page Button 간격은 8px, 좌우 페이지 버튼과는 16px. 각 페이지 버튼 간 간격은 4px Margin. 양쪽 Range Label·Capacity Control과의 간격은 Pagination이 위치하는 Container 너비에 따라 Flexible하게 사용됩니다."
+    },
+    "size": {
+      "title": "Size",
+      "text": "좌우 4px Padding 기준으로 Page Number 적용 시 32px보다 작은 경우 32px로 Width 고정. 32px보다 커지는 경우 좌우 4px Padding 기준으로 늘어납니다. 3자리 수 이상 조합 시 Page Number 부분의 조합 너비에 차이가 발생합니다."
+    }
+  }
+}

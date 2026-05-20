@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Design System",
+    "description": "A scalable design system for enterprise inspection products — tokens, components, and patterns that bridge Figma and React."
+  },
+  "hero": {
+    "title": "Design System",
+    "desc": "Design principles and a UI library for building one product experience. Foundation defines the visual primitives; Components catalogs the reusable patterns built on top.",
+    "stats": {
+      "foundation": "Foundation",
+      "components": "Components",
+      "categories": "Categories"
+    }
+  },
+  "foundation": {
+    "title": "Foundation",
+    "desc": "The visual primitives every component is built on — color, typography, iconography, and object style tokens.",
+    "count": "{count} items",
+    "items": {
+      "typography": {
+        "desc": "Type scale, weight, and line-height tokens for hierarchy and readability"
+      },
+      "color": {
+        "desc": "Brand, semantic, and UI-state color palettes"
+      },
+      "icon": {
+        "desc": "Guidelines for system iconography — size, layout, stroke, style"
+      },
+      "object-style": {
+        "desc": "Radius, elevation, and border tokens for surfaces"
+      }
+    }
+  },
+  "components": {
+    "title": "Components",
+    "desc": "{count} UI building blocks — each documented with Anatomy, Variants, Spec, and Usage.",
+    "categories": {
+      "general": {
+        "desc": "General-purpose components for fundamental interactions"
+      },
+      "navigation": {
+        "desc": "Wayfinding and movement across the product"
+      },
+      "dataEntry": {
+        "desc": "Data input and option selection"
+      },
+      "dataDisplay": {
+        "desc": "Components that structure and present data"
+      },
+      "feedback": {
+        "desc": "System responses and contextual guidance"
+      }
+    }
+  }
+}

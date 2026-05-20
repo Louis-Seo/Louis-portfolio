@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "title": "Research & Problem Framing",
+    "description": "Mapping wind blade inspection operations and defining the structural bottleneck — the research that set the starting point for Zoomable Worker and Wind."
+  },
+  "hero": {
+    "tags": ["Research", "Strategy", "Problem Framing"],
+    "titleLine1": "Research &",
+    "titleLine2": "Problem Framing",
+    "description": "With an annual target of 10,000 turbine reports on the table, the existing operating model couldn't keep up — not on speed, not on cost. I mapped the entire blade inspection workflow and framed the core problem around the biggest bottleneck: defect marking. This research became the starting point for Zoomable Worker and Zoomable Wind.",
+    "meta": [
+      { "label": "Role", "value": "Product Designer / UX Researcher" },
+      { "label": "Duration", "value": "2023–2024" },
+      { "label": "Scope", "value": "Research · Strategy · Problem Framing" },
+      { "label": "Outcome", "value": "→ Zoomable Worker · Zoomable Wind" }
+    ]
+  },
+  "whyThisMattered": {
+    "label": "Why This Mattered",
+    "titleLine1": "Before designing the screens,",
+    "titleLine2": "we had to understand the operating model.",
+    "paragraphs": [
+      "A wind blade inspection report passes through many hands — QC, defect marking, defect decision, and report generation. In 2022, one report cost about KRW 100,000 to produce, and the gap from final capture to customer delivery was two weeks. That structure couldn't process 10,000 turbines a year.",
+      "Polishing the UI wasn't going to solve this. Before any of that, we had to map structurally where time was being burned, which steps were people-dependent, and why quality stayed inconsistent."
+    ],
+    "highlight": "This project was the starting point of the product strategy. Before any screen design, the goal was to define operational bottlenecks and draw a clean line between where automation can step in and where human judgment has to stay."
+  },
+  "methods": {
+    "label": "Research Methods",
+    "titleLine1": "Four research methods,",
+    "titleLine2": "stacked to read the problem in layers.",
+    "desc": "These methods weren't independent. They ran as one sequence — operating reality → field problem collection → process bottleneck identification → quantitative validation.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "Desk Research",
+        "text": "Surveyed the operating model, defect detection methods, and report generation flow in the wind blade inspection industry. Compared standard industry workflow to the company's system and located where structural improvement was possible.",
+        "outcome": "→ Full structure and cost shape of the report production pipeline"
+      },
+      {
+        "num": "02",
+        "title": "Stakeholder Interview",
+        "text": "Conducted in-depth interviews with four roles in the inspection workflow — technicians, field engineers, supervisors, and data analysts. Identified which tasks burned time and where trust broke per role.",
+        "outcome": "→ Six structural pain points recurring across roles"
+      },
+      {
+        "num": "03",
+        "title": "Workflow Analysis",
+        "text": "Mapped the full AS-IS process: capture complete → image upload → Quality Check → Defect Marking → Defect Decision → Report. Recorded dependencies, wait times, and people-dependence per step to surface the bottlenecks.",
+        "outcome": "→ QC wait time and DM people-dependence confirmed as core bottlenecks"
+      },
+      {
+        "num": "04",
+        "title": "Quantitative Review",
+        "text": "Ran quantitative analysis across 100 turbines and 5 operators — image count, work time, defect count, severity distribution. Compared DM and QDM (Quick Defect Marking) to verify the real impact of automation.",
+        "outcome": "→ Confirmed 56.5% reduction in images and 55.7% reduction in work time"
+      }
+    ]
+  },
+  "interview": {
+    "label": "In-Depth Interview",
+    "titleLine1": "Field interviews across four roles",
+    "titleLine2": "surfaced the recurring structural problems.",
+    "desc": "We interviewed technicians, field engineers, supervisors, and data analysts on the wind blade inspection workflow. The goal: identify the operational problems that repeat across roles — not individual complaints.",
+    "imageAlt": "In-depth interview results with 4 stakeholders",
+    "cards": [
+      {
+        "name": "Kim Younghoon",
+        "role": "Wind farm technician",
+        "quote": "Lots of duplicate images, so the work takes forever. Defect labeling isn't consistent, so corrections happen all the time.",
+        "goalLabel": "Goal:",
+        "goal": "Identify and repair blade defects fast to minimize downtime."
+      },
+      {
+        "name": "Choi Jiyoung",
+        "role": "Field engineer",
+        "quote": "I have to finish quality checks fast after uploading images, but the process takes too long. Real-time communication is rough — sharing progress is a pain.",
+        "goalLabel": "Goal:",
+        "goal": "Inspect and report defects fast from the field so response is quick."
+      },
+      {
+        "name": "Lee Sujin",
+        "role": "Wind farm supervisor",
+        "quote": "The defect management process is inefficient. PPA-detected defects often need a second pass. Data cleanup takes a lot of time and real-time communication is missing.",
+        "goalLabel": "Goal:",
+        "goal": "Run the whole defect management process efficiently and keep operations stable."
+      },
+      {
+        "name": "Lee Jieun",
+        "role": "Data analyst",
+        "quote": "Defect data isn't consistent, so cleaning the metadata takes a huge amount of time. Writing accurate reports needs extra rounds of review.",
+        "goalLabel": "Goal:",
+        "goal": "Analyze defect data, produce reports, and deliver them to the operations team."
+      }
+    ],
+    "synthesis": {
+      "title": "Six structural problems that repeat across roles",
+      "items": [
+        {
+          "name": "Duplicate image overload",
+          "text": "— Duplicate captures of the same area flow into the work queue without filtering, inflating the review load."
+        },
+        {
+          "name": "Inconsistent defect marking",
+          "text": "— Defect type and severity criteria vary across operators, triggering repeated corrections and re-reviews."
+        },
+        {
+          "name": "Image QC delay",
+          "text": "— QC completion can take up to 48 hours, and that wait is tied to the pilot demobilization schedule."
+        },
+        {
+          "name": "Low trust in PPA",
+          "text": "— AI-detected defect accuracy is low, so manual re-review is mandatory and system trust stays low."
+        },
+        {
+          "name": "Metadata cleanup burden",
+          "text": "— Defect data inconsistency forces data analysts to spend excessive time on manual cleanup before report writing."
+        },
+        {
+          "name": "No real-time collaboration",
+          "text": "— No real-time channel between roles means work status sharing lags, and weekends or absences stall the process."
+        }
+      ]
+    }
+  },
+  "findings": {
+    "label": "Key Findings",
+    "titleLine1": "From AS-IS to TO-BE —",
+    "titleLine2": "the structural opportunity for process transformation.",
+    "desc": "This isn't just '48 hours dropped to 2.' The real constraints on scale were structural: QC wait time dictating the pilot demobilization schedule, and DM/DD needing headcount proportional to volume.",
+    "asIs": {
+      "title": "AS-IS — structural limits of the current process",
+      "items": [
+        {
+          "name": "Bottlenecked by QC wait",
+          "text": "— Up to 48 hours from final capture to QC response. Pilot demobilization can't proceed before QC completes, so the field schedule is tied to QC speed."
+        },
+        {
+          "name": "DM/DD scales with headcount",
+          "text": "— Volume up = operators up, by direct proportion. With training capped, quality consistency drops as headcount grows."
+        },
+        {
+          "name": "Labeling and severity drift",
+          "text": "— Defect type and severity criteria differ per operator, so even within a single report the call shifts. Downstream review keeps repeating corrections."
+        },
+        {
+          "name": "Stalls on weekends and absences",
+          "text": "— QC and DM both freeze when the owner is out. Standby coverage is needed but hard to secure."
+        }
+      ]
+    },
+    "toBe": {
+      "title": "TO-BE — process redesign on top of automation",
+      "items": [
+        {
+          "name": "Defect diagnosis under 2 hours",
+          "text": "— After image upload, QC, PPA, and DD Helper run as an automated pipeline. First-pass defect diagnosis completes without human intervention."
+        },
+        {
+          "name": "QC verdict info, provided",
+          "text": "— Coverage, focus, backlight, flare and other quality signals come through automatically — letting the user call Pass/Fail with evidence."
+        },
+        {
+          "name": "Auto-classification of defects",
+          "text": "— Defect type, severity, position info, and threshold bar all auto-provided. Turbine repair state auto-diagnosed as 'no repair needed / needs attention / repair required.'"
+        },
+        {
+          "name": "People-dependence released",
+          "text": "— Automation lowers QC/DM dependence on people, and the workflow moves forward without standby coverage."
+        }
+      ]
+    },
+    "imageAlt": "AS-IS vs TO-BE process transformation",
+    "insight": "The point wasn't time saved. The three structural problems at the process level were: QC waiting dictates the field schedule, DM can only scale with people, and labeling quality depends on operator experience. That's why we had to change the operating architecture, not the UI."
+  },
+  "problemFraming": {
+    "label": "Problem Framing",
+    "titleLine1": "Translating identified problems",
+    "titleLine2": "into four design challenges.",
+    "desc": "The operational problems from interviews and workflow analysis got structured into a form product design could respond to. Each challenge follows: problem → why it matters → design response.",
+    "cards": [
+      {
+        "num": "Priority 1",
+        "title": "Remove duplicate images",
+        "problem": "Duplicate captures of the same area enter the work queue without filtering. Operators end up reviewing redundant images.",
+        "why": "Of the average 435 images per turbine, a large share are duplicates. They are the direct driver of review load — over half of work time burns there.",
+        "response": "→ AI-based automatic duplicate image filtering."
+      },
+      {
+        "num": "Priority 2",
+        "title": "Improve defect marking",
+        "problem": "B-box editing is cumbersome and marking criteria vary across operators. Even within one report, calls drift.",
+        "why": "Labeling and severity inconsistency triggers repeated review and correction. Quality variance widens as headcount grows.",
+        "response": "→ Improve B-box editing UX and systematize the marking guideline."
+      },
+      {
+        "num": "Priority 3",
+        "title": "Improve PPA trust",
+        "problem": "Low trust in PPA's auto defect detection — operators routinely ignore AI output and re-do detection by hand.",
+        "why": "If system trust stays low, automation's time savings disappear. Reducing false positives and making results interpretable are prerequisites.",
+        "response": "→ Improve AI model performance, reduce FP, automate defect classification."
+      },
+      {
+        "num": "Priority 4",
+        "title": "Strengthen collaboration",
+        "problem": "No real-time channels between roles means status sharing lags. Weekends and absences stall the whole workflow.",
+        "why": "Without QC completion notifications, defect comments, and status sharing, people's availability still governs process speed.",
+        "response": "→ Real-time notifications, comments, and a work status dashboard."
+      }
+    ]
+  },
+  "opportunity": {
+    "label": "Proposed Operating Model",
+    "titleLine1": "What to automate,",
+    "titleLine2": "what to leave to human judgment.",
+    "desc": "QC and first-pass defect detection run as an AI pipeline. Final defect decisions and customer-specific work stay with experienced operators. We designed the automation boundary at the operating-structure level.",
+    "imageAlt": "Proposed Automated Process — QC, PPA, Defect Marking, Custom Work",
+    "summary": [
+      {
+        "label": "Automation zone",
+        "text": "Image quality check (QC), duplicate filtering, first-pass defect detection (PPA), automatic defect type and position classification."
+      },
+      {
+        "label": "Human judgment zone",
+        "text": "Final defect decision, severity confirmation, customer-specific custom work."
+      },
+      {
+        "label": "Expected effect",
+        "text": "Lead time 2 weeks → 2 hours, people-dependence released, quality held even as volume grows."
+      }
+    ],
+    "cards": [
+      {
+        "title": "What automation replaces",
+        "sub": "First-pass defect diagnosis without human intervention",
+        "text": "QC and PPA run as an AI pipeline. Includes duplicate filtering, coverage verification, focus and backlight detection, defect position and type auto-classification."
+      },
+      {
+        "title": "Where human judgment stays",
+        "sub": "Layer human accuracy on top of automation speed",
+        "text": "Final defect decisions and customer-specific work stay with experienced operators. They review and edit the first-pass results AI provides."
+      },
+      {
+        "title": "Role redistribution",
+        "sub": "Automation absorbs low-skill work; high-skill focuses on judgment",
+        "text": "Pre-QC and pre-DM low-skill work moves to automation. High-skill operators focus on final review and customer-facing work."
+      },
+      {
+        "title": "Operating structure shift",
+        "sub": "Volume growth no longer requires headcount growth",
+        "text": "A two-week process compresses to under two hours. Standby coverage becomes unnecessary, and the pipeline keeps moving on weekends and absences."
+      }
+    ]
+  },
+  "quant": {
+    "label": "Quantitative Results",
+    "titleLine1": "Quantitative validation",
+    "titleLine2": "confirmed the design direction was sound.",
+    "desc": "Through the third QDM test and 2022→2023 year-over-year growth metrics, we verified that duplicate removal and PPA performance improvements translated into real operational impact.",
+    "chart": {
+      "title": "Quantitative Results Comparison",
+      "yAxisLabels": ["400", "300", "200", "100", "0"],
+      "xLabels": ["Image count", "Work time", "Defect quality"],
+      "legend": { "before": "Before", "after": "After" }
+    },
+    "metrics": [
+      {
+        "value": "56.5%",
+        "label": "Fewer images",
+        "desc": "435 images → 189 images",
+        "insight": "Duplicate removal cuts the reviewable set in half. Review load drops structurally."
+      },
+      {
+        "value": "55.7%",
+        "label": "Less work time",
+        "desc": "79 min → 35 min",
+        "insight": "The same team processes more turbines. The basis for scaling without hiring."
+      },
+      {
+        "value": "85%",
+        "label": "Lower report production cost",
+        "desc": "KRW 100,943 → KRW 15,059",
+        "insight": "Per-report cost down to ~1/7. The budget structure holds even at 10,000 turbines."
+      },
+      {
+        "value": "168%",
+        "label": "Revenue growth",
+        "desc": "KRW 50M → KRW 134M",
+        "insight": "Production cost down 60% while revenue rose 168%. Operating margin moved from a loss to KRW 109M."
+      }
+    ],
+    "synthesis": "On quality, coverage of severity-3+ defects clears 94%. Precision 13.4 and Recall 50.9 show automation can't close it alone — but in terms of catching high-risk defects, the result confirms the design direction of combining auto detection with human final review. Holding the 2022 method, the 2024 report budget would have needed ~KRW 1.3B. PPA brought it down to ~KRW 280M — a 78.36% reduction."
+  },
+  "performance": {
+    "label": "Performance Metrics",
+    "title": "DM vs QDM performance comparison",
+    "desc": "Comparing the core metrics of the existing Defect Marking method and the Quick Defect Marking method. Image count and work time both dropped more than half, while severity-3+ defect coverage held above 94%.",
+    "charts": {
+      "panel1Title": "Work time and image count",
+      "leadTime": {
+        "title": "Average Lead Time Comparison",
+        "axisLabel": "Average Time (minutes)",
+        "yLabels": ["80", "70", "60", "50", "40", "30", "20", "10", "0"],
+        "xLabels": ["Production Lead Time", "Test Lead Time"],
+        "subtitle": "Work time (Production vs QDM Test)"
+      },
+      "imageCount": {
+        "title": "Average Image Count Comparison",
+        "axisLabel": "Average Image Count",
+        "yLabels": ["400", "300", "200", "100", "0"],
+        "xLabels": ["Production Image Count", "Test Image Count"],
+        "subtitle": "Image count (Production vs QDM Test)"
+      },
+      "panel2Title": "Defect distribution",
+      "productionDefects": {
+        "title": "Average Production Defects",
+        "axisLabel": "Average Defect Count",
+        "yLabels": ["60", "50", "40", "30", "20", "10", "0"],
+        "xLabels": ["Total Defects", "Severe Defects"],
+        "subtitle": "Defect distribution (Production)"
+      },
+      "testDefects": {
+        "title": "Average Counts of Test Defects",
+        "axisLabel": "Average Count",
+        "yLabels": ["30", "25", "20", "15", "10", "5", "0"],
+        "xLabels": ["PPA Used BBox", "User Created BBox"],
+        "subtitle": "Defect distribution (QDM Test)"
+      }
+    },
+    "table": {
+      "headers": [
+        "Metric (average)",
+        "DM (Defect Marking)",
+        "QDM (Quick Defect Marking)",
+        "Change"
+      ],
+      "rows": [
+        {
+          "metric": "Image count",
+          "dm": "435 images",
+          "qdm": "189 images",
+          "change": "56.5% reduction"
+        },
+        {
+          "metric": "Work time",
+          "dm": "79 min",
+          "qdm": "35 min",
+          "change": "55.7% reduction"
+        },
+        {
+          "metric": "Defect count",
+          "dm": "56",
+          "qdm": "66",
+          "change": "94% severity-3+ coverage"
+        }
+      ]
+    }
+  },
+  "connected": {
+    "label": "Connected Outcomes",
+    "titleLine1": "From the problem structure this research defined,",
+    "titleLine2": "two product tracks launched.",
+    "desc": "Research & Problem Framing isn't a one-off research project. It's the shared problem definition and design premise for two execution projects that came after it. The execution layer on the inspection field, and the management layer on the data side — both tracks start from the same research.",
+    "cards": [
+      {
+        "tag": "Execution Layer",
+        "title": "Zoomable Worker",
+        "text": "The execution workflow platform for field inspection and defect marking. Built to directly resolve the duplicate image overload, defect marking inconsistency, and PPA trust gap problems this research surfaced.",
+        "bullets": [
+          "AI-based automatic duplicate image filtering",
+          "Improved defect marking UX and B-box editing",
+          "Better PPA reliability and reduced false positives",
+          "55% reduction in work time via QDM"
+        ],
+        "cta": "View project →",
+        "href": "/portfolio/zoomable-worker"
+      },
+      {
+        "tag": "Management Layer",
+        "title": "Zoomable Wind",
+        "text": "The operational visibility platform for managing and analyzing inspection data in the cloud. Built to resolve the metadata inconsistency, missing collaboration, and data cleanup burden problems this research surfaced.",
+        "bullets": [
+          "Auto-consistent defect data",
+          "Real-time notifications and cross-role collaboration",
+          "Cloud-based report management and analysis",
+          "Operations-wide visibility and traceability"
+        ],
+        "cta": "View project →",
+        "href": "/portfolio/zoomable-wind"
+      }
+    ]
+  }
+}

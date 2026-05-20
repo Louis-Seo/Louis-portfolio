@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "title": "About",
+    "description": "Louis Seo — a system-oriented product designer building clarity into multi-role platforms, AI products, and design systems."
+  },
+  "hero": {
+    "label": "About",
+    "titleLine1": "A designer who designs",
+    "titleLine2": "the structure behind products.",
+    "descLine1": "For complex products, structure comes before the screen.",
+    "descLine2": "I shape systems tangled with roles, data, and workflows into experiences that are clearer and built to scale."
+  },
+  "whatIBring": {
+    "title": "What I Bring",
+    "desc": "I read structure before industry. My work is about taking products with messy role, data, and workflow problems and resolving them into clear experiences.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "Product System Design",
+        "text": "Built a 70+ component design system from scratch and rolled it out to four product teams. I have run the full lifecycle — token architecture, Figma library operations, documentation, and team adoption — myself.",
+        "tags": ["Design Systems", "Tokens", "70+ Components", "Multi-Product"]
+      },
+      {
+        "num": "02",
+        "title": "AI & Data Experience",
+        "text": "Designed an AI defect detection app on deep learning, a wind turbine risk prediction dashboard, and a real-time sensor monitoring system. My focus: make model output something users can trust and act on.",
+        "tags": ["AI/ML UX", "Data Visualization", "Real-time", "Predictive"]
+      },
+      {
+        "num": "03",
+        "title": "Platform & Multi-Role UX",
+        "text": "Shipped a B2B property management system, a B2C resident app, and an investment analytics dashboard in parallel — handling how the same data gets used differently across roles. I'm comfortable designing role-specific workflows on platforms where B2B, B2C, and B2G coexist.",
+        "tags": ["B2B/B2C/B2G", "Multi-tenant", "RBAC", "Workflow"]
+      },
+      {
+        "num": "04",
+        "title": "Design–Engineering Bridge",
+        "text": "Established a company-wide UX guideline and stood up a design QA process I ran myself. I understand component specs, state definitions, and React patterns well enough to make sure intent survives the handoff from Figma to code.",
+        "tags": ["Design QA", "UX Guide", "React", "Handoff"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Product Designer",
+        "company": "DNK (DN Korea)",
+        "period": "2024.11 — Present",
+        "desc": "Global SaaS platform for real estate rental and investment. I lead UX across four products in parallel: B2B PMS, B2C resident app and web, admin back office, and the Investment Manager analytics platform. Drove a new e-contract product from zero to one. Redesigned the legacy PMS around operational workflows. Across operators, residents, admins, and analysts, I design the information architecture and role-specific workflows that let the same data work in different contexts.",
+        "projects": ["DNK PMS", "Resident App/Web", "Investment Manager Platform"]
+      },
+      {
+        "role": "UX/UI Designer",
+        "company": "Nearthlab",
+        "period": "2022.08 — 2024.04",
+        "desc": "AI drone inspection platform company. Shipped 6+ products: B2B SaaS web, B2G drone operations and command systems for military and police (confidential), and a mobile autonomous flight app. Built the company-wide UX standard design system and established the solution identity. Introduced and ran the design QA process. Contributed to products awarded the iF Design Award (Service Design; AI & Robotics) and the Red Dot Design Award. Co-inventor on an employee invention patent for real-time information display and role-based workflow in mission-critical environments.",
+        "projects": [
+          "Zoomable Wind Web",
+          "Zoomable Worker Web",
+          "NearthWind Mobile",
+          "UDS App (B2G)",
+          "PPA Demo (AI)",
+          "Design System"
+        ]
+      },
+      {
+        "role": "UX/UI Designer",
+        "company": "WE Wumbo (AU)",
+        "period": "2021.06 — 2022.07",
+        "desc": "Australian PropTech SaaS startup. Designed three products in parallel: a resident management app used by strata managers, facility operators, and tenants (We Services); a hotel operations automation app (Wumbotel); and a remote healthcare service (Wumbo Care). Owned the full lifecycle from feature planning to design, launch, and ongoing operations. Collaborated in English with a multinational team across B2B operator and B2C user workflows.",
+        "projects": ["We Services", "Wumbotel App", "Wumbo Care"]
+      },
+      {
+        "role": "Product Designer Intern",
+        "company": "Boshantech (AU)",
+        "period": "2021.01 — 2021.06",
+        "desc": "Australian IoT startup. Designed the UX for a smart shower mobile app and developed brand identity, value, and BX concepts in parallel. My first time treating hardware product, digital interface, and brand as a single design surface.",
+        "projects": ["Smart Shower App", "Boshantech BX"]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards & Certificates",
+    "items": [
+      {
+        "name": "iF Design Award — Service Design",
+        "meta": "Zoomable Data Analytics Platforms · 2025"
+      },
+      {
+        "name": "Red Dot Design Award",
+        "meta": "AiDEN · Design Concept 2024"
+      },
+      {
+        "name": "iF Design Award — AI & Robotics",
+        "meta": "AiDEN · 2024"
+      },
+      {
+        "name": "Employee Invention Patent",
+        "meta": "Method and apparatus for displaying information provided by an aircraft · 2023"
+      },
+      {
+        "name": "Google UX Design Professional Certificate",
+        "meta": "Coursera · 2024"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "name": "RMIT University",
+        "meta": "Communication Design, Bachelor's degree · 2019–2021"
+      },
+      {
+        "name": "Holmesglen",
+        "meta": "Graphic Design, Diploma of Education · 2017–2018"
+      }
+    ]
+  },
+  "howIWork": {
+    "headlineLine1": "How I Work",
+    "headlineLine2": "Design Approach",
+    "principles": [
+      {
+        "title": "Start with the domain and the data flow",
+        "text": "Before I draw a screen, I map the business logic, the data model, and the relationships between user roles. Whether it's a wind farm inspection workflow or real estate investment reporting, the right structure doesn't come without understanding the domain first."
+      },
+      {
+        "title": "Build the system before the screens",
+        "text": "Instead of designing pages one at a time, I work in tokens, components, and patterns. I've run multiple products on a shared design system that still works in each product's own context."
+      },
+      {
+        "title": "Design at a level that ships",
+        "text": "API response shapes, component states, rendering constraints — I bake these into the design from the start. Engineers shouldn't have to interpret design intent. Running design QA myself has narrowed the gap between intent and the final result."
+      },
+      {
+        "title": "Ship fast, validate in real use",
+        "text": "A working prototype beats a perfect spec. Field engineers tapping a screen with gloves on. Investors comparing hundreds of assets on a single view. The feedback that finishes the design comes from real conditions."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "groups": [
+      {
+        "label": "Product & UX",
+        "chips": [
+          "Information Architecture",
+          "Data Visualization",
+          "Interaction Design",
+          "User Research",
+          "Workflow Design"
+        ]
+      },
+      {
+        "label": "Design Systems",
+        "chips": [
+          "Token Architecture",
+          "Component API Design",
+          "Figma Library",
+          "Design QA",
+          "Multi-Product Adoption"
+        ]
+      },
+      {
+        "label": "Design–Dev",
+        "chips": [
+          "React / Next.js",
+          "TypeScript",
+          "CSS Modules",
+          "Component Spec",
+          "Storybook",
+          "Token Pipeline"
+        ]
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "What's Next",
+    "intro": "I want to keep solving structural complexity — on products with more users and bigger reach.",
+    "links": {
+      "email": "niedr7893@gmail.com",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

@@ -1,10 +1,12 @@
 export interface PortfolioNavItem {
-  label: string;
-  href: string;
+  /** Translation key under `common.nav.*` */
+  key: "projects" | "designSystem" | "about";
+  /** Locale-independent href (without locale prefix; next-intl Link adds it) */
+  href: "/portfolio" | "/design-system" | "/portfolio/about";
 }
 
 export const PORTFOLIO_NAV: PortfolioNavItem[] = [
-  { label: "Projects", href: "/portfolio" },
-  { label: "Design System", href: "/design-system" },
-  { label: "About", href: "/portfolio/about" },
+  { key: "projects", href: "/portfolio" },
+  { key: "designSystem", href: "/design-system" },
+  { key: "about", href: "/portfolio/about" },
 ];

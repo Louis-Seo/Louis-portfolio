@@ -1,83 +1,68 @@
+export type SidebarSectionKey =
+  | "foundation"
+  | "general"
+  | "navigation"
+  | "dataEntry"
+  | "dataDisplay"
+  | "feedback";
+
 export interface SidebarItem {
+  /** Slug used for both the URL segment and the `ds.common.sidebar.items.{id}` translation key */
   id: string;
-  label: string;
 }
 
 export interface SidebarSection {
-  id: string;
-  title: string;
+  /** Used to look up `ds.common.sidebar.sections.{key}` */
+  key: SidebarSectionKey;
   basePath: "/foundation" | "/components";
   items: SidebarItem[];
 }
 
 export const SIDEBAR_SECTIONS: SidebarSection[] = [
   {
-    id: "foundation",
-    title: "Foundation",
+    key: "foundation",
     basePath: "/foundation",
+    items: [{ id: "typography" }, { id: "color" }, { id: "icon" }, { id: "object-style" }],
+  },
+  {
+    key: "general",
+    basePath: "/components",
+    items: [{ id: "button" }, { id: "dropdown" }],
+  },
+  {
+    key: "navigation",
+    basePath: "/components",
+    items: [{ id: "navigation" }, { id: "breadcrumb" }, { id: "pagination" }],
+  },
+  {
+    key: "dataEntry",
+    basePath: "/components",
     items: [
-      { id: "typography", label: "Typography" },
-      { id: "color", label: "Color" },
-      { id: "icon", label: "Icon" },
-      { id: "object-style", label: "Object Style" },
+      { id: "input" },
+      { id: "toggle-radio-checkbox" },
+      { id: "chip" },
+      { id: "date-picker" },
+      { id: "toolbar" },
+      { id: "slider" },
     ],
   },
   {
-    id: "general",
-    title: "General",
+    key: "dataDisplay",
     basePath: "/components",
     items: [
-      { id: "button", label: "Button" },
-      { id: "dropdown", label: "Dropdown" },
+      { id: "filter" },
+      { id: "expansion-panel" },
+      { id: "table-list" },
+      { id: "badge-tag" },
+      { id: "avatar" },
+      { id: "empty-state" },
+      { id: "image-gallery" },
+      { id: "tree-view" },
     ],
   },
   {
-    id: "navigation",
-    title: "Navigation",
+    key: "feedback",
     basePath: "/components",
-    items: [
-      { id: "navigation", label: "Navigation" },
-      { id: "breadcrumb", label: "Breadcrumb" },
-      { id: "pagination", label: "Pagenation" },
-    ],
-  },
-  {
-    id: "data-entry",
-    title: "Data Entry",
-    basePath: "/components",
-    items: [
-      { id: "input", label: "Input" },
-      { id: "toggle-radio-checkbox", label: "Toggle / Radio Btn / Checkbox" },
-      { id: "chip", label: "Chip" },
-      { id: "date-picker", label: "Date Picker" },
-      { id: "toolbar", label: "Toolbar" },
-      { id: "slider", label: "Slider" },
-    ],
-  },
-  {
-    id: "data-display",
-    title: "Data Display",
-    basePath: "/components",
-    items: [
-      { id: "filter", label: "Filter" },
-      { id: "expansion-panel", label: "Expansion Panel" },
-      { id: "table-list", label: "Table / List" },
-      { id: "badge-tag", label: "Badge / Tag" },
-      { id: "avatar", label: "Avatar" },
-      { id: "empty-state", label: "Empty State" },
-      { id: "image-gallery", label: "Image Gallery" },
-      { id: "tree-view", label: "Tree View" },
-    ],
-  },
-  {
-    id: "feedback",
-    title: "Feedback",
-    basePath: "/components",
-    items: [
-      { id: "feedback-message", label: "Feedback Message (Toast / Alert)" },
-      { id: "tooltip", label: "Tooltip" },
-      { id: "modal", label: "Modal" },
-      { id: "indicator", label: "Indicator (Spinner / Progress Bar)" },
-    ],
+    items: [{ id: "feedback-message" }, { id: "tooltip" }, { id: "modal" }, { id: "indicator" }],
   },
 ];

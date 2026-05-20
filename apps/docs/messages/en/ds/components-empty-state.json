@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Empty State",
+    "description": "Surface that explains the absence of data — Illustration, Header, Description, and optional CTA Button."
+  },
+  "hero": {
+    "title": "Empty State",
+    "desc": "Empty State communicates the absence of data for a given item — explaining what's not there (the no-data case)."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": ["1. Illustration", "2. Icon", "3. Header", "4. Description", "5. Container"]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc": "Empty State's base composition is Illustration, Header, and Description. Each element can be omitted or added based on context, and a CTA Button can join when functionally needed.",
+    "header": {
+      "title": "Header",
+      "desc": "Conveys the primary summary for the empty state. Typically a short 2-3 word phrase."
+    },
+    "description": {
+      "title": "Description",
+      "desc": "Surfaces alongside Illustration and Header when extra context is needed. Should not exceed 2 lines, with a max width of 300px."
+    },
+    "illustration": {
+      "title": "Illustration",
+      "desc": "Communicates the no-data state visually and intuitively. The illustration container is fixed at 100×100px — every illustration shares the same size."
+    },
+    "cta": {
+      "title": "CTA Button (optional)",
+      "desc": "Empty State can include a CTA Button to drive a specific action — typically a creation-related action."
+    }
+  },
+  "types": {
+    "title": "Type of Empty State",
+    "desc": "Empty State splits into three types by purpose. These surface when a given area lacks data, typically within a bounded container.\n\nBeyond these three types, individual components in Zoomable Design System can also surface empty states when their data is absent. Those component-specific cases are defined within each component's own system.\n(e.g., avatar image empty, image data empty …)",
+    "items": [
+      {
+        "key": "ies",
+        "title": "Illust Type (IES)",
+        "desc": "Used when an empty state appears repeatedly within a content scope and the case calls for a heavy visual — Illustration or Icon."
+      },
+      {
+        "key": "ides",
+        "title": "Illust with Description Type (IDES)",
+        "desc": "Used when an empty state appears repeatedly within a content scope and the case calls for a heavy visual — Illustration or Icon."
+      },
+      {
+        "key": "esc",
+        "title": "Illust with CTA Type (ESC)",
+        "desc": "Used when an empty state appears repeatedly within a content scope and the case calls for a heavy visual — Illustration or Icon."
+      }
+    ]
+  },
+  "illustrationTypes": {
+    "title": "Illustration Types",
+    "desc": "Empty State illustrations can be produced per function, but today the two primary states are No Data and Nothing Selected. No Data marks the absence of displayable data; Nothing Selected marks the absence of a current selection.",
+    "mainLabel": "Main Illustration Types",
+    "extraLabel": "Extra Illustration Type (Optional)"
+  }
+}

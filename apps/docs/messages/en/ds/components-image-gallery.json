@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Image Gallery",
+    "description": "Image collection that surfaces multiple images at once, with optional information layered over the thumbnails."
+  },
+  "hero": {
+    "title": "Image Gallery",
+    "desc": "Image Gallery surfaces multiple images at once, pairing each thumbnail with select pieces of information."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": ["1. Severity Label", "2. Image Container", "3. Text Label", "4. Label Container"]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc": "Image Gallery splits into four categories by data type and state.\n\nThe four types reflect the nature of the content. Each of the four also carries separate Selected and Unfocused statuses.",
+    "list": ["1. Default Image", "2. Image with Severity", "3. No Data", "4. Image Empty"],
+    "items": [
+      {
+        "key": "default",
+        "title": "Default Image",
+        "desc": "The base form of an image element."
+      },
+      {
+        "key": "severity",
+        "title": "Image with Severity",
+        "desc": "The form when the content carries severity information."
+      },
+      {
+        "key": "no-data",
+        "title": "No Data",
+        "desc": "The state when no data exists."
+      },
+      {
+        "key": "empty",
+        "title": "Image Empty",
+        "desc": "The form when metadata exists but the image hasn't loaded."
+      }
+    ]
+  },
+  "status": {
+    "title": "Status",
+    "desc": "Alert splits into two categories by composition — Container Alert and Text Alert. Built on a Basic Info Box of Info Text plus Info Icon. Text Alert and Container Alert are used when the information requires an action, or when information needs to be condensed and summarized.",
+    "items": [
+      {
+        "key": "default",
+        "title": "Default",
+        "desc": "The base state when accessing the image gallery."
+      },
+      {
+        "key": "focused",
+        "title": "Focused",
+        "desc": "State for concentrating on a specific image content to perform an action tied to that element."
+      },
+      {
+        "key": "unfocused",
+        "title": "Unfocused",
+        "desc": "Works alongside Focused — lowers the prominence of elements other than the focused one."
+      }
+    ]
+  },
+  "spacing": {
+    "title": "Spacing",
+    "desc": "Image Gallery image sizes flex to the gallery area assigned per screen. Top/bottom/left/right spacing stays fixed at 8px."
+  },
+  "contents": {
+    "title": "Contents",
+    "severityGroup": {
+      "title": "Severity Group",
+      "desc": "Severity Badges in Gallery use the Circular Type, split into Count Severity Group (with count) and Severity Group (without count)."
+    },
+    "textLabel": {
+      "title": "Text Label",
+      "desc": "Surfaces image information as text below the image. Displays 'Blade / Blade Side / R Value' fields."
+    }
+  }
+}

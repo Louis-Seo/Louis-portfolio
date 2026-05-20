@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Chip",
+    "description": "컴팩트한 Selection Control — 필터링용 Filter Chip, 단계 선택용 Severity Chip."
+  },
+  "hero": {
+    "title": "Chips",
+    "desc": "Chip은 사용자가 정보를 입력하거나 특정 값을 선택할 때 사용됩니다. 개별 Chip은 On/Off 목적으로 사용 가능하며, 여러 Chip이 함께 사용될 때는 단일 선택이 기본입니다."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "items": ["1. Filter Container", "2. Text Label"]
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Chip 중 하나를 선택하면 즉각적으로 반영된 액션과 데이터가 나타납니다. Basic Filter·Severity Chip은 최소 두 가지 옵션이 있는 경우 필터링 목적으로 사용됩니다. Filter Chip은 Label 종류와 관계없이 동일한 Selected 색상을 사용하며, Severity Chip은 Label에 정의된 Severity 종류에 따라 색상이 다르게 표출됩니다."
+  },
+  "filter": {
+    "title": "Filter Chip",
+    "desc": "Filter Chip Label Text는 변경 가능합니다. Wind에서는 여러 Filter Chip을 Filter Bar 형태로 사용합니다. 각 Chip Group에 부여된 Label Text는 다른 필터값을 의미하며, 모든 Filter Chip의 Selected 색상은 동일하게 사용됩니다.",
+    "state": {
+      "title": "State",
+      "desc": "Basic Filter Chip은 Selected/Unselected에 따라 Default·Hover·Selected·Disabled 상태로 분류됩니다. Selected는 Active 상태로 간주됩니다."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Width는 유동적, Height는 32px(Medium)·20px(Small). Size에 따라 폰트·아이콘·Radius·Padding이 달라집니다. 20 미만(Small)은 최소 터치 영역 확보를 위해 지양합니다."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Status", "values": "Selected, Unselected", "default": "Unselected" },
+        { "prop": "State", "values": "Default, Hover, Selected, Disabled", "default": "Default" },
+        { "prop": "Size", "values": "Medium, Small", "default": "Medium" }
+      ]
+    },
+    "spec": {
+      "title": "Spec",
+      "color": {
+        "title": "Color",
+        "desc": "Active 시 Filter Chip은 카테고리 색상을 적용받습니다."
+      },
+      "textByte": {
+        "title": "Text Byte",
+        "desc": "Chip 하나당 최대 글자 수는 10자(22byte, 공백 포함)로 제한됩니다. 초과 시 말줄임 처리되며, Tooltip 형태로 축약된 정보를 제공합니다."
+      },
+      "placement": {
+        "title": "Placement",
+        "desc": "Filter Bar 형태의 Filter Chip은 좌측 정렬을 기본으로 두 줄형 사용이 가능합니다. 좌우 Margin은 16 고정. Label과 Chip 간 간격은 8. Chip Group 간 간격은 32, 행간은 16입니다."
+      }
+    }
+  },
+  "severity": {
+    "title": "Severity Chip",
+    "desc": "Severity Chip은 상태 또는 결함의 심각도 수준을 단계별로 선택하기 위해 사용됩니다. 각 Chip에 포함된 숫자 값은 고정된 Severity Level을 의미하며, 사용자는 정해진 범위 내에서 하나의 값을 선택할 수 있습니다. 일반적인 텍스트 기반 Chip과 달리, Severity Chip은 동일한 크기·구조 안에서 숫자 중심의 선택 경험을 제공합니다. 선택된 값은 시각적으로 명확히 강조되며, 필요에 따라 단계별 색상 체계를 함께 적용하여 현재 심각도 수준을 빠르게 인지할 수 있도록 합니다.",
+    "state": {
+      "title": "State",
+      "desc": "Basic Filter Chip은 Selected/Unselected에 따라 Default·Hover·Selected·Disabled 상태로 분류됩니다. Selected는 Active 상태로 간주됩니다."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Width는 유동적으로 상황에 맞게 가로 폭 사이즈를 변경 가능합니다. Zoomable 사용 고객사의 Severity 분류 정책에 따라 색상·중요도 Order·표출 수가 변경될 수 있으며, 사용되는 공간 영역에 따라 Width는 유동적으로 변화합니다. OSD Viewer 내 포함 시 Width 기본값: {(포함 영역) − 12 × (전체 Severity 갯수 − 1)} / (전체 Severity 갯수). Modal 내에서는 {(포함 영역) − 8 × (전체 Severity 갯수 − 1)} / (전체 Severity 갯수).\n\nChip Width 최소값은 Height를 넘지 않는 것을 원칙으로 하나, Chip Group 영역이 Container를 넘어가는 경우 Container 내 포함시키는 것이 우선순위를 가집니다."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Status", "values": "Selected, Unselected", "default": "Unselected" },
+        { "prop": "State", "values": "Default, Hover, Selected, Disabled", "default": "Default" },
+        { "prop": "Size", "values": "Medium, Small", "default": "Medium" }
+      ]
+    },
+    "spec": {
+      "title": "Spec",
+      "color": {
+        "title": "Color",
+        "desc": "Active 시 Severity Filter Chip은 카테고리 색상을 적용받습니다. Zoomable 사용 고객사에 따라 Severity 단계가 다르게 나뉠 수 있으며, Severity 단계의 색상은 가장 양끝인 1과 5에서부터 차례로 포함시키는 것을 원칙으로 합니다."
+      },
+      "textByte": {
+        "title": "Text Byte",
+        "desc": "Severity Chip은 부여된 Severity Number를 사용하는 것이 원칙으로, 일반적으로 2글자 이내 숫자를 사용합니다."
+      },
+      "placement": {
+        "title": "Placement",
+        "desc": "좌측 정렬을 기본으로 두 줄형 사용이 가능합니다. Label과 Chip 간 위아래 간격은 8. Chip Group 간 간격은 Medium-8, Small-12 Margin."
+      }
+    }
+  }
+}

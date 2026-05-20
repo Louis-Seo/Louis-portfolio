@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Avatar",
+    "description": "그룹과 개인을 대표하는 식별자 — Square는 조직, Circle은 개인용. 3가지 사이즈와 Empty State 랜덤 색상 사용."
+  },
+  "hero": {
+    "title": "Avatar",
+    "desc": "Avatar는 특정 그룹 혹은 사용자를 대표하는 식별자로, Zoomable Design System에서는 Square와 Circle Type으로 사용됩니다."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": ["1. Avatar Label", "2. Circle Container", "3. Square Container", "4. Text Label"]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc": "Avatar는 형태적 기준으로 2가지로 분류되며, 각 Type은 다른 종류의 요소를 대표하는 역할로서 서로 별개의 용도로 사용됩니다.",
+    "table": {
+      "headers": { "component": "Component", "type": "Type", "usage": "Usage", "used": "Used" },
+      "rows": [
+        {
+          "type": "Square",
+          "usage": "그룹 (organization)을 대표하는 썸네일로 사용합니다.",
+          "used": "Farm, Fleet"
+        },
+        {
+          "type": "Circle",
+          "usage": "개인 (person)을 대표하는 썸네일로 사용합니다.",
+          "used": "User"
+        }
+      ]
+    }
+  },
+  "spec": {
+    "title": "Design Spec",
+    "headers": { "property": "Property", "values": "Values", "default": "Default" },
+    "rows": [
+      {
+        "prop": "Size",
+        "values": "36px (Large) / 32px (Medium) / 24px (Small)",
+        "default": "32px (Medium)"
+      },
+      { "prop": "Image", "values": "Image / Empty", "default": "Empty" },
+      { "prop": "State", "values": "Default / Disabled", "default": "Default" }
+    ]
+  },
+  "size": {
+    "title": "Size",
+    "desc": "Avatar는 총 3가지 사이즈를 제공합니다."
+  },
+  "color": {
+    "title": "Color",
+    "desc": "Avatar의 Image Empty 상태 배경은 총 5가지이며, 랜덤으로 배정되는 것을 원칙으로 합니다. 기존 Color Palette에서 Blue, Green, Yellow, Red, Gray Color의 200·700 값 조합으로 사용합니다."
+  }
+}

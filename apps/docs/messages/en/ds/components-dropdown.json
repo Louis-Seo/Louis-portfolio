@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Dropdown",
+    "description": "Selection control for picking options, filtering, or sorting — surfaced through a menu of items behind a dropdown button."
+  },
+  "hero": {
+    "title": "Dropdown",
+    "desc": "Dropdowns let users pick an option, filter content, or change sort order. They expose a Menu of selectable Items, surfaced through a Dropdown Button paired with an icon that signals the menu can be opened."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "items": [
+      "1. Dropdown Container",
+      "2. Dropdown Field",
+      "3. Arrow Icon",
+      "4. Dropdown Button",
+      "5. Dropdown Menu",
+      "6. Menu Item",
+      "7. Selected Item Field"
+    ]
+  },
+  "extraTypeIntro": {
+    "title": "Extra Type",
+    "desc": "Dropdowns surface Menu Items used to filter or sort page content. Variants split by Dropdown Button type — Primary (Label), Secondary (Avatar & Badge), and Tertiary (Non-Outlined)."
+  },
+  "compTable": {
+    "headers": {
+      "primary": "Primary Type",
+      "secondary": "Secondary Type",
+      "tertiary": "Tertiary Type",
+      "extra": "Extra Type"
+    },
+    "rows": [
+      {
+        "label": "Field Type",
+        "primary": "Text",
+        "secondary": "Avatar with Text, Badge",
+        "tertiary": "Text, Avatar with Text, Badge",
+        "extra": "Icon"
+      },
+      {
+        "label": "Selected Item",
+        "primary": "Single Selected",
+        "secondary": "Multi / Single Selected",
+        "tertiary": "Multi / Single Selected",
+        "extra": "Single Selected"
+      },
+      {
+        "label": "Extra Composition",
+        "primary": "—",
+        "secondary": "Multi Selected Count Badge",
+        "tertiary": "Multi Selected Count Badge",
+        "extra": "—"
+      },
+      {
+        "label": "Characteristics",
+        "primary": "Most common — composed of text or an icon",
+        "secondary": "Includes components like Avatar and Badge",
+        "tertiary": "No outline; inner field only — used inside tables and lists",
+        "extra": "Icon Button form, with the standard menu surface"
+      }
+    ],
+    "mobileLabels": {
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "tertiary": "Tertiary",
+      "extra": "Extra"
+    },
+    "mobileShortRows": [
+      {
+        "label": "Field Type",
+        "primary": "Text",
+        "secondary": "Avatar, Badge",
+        "tertiary": "Text, Avatar, Badge",
+        "extra": "Icon"
+      },
+      {
+        "label": "Selected Item",
+        "primary": "Single",
+        "secondary": "Multi / Single",
+        "tertiary": "Multi / Single",
+        "extra": "Single"
+      },
+      {
+        "label": "Extra Composition",
+        "primary": "—",
+        "secondary": "Count Badge",
+        "tertiary": "Count Badge",
+        "extra": "—"
+      }
+    ]
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Dropdowns split by style, intent, and the field type they expose — Primary (Label Dropdown), Secondary (Avatar and Badge Dropdown), Tertiary (Non-Outlined Dropdown), and Extra Type."
+  },
+  "primary": {
+    "title": "Primary Type",
+    "desc": "The most common type — composed of a Label Dropdown (text-only field) and a Label with Icon Dropdown (icon + text)."
+  },
+  "secondary": {
+    "title": "Secondary Type",
+    "desc": "Uses non-text components inside the field — most commonly Avatar or Badge."
+  },
+  "tertiary": {
+    "title": "Tertiary Type",
+    "desc": "Dropdowns with no visible outline — Clicked state shifts to the Secondary form. Split into Table Dropdown and List Dropdown, each using different field components."
+  },
+  "extraType": {
+    "title": "Extra Type",
+    "desc": "Use-case-specific variants — Icon Dropdown, Inspection Selector, Fleet Selector."
+  },
+  "variants": {
+    "title": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Dropdown Button supports 8 states — Disabled, Default, Hover, Clicked, Select Disabled, Selected, Select Hover, Select Clicked. Menu Item supports 4 — Default, Hover, Selected, Select Hover."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Sizes use height — Large, Medium, Small. Width remains flexible."
+    },
+    "menuItem": {
+      "title": "Menu Item",
+      "desc": "Menu Item fields compose from a core set — Text, Avatar, Badge — with optional Toggle or Icon. A Search Input matching the Dropdown Button height is also supported."
+    }
+  },
+  "componentTable": {
+    "title": "Table of Dropdown Component",
+    "headers": { "component": "Component", "values": "Values" },
+    "rows": [
+      { "component": "Dropdown Button", "values": "Primary, Secondary, Tertiary" },
+      { "component": "Menu List", "values": "List, Date Picker" },
+      { "component": "Menu Item", "values": "Text, Avatar, Badge" }
+    ]
+  },
+  "buttonProps": {
+    "title": "Table of Properties — Dropdown Button",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+      {
+        "prop": "State",
+        "values": "Disabled, Default, Hover, Clicked, Select Disabled, Selected, Select Hover, Select Clicked",
+        "default": "Default"
+      }
+    ]
+  },
+  "itemProps": {
+    "title": "Table of Properties — Menu Item",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+      { "prop": "State", "values": "Default, Hover, Selected, Select Hover", "default": "Default" },
+      { "prop": "Icon", "values": "False, True", "default": "False" },
+      { "prop": "Toggle", "values": "False, True", "default": "False" }
+    ]
+  },
+  "color": {
+    "title": "Color",
+    "desc": "Dropdown color shifts per state. The content filling the field keeps the same color across states; outline and container shift per state.",
+    "buttonColor": "Dropdown Button Color",
+    "itemColor": "Menu Item Color"
+  },
+  "spacing": {
+    "title": "Spacing",
+    "desc": "When Menu Item content wraps to two or more lines — and combines with other components (Icon, Avatar) — apply the following spacing. Single vs. multi-selection patterns also differ."
+  },
+  "contents": {
+    "title": "Contents",
+    "desc": "Aim to surface up to 4.5 Menu Items at once. With 5 or more, use a scrollbar — preserving the 4.5-item visible window.",
+    "empty": {
+      "title": "Table / List Empty State (Placeholder)",
+      "text": "Unlike the standard placeholder used elsewhere, Tertiary Type Table and List use \"—\" instead of text. This distinguishes empty cells from filled cells across many data rows in a single view."
+    },
+    "fieldType": {
+      "title": "Type of Field",
+      "text": "Dropdown fields default to a Label Dropdown with text — other components can take over. Common alternatives include Badge and Avatar. Other component types can be composed as needed."
+    },
+    "itemList": {
+      "title": "Menu Item List",
+      "text": "Surface up to 4 Items by default; beyond that, apply overflow scroll. When 4 isn't enough for usability, raise the Menu height max situationally."
+    },
+    "single": {
+      "title": "Single-Selection",
+      "text": "The most common Dropdown — only one selection is allowed. If the value is required, hide the Close (Clear All) button. If optional, surface the Close button."
+    },
+    "multi": {
+      "title": "Multi-Selection",
+      "text": "Multiple selections are allowed. The selected items can render two ways — a Badge that shows the count, or the full content text of each selected item."
+    },
+    "minWidth": {
+      "title": "Minimum Width",
+      "text": "Width flexes with the surrounding area. Minimum width is 120px."
+    },
+    "flexibleWidth": {
+      "title": "Flexible Width",
+      "text": "Dropdowns flex. Set the width by accounting for the longest Menu Item content. When used inside a parent container, honor the container's defined padding."
+    },
+    "overflow": {
+      "title": "Text Overflow",
+      "text": "When the Dropdown Button field text exceeds the horizontal area, truncate with \"…\". Menu Item text doesn't truncate — it wraps and shows in full."
+    }
+  },
+  "usage": {
+    "title": "Usage & Placement",
+    "desc": "Dropdowns most commonly pair with Labels in form input layouts, alongside Text Inputs. Multiple elements compose to deliver information to the user.",
+    "label": {
+      "title": "Label",
+      "text": "Forms with a Dropdown surface a Label for the field. Use Subtitle 3 (Inter, Medium, 14px), with Required, Error, and Information variants as needed.\n\nLabel + Dropdown / Input combinations are often used together. Use 8px between Label and Dropdown, 24px between horizontally arranged elements, and 32px between vertically arranged elements."
+    },
+    "information": {
+      "title": "Label: Information",
+      "text": "Surfaces supplementary information about the input value to the user."
+    },
+    "required": {
+      "title": "Label: Required",
+      "text": "Marks the field as required. Place 4px after the Label and use \"*\". Optional fields use no marker — just the Label.\n\nUse Body 2 (Inter, Regular, 14px) for \"*\", at the same text size as the Label."
+    },
+    "error": {
+      "title": "Label: Error (Alert)",
+      "text": "Surfaces an alert about the input value. Typically triggered after an action (e.g., Confirm Button). The Dropdown Button outline color and a Text Alert both surface.\n\nError state outline color: Red 500. Use the Medium-size Alert."
+    },
+    "labelSize": {
+      "title": "Label Size",
+      "text": "Match Label size to the Dropdown component's height and information density. When field size changes, Label scales within the same ratio system to preserve component balance and readability.\n\nMedium Dropdown uses Subtitle 3 (Inter, Medium, 14px); Large Dropdown uses Subtitle 1 (Inter, Medium, 16px). This rule clarifies the visual hierarchy between Label and Input field, and keeps a consistent rhythm across different form-element sizes."
+    }
+  },
+  "loading": {
+    "title": "Loading Status",
+    "type": {
+      "title": "Loading Type",
+      "desc": "Loading uses a single Spinner type, paired with the standard Dropdown Arrow. The Spinner centers within the area where Items would surface."
+    },
+    "spinner": {
+      "title": "Loading Spinner Size",
+      "desc": "The Spinner inside the Dropdown Container matches the height of the Item Text. While loading, width stays equal to the width used immediately before loading began."
+    }
+  },
+  "menuPlacement": {
+    "title": "Menu Placement",
+    "desc": "The Menu's position is decided by where the user triggered the action on screen. Default to top placement, but stay within the screen's 32px minimum padding."
+  },
+  "menuItems": {
+    "title": "Menu Items",
+    "desc": "Menu height behaves in two ways depending on item count: flexible up to 4 items, fixed beyond that.",
+    "le4": {
+      "title": "1. Menu Item ≤ 4",
+      "desc": "When item count is 4 or fewer, the Menu height is the sum of item heights plus 4 × 2px (top + bottom Menu padding) — flexed per count. Avoid Menus with a single Item."
+    },
+    "gt4": {
+      "title": "2. Menu Item > 4 (with Scroll)",
+      "desc": "When item count exceeds 4, Menu height equals 4.5 item heights plus 4 × 2px (top + bottom Menu padding) — flexed by item content. The 0.5 reveals the next item halfway, signaling scrollability."
+    },
+    "line4": {
+      "title": "3. Menu Item Text Line ≤ 4",
+      "desc": "Unlike the Dropdown Button, where text truncates with \"…\" in a fixed height, Menu Item text wraps up to 4 lines. Heights flex from 1 to 4 lines."
+    },
+    "lineGt4": {
+      "title": "4. Menu Item Text Line > 4 (with Scroll)",
+      "desc": "Maximum visible items default to 4.5, but each item's height flexes by content. Max visible text lines is 4 — beyond that, truncate with \"…\"."
+    }
+  },
+  "arrangement": {
+    "title": "Item List Contents Arrangement",
+    "desc": "Menu Item list content defaults to A–Z order. When a meaningful sequence applies, follow that sequence instead.",
+    "default": {
+      "title": "1. Default Item List",
+      "desc": "Applies to all text-bearing items. Except for Sequence Item Lists, all Menu Item lists default to alphabetical order — Primary, Secondary, Tertiary, and Extra Type."
+    },
+    "sequence": {
+      "title": "2. Sequence Item List",
+      "desc": "Applies when the task itself carries a meaningful sequence the user already recognizes (e.g., Roadmap — Priority and Status Filter Dropdown)."
+    }
+  }
+}

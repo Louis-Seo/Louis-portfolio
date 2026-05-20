@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "brand": "Louis Seo",
+    "title": "Louis Seo — Product Designer",
+    "description": "복잡한 제품에 구조와 명확함을 더하는 시스템 지향 프로덕트 디자이너 Louis Seo의 포트폴리오."
+  },
+  "nav": {
+    "projects": "프로젝트",
+    "designSystem": "디자인 시스템",
+    "about": "소개"
+  },
+  "language": {
+    "label": "Language",
+    "ko": "KO",
+    "en": "EN"
+  },
+  "actions": {
+    "viewProject": "케이스 스터디 보기",
+    "backToProjects": "프로젝트 목록으로",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "toggleTheme": "테마 전환"
+  },
+  "footer": {
+    "role": "Product Designer",
+    "copyright": "© {year} Louis Seo · Product Designer"
+  }
+}

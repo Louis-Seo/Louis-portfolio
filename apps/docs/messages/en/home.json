@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Louis Seo — Product Designer",
+    "description": "I design operational platforms where multiple roles meet, and data products that turn complexity into decisions."
+  },
+  "hero": {
+    "label": "Product Designer",
+    "name": "Louis Seo",
+    "statementLine1": "I design operational platforms where",
+    "statementLine2": "multiple roles meet — and data products built for decisions.",
+    "subLine1": "PMS, investment dashboards, AI inspection systems, design systems —",
+    "subLine2": "I work on products where complexity is the hardest problem to solve.",
+    "tags": ["Multi-Role Platforms", "AI & Data Products", "Design Systems", "Workflow Design"],
+    "scroll": "Scroll"
+  },
+  "selectedWork": {
+    "title": "Selected Work",
+    "subLine1": "For complex products, framing the problem is half the design.",
+    "subLine2": "These are the projects I led from workflow analysis through system design to shipped product."
+  },
+  "allProjects": {
+    "title": "All Projects",
+    "sub": "Different domains, but the same kind of problem underneath."
+  },
+  "approach": {
+    "headlineLine1": "Before the screen,",
+    "headlineLine2": "I design the structure",
+    "headlineLine3": "that makes the product",
+    "headlineLine4": "actually work.",
+    "principles": ["Structure First", "Systems Thinking", "Ship with Engineers"],
+    "cards": [
+      {
+        "num": "01",
+        "title": "Product Systems",
+        "text": "Built and operated a token-based design system shared across four product teams — over 70 components, designed and maintained end to end. The kind of structure that holds together as the product scales."
+      },
+      {
+        "num": "02",
+        "title": "AI & Data Products",
+        "text": "Designed AI defect detection on drone imagery, real estate investment analytics, and real-time monitoring interfaces. My focus is turning dense data into something users can read, trust, and act on."
+      },
+      {
+        "num": "03",
+        "title": "Design–Dev Bridge",
+        "text": "I define Figma tokens and React component specs myself — states, variants, edge cases. Design intent should hold up in production code, not get translated along the way."
+      }
+    ]
+  },
+  "contact": {
+    "titleLine1": "Looking for a team",
+    "titleLine2": "working on hard, structural problems.",
+    "textLine1": "Multi-role platforms, AI and data products, ops-heavy SaaS —",
+    "textLine2": "if you need a designer who frames problems and ships them, let's talk.",
+    "email": "niedr7893@gmail.com"
+  }
+}

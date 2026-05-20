@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Date Picker",
+    "description": "Date and Time selector — Date, Year, and Date & Time Picker types delivered through a Dropdown menu."
+  },
+  "hero": {
+    "title": "Date Picker",
+    "desc": "Date & Time Picker lets users pick a single date or a date range — including year and time."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "components": {
+    "title": "Components",
+    "desc": "Date Picker includes Date Picker for picking a specific date, Year Picker for picking a year, and Date and Time Picker for picking both. Typically surfaced as a Dropdown Menu item with a Schedule icon."
+  },
+  "props": {
+    "title": "Table of Figma Properties — Date Picker with Dropdown",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      {
+        "prop": "State",
+        "values": "Default, Hover, Clicked, Disabled, Selected, Select Hover, Select Disabled, Select Clicked",
+        "default": "Default"
+      },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "—" },
+      { "prop": "Open", "values": "True, False", "default": "False" },
+      { "prop": "Menu Type", "values": "Date, Year, Date and Time", "default": "—" }
+    ]
+  },
+  "sizing": {
+    "title": "Sizing",
+    "width": {
+      "title": "Width & Padding",
+      "text": "Unlike a typical Dropdown Menu, Date Picker doesn't flex with content length — it uses a fixed width. The outer area uses 12px padding, keeping the internal Calendar Grid and Header within a stable spacing rhythm."
+    },
+    "spacing": {
+      "title": "Internal Spacing",
+      "text": "Internal elements — Header, Navigation Control, Calendar Cell — follow a defined spacing system. The top Header and the body Grid hold a clear separation, and per-cell spacing follows the same rule."
+    }
+  },
+  "alignment": {
+    "title": "Alignment",
+    "desc": "Default alignment anchors to the left of the Dropdown. When a screen barrier interferes, alignment shifts to the right. Barrier conditions: the Dropdown width is smaller than the Date Picker, or the Dropdown sits near the right edge of the screen and blocks the picker area — in which case it aligns right."
+  },
+  "picker": {
+    "title": "Picker",
+    "type": {
+      "title": "Type",
+      "desc": "Date Picker supports three types — Time, Day, Year. Time and Day use dedicated Picker components; Year uses the existing Chip component from the design system."
+    },
+    "state": {
+      "title": "State",
+      "desc": "Year uses Chip — its states match Chip's definition. Day has 5 states — Placeholder, Default, Hover, Current, Selected. Time has 4 — Day's 5 states minus Current."
+    }
+  },
+  "usecase": {
+    "title": "Usecase"
+  }
+}

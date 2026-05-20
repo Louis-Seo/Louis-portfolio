@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "DNK Resident Portal",
+    "description": "Reframing Japan's rental operations around residents — a PMS-connected platform spanning resident app, admin web, and back office."
+  },
+  "hero": {
+    "label": "UX/UI Design · 2025–",
+    "title": "DNK Resident Portal",
+    "descLine1": "An admin-first rental operation in Japan,",
+    "descLine2": "redesigned around the people who live there.",
+    "meta": [
+      { "label": "Role", "value": "UX/UI Designer" },
+      { "label": "Duration", "value": "2025–" },
+      {
+        "label": "Contribution",
+        "valueLine1": "Product Planning, UX/UI Design,",
+        "valueLine2": "Design System, Cross-platform Structure"
+      },
+      { "label": "Team", "value": "Designer, PM, Dev, DL Engineer" }
+    ]
+  },
+  "overview": {
+    "label": "Overview",
+    "titleLine1": "A resident-first,",
+    "titleLine2": "two-sided housing platform",
+    "paragraphs": [
+      "Japan's housing market runs on complex mechanics: guarantor registration, recurring lease cycles, separate maintenance and system fees. The admin-side PMS that drives operations sits entirely apart from the resident's experience.",
+      "I designed a two-sided platform on a single contract data model — RP App for residents, RP Admin Web for operators, and the PMS — connecting all three. Residents can view contract details, payments, announcements, facility bookings, and intent submissions directly from the app. Operators handle contract issuance, announcements, push notifications, request management, and invoicing through Admin Web.",
+      "This is a PMS-integrated housing platform built around the resident — designed to honor Japan's local regulations and operational norms while giving residents the agency to verify and act on their own information."
+    ]
+  },
+  "marketResearch": {
+    "label": "Market Research",
+    "titleLine1": "The rental system has evolved.",
+    "titleLine2": "The experience hasn't followed.",
+    "desc": "Traditional Japanese rentals run admin-first. Residents receive everything — contracts, payments, announcements — second-hand. When PMS adoption digitized the admin workflow, the resident touchpoint stayed broken. The right job wasn't redesigning the ops system. It was redesigning the entire living experience.",
+    "imageAlt": "Market research timeline — 2000 to 2025"
+  },
+  "productOverview": {
+    "label": "Product",
+    "title": "RP App Overview",
+    "imageAlt": "RP App home screen with feature tags"
+  },
+  "userResearch": {
+    "label": "User Research",
+    "titleLine1": "Residents had to go find",
+    "titleLine2": "what they needed — every time.",
+    "desc": "In Japan's legacy rental systems, everything flows one way: from the admin, on their terms. Residents go looking. Talking to actual tenants made the real problem clear — it wasn't missing features. Contract, payment, announcement, and request never connected into one resident flow.",
+    "quotes": [
+      {
+        "user": "User 01",
+        "tag": "#Payment info isn't clear",
+        "quote": "I can't see how much I owe this month in one glance, so I get confused every time."
+      },
+      {
+        "user": "User 02",
+        "tag": "#Contract info is hard to reach",
+        "quote": "Finding my contract details or payment history takes way too many steps."
+      },
+      {
+        "user": "User 03",
+        "tag": "#Late fees come out of nowhere",
+        "quote": "I got hit with a late fee, but I can't tell from the app when it was added or how much."
+      },
+      {
+        "user": "User 04",
+        "tag": "#Facility booking is unclear",
+        "quote": "I want to book a facility but I can never figure out how, so I keep asking the manager."
+      },
+      {
+        "user": "User 05",
+        "tag": "#Co-residents have no access",
+        "quote": "My family living with me can't see anything. We need separate logins for residents."
+      }
+    ]
+  },
+  "insight": {
+    "imageAlt": "Insight — From Fragmented Touchpoints To A Connected Living Experience"
+  },
+  "direction": {
+    "label": "Direction",
+    "titleLine1": "We grounded the UX in how residents",
+    "titleLine2": "actually live, and pulled out four directions.",
+    "desc": "Drawing on Korean and Japanese tenant research, behavioral analysis, PMS integration constraints, and lived resident scenarios, I defined the UX directions that anchor the Resident Portal App.",
+    "cards": [
+      {
+        "title": "Accessibility",
+        "subtitle": "Information at the speed of need",
+        "text": "\"What do I need to do right now? How much do I owe, by when?\" Residents should know without searching. The home screen surfaces this through a status-based structure."
+      },
+      {
+        "title": "Contextuality",
+        "subtitle": "Adapt to where the resident is in their lease",
+        "text": "Pre-move-in, in residence, planning to leave — each state demands different info and actions. Notifications, menus, and submission rules branch automatically by state."
+      },
+      {
+        "title": "Clarity",
+        "subtitle": "Translate the money clearly",
+        "text": "Lease cycle invoices, late fees, refunds, payment status — complex financial structures need a visual translation. Within the constraints of PMS data, I simplified and layered the information so it lands immediately."
+      },
+      {
+        "title": "Autonomy",
+        "subtitle": "Put the resident in the driver's seat",
+        "text": "The legacy PMS was admin-centric. RP App lets tenants submit, verify, and track their own contracts, bills, and facility usage."
+      }
+    ]
+  },
+  "concept": {
+    "label": "UX/UI Concept",
+    "titleLine1": "From Fragmented Touchpoints",
+    "titleLine2": "To A Connected Living Experience",
+    "desc": "We structured the data around the contract, then built an environment on top where residents can manage and decide for themselves. Contract → Data → Autonomy. That stack is the core of the RP System.",
+    "flow": [
+      {
+        "step": "Step 01",
+        "title": "Contract",
+        "text": "Unify contract data into a single model. Residents and operators share the same contract in real time — lease cycle, guarantor, and corporate-vs-individual all managed as one model."
+      },
+      {
+        "step": "Step 02",
+        "title": "Data",
+        "text": "Layer billing, payment, notifications, announcements, and requests on top of the contract. Two-way PMS sync removes data drift and double entry."
+      },
+      {
+        "step": "Step 03",
+        "title": "Autonomy",
+        "text": "On top of the structured data, give residents a self-serve environment to verify, submit, and manage. They run their living arrangement themselves — without asking the operator."
+      }
+    ],
+    "imageAlt": "Concept — Contract → Data → Autonomy"
+  },
+  "designSystem": {
+    "label": "Design System",
+    "titleLine1": "One UI/UX system spanning",
+    "titleLine2": "the mobile app and admin web",
+    "desc": "RP App and RP Admin Web express the same contract data in different contexts. A resident's billing status tag in the app and the payment-status column an operator sees in Admin Web are the same data — but presented and prioritized differently. Add the reality of PMS field changes and new feature asks, and a shared design system became non-negotiable. It's how we kept both platforms scaling in sync without the experience drifting.",
+    "context": [
+      {
+        "title": "Unified visual language across App and Admin Web",
+        "text": "The 'unpaid' tag in the app and the payment-status column in Admin Web share the same color and icon system. Same information, different surfaces, no confusion."
+      },
+      {
+        "title": "Built to absorb PMS changes",
+        "text": "When PMS adds billing items or changes contract fields, we don't redesign screens from scratch. Figma Tokens and a structured component library let us recombine existing elements to ship the response fast."
+      },
+      {
+        "title": "No interpretation gap between design and dev",
+        "text": "We specified boolean variants, semantic color usage, and spacing rules upfront. No more 'which style is right for this state?' — engineers ship from the spec directly."
+      }
+    ],
+    "imageAlts": {
+      "typography": "Typography / Spacing & Layout",
+      "color": "Color System",
+      "icon": "Icon System",
+      "button": "Button & Interaction System"
+    }
+  },
+  "features": {
+    "myContract": {
+      "label": "Category",
+      "title": "My Contract",
+      "description": "Japanese rental contracts are structurally complex — cycle renewals, guarantor registration, corporate vs. individual. In the app, residents see lease terms, payment history, guarantor info, and submitted documents directly, and can share them on the spot. In Admin Web, operators handle tenant detail, status changes, and blacklist management from a single view. The result: a contract flow where both sides can operate independently, without phone calls or paperwork.",
+      "heroImageAlt": "My Contract — App and Admin Web views",
+      "bullets": [
+        {
+          "title": "App: Contract info + document sharing",
+          "text": "Residents view lease terms, payment history, and guarantor info directly. They can share lease agreements, income certificates, and other documents through AirDrop, email, or message — no need to ask the operator again."
+        },
+        {
+          "title": "Admin Web: Live contract operations",
+          "text": "Operators see tenant details, contract history, blacklist status, and emergency contacts in a single view. Contract status changes propagate to the app immediately — no calls, no manual cross-checks."
+        },
+        {
+          "title": "Cycle history + corporate/individual handling",
+          "text": "Multiple contracts (cycles) under one account are differentiated, and corporate-only fields (company name, contact person, etc.) are separated. Internal ops measured contract and document inquiries dropping by ~47% after rollout."
+        }
+      ]
+    },
+    "billing": {
+      "label": "Category",
+      "title": "Billing & Overdue",
+      "description": "PMS billing data was built for operators — feed it straight to residents and it's unreadable. The core job was translating it into the resident's view. The app surfaces amount, due date, and account on one screen; Admin Web manages per-unit invoice lists, transactions, deposits, and late-fee logs from one place.",
+      "heroImageAlt": "Billing & Overdue — Web and App views",
+      "bullets": [
+        {
+          "title": "App: Billing status + payment guidance",
+          "text": "Color and tags shift by state — unpaid, partial, overdue. Amount, due date, and account info live on a single screen, so 'when, how much, where to' is immediate."
+        },
+        {
+          "title": "Handling the delay between real payment and system",
+          "text": "There's a lag between auto-calculated late fees and confirmed deposits. To cut down on 'I already paid, why am I overdue?' inquiries, we designed a separate lag-aware UI — repeat inquiries dropped significantly."
+        },
+        {
+          "title": "Admin Web: Unified billing operations",
+          "text": "Monthly invoice lists by unit, transaction records, deposit management, late-fee logs — all on a single screen. Information that used to live across multiple views is consolidated, and the ops team reports ~40% less time spent on unpaid checks and collection workflows."
+        }
+      ]
+    },
+    "intent": {
+      "label": "Category",
+      "title": "Intent Submission",
+      "description": "Move-out, renewal, and room change used to live on phone calls and paper forms. We turned them into a mobile self-serve flow. Residents go from checking their contract, to choosing an intent, to entering conditions, to submitting — all in one motion. Admin Web supports approval/rejection/hold per request, plus e-contract integration and automatic eligibility checks.",
+      "heroImageAlt": "Intent Submission — Web and App views",
+      "bullets": [
+        {
+          "title": "App: Move-out, renewal, room change — self-serve",
+          "text": "Residents submit their living plans directly from mobile. Before/after rollout, related inquiries from the phone-and-paper era dropped by ~65%. The full flow — submission to history — completes inside the app."
+        },
+        {
+          "title": "Condition-based room-change requests",
+          "text": "Residents enter preferred area, rent range, and move-in date; the request links to PMS for candidate matching. Submission history is always visible in the app, so follow-up inquiries drop."
+        },
+        {
+          "title": "Admin Web: Status management + auto-filters",
+          "text": "Operators handle approve/reject/hold per request from Admin Web. Auto-reject filters fire for blacklist, unpaid balance, or unmet early-termination conditions — fewer dropped requests, and ops measures roughly 2x processing speed."
+        }
+      ]
+    },
+    "notifications": {
+      "label": "Category",
+      "title": "Notifications System",
+      "description": "The old bulk-broadcast model sent every resident the same message. We replaced it with a condition-based system that only sends what's relevant — driven by contract state, payment status, and request progress. The app drives action; Admin Web tracks who got what and whether they responded.",
+      "heroImageAlt": "Notifications System — log and settings",
+      "bullets": [
+        {
+          "title": "App: Five categories + opt-in settings",
+          "text": "Notifications are split by contract, payment, overdue, announcement, and request states. Residents can opt in or out per category — fewer unwanted pushes, more focus on the ones that matter."
+        },
+        {
+          "title": "Auto-sends tied to contract state",
+          "text": "If an overdue balance isn't paid, a reminder follows. Push notifications go out at 30 days, 7 days, and on the day a lease ends. 'When was that due again?' kind of inquiries dropped sharply."
+        },
+        {
+          "title": "Admin Web: Delivery log + tracking",
+          "text": "Operators see per-notification send time, success/failure, and read state. Failed sends can be retried, and a per-resident notification history sits on a single screen."
+        }
+      ]
+    },
+    "tenantRequests": {
+      "label": "Category",
+      "title": "Tenant Requests",
+      "description": "Filing a request was a black box — residents had no idea what was happening, so they asked again. We built a ticket system where requests filed in the app flow straight to Admin Web, and both sides see assignment, status updates, and resolution transparently.",
+      "heroImageAlt": "Tenant Requests — ticket system",
+      "bullets": [
+        {
+          "title": "App: Categorized intake + photo attachment",
+          "text": "Requests are split into 'unit issue' and 'common-area issue' upfront. Residents add a description and photos, so the responder can read the situation before showing up."
+        },
+        {
+          "title": "Admin Web: Kanban-based ticket handling",
+          "text": "Received → in progress → resolved → reopened, managed as a Kanban flow. Structured assignment and status transitions cut down on dropped requests and silent gaps."
+        },
+        {
+          "title": "Live status sharing → fewer follow-up inquiries",
+          "text": "Status changes surface in the app in real time, so 'is this received?' and 'when will it be handled?' inquiries drop sharply. Clearer intake also speeds up assignment — ops reports average resolution time cut by more than half."
+        }
+      ]
+    },
+    "announcements": {
+      "label": "Category",
+      "title": "Building Announcements",
+      "description": "Operators sent announcements with no idea who read them — and no way to reach the people who didn't. To solve the last mile, we built a system with multilingual support, automatic read-tracking, and re-broadcasting to non-readers. In the app, residents filter by type; in Admin Web, operators watch read rates in real time.",
+      "heroImageAlt": "Building Announcements — Web and App views",
+      "bullets": [
+        {
+          "title": "App: Type filters + multilingual reading",
+          "text": "Residents filter by category — community news, common areas, construction notices. More than half of users read announcements through these filters. Multilingual content (JP, KR, and more) is supported, and opened announcements are auto-marked as read."
+        },
+        {
+          "title": "Admin Web: Read-rate tracking + re-send",
+          "text": "Operators see per-announcement read rates in real time, with per-resident read status including account state. Pushing only to non-readers lifts read rates further on re-broadcast."
+        },
+        {
+          "title": "Fewer 'I didn't get the notice' inquiries",
+          "text": "After rollout, missed-announcement inquiries dropped sharply. Internal ops data shows the average announcement read rate clearing 80%, taking real load off the announcement workflow."
+        }
+      ]
+    }
+  },
+  "outcome": {
+    "label": "Outcome & Reflection",
+    "title": "Project results",
+    "metrics": [
+      {
+        "value": "3",
+        "label": "Integrated platforms",
+        "desc": "RP App + RP Admin Web + PMS, connected on a single data model as a two-sided housing platform."
+      },
+      {
+        "value": "6",
+        "label": "Core feature modules",
+        "desc": "Contract, billing, intent, notifications, requests, and announcements unified into one system."
+      },
+      {
+        "value": "47%",
+        "label": "Fewer inquiries",
+        "desc": "Self-serve structure — internal ops comparison, before vs. after rollout."
+      },
+      {
+        "value": "65%",
+        "label": "Fewer manual filings",
+        "desc": "Phone and paper-form processes migrated to mobile — before vs. after."
+      }
+    ],
+    "reflection": {
+      "title": "Reflection",
+      "paragraphs": [
+        "This project was never just about redrawing screens. Guarantor registration, lease cycles, separate utility and system fees — Japan's rental operations come with structural complexity that UI alone can't resolve. The real work was understanding the limits of what PMS could give us, and designing an information layer on top that residents could read and act on themselves.",
+        "The hardest part was showing the same data to two different users. For operators, billing data is a collection-management tool. For residents, it's an answer to 'how much do I owe this month?' Putting two contexts cleanly on top of one data model meant designing for both scenarios from the system level, not after.",
+        "RP System isn't a single app. It's a two-sided structure — resident App, operator Admin Web, and PMS connected on one data model — built to give residents real agency inside Japan's local regulations and norms.",
+        "In the end, the project wasn't another app on top of the stack. It was a shift from admin-first operations to a resident-first platform."
+      ]
+    }
+  }
+}

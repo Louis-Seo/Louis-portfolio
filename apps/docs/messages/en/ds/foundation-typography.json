@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Typography",
+    "description": "Type scale, weight, and usage rules — the typographic system for clear hierarchy and consistent reading."
+  },
+  "hero": {
+    "title": "Typography",
+    "desc": "Typography is the primary surface where the product talks to its users. The system defines a balanced scale, weight palette, and line-height to communicate hierarchy and keep reading effortless. Apply per intent — typeface and weight follow purpose, not preference."
+  },
+  "typeUsage": {
+    "title": "Type Usage",
+    "descLine1": "The scale is a recommendation, not a hard constraint.",
+    "descLine2": "Locking designers into a single scale removes flexibility. The system suggests font sizes and weights; designers compose freely on top of them.",
+    "noteBelow12": "For readability and accessibility, avoid font sizes below 12pt.",
+    "table": {
+      "scale": "Scale Category",
+      "typeface": "Typeface",
+      "weight": "Weight",
+      "size": "Font Size (px)",
+      "rem": "REM",
+      "lineHeight": "Line Height (px)",
+      "unitless": "Unitless Line Height (LH ÷ FS)"
+    }
+  },
+  "scaleLogic": {
+    "title": "Type Scale Logic",
+    "descLine1": "The scale starts at 12px and expands its step size every four levels.",
+    "descLine2": "Small body up through emphasis and headlines — each level adds enough contrast to read structurally, without breaking the rhythm.",
+    "formula": "The scale is computed as Xₙ = Xₙ₋₁ + {{ INT[(n−2)/4] + 1 }} × 2 — 2px steps at the low end, 4px in the middle, 6px at the top.",
+    "formulaSub": "Small steps preserve readability at the bottom; larger steps deliver clearer emphasis at the top.",
+    "table": {
+      "n": "n",
+      "calc": "Calculation",
+      "increment": "Increment",
+      "result": "Final Font Size (Xₙ)"
+    }
+  },
+  "typeWeight": {
+    "title": "Type Weight",
+    "desc": "The system uses Pretendard as the base typeface, with weights at Regular (400), Medium (500), and Semi Bold (600)."
+  },
+  "typeScale": {
+    "title": "Type Scale",
+    "desc": "Use the same scale for screen-level hierarchy and the hierarchy inside a component."
+  },
+  "weightUsage": {
+    "title": "Weight Usage",
+    "rows": [
+      { "weight": "Semi Bold", "desc": "Headings" },
+      { "weight": "Medium", "desc": "Default titles, emphasized inline copy, button labels" },
+      { "weight": "Regular", "desc": "Default body text" },
+      { "weight": "Light", "desc": "De-emphasized body text" }
+    ]
+  },
+  "usageNotes": {
+    "title": "Usage Notes",
+    "items": [
+      {
+        "label": "Navigation bar (exception)",
+        "text": "Main navigation uses Subtitle 1, Body 1 (letter spacing −0.5%)."
+      },
+      {
+        "label": "Subtitle & body (exception)",
+        "text": "When subtitle or body text wraps to two lines: 12px → line-height 120%; 14, 16px → line-height 140%."
+      },
+      {
+        "label": "Modal",
+        "text": "Header 24, Subtitle Medium 14, Info text Regular 14."
+      },
+      {
+        "label": "Tooltip",
+        "text": "Use 10px."
+      },
+      {
+        "label": "Alert",
+        "text": "Title — 14px / Medium · Body — 12px / Regular."
+      }
+    ]
+  },
+  "scaleGroups": {
+    "heading": {
+      "title": "Heading",
+      "meta": "Pretendard",
+      "metaWeight": "Semi Bold — 16px",
+      "contextLabel": "Navigation & Dashboard UI"
+    },
+    "subtitle": {
+      "title": "Subtitle",
+      "meta": "Pretendard",
+      "metaWeight": "Medium — 14px",
+      "contextLabel": "Form & Detail Panel UI"
+    },
+    "body": {
+      "title": "Body",
+      "meta": "Pretendard",
+      "metaWeight": "Regular — 14px",
+      "contextLabel": "Data Table UI"
+    }
+  }
+}

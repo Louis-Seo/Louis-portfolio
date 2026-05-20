@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Slider",
+    "description": "값·범위 설정을 위한 Horizontal Track — Single Value·Range·Pop-up Variant."
+  },
+  "hero": {
+    "title": "Slider",
+    "desc": "Slider는 수평 Track을 따라 이동하여 값을 조정 가능하도록 하는 시각적 표시 장치입니다."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "usage": {
+    "title": "Usage",
+    "desc": "Slider는 사용자가 특정 정량적 수치를 원할 때가 아닌, 대략적인 Boundary를 정의하고자 할 때 사용됩니다. 범위 설정 방식으로 2가지로 분류됩니다."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Slider는 Range 설정 범위에 따라 Single Range·Dual Range 2가지로 분류되며, 사용 방식에 따라 여러 부가 요소가 함께 사용될 수 있습니다.",
+    "single": {
+      "title": "1. Single Value Slider",
+      "desc": "가장 일반적인 Type — Range의 작은 값은 0으로 고정된 상태에서 사용자가 원하는 범위의 값을 한 방향으로 설정합니다. Image Correction 필터 형태에서 Numerical Input·Label과 함께 사용됩니다."
+    },
+    "range": {
+      "title": "2. Range Slider",
+      "desc": "사용자가 원하는 범위의 작은 값과 큰 값을 모두 설정하는 방식입니다. Distance to Root 필터 형태에서 Numerical Input·Label과 함께 사용됩니다."
+    },
+    "popup": {
+      "title": "3. Pop-up Slider",
+      "desc": "공간 제약으로 별도의 Pop-up을 띄워 Slider를 제공하는 방식입니다. Wind의 Blade View의 Rotate 동작에 사용됩니다. Pop-up 표출 방식은 Dropdown Menu 표출 방식과 동일하게 적용됩니다.\n\nDropdown 표출 위치는 연관 콘텐츠와 가까운 방향으로 띄우는 것을 원칙으로 합니다. 해당 조건이 동등하게 충족되면 좌측 기준 정렬을 사용합니다."
+    }
+  },
+  "state": {
+    "title": "State",
+    "desc": "Slider는 Range 설정 범위에 따라 Single Value Slider·Range Slider 2가지로 분류되며, 사용 방식에 따라 여러 부가 요소가 함께 사용될 수 있습니다.",
+    "handleProps": {
+      "title": "Table of Figma Properties — Slider / Handle",
+      "headers": { "property": "Property", "values": "Values" },
+      "rows": [{ "prop": "State", "values": "Default, Pressed, Disabled" }]
+    },
+    "sliderProps": {
+      "title": "Table of Figma Properties — Slider",
+      "headers": { "property": "Property", "values": "Values" },
+      "rows": [
+        { "prop": "Type", "values": "Single Value Slider, Range Slider" },
+        { "prop": "State", "values": "Default, Disabled" },
+        { "prop": "Position", "values": "Start, Middle, End" }
+      ]
+    }
+  },
+  "userCase": {
+    "title": "User Case",
+    "state": {
+      "title": "State",
+      "desc": "Slider는 Range 설정 범위에 따라 특정 기준점(0)이 정해진 상태에서의 값을 설정하는 Single Value Slider와 첫 값·끝값을 모두 설정 가능한 Range Slider 2가지로 분류됩니다. 사용 방식에 따라 여러 부가 요소(예: Input)가 함께 사용될 수 있습니다."
+    },
+    "handle": {
+      "title": "Handle",
+      "desc": "Handle은 Default·Pressed·Disabled 3가지 State를 가지며 별도의 Hover는 사용되지 않습니다. Disabled는 Handle 개별 적용되지 않으며 Slider 상태와 함께 적용됩니다."
+    }
+  }
+}

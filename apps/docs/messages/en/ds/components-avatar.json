@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Avatar",
+    "description": "Identifier for groups and individuals — Square for organizations, Circle for people. Three sizes, randomized empty-state colors."
+  },
+  "hero": {
+    "title": "Avatar",
+    "desc": "Avatar represents a specific group or user. In Zoomable Design System, it ships in Square and Circle types."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": ["1. Avatar Label", "2. Circle Container", "3. Square Container", "4. Text Label"]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc": "Avatar splits into two by shape. Each type represents a different kind of entity and should be used distinctly.",
+    "table": {
+      "headers": { "component": "Component", "type": "Type", "usage": "Usage", "used": "Used" },
+      "rows": [
+        {
+          "type": "Square",
+          "usage": "Used as a thumbnail to represent an organization.",
+          "used": "Farm, Fleet"
+        },
+        {
+          "type": "Circle",
+          "usage": "Used as a thumbnail to represent an individual person.",
+          "used": "User"
+        }
+      ]
+    }
+  },
+  "spec": {
+    "title": "Design Spec",
+    "headers": { "property": "Property", "values": "Values", "default": "Default" },
+    "rows": [
+      {
+        "prop": "Size",
+        "values": "36px (Large) / 32px (Medium) / 24px (Small)",
+        "default": "32px (Medium)"
+      },
+      { "prop": "Image", "values": "Image / Empty", "default": "Empty" },
+      { "prop": "State", "values": "Default / Disabled", "default": "Default" }
+    ]
+  },
+  "size": {
+    "title": "Size",
+    "desc": "Avatar is available in three sizes."
+  },
+  "color": {
+    "title": "Color",
+    "desc": "Avatar's empty-state background uses five colors, assigned randomly. Drawn from the existing Color Palette, it pairs the 200 and 700 values of Blue, Green, Yellow, Red, and Gray."
+  }
+}

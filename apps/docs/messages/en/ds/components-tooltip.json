@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Tooltip",
+    "description": "Short, contextual descriptions for UI elements — Tooltip on hover, Popup Tip on click for denser content."
+  },
+  "hero": {
+    "title": "Tooltip",
+    "desc": "Tooltip is a message component that delivers a brief, intuitive description for a specific UI element. It typically explains unfamiliar features, icon buttons, or contextual nuance — helping users quickly understand what they're looking at and what it does.\n\nBy default, Tooltip is meant to deliver a short description tied directly to its target element. Keep the surfaced information as concise as possible. When more — or multi-part — information is needed, use Popup Tip instead to differentiate the information density and interaction model."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "caption": "1. Label txt\n2. Container\n3. Tip"
+  },
+  "usage": {
+    "title": "Usage",
+    "desc": "Tooltip text should be a minimal, summarized description — it complements primary content rather than replacing it. Best for explaining icon buttons or function-focused actions, used as supporting information that helps users make decisions more easily.\n\nTooltip fits these cases:\n\n· Explaining the meaning of an icon button\n· Briefly clarifying the purpose of a feature or action\n· Adding context to an element or surrounding context\n· Surfacing a tool's role and shortcut within a Toolbar\n\nConversely, avoid Tooltip for sub-elements of a component or for icons inside dropdown items — these already carry enough context."
+  },
+  "spec": {
+    "title": "Spec",
+    "spacing": {
+      "title": "1. Spacing, Offset & Maximum Width",
+      "desc": "Default Tooltip uses 12px horizontal and 8px vertical inner padding around the Label Text. An 8px offset separates the Tooltip from its target element, making the relationship between the element and the message visually clear.\n\nMax width is capped at 280px; height flexes with content length. Keep Description to three lines or fewer for readability and information density."
+    },
+    "toolbar": {
+      "title": "2. Toolbar Tooltip Spacing",
+      "desc": "Toolbar Tooltip is an extended Tooltip that holds multiple information elements — Header, Shortcut, and Description. It keeps the same 12px horizontal padding as a default Tooltip, but inter-element spacing follows information hierarchy.\n\nHeader and Description sit 4px apart; 8px margin sits below Description. Shortcut typically aligns to the right of Tooltip Contents — when a Header is present, it aligns to the right of the Header."
+    },
+    "placement": {
+      "title": "3. Placement System",
+      "desc": "Tooltip places within a 32px inset from the Browser Window. Twelve placements anchor by centering the Tooltip Tip against the target element. Near screen edges, the position adjusts to stay within bounds; in Middle Space, Bottom Placement is the default priority."
+    },
+    "middleSpace": {
+      "title": "4. Middle Space Placement Priority",
+      "desc": "Within Middle Space, Tooltip must avoid covering critical surrounding content. Direction stays consistent within a group; while keeping content visible, prefer Vertical over Horizontal, and Center over Start/End alignment."
+    }
+  },
+  "contents": {
+    "title": "Contents",
+    "priority": {
+      "title": "1. Contents Priority",
+      "desc": "Tooltip should avoid covering content where possible. When unavoidable, follow a content priority hierarchy.\n\n· **Contents Priority: GNB > CTA button > filter/search bar > other content**\n· **\"Don't cover\" means the content inside a container is not obscured.**\n\nFollowing this priority, surface the Tooltip in a way that doesn't obscure higher-priority content."
+    },
+    "boundary": {
+      "title": "2. Boundary of Contents",
+      "desc": "Each area's content boundary is defined as the minimum set of elements carrying information inside its container. Tooltip must surface without covering the defined content area."
+    },
+    "shortcut": {
+      "title": "3. Tooltip Contained Shortcut",
+      "desc": "Used when a context — such as a Toolbar action — needs to surface shortcut information alongside the tool description. Conventionally positioned at the right of Tooltip Contents; when both Header and detailed contents are present, the shortcut sits at the right of the Header."
+    }
+  },
+  "popupTips": {
+    "title": "Tooltips & Popup Tips",
+    "desc": "Two types of Tip surface supplementary information. Tooltip surfaces directly on interaction with the target component. Popup Tip surfaces through an auxiliary Information Icon. Tooltip uses hover so it doesn't interfere with the component's primary action. Popup Tip uses click — appropriate when the information is multi-part or longer, with a more focused reading experience.",
+    "tooltip": {
+      "title": "Tooltip",
+      "desc": "Tooltip carries a description for a single content item and stays within one sentence as a rule. When step-by-step explanation is needed (e.g., a Toolbar), use bullet points.\n\nAll Icon Buttons should surface a Tooltip by default."
+    },
+    "popupTip": {
+      "title": "Popup Tip",
+      "desc": "Carries one or multiple pieces of information, surfaced through an Information Icon. Used when the description runs longer than one sentence or holds two or more pieces of content."
+    }
+  },
+  "interaction": {
+    "title": "Interaction",
+    "exposure": {
+      "title": "1. Exposure Rules",
+      "desc": "Tooltip surfaces through hover; Pop-up Tooltip surfaces through click."
+    },
+    "tooltipRules": {
+      "title": "Tooltips Exposure Rules",
+      "headerLabel": "Action: Hover",
+      "exposureLabel": "Exposure Rules",
+      "exposureDesc": "Tooltip surfaces when the user **hovers** over the component.\n(Although named \"hover,\" it surfaces from the Cursor's Focused state until just before Out Focused.)",
+      "disappearLabel": "Disappear Rules",
+      "disappearDesc": "Tooltip disappears when the cursor leaves both the component and the surfaced Tooltip area."
+    },
+    "popupRules": {
+      "title": "Pop-up Tooltips Exposure Rules",
+      "headerLabel": "Action: Clicked",
+      "exposureLabel": "Exposure Rules",
+      "exposureDesc": "Popup Tip surfaces when the user **clicks** the component.",
+      "disappearLabel": "Disappear Rules",
+      "disappearDesc": "Popup Tip disappears when the user clicks outside the component and the surfaced Popup Tip area."
+    }
+  },
+  "componentsUsage": {
+    "title": "Components",
+    "items": [
+      {
+        "key": "icon-button",
+        "title": "Composition of Words (Icon Button)",
+        "desc": "Used to describe an Icon Button that performs a specific action.\n(e.g., Segment (Icon) Button, More Icon Button)"
+      },
+      {
+        "key": "short-sentence",
+        "title": "Short Sentence",
+        "desc": "Used to describe specific content with a short sentence.\n(e.g., Unfold/Fold the Crack Panel)"
+      },
+      {
+        "key": "tool-explanation",
+        "title": "Explanation of Tool",
+        "desc": "Used to surface a tool description. Uses Toolbar Type Tooltip — Header, Keyboard Shortcut, and Explanation combined.\n(e.g., OSD Viewer Toolbar)"
+      },
+      {
+        "key": "info-icon",
+        "title": "Information Icon Button (Pop-up Tooltip)",
+        "desc": "For elements that need detailed explanation, use an Information Icon. Common in flows like Create Project/Task, where Project and Task need supplementary context."
+      },
+      {
+        "key": "no-tooltip",
+        "title": "Sub-Element of Components",
+        "desc": "Don't surface Tooltip on Icon Buttons embedded within a component's sub-elements. Even for non-icon-button elements, avoid surfacing Tooltip for descriptive purposes.\n(e.g., Dropdown Menu Item / Icon Button)"
+      }
+    ]
+  },
+  "guidelines": {
+    "title": "Usage Guidelines",
+    "rows": [
+      {
+        "key": "policy",
+        "dont": {
+          "title": "Don't: Tooltip Exposure Policy",
+          "desc": "Tooltip must never cover the content it points to. Vertical-direction Tooltips take exposure priority."
+        },
+        "do": {
+          "title": "Do: Tooltip Exposure Policy",
+          "desc": "Tooltip must never cover the content it points to. Vertical-direction Tooltips take exposure priority."
+        }
+      },
+      {
+        "key": "anchor",
+        "dont": {
+          "title": "Don't: Tooltip Anchor Position",
+          "desc": "When a vertical Tooltip would cover surrounding content of its target, surface the Tooltip horizontally instead. Always prefer positions that don't cover the target's hover area."
+        },
+        "do": {
+          "title": "Do: Tooltip Anchor Position",
+          "desc": "When a vertical Tooltip would cover surrounding content of its target, surface the Tooltip horizontally instead. Always prefer positions that don't cover the target's hover area."
+        }
+      },
+      {
+        "key": "duplicate",
+        "dont": {
+          "title": "Don't: Avoid wording that duplicates the Header",
+          "desc": "When a Tooltip pairs with a component that already has a Header, don't repeat information that already appears in the Header. (e.g., Upload Attachment)"
+        },
+        "do": {
+          "title": "Do: Omit wording that duplicates the Header",
+          "desc": "When a Tooltip pairs with a component that already has a Header, don't repeat information that already appears in the Header. (e.g., Upload Attachment)"
+        }
+      }
+    ]
+  }
+}

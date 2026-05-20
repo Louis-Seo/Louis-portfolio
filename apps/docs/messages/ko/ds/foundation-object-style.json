@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Object Style",
+    "description": "시스템의 Radius·Elevation·Surface 스타일 토큰."
+  },
+  "hero": {
+    "title": "Object Style",
+    "desc": "Zoomable의 디자인 컴포넌트는 대부분 Rounded Shape으로 구성됩니다. Component Box는 Filled와 Outlined로 분류되며, Worker Zoomable Design System은 차원 구분을 위한 Shadow를 사용하지 않고 Elevation Color로 계층을 구분합니다."
+  },
+  "rounding": {
+    "title": "Rounding Guide",
+    "note": "Rounding 값은 2 px ~ 6 px 범위입니다."
+  }
+}

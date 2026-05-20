@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "Table",
+    "description": "행과 열로 구성된 그리드 형태의 데이터 시각화 — 정보를 빠르게 스캔·해석해 패턴과 인사이트를 도출하도록 돕습니다."
+  },
+  "hero": {
+    "title": "Table",
+    "desc": "Table은 행과 열로 구성된 그리드 형태의 정보 시각화 방식으로, 데이터를 정렬해 정보를 시각화합니다. 많은 정보를 빠르게 스캔해 패턴과 인사이트를 확인할 수 있도록 돕는 디자인 요소입니다."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "usage": {
+    "title": "Usage",
+    "desc1": "Table은 기능적 특성에 따라 Stable Type과 Editable Type 두 가지로 분류됩니다.",
+    "desc2": "Table은 Container의 형태적 특성에 따라 Fixed Type과 Flexible Type 두 가지로 분류됩니다."
+  },
+  "tableStyle": {
+    "title": "Table Style",
+    "desc": "Table의 Style은 Table Data 종류에 따라 다르게 사용되며, Wind와 Wind Admin은 시각적 차이를 위해 별도로 사용됩니다. 색상을 제외한 Table의 시각화 규칙은 함께 적용되는 것을 원칙으로 합니다.",
+    "windHeader": "Wind Page Header",
+    "windAdminHeader": "Wind Admin Page Header",
+    "typography": { "title": "Typography" },
+    "border": {
+      "title": "Border",
+      "desc1": "Table에 사용되는 Border는 세 가지로 분류됩니다 — Background와 구분하는 Outline, 각 Row를 구분하는 Horizontal Line, Header Row 내 Header를 분리하는 Vertical Line.",
+      "desc2": "제공되어야 하는 Column 개수가 늘어나면 Table에 가로 스크롤이 발생합니다. 이때 좌측 주요 정보를 고정하는 목적으로 Divider를 Vertical 형태로 사용하기도 합니다."
+    },
+    "visualCue": {
+      "title": "Visual Cue",
+      "desc": "Table Item의 Expanded 기능 표출 혹은 특정 Pinned Column / Row 시에 사용됩니다. Zebra Stripe."
+    }
+  },
+  "alignment": {
+    "title": "Content Data Alignment",
+    "desc": "데이터의 종류와 Table 내 위치에 따라 Header와 Contents의 정렬 방식이 다르게 적용됩니다.",
+    "left": {
+      "title": "Left Align",
+      "desc": "수치적 정보가 아닌 Textual Data, 그리고 Content Cell 내부의 Component Data (e.g., Avatar, Badge) 등은 왼쪽 정렬을 지향합니다. 수치적 정보는 기본적으로 우측 정렬이 원칙이나, 한 Column에 복합적인 Contents Type이 표출되는 경우 Numerical Data는 Textual Data와 함께 좌측 정렬로 통일하는 것을 원칙으로 합니다."
+    },
+    "right": {
+      "title": "Right Align",
+      "desc": "Numerical Data는 수치적 비교에 용이하도록 오른쪽 정렬을 지향합니다. Component Data 중 Table Column 우측 가장자리에 Hover Action 시 표출되는 Button Icon도 우측 정렬을 원칙으로 합니다."
+    },
+    "middle": {
+      "title": "Middle Align",
+      "desc": "Textual, Component, Numerical 세 가지 데이터 타입 모두 Header 배열이 '3. Selection with Filter' Type일 때는 중간 정렬로 배치합니다."
+    }
+  },
+  "interaction": {
+    "title": "Interaction",
+    "desc": "Table에서 제공하는 Interaction은 크게 4가지로 분류되며, 각각의 특성은 개별적으로만 쓰이지 않고 복합적으로 함께 사용될 수 있습니다.",
+    "sorting": {
+      "title": "Sorting (Header)",
+      "desc": "Sorting은 각 Header의 Sorter Button Icon에 종속된 Column의 정렬을 바꿉니다. Header Title과 함께 사용되며, Icon Sort 형태는 세 가지 상태 (초기값, 오름차순, 내림차순)를 제공합니다."
+    },
+    "maintain": {
+      "title": "Maintain Column or Row when Scrolling",
+      "desc": "Table의 Contents는 기본적으로 Pagination이 아닌 Scroll 방식으로 표출하는 것을 원칙으로 하되, 데이터 이해에 필요한 정보는 고정하여 표출합니다."
+    }
+  },
+  "state": {
+    "title": "State",
+    "desc": "Table 내 State는 크게 3가지 (Main, Pinned, Empty)로 분류되며, 각 종류의 Feedback을 통해 상태가 변화합니다.",
+    "main": { "title": "Main Table Contents State" },
+    "sub": { "title": "Sub Table Contents State" }
+  },
+  "emptyState": {
+    "title": "Table Empty State",
+    "desc": "데이터가 없는 경우, Empty State는 Table Content가 비어있다는 사실을 알리거나 데이터가 아직 준비 중이라는 것을 표현합니다. Table 특성에 따라 Empty State를 적용해 사용할 수 있으며, 필요 시 이미지와 CTA 등을 자유롭게 적용할 수 있습니다."
+  },
+  "sizing": {
+    "title": "Sizing",
+    "desc": "Table의 크기는 각 Column이 Header Row와 Contents Row로 구성되며, Row의 높이 (세로 영역)는 32px, 40px, 48px, 56px의 4단계를 기본으로 사용합니다. 데이터 밀도와 사용 목적에 따라 Height를 지정합니다. 각 열의 너비는 콘텐츠 종류와 상하 관계에 맞추어 배분하며, 최소 너비·셀 내부 여백·Cell Padding 16px (좌우) 규칙은 모든 Cell에 동일하게 적용되어 읽기 쾌적한 그리드 밀도를 유지합니다. Column은 Contents에 포함되는 Component의 Size와 함께 Height를 맞추는 것을 원칙으로 합니다."
+  },
+  "headerStyle": {
+    "title": "Header Style",
+    "desc": "Table Header는 각 Column의 의미를 명확하게 전달하고, 필요에 따라 선택·정렬 같은 보조 기능을 함께 제공하기 위해 사용됩니다. 기본적으로 Text Label Type을 기준으로 구성되며, Table의 목적과 인터랙션 수준에 따라 Filter 또는 Selection 요소를 포함한 형태로 확장할 수 있습니다.",
+    "textLabel": {
+      "title": "1. Text Label Type",
+      "desc": "가장 기본적인 Header 형태로, Column의 이름이나 데이터 속성을 텍스트 중심으로 명확하게 전달할 때 사용합니다. 정렬·선택과 같은 추가 인터랙션이 필요하지 않은 읽기 중심의 Table에 적합합니다."
+    },
+    "textFilter": {
+      "title": "2. Text with Filter Type",
+      "desc": "Text Label과 함께 정렬 또는 필터 등의 보조 액션이 필요한 경우에 사용하는 Header 형태입니다. 사용자는 Header 영역에서 직접 데이터의 순서나 조건을 조정할 수 있습니다."
+    },
+    "selectionFilter": {
+      "title": "3. Selection with Filter Type",
+      "desc": "선택 기능과 필터 기능이 동시에 필요한 경우에 사용하는 Header 형태입니다. 주로 다중 선택이 가능한 Table에서 전체 선택과 Column 기준 정렬·필터를 함께 제공해야 할 때 적합합니다."
+    },
+    "selection": {
+      "title": "4. Selection Type",
+      "desc": "Header에 Selection Control만 포함된 형태로, Row 선택 기능을 제공하기 위해 사용됩니다. 주로 Checkbox 기반 다중 선택 Table에서 전체 선택 상태를 제어하는 용도로 사용됩니다."
+    }
+  },
+  "contentsStyle": {
+    "title": "Table Contents Style",
+    "desc": "Table Cell 내 Contents의 Padding은 기본적으로 좌우 16px이며, Editable State에서는 Dropdown 또는 Input의 Container 기준으로 좌우 4px을 가져가는 것으로 합니다.",
+    "checkbox": {
+      "title": "1. Checkbox Type",
+      "desc": "Checkbox가 포함된 Type의 Width는 좌우 Padding을 12px로 둔 값으로 정의합니다. Checkbox Type은 일반적으로 Table Row의 가장 좌측에 위치하는 것을 원칙으로 합니다."
+    },
+    "textLabel": {
+      "title": "2. Text Label Type",
+      "desc": "Text Label Type은 텍스트 기반 데이터를 표시하기 위한 가장 기본적인 Table Content 형태입니다. Default 상태에서는 읽기 중심의 정보를 안정적으로 전달하며, Editable 상태에서는 Input을 통해 직접 수정 가능한 구조로 확장할 수 있습니다."
+    },
+    "badge": {
+      "title": "3. Badge Type",
+      "desc": "Table Cell 내에 Badge가 포함되는 경우, Table 내에서 수정이 가능한 Editable Case와 수정이 불가한 Stable Case로 나뉘어 다른 Sizing으로 표출됩니다."
+    },
+    "hoverIcon": {
+      "title": "4. Hover Action Icon Type",
+      "desc": "Table Cell 내의 Button Icon은 Table Row 우측 끝에 위치하는 것으로 합니다. Height 56px 및 48px에서 모두 사용 가능하며, Width의 최소값은 Button Icon Group의 좌우 Padding 16px로 정의합니다."
+    },
+    "avatar": {
+      "title": "5. Avatar Type",
+      "desc": "Avatar Type은 사용자 또는 객체 식별이 필요한 정보를 표현하기 위해 Avatar와 텍스트를 함께 사용하는 형태입니다. 이름·담당자·소유자 등 빠른 인지와 구분이 필요한 데이터에 적합합니다."
+    },
+    "expand": {
+      "title": "6. Expand Type",
+      "desc": "Expand Type은 메인 정보와 하위 정보를 함께 표시하여 데이터 간의 위계와 관계를 전달하는 형태입니다. 부가 설명이나 하위 정보를 함께 제공해야 하는 경우에 사용되며, Main과 Sub 간의 구조적 구분을 통해 정보 이해를 돕습니다."
+    }
+  },
+  "guidelines": {
+    "title": "Usage Guidelines",
+    "items": [
+      {
+        "key": "do-text",
+        "type": "do",
+        "title": "Do : 텍스트 정보는 반복 유형을 기준으로 한다.",
+        "desc": "Textual Data는 반복, Numerical Data는 수치적 표현을 지향합니다. 두 가지 Data가 혼합되는 경우 별도 분리가 가능하다면 Numerical Data를 별도 Column으로 가져가는 것을 지향합니다."
+      },
+      {
+        "key": "dont-zebra",
+        "type": "dont",
+        "title": "Don't : Zebra Stripes의 사용을 지양합니다.",
+        "desc": "Zoomable Design System의 Table은 Zebra Stripe를 사용하지 않으며, Row 구분은 Divider를 활용하는 것을 기본으로 합니다."
+      },
+      {
+        "key": "do-state",
+        "type": "do",
+        "title": "Do : 데이터의 상태에 따라 다른 방식으로 표출합니다.",
+        "desc": "데이터가 없는 경우: 수정이 불가한 경우 gray 100, country info."
+      },
+      {
+        "key": "dont-headers",
+        "type": "dont",
+        "title": "Don't : Header 타입의 다중 사용을 지양합니다.",
+        "desc": "Size Separation 타입은 다양한 Header Type을 제한해 사용하며, 2개를 넘지 않는 것이 좋습니다. 같은 타입의 Header는 이해를 위한 시각적 분리가 되지 않도록 단일 Header Style로 사용하는 것을 지향합니다."
+      },
+      {
+        "key": "do-context",
+        "type": "do",
+        "title": "Do : 다른 맥락의 데이터는 시각적으로 분리한다.",
+        "desc": "주어진 정보 내 동일한 위계에서 서로 다른 Data Source의 표출은 같은 위계의 타입이면 같은 Row의 크기·구조를 사용해야 하나, 시각적으로 구분 지을 수 있어야 합니다."
+      },
+      {
+        "key": "dont-vertical",
+        "type": "dont",
+        "title": "Don't : Contents 내 Vertical Line 사용을 지양합니다.",
+        "desc": "Table Header의 Column을 분리하기 위한 Vertical Line이 사용되었으나, Wind Design System에서 Table의 Contents Line은 Header에만 적용되는 것이 특징입니다."
+      }
+    ]
+  }
+}

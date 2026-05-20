@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Breadcrumb",
+    "description": "Surfaces the user's current location and offers a path back up the page hierarchy."
+  },
+  "hero": {
+    "title": "Breadcrumb",
+    "desc": "Breadcrumb shows where the user is and provides a path back up the page hierarchy."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "spec": {
+    "title": "Spec",
+    "desc": "Breadcrumb spacing is 8px between items. The current page and prior hierarchy levels differ in typography and color for clear visual separation."
+  },
+  "itemStatus": {
+    "title": "Item Status",
+    "desc": "Breadcrumb items have two states — Linked to the destination page, or Stateless. The stateless form applies when the current tab depends on a parent that doesn't have a dedicated page."
+  },
+  "state": {
+    "title": "State",
+    "desc": "Breadcrumb has 3 states — Current Page, Enabled, Disabled. Enabled and Disabled look the same visually; the cursor change is the differentiator."
+  },
+  "pageLink": {
+    "title": "Page link",
+    "desc": "Breadcrumb both signals the page hierarchy and acts as a navigation control. Click an Enabled item (other than the Current Page) to navigate. Disabled items don't navigate."
+  }
+}

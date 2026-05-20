@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "Badge",
+    "description": "상태나 수치 정보를 시각적으로 제공하는 컴포넌트 — Wind에서는 Color Mapping을 통해 상태를 직관적으로 표현."
+  },
+  "hero": {
+    "title": "Badge",
+    "desc": "Badge는 상태나 수치 정보를 시각적으로 제공하는 역할로 사용됩니다. Wind에서 Badge는 일반적으로 상태를 시각적 Color Mapping을 통해 직관적으로 판단할 때 주로 사용됩니다."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": [
+      "1. Badge Container",
+      "2. Text Label",
+      "3. Icon Btn",
+      "4. Badge Box",
+      "5. Extra Label"
+    ]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc1": "Badge는 보여주고자 하는 정보의 특성에 따라 6가지로 분류됩니다.",
+    "desc2": "Box Badge와 Label Badge는 Progress 혹은 Status를 Color Mapping해 사용자에게 시각적으로 정보를 표출할 때 주로 사용되며, Count Badge는 해당 영역 내 전체적인 개수를 표출할 때 주로 사용됩니다. 대표적인 3가지 타입 외에 Severity Badge, Button Badge, Text Badge 타입도 추가로 사용됩니다.",
+    "list": [
+      "1. Box Badge",
+      "2. Contained Badge",
+      "    a. Text Type",
+      "    b. Number Type",
+      "3. Count Badge",
+      "4. Severity Badge",
+      "5. Button Badge",
+      "6. Text Badge"
+    ],
+    "items": [
+      {
+        "key": "box",
+        "title": "1. Box Badge",
+        "desc": "Box 형태로 Badge 내부에 별도의 Label 정보를 제공하지 않고, 색상만으로 정보를 제공할 때 사용됩니다."
+      },
+      {
+        "key": "contained",
+        "title": "2. Contained Badge",
+        "desc": "Label에 해당되는 정보는 Text와 Number가 있으며, Text Type은 외부 Label과 함께 활용되기도 합니다."
+      },
+      {
+        "key": "count",
+        "title": "3. Count Badge",
+        "desc": "전반적인 수치를 개별적으로 단일하게 나타낼 때 사용됩니다."
+      },
+      {
+        "key": "severity",
+        "title": "4. Severity Badge",
+        "desc": "Zoomable에서 결함의 5단계와 미확인 결함을 포함한 6단계를 표기해주는 역할을 합니다. Box 형태의 Badge에 결함 단계를 Text로 표기하여 함께 사용됩니다."
+      },
+      {
+        "key": "button",
+        "title": "5. Button Badge",
+        "desc": "Button Badge는 Badge를 클릭했을 때 특정 Action을 수행할 수 있는 것이 특징입니다."
+      },
+      {
+        "key": "text",
+        "title": "6. Text Badge",
+        "desc": "Text Badge는 Badge를 클릭했을 때 특정 Action을 수행할 수 있는 것이 특징입니다."
+      }
+    ]
+  },
+  "semanticVariants": {
+    "title": "Semantic Variants",
+    "desc": "Severity Badge는 6+1개의 색상 분류를 활용해 단계별 심각도를 각각의 색상으로 구성했습니다. Box Badge는 4가지 색상 분류를 사용해 Progress의 단계를 구성했습니다."
+  },
+  "contents": {
+    "title": "Contents",
+    "desc": "Badge는 Color Mapping이라는 특성으로 인해 텍스트 이외의 정보를 각 영역에 매핑하여 표기하므로, Text와 Color가 함께 의미를 전달하는 것을 원칙으로 합니다.\n\nBadge에서 사용되는 Contents는 Container 영역 내 Text Label로 포함되거나, 외부에 Extra Label 형식으로 Text Type만 포함 가능합니다. Badge의 타입에 따라 Count Badge와 Severity Badge는 포함되는 Text Label의 Contents Type이 숫자로만 한정됩니다. Box Badge에 Extra Label이 함께 사용되는 경우는 특정 Progress에 대한 Label로, 변동 가능한 Text가 아닌 고정된 Text로 변경 불가한 것이 특징입니다."
+  },
+  "sizing": {
+    "title": "Sizing",
+    "desc": "Badge의 사이즈는 일반적으로 Large, Medium, Small 세 가지로 사용되며 각각은 Height 값에 의해 결정됩니다. Contained·Count·Severity Badge는 Height 변경에 따라 사이즈가 결정되며, Text 글자 수 변화는 Height와 무관하게 검증합니다. Width는 Height와 동일하게 가져가는 방식, 또는 최소 크기와 Padding 규칙을 통해 Auto로 적용하는 방식을 사용합니다.",
+    "rules": [
+      {
+        "key": "char-one",
+        "title": "1. Text Character = 1",
+        "desc": "Text가 1자인 Badge는 동일한 Padding을 사용하고 Height와의 비율 값으로 Width를 맞추는 것이 원칙이며, Auto 모드에서는 고정 Height를 사용하지 않습니다."
+      },
+      {
+        "key": "char-many",
+        "title": "2. Text Characters > 1",
+        "desc": "Text가 2자 이상인 경우 전반적으로 동일한 Padding 값을 기준으로 사용됩니다. Text Level 변경에서도 사이즈가 변동되지 않는 것이 특징이며, 1 Line 내 글자 수에 따라 Width만 가변적으로 활용되고 단어 단위 이상의 가변 활용은 하지 않는 것이 특징입니다 (Single Words: Medium, Only). 사이즈는 필수값으로 합니다."
+      }
+    ]
+  },
+  "variants": {
+    "title": "Variants",
+    "textual": {
+      "title": "Table of Properties — Textual Badge",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Size", "values": "Large, Medium", "default": "Medium" },
+        { "prop": "Type", "values": "Green, Mint, Red, Yellow, Gray", "default": "-" }
+      ]
+    },
+    "box": {
+      "title": "Table of Properties — Box Badge",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+        { "prop": "Status", "values": "To Do, In Progress, In Review, Done", "default": "-" },
+        { "prop": "Text", "values": "False, True", "default": "True" },
+        { "prop": "Outline", "values": "Unoutline, Outline, None", "default": "Unoutline" }
+      ]
+    },
+    "severity": {
+      "title": "Table of Properties — Severity Badge",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Item Number", "values": "1, 2, 3, 4, 5, ?", "default": "-" },
+        { "prop": "Text", "values": "False, True", "default": "False" }
+      ]
+    }
+  }
+}

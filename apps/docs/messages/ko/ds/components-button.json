@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Button",
+    "description": "Action·Navigation을 위한 Button. Primary·Secondary·Tertiary·Extra Variant 및 Size·State·Icon 구성."
+  },
+  "intro": {
+    "title": "Button Components",
+    "desc": "Button은 사용자 액션에 대한 명확한 시각적 위계를 만듭니다. 위계에 따른 스타일 가이드를 준수하며, 임의 스타일은 지양합니다. 액션을 수행하거나 다른 페이지로 이동할 때 사용됩니다."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Button은 스타일과 쓰임에 따라 Primary·Secondary·Tertiary·Extra의 4가지 Type으로 분류됩니다. 각 Type 내에서도 Icon 유무와 Background Color 처리에 따라 세부 항목으로 분리됩니다. Extra를 제외한 3가지가 시스템 전반에서 주로 사용되는 Main Type입니다."
+  },
+  "mainType": {
+    "title": "1. Main Type (Primary, Secondary, Tertiary Type)",
+    "desc": "Primary는 가장 흔하게 사용되는 Type으로, Text Label 단독 또는 Icon과 함께 사용됩니다. Secondary는 Primary와 거의 동일한 형태이되 Color Type이 달라 두 번째 위계의 액션에 사용됩니다. Tertiary는 Icon으로만 구성된 Icon Button으로, 액션 위계에 따라 Tertiary 내에서도 Primary·Secondary로 나뉩니다.",
+    "cards": {
+      "primary": "A. Primary Button Type (Contained Button)",
+      "secondary": "B. Secondary Button Type (Outlined Button)",
+      "tertiary": "C. Tertiary Button Type (Icon Button)"
+    }
+  },
+  "extraType": {
+    "title": "2. Extra Type",
+    "desc": "Extra Button Type(Segment·Progress Status·Text·Combo)은 주요 액션은 아니지만 Zoomable 전반에서 자주 사용되는 Type입니다. 각각 기능과 목적에 따라 다양하게 구성됩니다.",
+    "cards": {
+      "text": "D-1. Extra Button Type — Text Button",
+      "segment": "D-2. Extra Button Type — Segment Button",
+      "progress": "D-3. Extra Button Type — Progress Status",
+      "combo": "D-4. Extra Button Type — Combo Button"
+    }
+  },
+  "primarySecondary": {
+    "title": "Primary & Secondary Button",
+    "desc": "Button은 사용자 액션에 대한 명확한 시각적 위계를 만듭니다. 위계에 따른 스타일 가이드를 준수하며, 임의 스타일은 지양합니다. 액션을 수행하거나 다른 페이지로 이동할 때 사용됩니다.",
+    "section": {
+      "title": "Button",
+      "desc": "가장 기본이 되는 Button입니다. 위계와 쓰임에 맞게 세부 속성을 조정합니다 — 자세한 내용은 아래 Variants와 Table of Figma Properties를 참고하세요.",
+      "previewCaption": "기본 케이스인 Primary + Secondary Button 조합 적용 예시."
+    },
+    "dialog": {
+      "title": "Delete Task",
+      "text": "Are you sure you want to delete the \"AWZ 1호기 수리\"?"
+    },
+    "anatomy": {
+      "container": "Button Container",
+      "label": "Text Label",
+      "icon": "Icon"
+    },
+    "variants": {
+      "primary": {
+        "title": "Primary",
+        "desc": "Primary Button은 페이지의 키 액션입니다. 한 페이지에 한 번만 사용합니다. 예: 로그인 페이지의 '로그인' Button, Image Quality Check의 'Start / Done' Button."
+      },
+      "secondary": {
+        "title": "Secondary",
+        "desc": "Secondary Button은 Primary의 보조로 사용합니다. 예: 로그인 페이지의 'Back to Login', OSD Viewer의 'Reset All'."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Size는 Height 기준 Large·Medium·Small·xSmall·2xSmall을 사용합니다. Size에 따라 폰트 크기, 아이콘 사이즈, Radius, Padding이 달라집니다. 28 미만 (Tiny)은 최소 터치 영역 확보를 위해 지양합니다."
+      }
+    },
+    "propsTable": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Primary, Secondary", "default": "Primary" },
+        { "prop": "Size", "values": "Large, Medium, Small, xSmall, 2xSmall", "default": "Medium" },
+        { "prop": "State", "values": "Default, Hovered, Clicked, Disabled", "default": "Default" },
+        { "prop": "Icon", "values": "False, True", "default": "False" }
+      ]
+    },
+    "spec": {
+      "title": "Spec",
+      "sizes": {
+        "title": "Sizes",
+        "desc": "Height 기준 — Large(48px), Medium(40px), Small(32px), xSmall(28px), 2xSmall(24px). Size에 따라 폰트·아이콘·Radius·Padding이 달라집니다. 28 미만(Tiny)은 최소 터치 영역 확보를 위해 지양합니다."
+      },
+      "minWidth": {
+        "title": "Minimum Width",
+        "desc": "Button은 Label 2글자 이상에 대해 최소 Padding 16을 사용합니다. 이 미만은 Button의 최소 사이즈를 충족하지 못해 제한합니다. Modal 외 페이지의 Button은 최소 Width 80px 이상을 원칙으로 합니다."
+      },
+      "fullWidth": {
+        "title": "Full Width Buttons",
+        "desc": "스크롤 시 위치 고정되는 Full Width Button은 포함 Frame의 Padding을 따릅니다. OSD Viewer 케이스는 보통 상하좌우 16px Padding."
+      }
+    },
+    "usage": {
+      "title": "Usage & Placement",
+      "fullWidth": {
+        "title": "Rule for Full Width Buttons",
+        "text": "일반적으로 Button은 Text Label에 Hug합니다 — 일반적인 Width 최소값(64px, 71px, 80px, 90px)보다 작아지는 경우 제외. Container의 잔여 Width가 Button Width보다 작은 경우, Container를 동일하게 n등분한 값을 Width로 사용합니다. 단일 Button도 Full Width 방식으로 사용 가능하며, 통일성 또는 목적성에 따라 채워 사용될 수 있습니다.",
+        "sub": "(예: OSD Viewer, Login)"
+      },
+      "placement": {
+        "title": "Placement of Button Group",
+        "text": "Button의 Width는 Text Label에 Hug합니다. 'Rule of Full Width Buttons' 조건을 만족하는 영역 내의 Button·Button Group은 우측 정렬을 사용합니다. Modal 내에서 자주 사용됩니다."
+      }
+    },
+    "requirement": {
+      "title": "Requirement Feedback",
+      "activation": {
+        "title": "Rule for Button Activation",
+        "text": "Modal 내 Button은 필수 요건이 모두 충족되지 않아도 기본적으로 모두 활성화합니다. 미충족 상태에서 Button 동작 시, 미충족 항목에 대한 Alert로 정보를 전달합니다."
+      },
+      "disabled": {
+        "title": "Exception Case of Button Disabled",
+        "text": "Modal 내 Button을 비활성화로 두는 예외 케이스 — Button의 액션이 Modal 내에서 명확히 드러나는 경우에 한합니다. 현재: Export PDF에서 파일 Export 중일 때, Remove List에서 Checkbox를 선택하지 않은 경우."
+      }
+    },
+    "loading": {
+      "title": "Loading Status",
+      "stateLabels": {
+        "default": "State = Default",
+        "loading": "State = Loading"
+      },
+      "typeLabels": {
+        "typeA": "Type A",
+        "typeB": "Type B"
+      },
+      "type": {
+        "title": "Loading Type",
+        "text": "Loading Type은 Primary·Secondary에 따라 다르게 사용되며, Button 내 Icon 유무와 관계없이 Container 기준으로 동일하게 사용됩니다. Primary는 Green 500 Container 위에, Secondary는 White Container 위에 표출됩니다."
+      },
+      "spinner": {
+        "title": "Loading Spinner Size",
+        "text": "Button 내 Spinner는 해당 Button Size의 Text Height와 동일하게 맞춰 표출됩니다. Loading 표출 시 Width는 Loading 발생 직전의 Width와 동일하게 유지됩니다."
+      }
+    }
+  },
+  "tertiary": {
+    "title": "Tertiary Button (Icon Button)",
+    "desc": "Icon Button은 Text Label 없이 Icon으로만 구성된 Button입니다.",
+    "section": {
+      "title": "Icon Button",
+      "desc": "Icon Button은 Text Label 없이 Icon으로만 구성됩니다. 가능한 한 Label을 포함한 Button을 지향하되, 공간이 부족하거나 Icon이 사용자에게 명확히 이해되는 경우 Icon-only를 사용할 수 있습니다. Icon Button은 Selection(On/Off) Action으로도 사용 가능합니다. Icon Button은 항상 Tooltip과 함께 표출하는 것을 원칙으로 합니다."
+    },
+    "anatomy": { "title": "Anatomy" },
+    "variants": {
+      "primary": {
+        "title": "Primary Type",
+        "desc": "Icon Button은 Primary·Secondary·Tertiary 3가지로 나뉘며, 콘텐츠에 맞게 유동적으로 사용됩니다. Primary Icon Button은 한 페이지에 중복 사용을 지양하며 한 번만 사용합니다."
+      },
+      "secondary": {
+        "title": "Secondary Type",
+        "desc": "Icon Button은 Primary·Secondary·Tertiary 3가지로 나뉘며, 콘텐츠에 맞게 유동적으로 사용됩니다. Primary Icon Button은 한 페이지에 중복 사용을 지양하며 한 번만 사용합니다."
+      },
+      "tertiary": {
+        "title": "Tertiary Type",
+        "desc": "Tertiary Type Icon Button은 Container와 Outlined이 모두 없으며, 외부 BG Color에 따라 다르게 사용됩니다. 3가지로 나뉘어 콘텐츠에 맞게 유동적으로 사용되며, Primary Icon Button은 한 페이지에 중복 사용을 지양합니다."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Icon Button은 4가지 기본 State — Default·Hover·Clicked·Disabled로 구성됩니다."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Size는 Height 기준 Large·Medium·Small·xSmall·2xSmall·3xSmall·4xSmall. Size에 따라 Container, Icon Size, Radius, Padding이 달라집니다."
+      }
+    },
+    "propsTable": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+        {
+          "prop": "Size",
+          "values": "Large, Medium, Small, xSmall, 2xSmall, 3xSmall, 4xSmall",
+          "default": "Medium"
+        },
+        { "prop": "State", "values": "Default, Hovered, Clicked, Disabled", "default": "Default" }
+      ]
+    },
+    "inTable": {
+      "title": "Icon Button in Table",
+      "desc": "Icon Button 간 간격은 4px 또는 8px. List 내에서 Header와 함께 사용 시 Margin에 유의합니다. Table 내 Icon Button 조합은 Row별 액션 수행에 사용되며 우측 정렬을 따릅니다."
+    },
+    "popupTooltip": {
+      "title": "Popup Tooltip",
+      "desc": "Popup Tooltip 표출용으로 Information Icon이 포함된 Button은 Tertiary Type Icon Button을 사용합니다. State는 표준 Tertiary Icon Button과 동일하며 Header와 함께 사용됩니다. Button 액션 시 Tooltip이 표출되며, 다시 클릭하거나 다른 영역을 클릭하면 Tooltip이 사라집니다."
+    },
+    "usage": {
+      "title": "Usage & Placement",
+      "header": {
+        "title": "Header with Icon",
+        "text": "Header에 포함된 Icon은 Header 전체 영역을 Touch Target으로 사용하며, 액션은 Icon으로 표출됩니다. 이 경우 Icon Button 자체에는 별도 State를 적용하지 않습니다 — Hover·Clicked 없이 Clickable 상태로만 사용됩니다.",
+        "sub": "(예: Item List — Expand Icon, OSD Viewer Panel — Expand Icon)"
+      }
+    }
+  },
+  "extra": {
+    "title": "Extra Button (Text, Segment, Progress Status, Combo Button)",
+    "desc": "Extra Button Type은 주요 액션은 아니지만 Zoomable 전반에서 자주 사용됩니다. Segment·Progress Status·Text·Combo 등 기능과 목적에 따라 다양하게 구성됩니다.",
+    "text": {
+      "title": "Text Button",
+      "desc": "Text Button은 별도의 Container·Outlined 없이 사용되는 Inline Button입니다. Text Label 또는 Linked 형태의 Underline과 결합되어 사용됩니다. 문장 일부 또는 단독으로 사용되며, 다른 페이지로의 안내, 현재 페이지 내 이동, 부가 정보 표출 용도로 사용됩니다."
+    },
+    "textVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Text Button은 Label(Primary·Secondary)과 Link 두 가지로 나뉘어 콘텐츠에 맞게 유동적으로 사용됩니다."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Text Button의 기본 State는 4가지 — Default·Hover·Clicked·Disabled."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Text Button은 본문과 동일한 사이즈 — Medium·Small·Xsmall. 네비게이션 이동(예: '자세히 보기') 목적 시 본문과 동일한 폰트 크기를 사용합니다."
+      }
+    },
+    "textPropsTable": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Label, Link", "default": "Label" },
+        { "prop": "Size", "values": "Medium, Small, Xsmall", "default": "Xsmall" },
+        { "prop": "State", "values": "Default, Hovered, Clicked, Disabled", "default": "Default" }
+      ]
+    },
+    "segment": {
+      "title": "Segment Button",
+      "desc": "Segment Button은 페이지 내 유사한 콘텐츠를 그룹화하여 섹션 간 이동에 사용합니다. 페이지를 벗어나지 않고 같은 위계의 콘텐츠를 둘러볼 수 있습니다. Selected 상태로 사용자 위치를 빠르게 전달하므로 시각적 일관성이 중요합니다. Segment Button은 Select 없는 상태가 없으며, 항상 하나의 Item이 Selected 상태로 유지됩니다."
+    },
+    "segmentVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Segment Button은 형태에 따라 Label·Icon 두 가지로 나뉘며, 위치 방식에 따라 Floating=true·Floating=false로 사용됩니다. 콘텐츠와 해상도에 맞게 유동적으로 사용됩니다."
+      },
+      "state": {
+        "title": "State",
+        "desc": "기본 State는 2가지 — Clicked·Unclicked. Clicked는 Inter / Medium Weight, Green 500 Color."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Size는 Large·Medium 2가지. 일반 Button의 Large는 40px이지만 Segment Button Large는 36px."
+      }
+    },
+    "progress": {
+      "title": "Progress Status Button",
+      "desc": "Progress Status Button은 사용자 작업의 단계별 시각적 위계를 만듭니다. 위계에 따른 스타일 가이드를 준수하며 임의 스타일은 지양합니다. Wind OSD Viewer의 Progress Status에서 단계·Workflow에 따른 시각적 Button으로 사용됩니다."
+    },
+    "progressVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Progress Status Button은 Approved·In Review 2가지로 나뉘며, 진행 단계와 상황 위계에 맞게 유동적으로 사용됩니다."
+      },
+      "state": {
+        "title": "State",
+        "desc": "기본 State는 2가지 — Default·Hover. 진행 단계에 맞는 State를 사용합니다."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Progress Status Button의 Size는 단일 — Width 58px, Height 18px 고정."
+      }
+    },
+    "combo": {
+      "title": "Combo Button",
+      "desc": "Dropdown List를 가지는 Button으로, 연관 액션이 다중으로 제공되어야 할 때 사용합니다. Wind Do Task 화면에서 여러 형식(Export PDF, CSV, AI Hub) Export를 지원하는 목적으로 사용됩니다. Icon을 포함한 Primary Button을 사용합니다."
+    },
+    "comboVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Combo Button은 현재 단일 Type으로 사용되며, 필요 시 Secondary Type Combo Button을 구성하여 사용할 수 있습니다."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Combo Button의 State는 4가지 — Default·Hover·Clicked·Disabled. Dropdown과 동일한 State Set을 따릅니다."
+      }
+    },
+    "comboMenu": {
+      "title": "Combo Button Menu",
+      "text": "Combo Button 선택 시 표출되는 Menu는 동일 사이즈의 Dropdown Menu 컴포넌트를 사용합니다. Menu 내 Item들은 Button과 동일한 Width를 가집니다."
+    }
+  }
+}

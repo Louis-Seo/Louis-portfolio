@@ -239,7 +239,7 @@
 /* 3-column row (Property / Values / Default) */
 .propsRow3col {
   display: grid;
-  grid-template-columns: 120px minmax(160px, 2fr) minmax(100px, 1fr);
+  grid-template-columns: 180px minmax(160px, 2fr) minmax(100px, 1fr);
   border-bottom: 1px solid var(--gray-300);
 }
 
@@ -250,7 +250,7 @@
 /* 2-column row (Label / Description) */
 .propsRow2col {
   display: grid;
-  grid-template-columns: 120px minmax(200px, 1fr);
+  grid-template-columns: 200px minmax(200px, 1fr);
   border-bottom: 1px solid var(--gray-300);
 }
 
@@ -293,7 +293,7 @@
 /* 3-column row with check icon */
 .propsRow3colCheck {
   display: grid;
-  grid-template-columns: 120px minmax(200px, 1fr) auto;
+  grid-template-columns: 200px minmax(200px, 1fr) auto;
   border-bottom: 1px solid var(--gray-300);
 }
 
@@ -304,7 +304,7 @@
 .checkIcon {
   width: 20px;
   height: 20px;
-  background: var(--green-500, #00B875);
+  background: var(--green-500, #00b875);
   border-radius: 4px;
   display: flex;
   align-items: center;

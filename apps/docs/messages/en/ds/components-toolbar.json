@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Toolbar",
+    "description": "Action toolbar for the OSD Viewer — Side, Bottom, and single toolbar buttons grouped by purpose."
+  },
+  "hero": {
+    "title": "Toolbar",
+    "desc": "Toolbar is the component that surfaces the actions needed to complete a task."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "usage": {
+    "title": "Usage",
+    "desc": "Toolbar is used in the Worker OSD Viewer, in two main placements:\n\n• Side Toolbar\n• Bottom Toolbar\n\nA single Toolbar Button can also be used standalone."
+  },
+  "positioning": {
+    "title": "Positioning",
+    "desc": "Toolbar sits above the working section. Place it where it doesn't interfere with the work — top, bottom, or side."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Toolbar surfaces the actions needed to complete a task.",
+    "side": {
+      "title": "Side Toolbar",
+      "desc": "Vertical form, anchored to the left or right edge of the host workspace. A Divider can separate elements by purpose."
+    },
+    "bottom": {
+      "title": "Bottom Toolbar",
+      "desc": "Horizontal form, anchored to the bottom of the host workspace. Functionally distinct groups separate with an 8px gap."
+    },
+    "single": {
+      "title": "Single Toolbar Button",
+      "desc": "Unlike Side and Bottom Toolbar groups, this element runs standalone. Roles and types vary widely."
+    },
+    "extra": {
+      "title": "Extra Case",
+      "desc": "Toolbar can adapt to different purposes in the workspace."
+    }
+  },
+  "variants": {
+    "title": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Toolbar Button has 5 states — Default, Hover, Selected, Select Hover, Disabled. Selected and Select Hover may be omitted depending on intent."
+    },
+    "hover": {
+      "title": "Hover",
+      "desc": "Hovering over a Toolbar element should surface a Tooltip describing the tool. Omission is permitted by context."
+    },
+    "selected": {
+      "title": "Selected & Clicked",
+      "desc": "When a specific tool requires a separate component in Selected state, position it using the Tooltip placement convention (4px). Unlike Selected, when a Clicked action surfaces a separate component (no dedicated Clicked Toolbar Button state defined), use an 8px gap."
+    },
+    "clicked": {
+      "title": "Clicked & Change",
+      "desc": "Bottom Toolbar buttons typically don't change visually on click — they just execute. Exception: Show / Hide directly reflects the current Annotation Object state in the Viewer for an intuitive read."
+    }
+  },
+  "types": {
+    "title": "Type of Toolbar",
+    "values": [
+      "Toolbar / Side Toolbar",
+      "Toolbar / Bottom Toolbar",
+      "Toolbar / Fold Toolbar",
+      "Toolbar / Toggle Filter"
+    ]
+  },
+  "stateTable": {
+    "title": "State of Side Toolbar",
+    "headers": { "type": "Type", "state": "State" },
+    "rows": [
+      { "type": "Navigation", "state": "Default, Hover, Selected, Select Hover, Disabled" },
+      { "type": "Select", "state": "Default, Hover, Selected, Select Hover, Disabled" },
+      { "type": "Pen", "state": "Default, Hover, Selected, Select Hover, Disabled" },
+      { "type": "Rectangle", "state": "Default, Hover, Selected, Select Hover, Disabled" },
+      { "type": "Measurement", "state": "Default, Hover, Selected, Select Hover, Disabled" },
+      { "type": "Send to back", "state": "Default, Hover, Disabled" },
+      { "type": "Send to front", "state": "Default, Hover, Disabled" },
+      { "type": "Redo", "state": "Default, Hover, Disabled" },
+      { "type": "Undo", "state": "Default, Hover, Disabled" }
+    ]
+  },
+  "toolGuide": {
+    "title": "Tool Guide",
+    "tooltip": {
+      "title": "Tooltip",
+      "desc": "Icon-based Toolbar tools surface their description through a Tooltip. The Tooltip typically holds name, description, and keyboard shortcut. Self-evident tools can omit description; tools that don't need a shortcut within the workspace can omit shortcut info.\n\nTooltip behavior follows the standard Tooltip policy — surfaces on Hover."
+    },
+    "cursor": {
+      "title": "Cursor",
+      "desc": "Toolbar elements expose a wide range of behaviors. The cursor shape shifts based on the function each Toolbar Button activates."
+    }
+  }
+}

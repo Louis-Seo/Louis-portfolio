@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "Badge",
+    "description": "Visual indicator for status and quantity. In Wind, Badge surfaces status through intuitive color mapping."
+  },
+  "hero": {
+    "title": "Badge",
+    "desc": "Badge surfaces status or quantity information visually. In Wind, Badge is most often used to communicate status through intuitive color mapping."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "labels": [
+      "1. Badge Container",
+      "2. Text Label",
+      "3. Icon Btn",
+      "4. Badge Box",
+      "5. Extra Label"
+    ]
+  },
+  "usage": {
+    "title": "Usage",
+    "desc1": "Badge splits into six categories by the type of information it carries.",
+    "desc2": "Box Badge and Label Badge surface progress or status through color mapping. Count Badge surfaces the total count within a given scope. Beyond these three primary types, Severity Badge, Button Badge, and Text Badge are also used.",
+    "list": [
+      "1. Box Badge",
+      "2. Contained Badge",
+      "    a. Text Type",
+      "    b. Number Type",
+      "3. Count Badge",
+      "4. Severity Badge",
+      "5. Button Badge",
+      "6. Text Badge"
+    ],
+    "items": [
+      {
+        "key": "box",
+        "title": "1. Box Badge",
+        "desc": "Box form. Carries no label inside — communicates information through color alone."
+      },
+      {
+        "key": "contained",
+        "title": "2. Contained Badge",
+        "desc": "Label can be Text or Number. Text Type often pairs with an external label."
+      },
+      {
+        "key": "count",
+        "title": "3. Count Badge",
+        "desc": "Used to surface an overall count as a single discrete value."
+      },
+      {
+        "key": "severity",
+        "title": "4. Severity Badge",
+        "desc": "Used in Zoomable to mark Zoomable's five defect levels plus an unconfirmed defect — six tiers in total. A Box-form Badge with the defect tier as text inside."
+      },
+      {
+        "key": "button",
+        "title": "5. Button Badge",
+        "desc": "Button Badge executes a specific action on click."
+      },
+      {
+        "key": "text",
+        "title": "6. Text Badge",
+        "desc": "Text Badge executes a specific action on click."
+      }
+    ]
+  },
+  "semanticVariants": {
+    "title": "Semantic Variants",
+    "desc": "Severity Badge uses six (plus one) colors to express severity tier by tier. Box Badge uses four colors to express progress stages."
+  },
+  "contents": {
+    "title": "Contents",
+    "desc": "Because each Badge maps information through color, content beyond text is mapped to the color region — both text and color carry the badge's meaning.\n\nBadge content supports a text label inside the container or an Extra Label outside (text-only). For Count Badge and Severity Badge, the inner Text Label is restricted to numbers. When Box Badge uses an Extra Label, the text marks a specific progress stage — it's fixed text, not user-editable."
+  },
+  "sizing": {
+    "title": "Sizing",
+    "desc": "Badge sizes are Large, Medium, Small — determined by Height. For Contained, Count, and Severity Badges, Height changes drive the size; text length adjustments are validated independently of Height. Width follows either an equal-to-Height rule or a minimum-size + padding rule that auto-fits content.",
+    "rules": [
+      {
+        "key": "char-one",
+        "title": "1. Text Character = 1",
+        "desc": "For single-character Badges, padding stays constant and the badge follows a fixed Width-to-Height ratio. Auto mode doesn't use a fixed Height."
+      },
+      {
+        "key": "char-many",
+        "title": "2. Text Characters > 1",
+        "desc": "For multi-character text, the same padding values apply consistently. The size stays stable across text-length changes — character count drives only Width within a single line, and the variable-Width rule doesn't extend beyond a single word (Single Words: Medium, Only). Size requires explicit values."
+      }
+    ]
+  },
+  "variants": {
+    "title": "Variants",
+    "textual": {
+      "title": "Table of Properties — Textual Badge",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Size", "values": "Large, Medium", "default": "Medium" },
+        { "prop": "Type", "values": "Green, Mint, Red, Yellow, Gray", "default": "-" }
+      ]
+    },
+    "box": {
+      "title": "Table of Properties — Box Badge",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+        { "prop": "Status", "values": "To Do, In Progress, In Review, Done", "default": "-" },
+        { "prop": "Text", "values": "False, True", "default": "True" },
+        { "prop": "Outline", "values": "Unoutline, Outline, None", "default": "Unoutline" }
+      ]
+    },
+    "severity": {
+      "title": "Table of Properties — Severity Badge",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Item Number", "values": "1, 2, 3, 4, 5, ?", "default": "-" },
+        { "prop": "Text", "values": "False, True", "default": "False" }
+      ]
+    }
+  }
+}

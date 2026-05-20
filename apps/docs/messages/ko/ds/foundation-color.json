@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Color",
+    "description": "Brand·Text·Background·Border 컬러 토큰 — 시스템의 컬러 기반."
+  },
+  "hero": {
+    "title": "Colors",
+    "descLine1": "Color는 브랜드 인지, 정보 위계, 상태 전달을 동시에 담당하는 핵심 시각 요소입니다.",
+    "descLine2": "디자인 시스템의 Color는 제품 전반의 일관된 경험을 위한 기준선입니다. 모든 UI 표면은 정의된 토큰을 적용하며, 임의 컬러 사용은 지양합니다."
+  },
+  "guidelines": {
+    "title": "Color Usage Guidelines",
+    "items": [
+      "Color는 Hex가 아닌 Token 이름으로 참조합니다.",
+      "WCAG 2.0 기반으로 컬러마다 10단계(50–900)를 제공하며, 주요 단계는 500입니다.",
+      "모든 화면에 정의된 토큰을 우선 적용합니다. 접근성과 시각 일관성을 위해 임의 컬러는 사용하지 않습니다.",
+      "텍스트·배경은 가독 가능한 명도 대비를 확보해야 합니다. 신규 컬러가 필요한 경우, 기존 시스템에서의 확장을 먼저 검토하고 그 범위에서 제한적으로 추가합니다."
+    ]
+  },
+  "brandColors": {
+    "title": "Brand Colors",
+    "descLine1": "Brand Colors는 제품 전반에서 브랜드 정체성을 가장 직접적으로 드러내는 컬러 체계입니다.",
+    "descLine2": "Primary Green은 시그니처 컬러로, 주요 액션·Active 상태·강조 요소처럼 사용자의 주의를 브랜드와 정렬시켜야 하는 영역에 우선 적용합니다.",
+    "noteLine1": "Primary Green은 단순 액센트가 아니라 제품의 시각적 중심축입니다.",
+    "noteLine2": "정의된 토큰과 사용 원칙을 기준으로 일관되게 적용하여, 브랜드 인지와 정보 위계를 동시에 강화합니다.",
+    "imageAlt": "Brand Colors usage example"
+  },
+  "greenVariation": {
+    "title": "Main Green Colour Variation",
+    "desc": "Green Scale은 Primary Green을 기준으로 확장된 단계형 세트입니다. 강조 수준과 맥락에 따라 배경·텍스트·상태 표현 등에 일관되게 활용합니다."
+  },
+  "textColor": {
+    "title": "Text Colour",
+    "desc": "텍스트 위계는 CTA, Primary, Secondary, Tertiary 컬러로 구분합니다. 그 외 화면 구성 요소에 따라 다른 토큰을 사용할 수 있습니다.",
+    "imageAlt": "Text Colour usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      {
+        "name": "Gray 700",
+        "usage": "Title(Title·Subtitle·Body), Tab, Filter, OSD Viewer 및 본문 텍스트",
+        "hex": "#616161"
+      },
+      {
+        "name": "Gray 900",
+        "usage": "Heading, Title, Icon, Button Info 및 강조 텍스트",
+        "hex": "#212121"
+      }
+    ]
+  },
+  "backgroundDepth": {
+    "title": "Background Depth",
+    "desc": "Background Depth는 배경과 아웃라인에만 사용하며, 텍스트에는 사용하지 않습니다.",
+    "imageAlt": "Background Depth usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      {
+        "name": "BG Color / 00dp",
+        "usage": "기본 배경, 리스트 형식의 항목 구분 배경",
+        "hex": "#FFFFFF"
+      },
+      { "name": "BG Color / −01dp", "usage": "두 번째 배경", "hex": "#FAFAFA" },
+      { "name": "BG Color / −02dp", "usage": "세 번째 배경", "hex": "#F5F5F5" },
+      { "name": "BG Color / −03dp", "usage": "네 번째 배경", "hex": "#EEEEEE" },
+      { "name": "Divider Color / Gray 200", "usage": "Divider 라인", "hex": "#EEEEEE" }
+    ]
+  },
+  "selectedColor": {
+    "title": "Selected Color",
+    "desc": "컴포넌트 Selected 상태를 위한 컬러 토큰.",
+    "imageAlt": "Selected Color usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      { "name": "(Table) Selected Color / 01dp", "usage": "선택된 Table Row", "hex": "#E6F7EF" },
+      {
+        "name": "(Table) Selected Hover Color / 02dp",
+        "usage": "선택된 Table Row의 Hover",
+        "hex": "#D2F2E6"
+      },
+      {
+        "name": "Selected Color / −02dp",
+        "usage": "선택된 요소 (예: Dropdown Item)",
+        "hex": "#F5F5F5"
+      },
+      {
+        "name": "Selected Hover Color / −03dp",
+        "usage": "선택된 요소의 Hover (예: Dropdown Item)",
+        "hex": "#EEEEEE"
+      }
+    ]
+  },
+  "borderColor": {
+    "title": "Border Colour",
+    "desc": "Border 토큰은 영역을 구분합니다. 배경이나 텍스트 색상에는 사용하지 않습니다.",
+    "imageAlt": "Border Colour usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      { "name": "Gray 200", "usage": "컴포넌트의 Default 또는 Hover 보더", "hex": "#EEEEEE" },
+      { "name": "Gray 300", "usage": "Active 보더 (예: Input, Dropdown)", "hex": "#E0E0E0" }
+    ]
+  },
+  "secondaryExtra": {
+    "title": "Secondary & Extra Colours",
+    "desc": "Chip, Badge, Avatar Color에서 사용되며 State Color도 포함합니다. 카테고리 기반으로 주요 컬러를 다양하게 제공합니다.",
+    "imageAlt": "Secondary & Extra Colours usage example"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Date Picker",
+    "description": "Date·Time 선택 컴포넌트 — Date·Year·Date and Time Picker를 Dropdown Menu로 제공."
+  },
+  "hero": {
+    "title": "Date Picker",
+    "desc": "Date & Time Picker는 사용자가 단일 또는 일정 기간에 대한 날짜(Date)·년도(Year)·시간(Time)을 선택할 수 있도록 합니다."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "components": {
+    "title": "Components",
+    "desc": "Date Picker는 특정 날짜를 선택하는 Date Picker, 특정 년도를 선택하는 Year Picker, 날짜와 시간을 함께 선택하는 Date and Time Picker로 구성됩니다. 일반적으로 Schedule Icon을 포함한 Dropdown Menu 항목으로 표출됩니다."
+  },
+  "props": {
+    "title": "Table of Figma Properties — Date Picker with Dropdown",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      {
+        "prop": "State",
+        "values": "Default, Hover, Clicked, Disabled, Selected, Select Hover, Select Disabled, Select Clicked",
+        "default": "Default"
+      },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "—" },
+      { "prop": "Open", "values": "True, False", "default": "False" },
+      { "prop": "Menu Type", "values": "Date, Year, Date and Time", "default": "—" }
+    ]
+  },
+  "sizing": {
+    "title": "Sizing",
+    "width": {
+      "title": "Width & Padding",
+      "text": "Date Picker는 일반 Dropdown Menu와 달리 콘텐츠 길이에 따라 가변적으로 확장되지 않고 고정 Width를 기준으로 사용됩니다. 외곽 영역은 12px Padding으로 구성되어, 내부 Calendar Grid와 Header 영역이 안정적인 간격으로 배치되도록 합니다."
+    },
+    "spacing": {
+      "title": "Internal Spacing",
+      "text": "Date Picker 내부 요소는 Header·Navigation Control·Calendar Cell 간 간격 규칙에 따라 정렬됩니다. 상단 Header와 본문 Grid는 명확한 간격 체계를 유지하며, 각 Cell 사이 간격 또한 일관된 Spacing Rule을 따릅니다."
+    }
+  },
+  "alignment": {
+    "title": "Alignment",
+    "desc": "기본 정렬은 Dropdown 좌측 기준입니다. 화면상 Barrier가 있을 때는 우측 정렬을 사용합니다. Barrier 조건: Dropdown Width가 Date Picker Width보다 작은 경우, 또는 Dropdown 위치가 화면 우측 가장자리에 위치하여 Date Picker 영역에 방해가 되는 경우 우측 정렬됩니다."
+  },
+  "picker": {
+    "title": "Picker",
+    "type": {
+      "title": "Type",
+      "desc": "Date Picker에는 Time·Day·Year 3가지 Type이 있으며, Time과 Day는 별도 Picker 컴포넌트를 정의해 사용합니다. Year는 디자인 시스템 내 Chip 컴포넌트를 그대로 사용합니다."
+    },
+    "state": {
+      "title": "State",
+      "desc": "Year는 Chip으로 사용되며 Chip에 정의된 상태와 동일합니다. Day의 State는 5가지 — Placeholder·Default·Hover·Current·Selected. Time은 Day의 5가지 중 Current를 제외한 4가지를 사용합니다."
+    }
+  },
+  "usecase": {
+    "title": "Usecase"
+  }
+}

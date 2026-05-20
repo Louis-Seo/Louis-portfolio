@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Design System",
+    "description": "엔터프라이즈 검사 제품을 위한 확장 가능한 디자인 시스템 — Figma와 React를 잇는 토큰·컴포넌트·패턴 체계."
+  },
+  "hero": {
+    "title": "Design System",
+    "desc": "하나의 제품 경험을 만들기 위한 디자인 원칙과 UI 라이브러리. Foundation은 시각적 기본 요소를, Components는 그 위에 구축된 재사용 가능한 패턴을 정의합니다.",
+    "stats": {
+      "foundation": "Foundation",
+      "components": "Components",
+      "categories": "Categories"
+    }
+  },
+  "foundation": {
+    "title": "Foundation",
+    "desc": "모든 컴포넌트가 기반하는 시각적 기본 요소 — Color, Typography, Iconography, Object Style 토큰.",
+    "count": "{count} items",
+    "items": {
+      "typography": {
+        "desc": "위계와 가독성을 위한 Type Scale·Weight·Line-height 토큰"
+      },
+      "color": {
+        "desc": "Brand·Semantic·UI State 컬러 팔레트"
+      },
+      "icon": {
+        "desc": "System Iconography 가이드 — Size, Layout, Stroke, Style"
+      },
+      "object-style": {
+        "desc": "Surface를 위한 Radius·Elevation·Border 토큰"
+      }
+    }
+  },
+  "components": {
+    "title": "Components",
+    "desc": "{count}개의 UI 빌딩 블록 — 각 컴포넌트는 Anatomy, Variants, Spec, Usage로 문서화됩니다.",
+    "categories": {
+      "general": {
+        "desc": "기본 인터랙션을 위한 범용 컴포넌트"
+      },
+      "navigation": {
+        "desc": "위치 안내와 이동 패턴"
+      },
+      "dataEntry": {
+        "desc": "데이터 입력 및 옵션 선택"
+      },
+      "dataDisplay": {
+        "desc": "데이터를 구조화하여 보여주는 컴포넌트"
+      },
+      "feedback": {
+        "desc": "시스템 응답과 상황별 안내"
+      }
+    }
+  }
+}

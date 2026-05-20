@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "title": "Color",
+    "description": "Brand, text, background, and border color tokens — the system's color foundation."
+  },
+  "hero": {
+    "title": "Colors",
+    "descLine1": "Color carries brand recognition, information hierarchy, and state — all at once.",
+    "descLine2": "Color in the design system sets the baseline for a consistent product experience. Every UI surface applies the defined tokens; ad-hoc color is avoided."
+  },
+  "guidelines": {
+    "title": "Color Usage Guidelines",
+    "items": [
+      "Reference colors by token name, not by hex.",
+      "Each color exposes 10 steps (50–900) per WCAG 2.0; the primary step is 500.",
+      "Apply defined tokens first across every surface. Avoid arbitrary colors to preserve accessibility and visual consistency.",
+      "Text and background must meet readable contrast. If a new color is required, extend through the existing system first; add new colors only when extension isn't viable."
+    ]
+  },
+  "brandColors": {
+    "title": "Brand Colors",
+    "descLine1": "Brand Colors carry brand identity most directly across the product.",
+    "descLine2": "Primary Green is the signature color — apply it to primary actions, active states, and points of emphasis that should align the user's attention with the brand.",
+    "noteLine1": "Primary Green isn't an accent; it's the visual anchor for the product.",
+    "noteLine2": "Apply it consistently against the defined tokens and rules — reinforcing brand recognition and information hierarchy together.",
+    "imageAlt": "Brand Colors usage example"
+  },
+  "greenVariation": {
+    "title": "Main Green Colour Variation",
+    "desc": "The Green Scale extends from Primary Green into a graded set. Use it consistently across backgrounds, text, and state representation, scaled to the level of emphasis and context."
+  },
+  "textColor": {
+    "title": "Text Colour",
+    "desc": "Hierarchy steps through CTA, Primary, Secondary, and Tertiary text colors. Beyond these, other tokens may apply per screen composition.",
+    "imageAlt": "Text Colour usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      {
+        "name": "Gray 700",
+        "usage": "Titles (Title, Subtitle, Body), tabs, filters, OSD viewer, and body text",
+        "hex": "#616161"
+      },
+      {
+        "name": "Gray 900",
+        "usage": "Headings, titles, icon labels, button info, and emphasized text",
+        "hex": "#212121"
+      }
+    ]
+  },
+  "backgroundDepth": {
+    "title": "Background Depth",
+    "desc": "Use background depth for backgrounds and outlines only — not for text.",
+    "imageAlt": "Background Depth usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      {
+        "name": "BG Color / 00dp",
+        "usage": "Default background; separator for list-like compositions",
+        "hex": "#FFFFFF"
+      },
+      { "name": "BG Color / −01dp", "usage": "Second-level background", "hex": "#FAFAFA" },
+      { "name": "BG Color / −02dp", "usage": "Third-level background", "hex": "#F5F5F5" },
+      { "name": "BG Color / −03dp", "usage": "Fourth-level background", "hex": "#EEEEEE" },
+      { "name": "Divider Color / Gray 200", "usage": "Divider lines", "hex": "#EEEEEE" }
+    ]
+  },
+  "selectedColor": {
+    "title": "Selected Color",
+    "desc": "Color tokens for component Selected states.",
+    "imageAlt": "Selected Color usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      { "name": "(Table) Selected Color / 01dp", "usage": "Selected table row", "hex": "#E6F7EF" },
+      {
+        "name": "(Table) Selected Hover Color / 02dp",
+        "usage": "Hover over a selected table row",
+        "hex": "#D2F2E6"
+      },
+      {
+        "name": "Selected Color / −02dp",
+        "usage": "Selected element (e.g. Dropdown item)",
+        "hex": "#F5F5F5"
+      },
+      {
+        "name": "Selected Hover Color / −03dp",
+        "usage": "Hover over a selected element (e.g. Dropdown item)",
+        "hex": "#EEEEEE"
+      }
+    ]
+  },
+  "borderColor": {
+    "title": "Border Colour",
+    "desc": "Border tokens delineate regions. They aren't applied to backgrounds or text.",
+    "imageAlt": "Border Colour usage example",
+    "tableHeaders": { "name": "Name", "usage": "Usage", "hex": "Hex" },
+    "rows": [
+      {
+        "name": "Gray 200",
+        "usage": "Default or Hover border on interactive components",
+        "hex": "#EEEEEE"
+      },
+      { "name": "Gray 300", "usage": "Active border (e.g. Input, Dropdown)", "hex": "#E0E0E0" }
+    ]
+  },
+  "secondaryExtra": {
+    "title": "Secondary & Extra Colours",
+    "desc": "Used in Chip, Badge, and Avatar colors — and across state colors. Categorized to cover a range of primary uses.",
+    "imageAlt": "Secondary & Extra Colours usage example"
+  }
+}

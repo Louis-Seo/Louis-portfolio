@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "NearthWind Mobile",
+    "description": "Field operations app for AI-driven autonomous drone inspection of wind turbine blades — built for the conditions where the work actually happens."
+  },
+  "hero": {
+    "label": "UX/UI Design · 2022–2024",
+    "title": "NearthWind Mobile",
+    "description": "A mobile ops system that controls AI-driven autonomous drone flight and four-sided blade capture in the field. Setup, capture, review, and data transfer — every inspection workflow starts here.",
+    "meta": [
+      { "label": "Role", "value": "UX/UI Designer" },
+      { "label": "Duration", "value": "2022–2024" },
+      { "label": "Contribution", "value": "Planning, Design, Maintenance" },
+      { "label": "Team", "value": "Designer, PM, Dev, DL Engineer" }
+    ]
+  },
+  "overview": {
+    "label": "Overview",
+    "titleLine1": "AI autonomous drones for",
+    "titleLine2": "four-sided turbine blade inspection",
+    "paragraphs": [
+      "NearthWind Mobile is a field ops system for wind turbine blade inspection. After the turbine is stopped, the drone autonomously flies to capture the upper blade across all four sides. It runs on commodity drones — no specialist hardware required.",
+      "This app is the starting point of the inspection pipeline. Operators set capture conditions, AI handles the flight, and the team reviews the result on-site. Verified data syncs to Zoomable Worker, where desktop-side precision analysis takes over."
+    ]
+  },
+  "challenge": {
+    "label": "Design Challenge",
+    "titleLine1": "Products used in the field",
+    "titleLine2": "solve a different kind of problem.",
+    "cards": [
+      {
+        "title": "Operating in extreme conditions",
+        "text": "High wind, direct sunlight, ambient noise. Operators often wear gloves. Touch targets need real room, and critical info has to stay legible in bright sun."
+      },
+      {
+        "title": "Flying and configuring at the same time",
+        "text": "Operators pilot and adjust capture settings simultaneously. They monitor altitude, angle, and speed mid-flight while tuning capture parameters. The cognitive cost of switching modes had to drop."
+      },
+      {
+        "title": "The cost of getting setup wrong",
+        "text": "Misconfigure blade order, ISO, or shutter speed and the whole capture starts over. Turbine downtime is bounded, so a setup mistake is a real cost on the ground."
+      },
+      {
+        "title": "Continuity with downstream systems",
+        "text": "Mobile capture flows into Zoomable Worker for analysis and Zoomable Wind for management. Metadata structure and handoff decide downstream quality."
+      }
+    ]
+  },
+  "features": {
+    "settings": {
+      "label": "Core Feature 01",
+      "title": "Flight & Inspection Settings",
+      "description": "Blade selection, turbine info, joystick mode, camera parameters — all configured inside a single setup flow. Every input the inspection needs lives in one place, so operators spend less time hopping screens or missing fields.",
+      "context": "A bad capture condition forces the whole inspection to repeat. Setup is laid out as a sequence, and required fields block progress until filled — fewer mistakes at the gate.",
+      "heroImageAlt": "Inspection Setting form",
+      "bullets": [
+        {
+          "title": "Blade selection",
+          "text": "Inspect all four sides of the upper blade. Operators pick blade order and then enter Wind Farm, Wind Turbine, and Blade Length in sequence."
+        },
+        {
+          "title": "Remote controller",
+          "text": "Supports Mode 1 / Mode 2 and Left/Right stick mapping. Pilots customize for their flying habits, cutting down on input mistakes."
+        },
+        {
+          "title": "Capture settings",
+          "text": "ISO, shutter speed, and exposure are tuned to field conditions. Onshore and Offshore presets reduce repeat setup overhead."
+        }
+      ],
+      "subImageAlts": {
+        "blade": "Blade selection and flight view",
+        "remote": "Remote Controller Mode settings"
+      }
+    },
+    "upload": {
+      "label": "Core Feature 02",
+      "title": "Metadata Upload & Review",
+      "description": "This isn't simple upload. It's a quality gate: review captures on-site, decide whether to re-shoot, and only ship verified data to Zoomable Worker.",
+      "context": "The quality of mobile capture decides the accuracy of downstream analysis. This screen is the handoff between the field and the desktop — the first gate on data trust.",
+      "heroImageAlt": "Upload Metadata main view",
+      "bullets": [
+        {
+          "title": "Stitch & Review",
+          "text": "The four blade sides (Pressure, Leading Edge, Suction, Trailing Edge) stitch into a single view so the team can scan the whole blade and catch missing coverage on-site."
+        },
+        {
+          "title": "Quality check & re-capture",
+          "text": "Per-side image count and capture state appear in real time. Below quality threshold? Re-run the autonomous flight on the spot to fill the gap."
+        },
+        {
+          "title": "Worker handoff",
+          "text": "Verified data syncs to Zoomable Worker with metadata structure intact, so desktop-side precision defect analysis starts the moment it lands."
+        }
+      ],
+      "subImageAlts": {
+        "stitch1": "Stitch Photos — blade 4-side view",
+        "stitch2": "Upload preview and sync view"
+      }
+    }
+  },
+  "process": {
+    "label": "Process Flow",
+    "title": "End-to-end drone inspection workflow",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Inspection Setting",
+        "desc": "Blade selection, turbine info, and capture conditions configured in sequence",
+        "input": "User input",
+        "output": "Inspection parameters locked"
+      },
+      {
+        "num": "02",
+        "title": "Auto Flight",
+        "desc": "AI-driven autonomous flight captures the four blade sides in sequence",
+        "input": "System automation",
+        "output": "Four-side capture data"
+      },
+      {
+        "num": "03",
+        "title": "Preview & Check",
+        "desc": "Stitched preview verifies capture quality on-site, instantly",
+        "input": "User judgment",
+        "output": "Re-capture or approve"
+      },
+      {
+        "num": "04",
+        "title": "Upload & Sync",
+        "desc": "Verified data syncs to Zoomable Worker, analysis begins",
+        "input": "User confirmation",
+        "output": "Worker handoff complete"
+      }
+    ]
+  },
+  "outcome": {
+    "label": "Outcome",
+    "title": "Project results",
+    "metrics": [
+      {
+        "subLabel": "Efficiency",
+        "value": "60%",
+        "label": "Less inspection time",
+        "desc": "Automated setup plus AI-driven flight cut on-site time dramatically compared to the manual baseline."
+      },
+      {
+        "subLabel": "Coverage",
+        "value": "4 sides",
+        "label": "Full blade coverage",
+        "desc": "Pressure, Leading Edge, Suction, Trailing Edge — every side captured, no gaps."
+      },
+      {
+        "subLabel": "Reliability",
+        "value": "Auto",
+        "label": "Autonomous flight & capture",
+        "desc": "Deep-learning-based autonomous flight reduces dependence on pilot skill and keeps captures consistent."
+      },
+      {
+        "subLabel": "Improvement",
+        "value": "2yr",
+        "label": "Ongoing operation & iteration",
+        "desc": "Two years of field-feedback-driven iteration, validated under real operating conditions."
+      }
+    ],
+    "reflections": [
+      {
+        "title": "Field UX",
+        "text": "Designing for wind, noise, and direct sun is fundamentally different from designing for an office. Touch targets, color contrast, information density — every decision had to bend to field conditions. The core challenge: take the complex workflow of flying a drone while configuring an inspection and simplify it down to something one hand can run."
+      },
+      {
+        "title": "System Continuity",
+        "text": "This app isn't a standalone product. It's the entry point of an inspection pipeline. I designed the end-to-end experience so mobile capture flows naturally into Zoomable Worker and is managed in Zoomable Wind. Because metadata consistency drives downstream accuracy, the handoff design was the most consequential call we made."
+      }
+    ]
+  }
+}

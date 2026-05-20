@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Dropdown",
+    "description": "옵션 선택·필터링·정렬을 위한 Selection Control — Dropdown Button과 Menu Item으로 구성됩니다."
+  },
+  "hero": {
+    "title": "Dropdown",
+    "desc": "Dropdown은 옵션 선택, 콘텐츠 필터링, 정렬 변경에 사용됩니다. 선택 가능한 Item으로 구성된 Menu를 노출하며, Menu를 열 수 있음을 알리는 Icon이 포함된 Dropdown Button과 함께 사용됩니다."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "items": [
+      "1. Dropdown Container",
+      "2. Dropdown Field",
+      "3. Arrow Icon",
+      "4. Dropdown Button",
+      "5. Dropdown Menu",
+      "6. Menu Item",
+      "7. Selected Item Field"
+    ]
+  },
+  "extraTypeIntro": {
+    "title": "Extra Type",
+    "desc": "Dropdown은 페이지 콘텐츠를 필터링·정렬하기 위해 Menu Item을 노출합니다. Dropdown Button Type에 따라 Primary(Label), Secondary(Avatar & Badge), Tertiary(Non-Outlined) 3가지로 분류됩니다."
+  },
+  "compTable": {
+    "headers": {
+      "primary": "Primary Type",
+      "secondary": "Secondary Type",
+      "tertiary": "Tertiary Type",
+      "extra": "Extra Type"
+    },
+    "rows": [
+      {
+        "label": "Field Type",
+        "primary": "Text",
+        "secondary": "Avatar with Text, Badge",
+        "tertiary": "Text, Avatar with Text, Badge",
+        "extra": "Icon"
+      },
+      {
+        "label": "Selected Item",
+        "primary": "Single Selected",
+        "secondary": "Multi / Single Selected",
+        "tertiary": "Multi / Single Selected",
+        "extra": "Single Selected"
+      },
+      {
+        "label": "Extra Composition",
+        "primary": "—",
+        "secondary": "Multi Selected Count Badge",
+        "tertiary": "Multi Selected Count Badge",
+        "extra": "—"
+      },
+      {
+        "label": "Characteristics",
+        "primary": "가장 일반적인 Type — Text 또는 Icon으로 구성",
+        "secondary": "Avatar·Badge 등 다양한 컴포넌트로 구성",
+        "tertiary": "Outline 없이 내부 Field만 표출 — Table·List에서 사용",
+        "extra": "Icon Button 형태로 제공, 기존 Menu 형태 사용"
+      }
+    ],
+    "mobileLabels": {
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "tertiary": "Tertiary",
+      "extra": "Extra"
+    },
+    "mobileShortRows": [
+      {
+        "label": "Field Type",
+        "primary": "Text",
+        "secondary": "Avatar, Badge",
+        "tertiary": "Text, Avatar, Badge",
+        "extra": "Icon"
+      },
+      {
+        "label": "Selected Item",
+        "primary": "Single",
+        "secondary": "Multi / Single",
+        "tertiary": "Multi / Single",
+        "extra": "Single"
+      },
+      {
+        "label": "Extra Composition",
+        "primary": "—",
+        "secondary": "Count Badge",
+        "tertiary": "Count Badge",
+        "extra": "—"
+      }
+    ]
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Dropdown은 스타일·쓰임·Field 형태에 따라 Primary(Label Dropdown)·Secondary(Avatar and Badge Dropdown)·Tertiary(Non-Outlined Dropdown)·Extra Type으로 분류됩니다."
+  },
+  "primary": {
+    "title": "Primary Type",
+    "desc": "가장 일반적인 Type — Text 단독의 Label Dropdown과 Icon + Text의 Label with Icon Dropdown으로 구성됩니다."
+  },
+  "secondary": {
+    "title": "Secondary Type",
+    "desc": "Field 값에 Text 대신 별도 컴포넌트가 사용되는 Type — 주로 Avatar와 Badge가 함께 사용됩니다."
+  },
+  "tertiary": {
+    "title": "Tertiary Type",
+    "desc": "Outline이 표출되지 않는 Type — Clicked 상태에서 Secondary Type 형태로 전환됩니다. Table Dropdown과 List Dropdown 2가지로 분류되며, 각 Field에 사용되는 컴포넌트가 다릅니다."
+  },
+  "extraType": {
+    "title": "Extra Type",
+    "desc": "기능적·형태적 목적에 따라 사용되는 Use-case별 Variant — Icon Dropdown, Inspection Selector, Fleet Selector."
+  },
+  "variants": {
+    "title": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Dropdown Button의 State는 8가지 — Disabled·Default·Hover·Clicked·Select Disabled·Selected·Select Hover·Select Clicked. Menu Item은 4가지 — Default·Hover·Selected·Select Hover."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Size는 Height 기준 — Large·Medium·Small. Width는 유동적입니다."
+    },
+    "menuItem": {
+      "title": "Menu Item",
+      "desc": "Menu Item Field는 핵심 요소(Text·Avatar·Badge)와 부가 요소(Toggle·Icon)를 조합합니다. Dropdown Button과 동일한 Height의 Search Input도 사용 가능합니다."
+    }
+  },
+  "componentTable": {
+    "title": "Table of Dropdown Component",
+    "headers": { "component": "Component", "values": "Values" },
+    "rows": [
+      { "component": "Dropdown Button", "values": "Primary, Secondary, Tertiary" },
+      { "component": "Menu List", "values": "List, Date Picker" },
+      { "component": "Menu Item", "values": "Text, Avatar, Badge" }
+    ]
+  },
+  "buttonProps": {
+    "title": "Table of Properties — Dropdown Button",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+      {
+        "prop": "State",
+        "values": "Disabled, Default, Hover, Clicked, Select Disabled, Selected, Select Hover, Select Clicked",
+        "default": "Default"
+      }
+    ]
+  },
+  "itemProps": {
+    "title": "Table of Properties — Menu Item",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+      { "prop": "State", "values": "Default, Hover, Selected, Select Hover", "default": "Default" },
+      { "prop": "Icon", "values": "False, True", "default": "False" },
+      { "prop": "Toggle", "values": "False, True", "default": "False" }
+    ]
+  },
+  "color": {
+    "title": "Color",
+    "desc": "Dropdown 컴포넌트의 색상은 State에 따라 변경됩니다. Field에 채워진 콘텐츠 색상은 모든 State에서 동일하게 유지되며, Outline과 Container 색상이 State별로 다르게 적용됩니다.",
+    "buttonColor": "Dropdown Button Color",
+    "itemColor": "Menu Item Color"
+  },
+  "spacing": {
+    "title": "Spacing",
+    "desc": "Menu Item의 Text가 2줄 이상으로 길어지거나 Text 외 요소(Icon·Avatar)와 함께 사용되는 경우 다음 패턴을 따릅니다. Single·Multi-Selection 여부에 따라서도 다르게 사용됩니다."
+  },
+  "contents": {
+    "title": "Contents",
+    "desc": "Dropdown Menu Item은 최대 4.5개를 표출하는 것을 지향합니다. 5개 이상인 경우 Scrollbar를 사용하여 4.5개 표출 윈도우를 유지합니다.",
+    "empty": {
+      "title": "Table / List Empty State (Placeholder)",
+      "text": "일반 Dropdown의 Placeholder 방식과 달리, Tertiary Type의 Table·List Placeholder는 문구가 아닌 '—'을 사용합니다. 여러 데이터가 한 곳에 표기되는 Table·List에서 데이터가 비어 있는 구간과 채워진 구간을 구분하기 위함입니다."
+    },
+    "fieldType": {
+      "title": "Type of Field",
+      "text": "Dropdown Field는 기본적으로 Text 기반 Label Dropdown으로 구성되나 다른 컴포넌트가 사용될 수 있습니다. 대표적으로 Badge·Avatar이며, 필요에 따라 다양한 컴포넌트가 함께 사용됩니다."
+    },
+    "itemList": {
+      "title": "Menu Item List",
+      "text": "Menu Item은 최대 4개를 기본으로 표출하며, 그 이상은 Overflow를 적용하여 Scroll합니다. 4개의 기본 표출이 사용성 측면에서 충분치 않다고 판단되는 경우 Menu Height 최댓값을 상황에 따라 변경할 수 있습니다."
+    },
+    "single": {
+      "title": "Single-Selection",
+      "text": "Menu Item 중 단일 선택만 가능한 형태로 Dropdown에서 가장 많이 사용됩니다. 필수값일 경우 Close(Clear All) 버튼을 표출하지 않으며, 선택적 옵션일 경우 Close 버튼을 함께 제공합니다."
+    },
+    "multi": {
+      "title": "Multi-Selection",
+      "text": "단일 또는 다수의 Item 선택이 가능합니다. 선택된 Item은 두 가지 방식으로 표출됩니다 — 추가된 Item 갯수를 Badge로 표출하는 방식, 선택된 Item의 콘텐츠 값을 모두 표출하는 방식."
+    },
+    "minWidth": {
+      "title": "Minimum Width",
+      "text": "Width는 위치 영역에 따라 Flexible하게 구성됩니다. Minimum Width는 120px입니다."
+    },
+    "flexibleWidth": {
+      "title": "Flexible Width",
+      "text": "Dropdown은 Flexible하게 사용됩니다. Menu Item에 표출되는 콘텐츠를 고려하여 Width를 설정합니다. 특정 Parent Container 내에 사용될 경우 정의된 Padding을 지키는 것을 원칙으로 합니다."
+    },
+    "overflow": {
+      "title": "Text Overflow",
+      "text": "Dropdown Button Field의 Text가 horizontal 영역을 넘는 경우 '...'으로 축약합니다. Menu Item의 Text는 축약하지 않고 줄바꿈하여 모두 표출합니다."
+    }
+  },
+  "usage": {
+    "title": "Usage & Placement",
+    "desc": "Dropdown은 Form 입력 형식에서 Label과 함께 자주 사용되며, Text Input과 함께 주로 조합됩니다. 필요에 따라 여러 요소가 복합적으로 사용되어 사용자에게 정보를 전달합니다.",
+    "label": {
+      "title": "Label",
+      "text": "Dropdown이 포함된 입력 Form에서 항목 Label을 함께 사용합니다. Subtitle 3 (Inter, Medium, 14px)를 사용하며, Required·Error·Information 형태로 사용 가능합니다.\n\nLabel을 포함한 Dropdown·Input 조합은 여러 개가 함께 사용되는 경우가 많습니다. Label과 Dropdown 사이는 8px, 각 요소 사이 간격은 가로 배열 시 24px, 세로 배열 시 32px를 사용합니다."
+    },
+    "information": {
+      "title": "Label: Information",
+      "text": "해당 입력 값에 대한 부가적인 정보를 사용자에게 제공할 때 사용됩니다."
+    },
+    "required": {
+      "title": "Label: Required",
+      "text": "필수 입력 값을 표기하기 위해 사용됩니다. Label과 4px 간격을 두고 '*'을 표기합니다. 필수가 아닌 선택값은 별도 표기 없이 Label만 사용합니다.\n\n'*'은 Body 2 (Inter, Regular, 14px)를 사용하며 Label과 동일한 텍스트 사이즈를 가져갑니다."
+    },
+    "error": {
+      "title": "Label: Error (Alert)",
+      "text": "입력 값에 대한 Error(Alert)를 띄우는 경우로, 입력 값의 필수 요건에 대한 설명을 표출합니다. 별도 Action(예: Confirm Button) 이후에 표출되며, Dropdown Button의 Outline 색상과 Text Alert을 함께 표출합니다.\n\nError 상태 Outline Color: Red 500. Medium 사이즈 Alert을 사용합니다."
+    },
+    "labelSize": {
+      "title": "Label Size",
+      "text": "Dropdown 컴포넌트의 Height·정보 밀도에 맞춰 Label 크기를 일관되게 정의합니다. 입력 필드 크기가 달라지면 Label도 동일한 비율 체계 안에서 조정되어야 컴포넌트 전체의 균형감과 가독성이 유지됩니다.\n\nMedium Dropdown은 Subtitle 3 (Inter, Medium, 14px)를 사용하고, Large Dropdown은 Subtitle 1 (Inter, Medium, 16px)를 적용합니다. 이 규칙은 Label과 Input Field 사이의 시각적 위계를 명확히 하고, 서로 다른 크기의 Form 요소가 함께 배치되어도 일관된 리듬을 유지합니다."
+    }
+  },
+  "loading": {
+    "title": "Loading Status",
+    "type": {
+      "title": "Loading Type",
+      "desc": "Loading은 단일 Spinner Type을 사용하며, 기본 Dropdown Arrow와 함께 표출됩니다. Spinner는 Item이 표출되는 영역 내 중앙에 위치합니다."
+    },
+    "spinner": {
+      "title": "Loading Spinner Size",
+      "desc": "Dropdown Container 내 Spinner는 Item Text의 Height에 맞춰 표출됩니다. Loading 표출 시 Width는 Loading 발생 직전의 Width와 동일하게 유지됩니다."
+    }
+  },
+  "menuPlacement": {
+    "title": "Menu Placement",
+    "desc": "Menu의 표출 위치는 사용자가 Action을 수행하기 시작한 지점의 컴포넌트 위치에 따라 결정됩니다. 최상단 Positioning을 원칙으로 하되, 화면의 최소 Padding 32px를 넘지 않는 선에서 Positioning합니다."
+  },
+  "menuItems": {
+    "title": "Menu Items",
+    "desc": "Menu Item Boundary에 따라 Height가 Flexible한 구간과 Fixed인 구간으로 분류됩니다. 기준 Item 값은 4 — 4 이하인 경우와 4를 초과하는 경우로 나뉩니다.",
+    "le4": {
+      "title": "1. Menu Item ≤ 4",
+      "desc": "Item 갯수가 4개 이하인 경우 Menu Height는 Item Height의 총합 + 4 × 2px(Menu 상하 Padding)으로 갯수에 따라 Flexible하게 변형됩니다. Dropdown Menu의 Item이 1개인 경우는 지양합니다."
+    },
+    "gt4": {
+      "title": "2. Menu Item > 4 (with Scroll)",
+      "desc": "Item 갯수가 4를 초과하는 경우 Menu Height는 4.5개 Item Height의 총합 + 4 × 2px(Menu 상하 Padding)으로, Item 콘텐츠에 따라 Flexible하게 변형됩니다. 0.5개로 표출되는 4번째 Item의 절반이 보이도록 표출됩니다."
+    },
+    "line4": {
+      "title": "3. Menu Item Text Line ≤ 4",
+      "desc": "Menu Item Text는 Dropdown Button과 달리 '...' 축약 없이 최대 4 Line까지 표출됩니다. 1–4 Line까지의 Height가 Flexible하게 사용됩니다."
+    },
+    "lineGt4": {
+      "title": "4. Menu Item Text Line > 4 (with Scroll)",
+      "desc": "Menu Item 최대 표출 갯수는 기본 4.5개이며, 각 Item Height는 Text 콘텐츠에 따라 유동적입니다. 최대 표출 Text Line은 4이며, 이를 초과하면 '...'으로 축약합니다."
+    }
+  },
+  "arrangement": {
+    "title": "Item List Contents Arrangement",
+    "desc": "Menu Item List의 콘텐츠 순서는 기본 A–Z 순으로 나열됩니다. 특정 Sequence를 지닌 Item 조합은 해당 Sequence에 따라 나열합니다.",
+    "default": {
+      "title": "1. Default Item List",
+      "desc": "Text를 포함한 모든 Item 콘텐츠에 해당합니다. Sequence Item List를 제외한 모든 Menu Item List는 알파벳 순으로 배열합니다. Primary·Secondary·Tertiary·Extra Type 모두 이 원칙을 따릅니다."
+    },
+    "sequence": {
+      "title": "2. Sequence Item List",
+      "desc": "사용자가 인지하는 Task의 의미 있는 Sequence가 부여된 경우(예: Roadmap — Priority and Status Filter Dropdown)에 해당합니다."
+    }
+  }
+}

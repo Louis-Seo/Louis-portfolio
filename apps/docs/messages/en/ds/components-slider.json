@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Slider",
+    "description": "Horizontal track for setting a value or a range — Single Value, Range, and Pop-up variants."
+  },
+  "hero": {
+    "title": "Slider",
+    "desc": "Slider is the visual control for setting a value by moving along a horizontal track."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "usage": {
+    "title": "Usage",
+    "desc": "Slider is used to define an approximate boundary — not a precise quantitative value. Two range-setting modes are supported."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Slider splits by range-setting mode into Single Range and Dual Range. Additional elements may compose alongside based on use case.",
+    "single": {
+      "title": "1. Single Value Slider",
+      "desc": "The most common type — the low end of the range is fixed at 0, and the user sets a one-direction value. Typically used in Image Correction filters with a Numerical Input and Label."
+    },
+    "range": {
+      "title": "2. Range Slider",
+      "desc": "Lets the user set both the low and high ends of the range. Typically used in Distance to Root filters with a Numerical Input and Label."
+    },
+    "popup": {
+      "title": "3. Pop-up Slider",
+      "desc": "For space-constrained contexts where the Slider surfaces inside a separate Pop-up. In Wind, used for the Rotate action in Blade View. The Pop-up follows the same placement rules as a Dropdown Menu.\n\nThe Pop-up surfaces toward the related content by default; when the conditions are equal, it aligns to the left."
+    }
+  },
+  "state": {
+    "title": "State",
+    "desc": "Slider splits by range-setting mode into Single Value Slider and Range Slider. Additional elements may compose alongside based on use case.",
+    "handleProps": {
+      "title": "Table of Figma Properties — Slider / Handle",
+      "headers": { "property": "Property", "values": "Values" },
+      "rows": [{ "prop": "State", "values": "Default, Pressed, Disabled" }]
+    },
+    "sliderProps": {
+      "title": "Table of Figma Properties — Slider",
+      "headers": { "property": "Property", "values": "Values" },
+      "rows": [
+        { "prop": "Type", "values": "Single Value Slider, Range Slider" },
+        { "prop": "State", "values": "Default, Disabled" },
+        { "prop": "Position", "values": "Start, Middle, End" }
+      ]
+    }
+  },
+  "userCase": {
+    "title": "User Case",
+    "state": {
+      "title": "State",
+      "desc": "Slider splits into Single Value Slider (a fixed reference point of 0 with one-direction value) and Range Slider (both low and high values configurable). Additional elements like Input may compose alongside based on use case."
+    },
+    "handle": {
+      "title": "Handle",
+      "desc": "Handle has 3 states — Default, Pressed, Disabled — and no Hover. Disabled isn't applied per-handle; it follows the Slider's state."
+    }
+  }
+}

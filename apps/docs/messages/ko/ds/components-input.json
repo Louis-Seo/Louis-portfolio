@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Input",
+    "description": "Text 입력 컴포넌트 — Text Input, Text Input with Icon, Search Input과 Numerical·Table·List·Description Variant."
+  },
+  "hero": {
+    "title": "Input",
+    "desc": "Input은 Text를 입력하고 편집할 수 있는 컴포넌트입니다. Text Input, Text Input with Icon, Text 입력을 통해 특정 값을 검색하는 Search Input으로 구성됩니다."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "dropdownType": {
+    "title": "Dropdown Type",
+    "desc": "Dropdown은 Menu Item을 사용해 페이지 콘텐츠를 필터링·정렬합니다. Dropdown Button Type에 따라 Primary(Label)·Secondary(Avatar & Badge)·Tertiary(Non-Outlined) 3가지로 분류됩니다.",
+    "tableHeaders": {
+      "primary": "Primary Type",
+      "secondary": "Secondary Type",
+      "extra": "Extra Type"
+    },
+    "rows": [
+      {
+        "label": "Field Type",
+        "primary": "Text",
+        "secondary": "Text",
+        "extra": "Text (Numerical Type)"
+      },
+      {
+        "label": "Extra Composition",
+        "primary": "Leading Icon, Clear All Icon Button",
+        "secondary": "—",
+        "extra": "—"
+      },
+      {
+        "label": "Characteristics",
+        "primary": "가장 일반적인 Type — Text 단독의 Label Dropdown 또는 Icon + Text의 Label with Icon Dropdown으로 구성.",
+        "secondary": "Outline이 표출되지 않으며 Focused 시 Primary Type Text (with Icon) Input 형태로 전환. Table·List에서 사용.",
+        "extra": "Primary·Secondary에 포함되지 않는 형태 — 주로 Text Area, Comment Text Input, Numerical Text Input."
+      }
+    ]
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Input은 스타일·쓰임·Field 형태에 따라 Primary·Secondary로 분류됩니다. 각 Type 내에서도 사용 방식에 따라 Text (with Icon) Input, Search Input 등 세부 항목으로 분리됩니다."
+  },
+  "textWithIcon": {
+    "title": "Text (with Icon) Input",
+    "desc": "가장 일반적인 Type — Text 단독의 Label Input 또는 Icon + Text의 Label with Icon Input으로 구성됩니다."
+  },
+  "secondary": {
+    "title": "Secondary Type",
+    "desc": "Outline이 표출되지 않으며 Focused 시 Primary Type Text (with Icon) Input 형태로 전환됩니다. Table Input과 List Input 2가지로 분류됩니다. Table Input은 일정 Padding이 제공된 상태에서 Input 영역을 제공하며, List Input은 List Cell 영역 전체를 차지(Padding = 0)합니다."
+  },
+  "extra": {
+    "title": "Extra Type",
+    "desc": "Primary·Secondary에 포함되지 않는 Type — Description Text Area(최대 Height 기준 콘텐츠에 따라 Height 유동), Comment Text Input(Height 고정), Numerical Text Input(숫자 Data 전용)."
+  },
+  "variants": {
+    "title": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Input의 State는 4가지 — Disabled·Default·Hover·Focused."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Size는 Height 기준 Large·Medium·Small. Width는 유동적입니다."
+    }
+  },
+  "sizing": {
+    "title": "Sizing",
+    "minWidth": {
+      "title": "Minimum Width",
+      "text": "Width는 위치 영역에 따라 Flexible하게 구성됩니다. Minimum Width는 160px."
+    },
+    "overflow": {
+      "title": "Text Overflow",
+      "text": "Input에서 Text가 넘치는 경우 두 가지 방식으로 표현됩니다 — Height 고정 상태에서 '...'으로 축약, 또는 주어진 Width를 넘는 Text를 줄바꿈하여 표기. 기능의 특징·목적에 따라 선택적으로 사용됩니다."
+    }
+  },
+  "props": {
+    "title": "Table of Figma Properties — Input",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+      { "prop": "Size", "values": "Large, Medium, Small", "default": "Medium" },
+      { "prop": "State", "values": "Default, Hover, Focused, Disabled", "default": "Default" },
+      { "prop": "Filled", "values": "False, True", "default": "False" },
+      { "prop": "Search", "values": "False, True", "default": "False" },
+      { "prop": "Clear All (Cancel Icon)", "values": "False, True", "default": "False" },
+      { "prop": "Icon", "values": "False, True", "default": "False" }
+    ]
+  },
+  "search": {
+    "title": "Search",
+    "desc": "Search Input은 Text 입력을 통해 원하는 정보를 검색합니다. 다른 Input과 달리 Fill = On일 때 Cancel(Clear All) Icon Button이 표출되는 것이 특징입니다.",
+    "withLabel": {
+      "title": "Text Input with Field Label",
+      "desc": "페이지 내 항목 검색에 사용 — Container Outline을 가지는 형태."
+    },
+    "withoutLabel": {
+      "title": "Text Input without Field Label",
+      "desc": "다른 컴포넌트 내 아이템 검색에 사용 — Underline을 가지는 형태."
+    }
+  },
+  "textIconSection": {
+    "title": "Text (with Icon) Input",
+    "desc": "사용자가 Text를 Field에 입력하도록 표시됩니다. 일반적으로 Field Label과 함께 사용됩니다.\n(예: OSD Viewer Panel의 Status·Comment 등 Text 입력, History Panel Text 입력, Login 입력)"
+  },
+  "tableList": {
+    "title": "Table / List Input",
+    "desc": "Table·List 내에서 즉각적으로 수정 가능합니다. Hover, Focused 상태에서 기존 Primary Type Input과 동일한 상태로 표출됩니다.",
+    "table": {
+      "title": "Text Input in Table",
+      "desc": "Table 내 콘텐츠 수정 목적으로 사용됩니다."
+    },
+    "list": {
+      "title": "Text Input in List",
+      "desc": "List 내 콘텐츠 수정 목적으로 사용됩니다."
+    }
+  },
+  "numerical": {
+    "title": "Numerical Input",
+    "desc": "Value 형태의 값만 입력 가능한 Input으로, Label과 함께 사용되지 않아 우측에 일정 간격을 둔 채 Unit과 함께 표출됩니다.",
+    "withUnit": {
+      "title": "Numerical Input with unit",
+      "desc": "단위와 함께 사용되는 형태 — 다른 요소(Checkbox·Slider 등)와 함께 사용됩니다."
+    },
+    "state": {
+      "title": "State of Numerical Input",
+      "desc": "4가지 State — Disabled·Default·Hover·Focused. 각 상태별 Filled·Unfilled로 데이터 입력 여부 2가지로 존재하며, Unfilled의 Placeholder는 경우에 따라 '0', 'min', 'max' 3가지 값을 가집니다."
+    }
+  },
+  "description": {
+    "title": "Description / Comment",
+    "desc": "Description과 Comment 패턴은 텍스트 정보를 표시하거나 사용자의 의견을 입력받는 상황에서 사용됩니다. 표현 목적에 따라 읽기 중심 Text Area와 입력 중심 Text Input으로 구분되며, 사용 맥락에 따라 Container Height가 유동적으로 확장되거나 고정된 Height 내에서 동작합니다.\n\n동일한 텍스트 기반 컴포넌트라도 화면의 목적과 사용 흐름에 맞는 일관된 입력 경험을 제공합니다.",
+    "descArea": {
+      "title": "Description Text Area",
+      "desc": "설명성 텍스트를 읽기 쉬운 형태로 전달합니다. 주로 안내 문구, 상태 설명, 부가 정보 등 읽기 중심 콘텐츠에 활용되며, 내용 길이에 따라 1줄 또는 2줄 이상으로 확장하여 사용 가능합니다."
+    },
+    "descInput": {
+      "title": "Description Text Input",
+      "desc": "사용자가 설명이나 상세 내용을 직접 입력합니다. History Panel과 같이 Height가 고정된 영역에서는 전체 패널 구조를 유지한 상태로 입력이 이루어지도록 설계됩니다."
+    },
+    "commentArea": {
+      "title": "Comment Text Area",
+      "desc": "자유로운 길이의 의견·코멘트를 입력받습니다. 입력 Text 양에 따라 Container Height가 함께 확장되며, 여러 줄의 내용을 자연스럽게 수용합니다."
+    },
+    "commentInput": {
+      "title": "Commnet Text Input",
+      "desc": "짧은 코멘트나 빠른 응답 입력에 사용됩니다. Input Height가 고정되며, 제한된 영역 내에서 간결하고 효율적인 입력 경험을 제공합니다."
+    }
+  },
+  "usage": {
+    "title": "Usage & Placement",
+    "desc": "Input은 Form 입력 형식에서 자주 사용되며, Dropdown과 함께 주로 조합됩니다.",
+    "label": {
+      "title": "Label",
+      "text": "Dropdown이 포함된 입력 Form에서 항목 Label을 함께 사용합니다. Subtitle 3 (Inter, Medium, 14px)를 사용하며, Required·Error·Information 형태로 사용 가능합니다. Label을 포함한 Dropdown·Input 조합은 여러 개가 함께 사용되는 경우가 많습니다. Label과 Dropdown 사이 8px, 각 요소 사이 간격은 가로 배열 시 24px, 세로 배열 시 32px. 세로 형태로만 배열되는 형식일 경우 각 요소 사이 간격은 16px입니다."
+    },
+    "sync": {
+      "title": "Label: Sync",
+      "text": "Label 우측에 위치하는 Sync Checkbox는 해당 Input에 입력될 데이터 정보를 연동하여 자동 Sync합니다."
+    },
+    "information": {
+      "title": "Label: Information",
+      "text": "해당 입력 값에 대한 부가 정보를 사용자에게 제공할 때 사용됩니다."
+    },
+    "required": {
+      "title": "Label: Required",
+      "text": "필수 입력 값을 표기할 때 사용됩니다. Label과 4px 간격을 두고 '*'을 표기합니다. 필수가 아닌 선택값은 별도 표기 없이 Label만 사용합니다. '*'은 Body 2 (Inter, Regular, 14px)를 사용하며 Label과 동일한 텍스트 사이즈를 가져갑니다."
+    },
+    "error": {
+      "title": "Label: Error(Alert)",
+      "text": "입력 값에 대한 Error(Alert)를 띄우는 경우로, 입력 값의 필수 요건에 대한 설명을 표출합니다. 별도 Action(예: Confirm Button) 이후에 표출되며, Dropdown Button의 Outline 색상과 Text Alert을 함께 표출합니다. Error 상태 Outline Color: Red 500. Medium 사이즈 Alert을 사용합니다."
+    },
+    "labelSize": {
+      "title": "Label Size",
+      "text": "Form에 사용되는 Label 포함 Input은 Large·Medium Size의 Primary Type Text Input을 사용합니다. 각 Size별 Label Typography를 다르게 사용합니다."
+    },
+    "unit": {
+      "title": "Unit",
+      "text": "Input의 값이 Value인 경우 단위 정보를 Label에 표출하는 것을 원칙으로 합니다. Label (Unit) 방식으로 괄호를 이용해 표기합니다. Numerical Input은 별도 Label과 함께 사용되지 않으므로 단위 표기가 필요한 경우 우측 바깥쪽에 4px 간격을 두고 위치시킵니다."
+    }
+  }
+}

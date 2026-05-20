@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Navigation",
+    "description": "사용자 위치를 표시하고 동일 위계의 화면·메뉴 간 이동을 지원하는 상위 수준 Navigation."
+  },
+  "hero": {
+    "title": "Navigation",
+    "desc": "Navigation은 사용자가 필요한 것을 찾도록 돕고 현재 위치를 알려주는 컴포넌트입니다. 제품 내 상위 수준 탐색에 사용되며, 동일한 Hierarchy Level의 화면이나 메뉴 사이를 이동할 때 사용됩니다."
+  },
+  "gnb": {
+    "title": "Wind GNB",
+    "desc": "Wind GNB는 화면 좌측에 고정되어 노출되며, 다른 페이지로 빠르게 이동할 수 있도록 합니다. 5가지 아이콘을 탭하면 해당 아이콘과 연결된 최상위 Navigation 대상으로 이동합니다. 언제 어디서든 직관적이고 예측 가능해야 하며, 스크롤 시에도 좌측에 고정됩니다. GNB는 항상 Expand 상태를 기본으로 정의합니다. Wind에서 사용되는 GNB는 Wind·Wind Farm·Admin 3가지로 분류됩니다.",
+    "caption": "앱 진입 시 Main Navigation Bar의 'DASHBOARD'가 Active 상태이며 기본값으로 노출됩니다."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "variants": {
+    "title": "Variants",
+    "desc": "Main GNB 아이콘은 Active·Inactive(Selected·Unselected)로 분류됩니다. 사용자 위치를 나타내므로 시각적 일관성을 위해 Active Icon Color는 Green 500, Inactive Icon Color는 Gray 500을 사용합니다. 기본 설정에서 Navigation 아이콘 하나는 항상 Active 상태입니다(예: 로그인 후 첫 화면은 Dashboard가 선택된 상태)."
+  },
+  "spec": {
+    "title": "Spec",
+    "fold": {
+      "title": "GNB Fold",
+      "desc": "GNB는 사용 용도에 따라 접고 펼 수 있습니다. 해당 액션을 수행하는 Icon Button은 GNB 가장자리 Hover 시 표출됩니다."
+    },
+    "scroll": {
+      "title": "Scroll Bar",
+      "desc": "GNB에 표출되는 Item이 화면 영역을 넘어가면 Scroll Bar가 생성되며, Item 영역을 기준으로 Scroll Area가 생성됩니다."
+    },
+    "spacing": {
+      "title": "Spacing",
+      "desc": "GNB의 영역은 각 Container 높이 36px을 사용합니다. Dashboard와 Inspection 간 간격은 24px. 각 탭과 아이콘 간 간격은 Container 기준 Center에서 높이 12px. 아이콘과 Label 간격은 12px."
+    },
+    "extended": {
+      "title": "Extended Structure",
+      "desc": "Wind Farm 화면에서 사용되는 GNB는 기본 구조에 추가 요소가 포함된 확장형 구조를 사용합니다. 상단에 이전 화면으로 이동하는 Back Button이 배치되고, Farm 전환을 위한 Dropdown Button이 함께 제공됩니다. 사용자는 현재 컨텍스트를 유지한 상태로 상위 화면으로 이동하거나 다른 Farm으로 빠르게 전환할 수 있습니다."
+    }
+  },
+  "gnbProps": {
+    "title": "Table of Figma Properties — Wind GNB",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Admin, Wind, WindFarm", "default": "Wind" },
+      { "prop": "Fold", "values": "False, True", "default": "False" }
+    ]
+  },
+  "gnbItemProps": {
+    "title": "Table of Figma Properties — Wind GNB / Item",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Wind, Admin", "default": "Expand" },
+      {
+        "prop": "Category",
+        "values": "Management, Blades, Reports, History, User, Dashboard, Resources, Statistics, Wind Farm",
+        "default": "Dashboard"
+      },
+      {
+        "prop": "State",
+        "values": "Default, Hover, Selected, Selected Hover",
+        "default": "Default"
+      },
+      { "prop": "Fold", "values": "False, True", "default": "True" },
+      { "prop": "Expand", "values": "False, True", "default": "False" }
+    ]
+  },
+  "itemProps": {
+    "title": "Table of Figma Properties — Item",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      {
+        "prop": "State",
+        "values": "Default, Selected, Hover, Selected Hover",
+        "default": "Default"
+      },
+      { "prop": "Dp", "values": "00, 01", "default": "00" }
+    ]
+  },
+  "menuProps": {
+    "title": "Table of Figma Properties — Menu",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Open", "values": "True", "default": "True" },
+      { "prop": "ItemCount", "values": "1, 2, 3", "default": "None" }
+    ]
+  },
+  "dropdown": {
+    "title": "GNB Dropdown",
+    "desc": "GNB Dropdown은 옵션 리스트 중 하나를 선택할 때 활용되는 컴포넌트입니다. 선택 가능한 옵션 갯수가 다수일 경우 Dropdown Menu로 값을 노출합니다. 아이템 선택 시 해당 값에 매칭되는 디스플레이 화면으로 전환됩니다."
+  },
+  "usage": {
+    "title": "Usage Guidelines",
+    "desc": "Main GNB 아이콘은 Active·Inactive(Selected·Unselected)로 분류됩니다. 사용자 위치를 나타내므로 시각적 일관성을 위해 Active Icon Color는 Green 500, Inactive Icon Color는 Gray 500을 사용합니다. 기본 설정에서 Navigation 아이콘 하나는 항상 Active 상태입니다(예: 로그인 후 첫 화면은 Dashboard).",
+    "do": {
+      "title": "Do — GNB Menu의 Item에는 Icon을 사용하지 않음",
+      "desc": "같은 위계의 Item은 묶어서 사용하되, 최상위 위계 Item에만 Icon을 함께 사용하는 것을 원칙으로 합니다."
+    },
+    "dont": {
+      "title": "Don't — Active GNB Item 상태는 단일하게 사용",
+      "desc": "Default 상태로 정의된 색상 외 다른 색상의 아이콘·Text Label을 사용하지 않으며, GNB의 Active 상태는 중복 사용을 지양합니다."
+    }
+  }
+}

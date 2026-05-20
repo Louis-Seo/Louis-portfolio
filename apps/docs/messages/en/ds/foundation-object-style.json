@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Object Style",
+    "description": "Radius, elevation, and surface style tokens for the system."
+  },
+  "hero": {
+    "title": "Object Style",
+    "desc": "Zoomable's design components are composed mostly of rounded shapes. Component boxes split between filled and outlined styles. The Worker Zoomable Design System uses no shadow for dimensional separation; elevation color signals hierarchy instead."
+  },
+  "rounding": {
+    "title": "Rounding Guide",
+    "note": "Rounding values range from 2 px to 6 px."
+  }
+}

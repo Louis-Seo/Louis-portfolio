@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "brand": "Louis Seo",
+    "title": "Louis Seo — Product Designer",
+    "description": "Portfolio of Louis Seo, a system-oriented product designer building clarity into complex products."
+  },
+  "nav": {
+    "projects": "Projects",
+    "designSystem": "Design System",
+    "about": "About"
+  },
+  "language": {
+    "label": "Language",
+    "ko": "KO",
+    "en": "EN"
+  },
+  "actions": {
+    "viewProject": "View case study",
+    "backToProjects": "Back to projects",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme"
+  },
+  "footer": {
+    "role": "Product Designer",
+    "copyright": "© {year} Louis Seo · Product Designer"
+  }
+}

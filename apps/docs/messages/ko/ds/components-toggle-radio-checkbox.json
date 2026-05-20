@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "title": "Toggle / Radio / Checkbox",
+    "description": "Selection Control — 다중 선택용 Checkbox, 배타적 선택용 Radio Button, On/Off 전환용 Toggle Switch."
+  },
+  "hero": {
+    "title": "Selection Controls",
+    "desc": "Selection Control은 사용자가 선택 옵션을 제어할 수 있도록 돕는 컴포넌트입니다. 다중 선택을 위한 Checkbox, 다수의 옵션 중 하나를 선택하는 Radio Button, 효과 전환을 위한 Toggle Switch로 나뉩니다."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Selection Control은 하나 이상·다중 선택이 가능한 Checkbox, 여러 선택 사항 중 하나만 선택 가능한 Radio Button, 즉각적인 상황 변화로 On/Off 기능을 하는 Toggle Switch로 구성됩니다. 쓰임새에 따라 적절한 Selection Control을 사용합니다."
+  },
+  "group": {
+    "title": "Selection Control Group",
+    "desc": "Selection Control은 단일하게 사용되기도 하지만, 하나의 목적의 Group 내에서 같은 종류의 여러 개로 구성되어 묶여 사용되기도 합니다. Group 내 Selection Control은 서로 상호 배타적 관계 또는 독립적 관계를 형성할 수 있습니다.",
+    "checkbox": {
+      "title": "Checkboxes Group",
+      "desc": "단일 또는 다중 선택 가능한 요소들을 묶어 선택지로 제공할 때 사용됩니다. 주로 다중 필터 목적으로 사용됩니다.",
+      "example": "(예: Statistics·Defects Side Filter, Task Settings)"
+    },
+    "radio": {
+      "title": "Radio Buttons Group",
+      "desc": "여러 선택지 중 하나의 선택만 가능할 때 사용됩니다. 현재 Zoomable Wind 내에서 Radio Buttons Group으로 사용되는 부분은 없습니다."
+    },
+    "toggle": {
+      "title": "Toggle-Switches Group",
+      "desc": "Toggle Switch는 단일 컴포넌트가 이미 Checked / Unchecked (On/Off) 역할을 수행하므로 단독 사용이 일반적입니다. Group으로 사용될 경우 유사한 역할을 수행하는 각 Label을 포함한 Toggle Switch를 함께 배치합니다.",
+      "example": "(예: Management Settings, Table Settings)"
+    }
+  },
+  "compTable": {
+    "title": "Selection Control",
+    "headers": {
+      "checkbox": "Checkboxes Group",
+      "radio": "Radio Button",
+      "toggle": "Toggle-Switch"
+    },
+    "rows": [
+      {
+        "label": "Options",
+        "checkbox": "Multiple",
+        "radio": "Multiple",
+        "toggle": "Single"
+      },
+      {
+        "label": "Selection Case",
+        "checkbox": "0 – all (Multiple)",
+        "radio": "1 (Single)",
+        "toggle": "2 (On / Off)"
+      },
+      {
+        "label": "Default Option",
+        "checkbox": "All Unselected",
+        "radio": "1 (Single)",
+        "toggle": "Checked (On)"
+      },
+      {
+        "label": "Relation btw Other Options",
+        "checkbox": "Independent of Each Other",
+        "checkboxSub": "(각 요소가 독립적인 관계)",
+        "radio": "Mutually Exclusive",
+        "radioSub": "(다른 요소들과 상호 배타적인 관계)",
+        "toggle": "Independent of Each Other",
+        "toggleSub": "(각 요소가 독립적인 관계)"
+      }
+    ],
+    "mobileLabels": { "checkbox": "Checkbox", "radio": "Radio", "toggle": "Toggle" },
+    "mobileRows": [
+      { "label": "Options", "checkbox": "Multiple", "radio": "Multiple", "toggle": "Single" },
+      {
+        "label": "Selection Case",
+        "checkbox": "0 – all (Multiple)",
+        "radio": "1 (Single)",
+        "toggle": "2 (On / Off)"
+      },
+      {
+        "label": "Default Option",
+        "checkbox": "All Unselected",
+        "radio": "1 (Single)",
+        "toggle": "Checked (On)"
+      },
+      {
+        "label": "Relation",
+        "checkbox": "Independent",
+        "radio": "Mutually Exclusive",
+        "toggle": "Independent"
+      }
+    ]
+  },
+  "checkbox": {
+    "title": "Checkbox",
+    "desc": "Checkbox는 한 개 또는 다수의 독립적인 옵션이 있어 사용자가 선택하지 않거나, 하나 또는 여러 개를 선택할 수 있을 때 사용됩니다. Checkbox 단독일 경우 기능 On/Off 용도로 사용 가능합니다.",
+    "previewCaption": "Unchecked / Checked",
+    "anatomy": { "title": "Anatomy", "items": ["1. Container", "2. Label"] },
+    "variantsTitle": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Checkbox는 Checked / Unchecked에 따라 Default·Active·Disabled로 분류됩니다. Selection Control 내에서 Active는 Hover 기능으로 간주되어, 사용자에게 최종 표출되는 형상은 Default와 Disabled입니다."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Checkbox는 Large·Medium·Small·Xsmall 4가지 사이즈가 있으며 16 × 16이 Default입니다. 요소 간 위계 차이가 필요한 경우 다른 사이즈를 사용할 수 있습니다."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Unchecked, Checked", "default": "Unchecked" },
+        { "prop": "State", "values": "Default, Active, Disabled", "default": "Default" }
+      ]
+    },
+    "spacing": {
+      "title": "Spacing",
+      "text": "Checkbox와 Label은 Large·Medium·sMedium에서 8 Margin, Small은 4px Margin. 선택 시 인접 항목 오인식이 발생하지 않도록 List 내 12px Padding을 가집니다. Checkbox는 Text와 함께 사용되는 경우 일반적으로 좌측에 배치되지만, 레이아웃·공간적 이유로 우측 배치도 가능합니다."
+    },
+    "usecase": {
+      "title": "Usecase",
+      "side": {
+        "title": "Side Panel Filter (Statistics, Defects)",
+        "desc": "Data Table에서 사용자가 원하는 데이터를 보기 위한 Filter 역할로 사용됩니다."
+      },
+      "task": {
+        "title": "Task Settings Farm Selection",
+        "desc": "동일한 특성을 가진 항목을 다중 선택할 때 사용됩니다."
+      },
+      "sync": {
+        "title": "Sync User name Data",
+        "desc": "Data Sync 여부를 선택하도록 단독으로 사용됩니다."
+      },
+      "multiple": {
+        "title": "Multiple Select Option",
+        "text": "다중으로 여러 개가 함께 표출되는 Checkbox Group에서 단일 또는 다중 모두 Selection(Checked)으로 표출 가능합니다."
+      },
+      "arrangement": {
+        "title": "Right and Left Arrangement",
+        "text": "다중으로 Item을 그룹화하여 사용할 때 Checkbox와 Text Label 정렬에서 Checkbox를 좌측에 두어 Item List의 Text 배열을 동일하게 사용합니다. Checkbox를 우측에 두어 정렬하는 경우는 Item List가 아닌, 데이터를 불러오는 경우처럼 Optional Filter로 단독 사용될 때입니다."
+      },
+      "indeterminate": {
+        "title": "Indeterminate State",
+        "text": "Indeterminate State는 Checkbox의 하위 항목 값이 Unchecked·Checked가 함께 존재할 때 사용됩니다. 상위 항목의 Checked State는 모든 하위 항목이 Checked일 때, Unchecked는 모든 하위 항목이 Unchecked일 때 사용됩니다."
+      }
+    }
+  },
+  "radio": {
+    "title": "Radio Button",
+    "desc": "Radio Button은 상호 배타적인 두 개 이상의 옵션이 있어 그 중 하나만 선택할 수 있을 때 사용합니다. ※Default로 하나는 반드시 선택되어 있어야 합니다.",
+    "previewCaption": "Unselected / Selected",
+    "anatomy": { "title": "Anatomy", "items": ["1. Radio Button", "2. Label"] },
+    "variantsTitle": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Radio Button은 Selected / Unselected에 따라 Default·Active·Disabled로 분류됩니다. Active는 Hover 기능으로 간주되어 사용자에게 최종 표출되는 상태는 Default와 Disabled입니다."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Radio Button의 Size는 Small과 Medium 2가지. 함께 사용되는 Label 사이즈에 따라 선택되며 16 × 16px가 Default입니다. 요소 간 위계 차이가 필요한 경우 Small 사이즈 사용을 허용합니다."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Unchecked, Checked", "default": "Unchecked" },
+        { "prop": "State", "values": "Default, Active, Disabled", "default": "Default" }
+      ]
+    },
+    "spacingTitle": "Spacing",
+    "spacing": {
+      "title": "Control and Label Spacing",
+      "text": "Radio Button은 컨트롤 아이콘과 Label 사이 8px 간격을 사용합니다. 각 옵션은 인접 선택 오류를 방지하기 위해 List 내 12px 간격을 유지합니다. Radio 아이콘은 기본적으로 Label 좌측에 배치되지만, 레이아웃·공간 제약에 따라 우측 배치도 가능합니다."
+    },
+    "usecaseTitle": "Usecase",
+    "usecase": {
+      "exactlyOne": {
+        "title": "Select Exactly One",
+        "text": "하나의 Radio Button Group 내에서는 오직 하나의 Radio Button만 Selection(Checked State)으로 표출 가능합니다."
+      },
+      "mutuallyExclusive": {
+        "title": "Mutually Exclusive Options",
+        "text": "Radio Button은 상호 배타적인 선택지로 단일 선택만 가능합니다. Radio Button Item List가 포함하는 Label 콘텐츠도 상호 배타적으로 제공하는 것을 지향합니다."
+      }
+    }
+  },
+  "toggle": {
+    "title": "Toggle-Switch",
+    "desc": "Toggle Switch는 상호 배타적 옵션에 대해 각 선택에 따른 효과 전환이 필요한 경우 사용합니다.",
+    "previewCaption": "Unchecked / Checked",
+    "anatomy": { "title": "Anatomy", "items": ["1. Track", "2. Thumb"] },
+    "variantsTitle": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Toggle Switch의 State는 Default·Active·Disabled 3가지로, Checked / Unchecked(On/Off) 여부에 따라 각 상태를 모두 가집니다."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Toggle Switch의 Size는 Small과 Medium 2가지. Label 위계와 사이즈에 따라 선택되며, 동일한 Label Font Size여도 위계에 따라 Toggle Switch Size가 달라질 수 있습니다."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Off, On", "default": "Off" },
+        { "prop": "State", "values": "Default, Active, Disabled", "default": "Default" }
+      ]
+    },
+    "spacingTitle": "Spacing",
+    "spacing": {
+      "title": "Control and Label Spacing",
+      "text": "주로 List 내 우측에 위치합니다. Right Padding은 Container 영역과 사이즈에 따라 다르게 사용되며 — Medium은 16px, Small은 12px를 지향합니다."
+    },
+    "usecaseTitle": "Usecase",
+    "usecase": {
+      "management": {
+        "title": "Management View Settings",
+        "desc": "View Setting에서 각 항목 조건을 On/Off 할 것인지 선택합니다."
+      },
+      "filter": {
+        "title": "Filter Settings (Statistics)",
+        "desc": "Table Column을 각 항목별로 On/Off 할 것인지 선택합니다."
+      },
+      "tableSettings": {
+        "title": "Table Settings (Defects)",
+        "desc": "Table Column을 각 항목별로 On/Off 할 것인지 선택합니다."
+      },
+      "withLabel": {
+        "title": "Toggle Switch with Label",
+        "text": "Toggle은 일반적으로 수행 역할에 대한 Label과 함께 사용됩니다. 포함되는 Container 영역에 따라 좌·우를 기준으로 위치하며, 주로 우측에 Toggle Switch를 두는 것이 일반적입니다."
+      },
+      "group": {
+        "title": "Toggle Switch Group",
+        "text": "Toggle Switch는 해당 영역에 대한 On/Off 기능을 수행하며, 함께 사용되는 Item 요소는 같은 위계의 Item 그룹으로 이루어집니다."
+      }
+    }
+  }
+}

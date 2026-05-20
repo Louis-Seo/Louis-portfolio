@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Icon",
+    "description": "Iconography 가이드 — Size, Layout, Keyline, Stroke, Radius, Style, Color."
+  },
+  "hero": {
+    "title": "Iconography",
+    "desc": "Icon은 기능·행동·사물을 기호로 압축한 시각 언어로, 한정된 공간에서 효율적으로 정보를 전달합니다."
+  },
+  "iconSize": {
+    "title": "Icon Size",
+    "desc": "시스템 Icon은 24 × 24 dp로 렌더링됩니다. 픽셀 정확도를 위해 100% 스케일에서 가독 가능하도록 디자인합니다.",
+    "imageAlt": "Icon Size diagram showing 100% and 1000% scale"
+  },
+  "layout": {
+    "title": "Layout",
+    "desc": "콘텐츠는 Live Area 내부에 위치해야 합니다 — 런타임에서 잘리지 않을 영역(예: 스크롤 시 사이드바가 나타나는 경우)입니다. 추가 시각 무게가 필요할 때, Live Area와 Trim Area 사이의 Padding(아이콘 전체 크기)으로 콘텐츠가 확장될 수 있습니다. Icon의 어떤 부분도 Trim Area를 넘어서는 안 됩니다.",
+    "imageAlt": "Layout diagram showing live area and padding"
+  },
+  "keyline": {
+    "title": "Keyline Shapes",
+    "desc": "Keyline Shape은 각 Icon의 기본 틀을 정의합니다. 유사한 비율의 Icon에 일관된 실루엣을 제공합니다.",
+    "imageAlt": "Keyline Shapes diagram showing square, vertical rectangle, horizontal rectangle, and circle"
+  },
+  "stroke": {
+    "title": "Stroke",
+    "desc": "기본 Stroke는 2 dp입니다. Icon의 크기·위치·목적에 따라 변경될 수 있습니다.",
+    "imageAlt": "Stroke diagram showing 2dp stroke width"
+  },
+  "radius": {
+    "title": "Radius",
+    "desc": "Radius는 0–2 dp 범위에서 자유롭게 선택합니다. 모서리마다 개별 적용해 Icon의 모티프를 더 효과적으로 전달할 수 있습니다.",
+    "imageAlt": "Radius diagram showing 0, 1, and 2dp radius options"
+  },
+  "styles": {
+    "title": "Styles",
+    "desc": "Icon은 Line, Fill 두 가지 스타일을 사용하며 맥락에 맞게 적용합니다.",
+    "imageAlt": "Styles diagram showing Line and Fill icon types"
+  },
+  "colors": {
+    "title": "Colors",
+    "desc": "Icon은 기본 Gray-50입니다. Worker 내 단독 사용 시 일반적으로 Gray-400을, Heading과 함께 사용될 때는 Gray-50을 사용합니다. 배경과 맥락에 따라 적용 컬러는 변경될 수 있습니다.",
+    "imageAlt": "Colors diagram showing Gray-500, Gray-900, and Gray-50 icon colors"
+  }
+}

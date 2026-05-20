@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Modal",
+    "description": "Overlay surface for focused tasks — short, contained flows with confirmation, light input, or contextual decisions."
+  },
+  "hero": {
+    "title": "Modal",
+    "desc": "Modal is an overlay surface used to deliver task-related information or to collect confirmation and light input from the user. The user must address what's inside before continuing, which helps focus attention on the current task.\n\nModal pairs with a Dim layer that disables background interaction — directing the user's attention to the task at hand. Because of this, Modal is best for short, focused work; avoid using it for long or complex flows.\n\nWhen content volume grows or steps lengthen, prefer Drawer or a dedicated page over Modal."
+  },
+  "anatomy": {
+    "title": "Anatomy",
+    "caption": "1. Header\n2. Text Description\n3. Contents\n4. Secondary Btn\n5. Primary Btn"
+  },
+  "buttons": {
+    "title": "Buttons",
+    "desc": "Modal supports one to three buttons, with two as the recommended default. The highest-priority button uses Green-500 text and sits in the leading position. A button that backs out of the flow must always be included.",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [{ "prop": "Buttons", "values": "1, 2, 3", "default": "2 Buttons" }]
+  },
+  "criteria": {
+    "title": "Modality Criteria & Checklist",
+    "desc": "Use these criteria and the checklist when deciding whether to introduce a modal. Criteria split into Required and Recommended — Required must be served as a modal because they demand focused attention.\n\nModal in Modal: stacking modals makes it hard for users to retrace their steps and breaks the task context. When a second modal would otherwise appear, prefer a normal view unless the Required criteria apply.\n\n*Task modal, *Confirmation modal",
+    "criteriaTitle": "Modality Criteria",
+    "requiredTitle": "Required",
+    "recommendTitle": "Recommend",
+    "checklistTitle": "Modality Checklist",
+    "requiredRows": [
+      {
+        "key": "task",
+        "label": "Task-orientation",
+        "desc": "The modal task is immersive content (exception: full-screen experiences)"
+      },
+      {
+        "key": "completeness",
+        "label": "Completeness",
+        "desc": "The modal task has a clear start point and end point"
+      }
+    ],
+    "recommendRows": [
+      {
+        "key": "mismatch",
+        "label": "Context mismatch",
+        "desc": "The modal task sits outside the existing context"
+      },
+      {
+        "key": "isolation",
+        "label": "Isolation",
+        "desc": "The user should be prevented from navigating to other screens while the modal task is in progress"
+      },
+      {
+        "key": "non-primary",
+        "label": "Non-primary",
+        "desc": "The modal task is unrelated to the primary task of the host screen"
+      },
+      {
+        "key": "return",
+        "label": "Return",
+        "desc": "The user must return to the host screen after completing the modal task"
+      }
+    ],
+    "requiredCheckRows": [
+      {
+        "key": "immersion",
+        "label": "Immersion",
+        "desc": "Does the surface provide enough focus to complete the task?"
+      },
+      {
+        "key": "completeness",
+        "label": "Completeness",
+        "desc": "Does the task run from start to finish on a single linear flow?"
+      }
+    ],
+    "recommendCheckRows": [
+      {
+        "key": "mismatch",
+        "label": "Context mismatch",
+        "desc": "The modal task sits outside the existing context"
+      },
+      {
+        "key": "mismatch-2",
+        "label": "",
+        "desc": "Can the user grasp the volume of information on the entry screen at a glance?"
+      },
+      {
+        "key": "mismatch-3",
+        "label": "",
+        "desc": "Is the entry menu structure simple rather than nested?"
+      },
+      {
+        "key": "mismatch-4",
+        "label": "",
+        "desc": "Does another modal rarely appear after entering this one?"
+      },
+      {
+        "key": "isolation",
+        "label": "Isolation",
+        "desc": "Is there a clear benefit to limiting navigation until the task is completed or canceled?"
+      },
+      {
+        "key": "non-primary",
+        "label": "Non-primary",
+        "desc": "Is there a clear benefit to limiting navigation until the task is completed or canceled?"
+      },
+      {
+        "key": "return",
+        "label": "Return",
+        "desc": "Must the user return to the host screen after completing the task?"
+      }
+    ]
+  },
+  "scrim": {
+    "title": "Scrim Area (Overlay)",
+    "desc": "The Dim layer is a transparent surface that separates the background from the Modal. It signals that the rest of the screen isn't reachable and focuses attention on the modal. Overlay uses Black at 60% opacity. Clicking the Dim area doesn't return the user to the host screen — surface a Cancel button for that path."
+  },
+  "spacing": {
+    "title": "Spacing",
+    "spacing": {
+      "title": "Spacing",
+      "desc": "Modal's default width is 448px; both Width and Height are flexible. The contents area uses 24px or 32px margin on all sides depending on Modal size and content. The gap between Header and Contents Area is 24px. Within Contents Area, the typical gap is 16px (24px when needed). The gap between Contents Area and the Footer button row is 32px. Buttons use Medium size at 40px. Modal scroll begins when the content occupies more than 84% of the viewport."
+    },
+    "font": {
+      "title": "Font",
+      "desc": "Modal uses Inter. Heading: H2 (Inter / Semibold / 24 / Gray50). Subtitle: Subtitle1 (Inter / Medium / 16 / Gray400). Body: Body2 (Inter / Regular / 14 / Gray700)."
+    }
+  },
+  "contentAction": {
+    "title": "Content & Action Area",
+    "desc": "Modal separates content from action. The footer action area uses right-aligned horizontal buttons by default — Primary + Secondary combinations are recommended, and groups of three or more should be avoided. A Dismiss action that closes the Modal must always be included.\n\nWhen content exceeds the max height (or the configured height), only the body area scrolls while the action area stays fixed. This keeps primary actions reachable while users review long content."
+  }
+}

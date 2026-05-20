@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "title": "Toggle / Radio / Checkbox",
+    "description": "Selection controls — Checkbox for multi-select, Radio Button for exclusive choice, and Toggle Switch for binary state."
+  },
+  "hero": {
+    "title": "Selection Controls",
+    "desc": "Selection controls help users pick options. The family splits into Checkbox for multi-select, Radio Button for exclusive single-select, and Toggle Switch for on/off binary state."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Selection Control includes Checkbox (one or more, multi-select), Radio Button (one of many, single-select), and Toggle Switch (immediate on/off state change). Apply the right control for each use case."
+  },
+  "group": {
+    "title": "Selection Control Group",
+    "desc": "Selection controls also group as multiples within a single purpose. Within the group, controls form either mutually exclusive or independent relationships.",
+    "checkbox": {
+      "title": "Checkboxes Group",
+      "desc": "Groups single or multi-selectable items together as a selection set. Most commonly used for multi-filter purposes.",
+      "example": "(e.g. Statistics and Defects Side Filter, Task Settings)"
+    },
+    "radio": {
+      "title": "Radio Buttons Group",
+      "desc": "Used when only one option may be selected from many. Currently not used inside Zoomable Wind."
+    },
+    "toggle": {
+      "title": "Toggle-Switches Group",
+      "desc": "Toggle Switches already act as Checked / Unchecked (On/Off) by themselves — typically used singly. When grouped, place toggles serving similar roles together, each with its own Label.",
+      "example": "(e.g. Management Settings, Table Settings)"
+    }
+  },
+  "compTable": {
+    "title": "Selection Control",
+    "headers": {
+      "checkbox": "Checkboxes Group",
+      "radio": "Radio Button",
+      "toggle": "Toggle-Switch"
+    },
+    "rows": [
+      {
+        "label": "Options",
+        "checkbox": "Multiple",
+        "radio": "Multiple",
+        "toggle": "Single"
+      },
+      {
+        "label": "Selection Case",
+        "checkbox": "0 – all (Multiple)",
+        "radio": "1 (Single)",
+        "toggle": "2 (On / Off)"
+      },
+      {
+        "label": "Default Option",
+        "checkbox": "All Unselected",
+        "radio": "1 (Single)",
+        "toggle": "Checked (On)"
+      },
+      {
+        "label": "Relation btw Other Options",
+        "checkbox": "Independent of Each Other",
+        "checkboxSub": "(each option is independent)",
+        "radio": "Mutually Exclusive",
+        "radioSub": "(options are mutually exclusive)",
+        "toggle": "Independent of Each Other",
+        "toggleSub": "(each option is independent)"
+      }
+    ],
+    "mobileLabels": { "checkbox": "Checkbox", "radio": "Radio", "toggle": "Toggle" },
+    "mobileRows": [
+      { "label": "Options", "checkbox": "Multiple", "radio": "Multiple", "toggle": "Single" },
+      {
+        "label": "Selection Case",
+        "checkbox": "0 – all (Multiple)",
+        "radio": "1 (Single)",
+        "toggle": "2 (On / Off)"
+      },
+      {
+        "label": "Default Option",
+        "checkbox": "All Unselected",
+        "radio": "1 (Single)",
+        "toggle": "Checked (On)"
+      },
+      {
+        "label": "Relation",
+        "checkbox": "Independent",
+        "radio": "Mutually Exclusive",
+        "toggle": "Independent"
+      }
+    ]
+  },
+  "checkbox": {
+    "title": "Checkbox",
+    "desc": "Checkbox is used when there are one or more independent options, and the user may select none, one, or many. When standalone, a Checkbox can act as a feature on/off toggle.",
+    "previewCaption": "Unchecked / Checked",
+    "anatomy": { "title": "Anatomy", "items": ["1. Container", "2. Label"] },
+    "variantsTitle": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Checkbox states split by Checked / Unchecked into Default, Active, Disabled. Inside Selection Control, Active behaves as Hover — the user-facing rest states are Default and Disabled."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Four sizes — Large, Medium, Small, Xsmall. The default is 16 × 16. Pick sizes to create hierarchy between elements when needed."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Unchecked, Checked", "default": "Unchecked" },
+        { "prop": "State", "values": "Default, Active, Disabled", "default": "Default" }
+      ]
+    },
+    "spacing": {
+      "title": "Spacing",
+      "text": "Checkbox-to-label margin is 8px at Large, Medium, sMedium; 4px at Small. List items use 12px padding to avoid mis-selection from neighboring items. Checkboxes typically sit to the left of the text, though right placement is allowed for layout or spacing reasons."
+    },
+    "usecase": {
+      "title": "Usecase",
+      "side": {
+        "title": "Side Panel Filter (Statistics, Defects)",
+        "desc": "Used as a filter in a Data Table to surface only the data the user wants."
+      },
+      "task": {
+        "title": "Task Settings Farm Selection",
+        "desc": "Used to multi-select items with the same characteristic."
+      },
+      "sync": {
+        "title": "Sync User name Data",
+        "desc": "Used standalone to toggle data sync on or off."
+      },
+      "multiple": {
+        "title": "Multiple Select Option",
+        "text": "In a Checkbox Group with multiple items visible, one or more items can be selected (Checked)."
+      },
+      "arrangement": {
+        "title": "Right and Left Arrangement",
+        "text": "When grouping multiple items, place the Checkbox on the left to align the text labels consistently. Right placement applies when the Checkbox isn't part of an item list — for example, a standalone optional filter that triggers a data load."
+      },
+      "indeterminate": {
+        "title": "Indeterminate State",
+        "text": "The Indeterminate state applies when sub-items mix Checked and Unchecked. The parent reads Checked when all sub-items are Checked, and Unchecked when all sub-items are Unchecked."
+      }
+    }
+  },
+  "radio": {
+    "title": "Radio Button",
+    "desc": "Radio Button is used when two or more options are mutually exclusive and only one can be selected. Note: one option must be selected by default.",
+    "previewCaption": "Unselected / Selected",
+    "anatomy": { "title": "Anatomy", "items": ["1. Radio Button", "2. Label"] },
+    "variantsTitle": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Radio Button states split by Selected / Unselected into Default, Active, Disabled. Active behaves as Hover — user-facing rest states are Default and Disabled."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Two sizes — Small and Medium. Size pairs with the Label's font size; default is 16 × 16. Small is allowed when hierarchy between elements requires it."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Unchecked, Checked", "default": "Unchecked" },
+        { "prop": "State", "values": "Default, Active, Disabled", "default": "Default" }
+      ]
+    },
+    "spacingTitle": "Spacing",
+    "spacing": {
+      "title": "Control and Label Spacing",
+      "text": "Radio Button uses 8px between the control icon and the label. List items maintain 12px between options to avoid mis-selection. The Radio icon defaults to the left of the label; right placement is allowed for layout or spacing reasons."
+    },
+    "usecaseTitle": "Usecase",
+    "usecase": {
+      "exactlyOne": {
+        "title": "Select Exactly One",
+        "text": "Within a single Radio Button Group, only one Radio Button can be in the Selection (Checked) state."
+      },
+      "mutuallyExclusive": {
+        "title": "Mutually Exclusive Options",
+        "text": "Radio Buttons present mutually exclusive options for single-select. The label content inside the Radio Button item list should also be mutually exclusive."
+      }
+    }
+  },
+  "toggle": {
+    "title": "Toggle-Switch",
+    "desc": "Toggle Switch is used when binary, mutually exclusive options require an immediate effect change.",
+    "previewCaption": "Unchecked / Checked",
+    "anatomy": { "title": "Anatomy", "items": ["1. Track", "2. Thumb"] },
+    "variantsTitle": "Variants",
+    "state": {
+      "title": "State",
+      "desc": "Three states — Default, Active, Disabled — each holding Checked / Unchecked (On/Off)."
+    },
+    "size": {
+      "title": "Size",
+      "desc": "Two sizes — Small and Medium — chosen by the Label's hierarchy and size. Even with the same Label font size, hierarchy may shift the Toggle size."
+    },
+    "props": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Off, On", "default": "Off" },
+        { "prop": "State", "values": "Default, Active, Disabled", "default": "Default" }
+      ]
+    },
+    "spacingTitle": "Spacing",
+    "spacing": {
+      "title": "Control and Label Spacing",
+      "text": "Typically placed at the right of a list. Right padding shifts by the container's area and size — Medium uses 16px, Small uses 12px."
+    },
+    "usecaseTitle": "Usecase",
+    "usecase": {
+      "management": {
+        "title": "Management View Settings",
+        "desc": "Toggle each setting on or off within View Settings."
+      },
+      "filter": {
+        "title": "Filter Settings (Statistics)",
+        "desc": "Toggle table columns on or off, per item."
+      },
+      "tableSettings": {
+        "title": "Table Settings (Defects)",
+        "desc": "Toggle table columns on or off, per item."
+      },
+      "withLabel": {
+        "title": "Toggle Switch with Label",
+        "text": "Toggles typically pair with a label describing their role. Placement (left or right) depends on the surrounding container — right placement is the convention."
+      },
+      "group": {
+        "title": "Toggle Switch Group",
+        "text": "Toggle Switches handle On/Off for their target area. When grouped, the surrounding items belong to the same hierarchy as a coherent set."
+      }
+    }
+  }
+}

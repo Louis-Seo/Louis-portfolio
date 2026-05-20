@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Navigation",
+    "description": "Top-level navigation surfacing the user's location and routing between hierarchy-equivalent screens or menus."
+  },
+  "hero": {
+    "title": "Navigation",
+    "desc": "Navigation helps users find what they need and signals where they are. It powers top-level wayfinding across the product — moving between hierarchy-equivalent screens or menus."
+  },
+  "gnb": {
+    "title": "Wind GNB",
+    "desc": "Wind GNB anchors to the left of the screen and gives users a fast jump to any top-level destination. Five icons each route to their connected top-level target. GNB stays intuitive and predictable — fixed on the left even while scrolling. The default state is Expanded. Wind GNB splits into three flavors: Wind, Wind Farm, and Admin.",
+    "caption": "On app entry, 'DASHBOARD' in the Main Navigation Bar is Active by default and stays surfaced."
+  },
+  "anatomy": { "title": "Anatomy" },
+  "variants": {
+    "title": "Variants",
+    "desc": "Main GNB icons split between Active and Inactive (Selected, Unselected). Active icon color is Green 500; Inactive is Gray 500 — preserving visual consistency as the user moves through the product. One navigation icon is always set Active by default (e.g., Dashboard on first login)."
+  },
+  "spec": {
+    "title": "Spec",
+    "fold": {
+      "title": "GNB Fold",
+      "desc": "GNB can collapse and expand based on usage. The action's Icon Button reveals on hover at the GNB edge."
+    },
+    "scroll": {
+      "title": "Scroll Bar",
+      "desc": "When GNB items overflow the visible area, a scrollbar appears. The scroll area is constrained to the item region."
+    },
+    "spacing": {
+      "title": "Spacing",
+      "desc": "GNB containers stand at 36px height. The gap between Dashboard and Inspection starts at 24px. Between tabs and icons, use 12px vertical spacing from the container center. Icon-to-label gap is 12px."
+    },
+    "extended": {
+      "title": "Extended Structure",
+      "desc": "Wind Farm uses an extended GNB structure on top of the base. A Back Button surfaces at the top to return to the previous screen, paired with a Dropdown Button for switching farms. Users keep their current context while moving up the hierarchy or switching between farms quickly."
+    }
+  },
+  "gnbProps": {
+    "title": "Table of Figma Properties — Wind GNB",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Admin, Wind, WindFarm", "default": "Wind" },
+      { "prop": "Fold", "values": "False, True", "default": "False" }
+    ]
+  },
+  "gnbItemProps": {
+    "title": "Table of Figma Properties — Wind GNB / Item",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Type", "values": "Wind, Admin", "default": "Expand" },
+      {
+        "prop": "Category",
+        "values": "Management, Blades, Reports, History, User, Dashboard, Resources, Statistics, Wind Farm",
+        "default": "Dashboard"
+      },
+      {
+        "prop": "State",
+        "values": "Default, Hover, Selected, Selected Hover",
+        "default": "Default"
+      },
+      { "prop": "Fold", "values": "False, True", "default": "True" },
+      { "prop": "Expand", "values": "False, True", "default": "False" }
+    ]
+  },
+  "itemProps": {
+    "title": "Table of Figma Properties — Item",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      {
+        "prop": "State",
+        "values": "Default, Selected, Hover, Selected Hover",
+        "default": "Default"
+      },
+      { "prop": "Dp", "values": "00, 01", "default": "00" }
+    ]
+  },
+  "menuProps": {
+    "title": "Table of Figma Properties — Menu",
+    "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+    "rows": [
+      { "prop": "Open", "values": "True", "default": "True" },
+      { "prop": "ItemCount", "values": "1, 2, 3", "default": "None" }
+    ]
+  },
+  "dropdown": {
+    "title": "GNB Dropdown",
+    "desc": "GNB Dropdown is used to pick a single option from a list. When the option count is large, a dropdown menu surfaces the values. Selecting an item navigates to the display screen tied to the chosen value."
+  },
+  "usage": {
+    "title": "Usage Guidelines",
+    "desc": "Main GNB icons split between Active and Inactive (Selected, Unselected). Active icon color is Green 500; Inactive is Gray 500 — preserving visual consistency as the user moves through the product. One navigation icon is always Active by default (e.g., Dashboard on first login).",
+    "do": {
+      "title": "Do — Menu items inside GNB don't use Icons",
+      "desc": "Items at the same hierarchy group together. Reserve the Icon for top-level items only."
+    },
+    "dont": {
+      "title": "Don't — Active GNB items stay single",
+      "desc": "Don't use icon or label colors outside the defined Default state. Avoid multiple Active states across GNB items."
+    }
+  }
+}

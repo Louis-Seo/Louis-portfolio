@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Button",
+    "description": "Buttons trigger actions or navigation. Primary, Secondary, Tertiary, and Extra variants — with size, state, and icon configurations."
+  },
+  "intro": {
+    "title": "Button Components",
+    "desc": "Buttons set a clear visual hierarchy for the actions a user takes. Follow the style guide per hierarchy — avoid ad-hoc styling. Use them to trigger an action or to navigate to another page."
+  },
+  "components": {
+    "title": "Components",
+    "desc": "Buttons split into four types by style and intent — Primary, Secondary, Tertiary, and Extra. Each splits further by icon presence and background-color treatment. The first three are the main types used across the system."
+  },
+  "mainType": {
+    "title": "1. Main Type (Primary, Secondary, Tertiary Type)",
+    "desc": "Primary is the most common type — used with a text label, or with an icon paired alongside. Secondary mirrors Primary's shape but with a different color treatment for second-tier actions. Tertiary is icon-only — and Tertiary itself splits into Primary and Secondary by action hierarchy.",
+    "cards": {
+      "primary": "A. Primary Button Type (Contained Button)",
+      "secondary": "B. Secondary Button Type (Outlined Button)",
+      "tertiary": "C. Tertiary Button Type (Icon Button)"
+    }
+  },
+  "extraType": {
+    "title": "2. Extra Type",
+    "desc": "Extra Button types — Segment, Progress Status, Text, and Combo — aren't primary actions, but they show up frequently across Zoomable. Each is shaped by its specific function and purpose.",
+    "cards": {
+      "text": "D-1. Extra Button Type — Text Button",
+      "segment": "D-2. Extra Button Type — Segment Button",
+      "progress": "D-3. Extra Button Type — Progress Status",
+      "combo": "D-4. Extra Button Type — Combo Button"
+    }
+  },
+  "primarySecondary": {
+    "title": "Primary & Secondary Button",
+    "desc": "Buttons set a clear visual hierarchy for the actions a user takes. Follow the style guide per hierarchy — avoid ad-hoc styling. Use them to trigger an action or to navigate to another page.",
+    "section": {
+      "title": "Button",
+      "desc": "The base button. Adjust detail properties based on hierarchy and intent — see Variants and the Figma Properties table below.",
+      "previewCaption": "Standard Primary + Secondary pairing example."
+    },
+    "dialog": {
+      "title": "Delete Task",
+      "text": "Are you sure you want to delete the \"AWZ Unit 1 Repair\"?"
+    },
+    "anatomy": {
+      "container": "Button Container",
+      "label": "Text Label",
+      "icon": "Icon"
+    },
+    "variants": {
+      "primary": {
+        "title": "Primary",
+        "desc": "Primary buttons mark the key action on a page — use at most one per page. Examples: the Login button on the sign-in page, the Start / Done action on the Image Quality Check page."
+      },
+      "secondary": {
+        "title": "Secondary",
+        "desc": "Secondary buttons support the Primary action. Examples: Back to Login on the sign-in page, Reset All on the OSD Viewer."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Sizes use height: Large, Medium, Small, xSmall, 2xSmall. Font size, icon size, radius, and padding vary per size. Heights below 28 (Tiny) are avoided — they fall below the minimum touch target."
+      }
+    },
+    "propsTable": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Primary, Secondary", "default": "Primary" },
+        { "prop": "Size", "values": "Large, Medium, Small, xSmall, 2xSmall", "default": "Medium" },
+        { "prop": "State", "values": "Default, Hovered, Clicked, Disabled", "default": "Default" },
+        { "prop": "Icon", "values": "False, True", "default": "False" }
+      ]
+    },
+    "spec": {
+      "title": "Spec",
+      "sizes": {
+        "title": "Sizes",
+        "desc": "Heights — Large (48px), Medium (40px), Small (32px), xSmall (28px), 2xSmall (24px). Font size, icon size, radius, and padding vary per size. Heights below 28 (Tiny) are avoided — they fall below the minimum touch target."
+      },
+      "minWidth": {
+        "title": "Minimum Width",
+        "desc": "Buttons reserve a minimum of 16 padding for a 2-character label or more. Below that breaks the minimum size rule. Page-level buttons (outside modals) hold a minimum width of 80px."
+      },
+      "fullWidth": {
+        "title": "Full Width Buttons",
+        "desc": "Buttons fixed in position on scroll inherit padding from their containing frame. OSD Viewer cases typically use 16px padding on all sides."
+      }
+    },
+    "usage": {
+      "title": "Usage & Placement",
+      "fullWidth": {
+        "title": "Rule for Full Width Buttons",
+        "text": "By default, buttons hug their text label, except when below the conventional minimum widths (64px, 71px, 80px, 90px). When the remaining container width is less than the button width, divide the container width equally for each button. A single button can also fill the full width for visual consistency or by intent.",
+        "sub": "(e.g. OSD Viewer, Login)"
+      },
+      "placement": {
+        "title": "Placement of Button Group",
+        "text": "Buttons hug their text label by default. Within frames that satisfy the Full Width rule, button groups align right. Common pattern inside modals."
+      }
+    },
+    "requirement": {
+      "title": "Requirement Feedback",
+      "activation": {
+        "title": "Rule for Button Activation",
+        "text": "Buttons inside modals default to active, even when required fields aren't filled. If a user triggers an unmet state, surface the missing requirements through an Alert."
+      },
+      "disabled": {
+        "title": "Exception Case of Button Disabled",
+        "text": "Two exceptions where a modal button stays disabled — when the action's task is unmistakable inside the modal. Today: PDF Export while the file is processing, and Remove List when no checkbox is selected."
+      }
+    },
+    "loading": {
+      "title": "Loading Status",
+      "stateLabels": {
+        "default": "State = Default",
+        "loading": "State = Loading"
+      },
+      "typeLabels": {
+        "typeA": "Type A",
+        "typeB": "Type B"
+      },
+      "type": {
+        "title": "Loading Type",
+        "text": "Loading type differs by Primary or Secondary. Icon presence doesn't change it — loading renders on the container. Primary surfaces it on the Green 500 container; Secondary on white."
+      },
+      "spinner": {
+        "title": "Loading Spinner Size",
+        "text": "The spinner inside a button matches the text height for that button size. While loading, the width stays equal to the width used immediately before the loading began."
+      }
+    }
+  },
+  "tertiary": {
+    "title": "Tertiary Button (Icon Button)",
+    "desc": "Icon Buttons are buttons without a text label — icon only.",
+    "section": {
+      "title": "Icon Button",
+      "desc": "Icon Buttons have no text label. Prefer a labeled button when possible — but when space is limited, or when the icon is clearly understood on its own, an icon-only button is acceptable. Icon Buttons can also act as toggles (On / Off selection). Icon Buttons must always pair with a Tooltip."
+    },
+    "anatomy": { "title": "Anatomy" },
+    "variants": {
+      "primary": {
+        "title": "Primary Type",
+        "desc": "Icon Buttons split into three types — Primary, Secondary, Tertiary — applied flexibly per content. Use at most one Primary Icon Button per page."
+      },
+      "secondary": {
+        "title": "Secondary Type",
+        "desc": "Icon Buttons split into three types — Primary, Secondary, Tertiary — applied flexibly per content. Use at most one Primary Icon Button per page."
+      },
+      "tertiary": {
+        "title": "Tertiary Type",
+        "desc": "Tertiary Icon Buttons have neither container nor outline — their treatment shifts with the surrounding background color. Three variants apply flexibly per content. Use at most one Primary Icon Button per page."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Icon Buttons have four base states — Default, Hover, Clicked, Disabled."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Heights — Large, Medium, Small, xSmall, 2xSmall, 3xSmall, 4xSmall. Container size, icon size, radius, and padding vary per size."
+      }
+    },
+    "propsTable": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Primary, Secondary, Tertiary", "default": "Primary" },
+        {
+          "prop": "Size",
+          "values": "Large, Medium, Small, xSmall, 2xSmall, 3xSmall, 4xSmall",
+          "default": "Medium"
+        },
+        { "prop": "State", "values": "Default, Hovered, Clicked, Disabled", "default": "Default" }
+      ]
+    },
+    "inTable": {
+      "title": "Icon Button in Table",
+      "desc": "Space Icon Buttons 4 or 8 px apart. When combined with table headers, watch the margin. Inside a table, Icon Button groups drive per-row actions and align right."
+    },
+    "popupTooltip": {
+      "title": "Popup Tooltip",
+      "desc": "Use a Tertiary Icon Button with an Information icon to surface a Popup Tooltip. State matches the standard Tertiary Icon Button, paired with a Header. The button's action shows a contextual Tooltip; clicking the button again — or anywhere outside — dismisses it."
+    },
+    "usage": {
+      "title": "Usage & Placement",
+      "header": {
+        "title": "Header with Icon",
+        "text": "When an Icon sits inside a Header, the entire row acts as the touch target — and the action is signaled through the icon. No state styling on the Icon Button itself — it stays clickable without Hover or Clicked states.",
+        "sub": "(e.g. Item List → Expand Icon, OSD Viewer Panel → Expand Icon)"
+      }
+    }
+  },
+  "extra": {
+    "title": "Extra Button (Text, Segment, Progress Status, Combo Button)",
+    "desc": "Extra Button types aren't primary actions, but they appear frequently across Zoomable. The family includes Segment, Progress Status, Text, and Combo — each shaped by its specific function and purpose.",
+    "text": {
+      "title": "Text Button",
+      "desc": "Text Buttons render without a container or outline — used inline. They combine with text (label) or appear as a linked underline. Used as part of a sentence or standalone — for navigating to another page, moving within the current page, or surfacing additional info."
+    },
+    "textVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Text Buttons split into two types — Label (Primary, Secondary) and Link — applied flexibly per content."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Text Buttons have four base states — Default, Hover, Clicked, Disabled."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Text Button sizes match the body scale — Medium, Small, Xsmall. When used for navigation (e.g., \"See more\"), match the body font size."
+      }
+    },
+    "textPropsTable": {
+      "title": "Table of Figma Properties",
+      "headers": { "property": "Property", "values": "Values", "default": "Default Value" },
+      "rows": [
+        { "prop": "Type", "values": "Label, Link", "default": "Label" },
+        { "prop": "Size", "values": "Medium, Small, Xsmall", "default": "Xsmall" },
+        { "prop": "State", "values": "Default, Hovered, Clicked, Disabled", "default": "Default" }
+      ]
+    },
+    "segment": {
+      "title": "Segment Button",
+      "desc": "Segment Buttons group similar content on a page and let users move between sections without leaving. They expose hierarchy-equivalent content for browsing in place. Visual consistency matters — selected state communicates location quickly. Segment Buttons always have one item selected; no unselected-all state."
+    },
+    "segmentVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Segment Buttons take two shapes — Label or Icon — and two placements — Floating=true or Floating=false. Applied flexibly per content and resolution."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Two states — Clicked, Unclicked. Clicked uses Inter / Medium weight and Green 500 color."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "Two sizes — Large, Medium. Standard Large is 40px elsewhere; Segment Button Large is 36px."
+      }
+    },
+    "progress": {
+      "title": "Progress Status Button",
+      "desc": "Progress Status Buttons signal a stage-level hierarchy for the user's task progress. Follow the style guide per stage — avoid ad-hoc styling. Used in the Wind OSD Viewer's Progress Status to surface state and workflow per step."
+    },
+    "progressVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Two types — Approved, In Review — applied flexibly per stage and situational hierarchy."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Two states — Default, Hover — matched to the progress stage."
+      },
+      "size": {
+        "title": "Size",
+        "desc": "A single size — Width = 58px, Height = 18px."
+      }
+    },
+    "combo": {
+      "title": "Combo Button",
+      "desc": "A button paired with a dropdown list — used when related actions need multiple options. In the Wind Do Task view, supports multi-format export (Export PDF, CSV, AI Hub). Uses a Primary Button with an icon."
+    },
+    "comboVariants": {
+      "type": {
+        "title": "Type",
+        "desc": "Currently a single type — a Secondary-styled Combo Button can be composed if needed."
+      },
+      "state": {
+        "title": "State",
+        "desc": "Four states — Default, Hover, Clicked, Disabled — mirroring Dropdown's state set."
+      }
+    },
+    "comboMenu": {
+      "title": "Combo Button Menu",
+      "text": "The menu surfaced on Combo Button selection uses the same Dropdown Menu component at matching size. Menu items hold the same width as the button."
+    }
+  }
+}

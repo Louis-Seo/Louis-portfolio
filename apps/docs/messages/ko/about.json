@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "title": "소개",
+    "description": "복잡한 제품에 구조와 명확함을 더하는 시스템 지향 프로덕트 디자이너 Louis Seo의 이력과 작업 방식."
+  },
+  "hero": {
+    "label": "About",
+    "titleLine1": "제품의 구조를",
+    "titleLine2": "설계하는 디자이너",
+    "descLine1": "복잡한 제품일수록 화면보다 구조가 먼저라고 믿습니다.",
+    "descLine2": "저는 역할, 데이터, 워크플로우가 얽힌 시스템을 더 명확하고 확장 가능한 경험으로 설계해왔습니다."
+  },
+  "whatIBring": {
+    "title": "What I Bring",
+    "desc": "산업보다 구조를 먼저 보는 디자이너입니다. 복잡한 제품이 가진 역할, 데이터, 워크플로우의 문제를 더 명확한 경험으로 정리해왔습니다.",
+    "cards": [
+      {
+        "num": "01",
+        "title": "Product System Design",
+        "text": "70개 이상의 컴포넌트로 구성된 디자인 시스템을 처음부터 만들어 4개 제품팀에 적용했습니다. 토큰 구조 설계부터 Figma 라이브러리 운영, 문서화, 팀 채택까지 시스템의 전체 생명주기를 직접 운영한 경험이 있습니다.",
+        "tags": ["Design Systems", "Tokens", "70+ Components", "Multi-Product"]
+      },
+      {
+        "num": "02",
+        "title": "AI & Data Experience",
+        "text": "딥러닝 기반 자동 결함 탐지 앱, 풍력 터빈 AI 리스크 예측 대시보드, 실시간 센서 데이터 모니터링 시스템을 설계했습니다. 모델의 결과를 사용자가 신뢰하고 행동으로 연결할 수 있는 인터페이스를 만드는 데 집중합니다.",
+        "tags": ["AI/ML UX", "Data Visualization", "Real-time", "Predictive"]
+      },
+      {
+        "num": "03",
+        "title": "Platform & Multi-Role UX",
+        "text": "B2B 임대 관리(PMS), B2C 입주자 앱, 투자 운용 대시보드를 동시에 설계하며 같은 데이터를 다른 역할이 다르게 사용하는 구조를 다뤘습니다. B2B, B2C, B2G가 공존하는 플랫폼에서 역할별 워크플로우를 설계하는 데 익숙합니다.",
+        "tags": ["B2B/B2C/B2G", "Multi-tenant", "RBAC", "Workflow"]
+      },
+      {
+        "num": "04",
+        "title": "Design–Engineering Bridge",
+        "text": "전사 UX 가이드를 수립하고 디자인 QA 프로세스를 도입해 직접 운영했습니다. 컴포넌트 스펙, 상태 정의, React 패턴까지 이해하며, Figma에서 코드로 넘어갈 때 의도가 손실되지 않도록 책임집니다.",
+        "tags": ["Design QA", "UX Guide", "React", "Handoff"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Product Designer",
+        "company": "디엔코리아 (DNK)",
+        "period": "2024.11 — Present",
+        "desc": "글로벌 부동산 임대·투자 SaaS 플랫폼에서 B2B PMS, B2C 레지던트 앱/웹, 어드민 백오피스, 투자 분석 대시보드(Investment Manager) 등 4개 제품군의 UX를 동시에 설계. 전자계약 신규 제품을 0→1로 기획·리드. 기존 PMS는 운영 워크플로우 중심으로 리디자인. 임대 운영자·입주자·어드민·투자 분석자가 같은 데이터를 다른 맥락에서 사용하는 멀티 롤 플랫폼의 정보 구조와 역할별 워크플로우를 통합 설계.",
+        "projects": ["DNK PMS", "Resident App/Web", "Investment Manager Platform"]
+      },
+      {
+        "role": "UX/UI Designer",
+        "company": "Nearthlab",
+        "period": "2022.08 — 2024.04",
+        "desc": "AI 드론 검사 플랫폼 기업에서 B2B SaaS 웹 서비스, B2G 군·경찰용 드론 운영 앱과 관제 시스템(보안 비공개), 모바일 자율비행 앱 등 6개 이상의 제품을 설계. 전사 UX 표준 디자인 시스템을 구축하여 솔루션 아이덴티티 수립. 디자인 QA 프로세스 도입 및 운영. iF Design Award(Service Design, AI & Robotics)와 Red Dot Design Award 수상 제품에 기여. 미션 크리티컬 환경의 실시간 정보 표시와 역할 기반 워크플로우 설계 경험으로 직무발명 특허 등록.",
+        "projects": [
+          "Zoomable Wind Web",
+          "Zoomable Worker Web",
+          "NearthWind Mobile",
+          "UDS App (B2G)",
+          "PPA Demo (AI)",
+          "Design System"
+        ]
+      },
+      {
+        "role": "UX/UI Designer",
+        "company": "WE Wumbo (AU)",
+        "period": "2021.06 — 2022.07",
+        "desc": "호주 기반 프롭테크 SaaS 스타트업에서 strata 매니저·시설 운영자·입주자가 함께 쓰는 레지던트 매니지먼트 앱(We Services)을 비롯해 호텔 운영 자동화 앱(Wumbotel), 원격 의료 서비스(Wumbo Care) 등 3개 제품의 UX를 동시에 설계. 신규 기능 기획부터 디자인·출시·운영 유지보수까지 풀 라이프사이클을 담당. 다국적 팀과 영어 기반 협업으로 B2B 운영자와 B2C 사용자 양측 워크플로우를 통합.",
+        "projects": ["We Services", "Wumbotel App", "Wumbo Care"]
+      },
+      {
+        "role": "Product Designer Intern",
+        "company": "Boshantech (AU)",
+        "period": "2021.01 — 2021.06",
+        "desc": "호주 IoT 스타트업에서 스마트 샤워 시스템 모바일 앱 UX와 Brand Identity·Value·BX 시안을 직접 디자인. 하드웨어 제품·디지털 인터페이스·브랜드를 한 흐름으로 다룬 첫 디자인 경험.",
+        "projects": ["Smart Shower App", "Boshantech BX"]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards & Certificates",
+    "items": [
+      {
+        "name": "iF Design Award — Service Design",
+        "meta": "Zoomable Data Analytics Platforms · 2025"
+      },
+      {
+        "name": "Red Dot Design Award",
+        "meta": "AiDEN · Design Concept 2024"
+      },
+      {
+        "name": "iF Design Award — AI & Robotics",
+        "meta": "AiDEN · 2024"
+      },
+      {
+        "name": "직무발명 특허",
+        "meta": "비행체가 제공하는 정보를 표시하는 방법 및 장치 · 2023"
+      },
+      {
+        "name": "Google UX Design Professional Certificate",
+        "meta": "Coursera · 2024"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "name": "RMIT University",
+        "meta": "Communication Design, Bachelor's degree · 2019–2021"
+      },
+      {
+        "name": "Holmesglen",
+        "meta": "Graphic Design, Diploma of Education · 2017–2018"
+      }
+    ]
+  },
+  "howIWork": {
+    "headlineLine1": "How I Work",
+    "headlineLine2": "Design Approach",
+    "principles": [
+      {
+        "title": "도메인과 데이터 흐름부터 파악한다",
+        "text": "화면을 그리기 전에 비즈니스 로직, 데이터 모델, 사용자 역할 간의 관계를 먼저 그립니다. 풍력 발전소 검사 워크플로우든, 부동산 투자 리포팅이든, 도메인을 이해하지 않으면 좋은 구조가 나올 수 없다는 걸 경험으로 알고 있습니다."
+      },
+      {
+        "title": "화면보다 시스템을 먼저 만든다",
+        "text": "개별 페이지를 하나씩 그리는 대신, 토큰·컴포넌트·패턴 단위로 제품을 설계합니다. 여러 제품이 하나의 디자인 시스템을 공유하면서도 각자의 맥락에서 작동하는 구조를 직접 운영해왔기 때문입니다."
+      },
+      {
+        "title": "구현 가능한 수준으로 설계한다",
+        "text": "API 응답 구조, 컴포넌트 상태, 렌더링 제약을 초기 설계 단계에서 반영합니다. 엔지니어가 디자인을 '해석'해야 하는 상황을 만들지 않습니다. 직접 디자인 QA를 수행하며 의도와 결과의 차이를 줄여 왔습니다."
+      },
+      {
+        "title": "빠르게 출시하고 실제 사용으로 검증한다",
+        "text": "완벽한 기획서보다 작동하는 프로토타입을 먼저 만듭니다. 현장 엔지니어가 장갑 낀 손으로 터치하는 환경, 투자자가 수백 개 자산을 한 화면에서 비교하는 환경 — 실제 사용 맥락에서 나온 피드백이 설계를 완성합니다."
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "groups": [
+      {
+        "label": "Product & UX",
+        "chips": [
+          "Information Architecture",
+          "Data Visualization",
+          "Interaction Design",
+          "User Research",
+          "Workflow Design"
+        ]
+      },
+      {
+        "label": "Design Systems",
+        "chips": [
+          "Token Architecture",
+          "Component API Design",
+          "Figma Library",
+          "Design QA",
+          "Multi-Product Adoption"
+        ]
+      },
+      {
+        "label": "Design–Dev",
+        "chips": [
+          "React / Next.js",
+          "TypeScript",
+          "CSS Modules",
+          "Component Spec",
+          "Storybook",
+          "Token Pipeline"
+        ]
+      }
+    ]
+  },
+  "whatsNext": {
+    "title": "What's Next",
+    "intro": "복잡한 시스템을 단단하게 풀어내는 일을, 더 많은 사용자가 쓰는 제품에서 해보고 싶습니다.",
+    "links": {
+      "email": "niedr7893@gmail.com",
+      "linkedin": "LinkedIn"
+    }
+  }
+}
