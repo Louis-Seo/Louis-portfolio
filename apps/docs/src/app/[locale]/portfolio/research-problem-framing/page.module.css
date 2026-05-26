@@ -312,13 +312,17 @@
 .findingsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  grid-template-rows: auto repeat(4, auto);
+  column-gap: 48px;
+  row-gap: 16px;
   margin-bottom: 48px;
+  align-items: stretch;
 }
 .findingsColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 5;
+  gap: 0;
 }
 .findingsColumnTitle {
   font-size: 14px;
@@ -1017,7 +1021,14 @@
   }
   .findingsGrid {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
     gap: 32px;
+  }
+  .findingsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-row: auto;
   }
   .synthesisGrid {
     grid-template-columns: 1fr;
